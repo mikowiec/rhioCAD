@@ -1,0 +1,12 @@
+<project name="testOS" default="runTest">  
+<property name="operatingSystem" value="${operating-system::to-string(environment::get-operating-system())}" />  
+
+	<target name="runTest">  
+		<echo message="${operatingSystem}" /> 
+
+	    <if test="${string::contains(operatingSystem, 'Unix')}">  
+	      <echo message="Unix build" />  
+	    </if>   
+	</target>  
+</project>  
+

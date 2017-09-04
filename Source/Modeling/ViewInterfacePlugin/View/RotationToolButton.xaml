@@ -1,0 +1,5 @@
+﻿<RibbonMapping:RibbonButtonMapping x:Class="ViewInterfacePlugin.View.RotationToolButton" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary" xmlns:RibbonMapping="clr-namespace:NaroUiBuilder.RibbonMapping;assembly=NaroUiBuilder">
+	<RibbonMapping:RibbonButtonMapping.Command>
+		<r:RibbonCommand Executed="DynamicRotation" SmallImageSource="/Resources;component/Resources/view_rotate.png" LargeImageSource="/Resources;component/Resources/view_rotate.png" LabelTitle="Rotation" ToolTipTitle="Rotation" ToolTipDescription="Rotates the scene by moving the mouse left right up down." />
+	</RibbonMapping:RibbonButtonMapping.Command>
+</RibbonMapping:RibbonButtonMapping>

@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C478E40B-A05E-4C69-9AB3-7A3BB374243F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Microsoft.Practices.CompositeUI</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Microsoft.Practices.CompositeUI</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Ciprian\AppData\Roaming\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\Microsoft.Practices.CompositeUI.XML</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoWarn>1701%3b1702</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\bin\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\Microsoft.Practices.CompositeUI.XML</DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Solution Items\GlobalAssemblyInfo.cs" />
+    <Compile Include="BuilderStrategies\BuilderStrategyException.cs" />
+    <Compile Include="BuilderStrategies\CommandStrategy.cs" />
+    <Compile Include="BuilderStrategies\EventBrokerStrategy.cs" />
+    <Compile Include="BuilderStrategies\ObjectBuiltNotificationPolicy.cs" />
+    <Compile Include="BuilderStrategies\ObjectBuiltNotificationStrategy.cs" />
+    <Compile Include="BuilderStrategies\RootWorkItemInitializationStrategy.cs" />
+    <Compile Include="CabApplication.cs" />
+    <Compile Include="CabShellApplication.cs" />
+    <Compile Include="Collections\UIExtensionSite.cs" />
+    <Compile Include="Collections\UIExtensionSiteCollection.cs" />
+    <Compile Include="Commands\CommandStatus.cs" />
+    <Compile Include="DesignerCodeDomSerializer.cs" />
+    <Compile Include="IChangeNotification.cs" />
+    <Compile Include="SmartParts\ISmartPartInfoProvider.cs" />
+    <Compile Include="SmartParts\SmartPartInfoProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RootWorkItemExtensionAttribute.cs" />
+    <Compile Include="Services\LoadedModuleInfo.cs" />
+    <Compile Include="Services\ModuleLoaderService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmartParts\IComposableWorkspace.cs" />
+    <Compile Include="SmartParts\SmartPartInfo.Designer.cs">
+      <DependentUpon>SmartPartInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartParts\Workspace.cs" />
+    <Compile Include="SmartParts\WorkspaceComposer.cs" />
+    <Compile Include="Utility\DataEventArgs.cs" />
+    <Compile Include="Utility\Guard.cs" />
+    <Compile Include="Utility\ListDictionary.cs" />
+    <Compile Include="Utility\LockBase.cs" />
+    <Compile Include="Utility\ReaderLock.cs" />
+    <Compile Include="Utility\ReadOnlyDictionary.cs" />
+    <Compile Include="Utility\Set.cs" />
+    <Compile Include="Utility\WriterLock.cs" />
+    <Compile Include="Visualizer\CabVisualizer.cs" />
+    <Compile Include="Collections\ManagedObjectCollection.cs" />
+    <Compile Include="Collections\ServiceCollection.cs" />
+    <Compile Include="Commands\CommandAdapter.cs" />
+    <Compile Include="Commands\CommandAdapterMapService.cs" />
+    <Compile Include="Commands\CommandAdapterMapServiceException.cs" />
+    <Compile Include="Commands\CommandException.cs" />
+    <Compile Include="Commands\CommandHandlerAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\EventCommandAdapter.cs" />
+    <Compile Include="Commands\EventTopicCommand.cs" />
+    <Compile Include="Commands\ICommandAdapterMapService.cs" />
+    <Compile Include="Configuration\ConfigurationException.cs" />
+    <Compile Include="Configuration\IModuleInfo.cs" />
+    <Compile Include="Configuration\ModuleInfo.cs" />
+    <Compile Include="Configuration\SolutionProfileReaderException.cs" />
+    <Compile Include="Configuration\VisualizationElement.cs" />
+    <Compile Include="Configuration\VisualizationElementCollection.cs" />
+    <Compile Include="ComponentDependencyAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventBroker\EventPublicationAttribute.cs" />
+    <Compile Include="EventBroker\EventSubscriptionAttribute.cs" />
+    <Compile Include="EventBroker\EventTopic.cs" />
+    <Compile Include="EventBroker\EventTopicFireDelegate.cs" />
+    <Compile Include="EventBroker\Publication.cs" />
+    <Compile Include="EventBroker\PublicationScope.cs" />
+    <Compile Include="EventBroker\Subscription.cs" />
+    <Compile Include="EventBroker\ThreadOption.cs" />
+    <Compile Include="EventBroker\WorkItemSubscriptions.cs" />
+    <Compile Include="Visualizer\IVisualizer.cs" />
+    <Compile Include="OptionalDependencyAttribute.cs" />
+    <Compile Include="ServiceDependencyAttribute.cs" />
+    <Compile Include="Configuration\SolutionProfileReader.cs" />
+    <Compile Include="Configuration\Xsd\SolutionProfileInit.cs" />
+    <Compile Include="DictionaryEventArgs.cs" />
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Configuration\ConfigurationAttribute.cs" />
+    <Compile Include="Configuration\ParametersElement.cs" />
+    <Compile Include="Configuration\SettingsSection.cs" />
+    <Compile Include="Configuration\ServiceElementCollection.cs" />
+    <Compile Include="Configuration\ServiceElement.cs" />
+    <Compile Include="Configuration\Xsd\SolutionProfile.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="CyclicDependencyFoundException.cs" />
+    <Compile Include="EventBroker\EventBrokerException.cs" />
+    <Compile Include="EventBroker\EventInspector.cs" />
+    <Compile Include="EventBroker\EventTopicException.cs" />
+    <Compile Include="IConfigurable.cs" />
+    <Compile Include="IModule.cs" />
+    <Compile Include="Instrumentation\ITraceSourceCatalogService.cs" />
+    <Compile Include="Instrumentation\TraceSourceAttribute.cs" />
+    <Compile Include="Instrumentation\TraceSourceCatalogService.cs" />
+    <Compile Include="IWorkItemExtension.cs" />
+    <Compile Include="Services\FileCatalogModuleEnumerator.cs" />
+    <Compile Include="Services\IModuleEnumerator.cs" />
+    <Compile Include="Services\IsolatedStorageStatePersistenceService.cs" />
+    <Compile Include="Services\IWorkItemTypeCatalogService.cs" />
+    <Compile Include="Services\IWorkItemExtensionService.cs" />
+    <Compile Include="Services\ModuleEnumeratorException.cs" />
+    <Compile Include="Services\ReflectionModuleEnumerator.cs" />
+    <Compile Include="Services\ServiceMissingException.cs" />
+    <Compile Include="Services\WorkItemTypeCatalogService.cs" />
+    <Compile Include="Services\WorkItemExtensionService.cs" />
+    <Compile Include="Services\StreamStatePersistenceService.cs" />
+    <Compile Include="SmartParts\ISmartPartInfo.cs" />
+    <Compile Include="SmartParts\ISmartPartPlaceholder.cs" />
+    <Compile Include="SmartParts\IWorkspace.cs" />
+    <Compile Include="IWorkItemActivationService.cs" />
+    <Compile Include="ModuleInit.cs" />
+    <Compile Include="ModuleAttribute.cs" />
+    <Compile Include="ModuleDependencyAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceAttribute.cs" />
+    <Compile Include="Services\DataProtectionCryptographyService.cs" />
+    <Compile Include="Services\FileStatePersistenceService.cs" />
+    <Compile Include="Services\IAuthenticationService.cs" />
+    <Compile Include="Services\ICryptographyService.cs" />
+    <Compile Include="Services\IModuleLoaderService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\IStatePersistenceService.cs" />
+    <Compile Include="ModuleDependencySolver.cs" />
+    <Compile Include="Services\ModuleLoadException.cs" />
+    <Compile Include="Services\StatePersistenceException.cs" />
+    <Compile Include="Services\WindowsPrincipalAuthenticationService.cs" />
+    <Compile Include="SimpleWorkItemActivationService.cs" />
+    <Compile Include="SmartParts\SmartPartAttribute.cs" />
+    <Compile Include="SmartParts\SmartPartInfo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SmartParts\SmartPartPlaceHolderEventArgs.cs" />
+    <Compile Include="SmartParts\WorkspaceCancelEventArgs.cs" />
+    <Compile Include="SmartParts\WorkspaceEventArgs.cs" />
+    <Compile Include="State.cs" />
+    <Compile Include="StateAttribute.cs" />
+    <Compile Include="StateChangedAttribute.cs" />
+    <Compile Include="StateChangedEventArgs.cs" />
+    <Compile Include="StateChangedTopic.cs" />
+    <Compile Include="StateElement.cs" />
+    <Compile Include="StateException.cs" />
+    <Compile Include="UIElements\IUIElementAdapter.cs" />
+    <Compile Include="UIElements\IUIElementAdapterFactory.cs" />
+    <Compile Include="UIElements\IUIElementAdapterFactoryCatalog.cs" />
+    <Compile Include="UIElements\UIElementAdapter.cs" />
+    <Compile Include="UIElements\UIElementAdapterFactoryCatalog.cs" />
+    <Compile Include="WorkItem.cs" />
+    <Compile Include="WorkItemExtension.cs" />
+    <Compile Include="WorkItemExtensionAttribute.cs" />
+    <Compile Include="WorkItemStatus.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SolutionProfile.xsd" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartParts\SmartPartInfo.bmp">
+      <DependentUpon>SmartPartInfo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

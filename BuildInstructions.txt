@@ -1,0 +1,82 @@
+http://narocad.com/tweb/index.php?option=com_content&view=article&id=47&Itemid=27
+
+Beginner's Guide into NaroCAD Development
+
+ 
+
+Resources needed: Windows based computer [Windows XP or Vista]. I will use my server running Windows 2008 Server.
+
+Practical steps:
+
+1. Download and install Visual Studio 2008 Express [C# and C++ programming languages - optional for the wrappers]: http://www.microsoft.com/Express/
+
+ 
+
+2. Alternatively - download and install:
+
+--> SharpDevelop 3.1: http://build.sharpdevelop.net/buildartefacts/
+
+Sharp Develop Start Page:
+
+# Develop Start Page
+
+ --> .NET Framework 3.5 + Service Pack 1: http://www.microsoft.com/downloads/details.aspx?familyid=ab99342f-5d1a-413d-8319-81da479ab0d7&displaylang=en
+
+--> Visual C++ 2008 runtime SP1: http://www.microsoft.com/downloads/details.aspx?familyid=A5C84275-3B97-4AB7-A40D-3802B2AF5FC2&displaylang=en
+
+ 
+
+3. Versioning Control: TortoiseSVN: http://tortoisesvn.net/downloads
+
+Installing Tortoise SVN:
+
+Tortoise SVN
+
+4. OpenCascade*: http://www.opencascade.org/getocc/download/
+*Note: at this step, you need to register and then you will be able to download. The code of OpenCascade is opensource.
+
+ 
+
+ 
+
+Getting and compiling the NaroCAD code:
+
+Ok, let's make the code source work.
+
+ 
+
+1. Download the code sources from NaroCAD SourceForge SVN: 
+
+  a. create a new folder/directory on your hard-drive
+
+  b. right click on it and then click the option SVN Checkout...
+
+  c. in the dialog box paste in the "URL repository:" field the SVN link: https://narocad.svn.sourceforge.net/svnroot/narocad
+
+  d. click OK and then wait until all the code source files are downloading.
+
+ At the end, you should be able to see this window:
+
+At revision
+
+ 
+
+2. Compile the code source files:
+
+    a. double click on your:  <path_to...>\trunk\NaroCad.sln
+    b. click Run
+
+Then you should be able to see NaroCAD running:
+
+NaroCAD
+
+ 
+
+3. Compile the wrappers. 
+
+If you need any help, don't hesitate to contact us.
+
+ 
+
+NaroCAD Team 
+

@@ -1,0 +1,22 @@
+﻿<Window x:Class="PartModellingUi.Views.Renderer.WpfShaderNewName" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="New Shader" Height="130" Width="400">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="35*" />
+			<ColumnDefinition Width="65*" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<Label Margin="5" HorizontalContentAlignment="Center">Shader name</Label>
+		<TextBox Name="tbShaderName" Grid.Column="1" Margin="5"></TextBox>
+		<StackPanel Grid.Row="1">
+			<Label>Type:</Label>
+			<ComboBox Name="cbShaderType" Margin="3,0,3,0"></ComboBox>
+		</StackPanel>
+		<WrapPanel Grid.Row="1" Grid.Column="1" FlowDirection="RightToLeft">
+			<Button Name="btnSetup" Content="Setup" Height="25" Width="60" Margin="15" Click="SetupClick"></Button>
+			<Button Name="btnCancel" Content="Cancel" Height="25" Width="60" Margin="15" Click="CancelClick"></Button>
+		</WrapPanel>
+	</Grid>
+</Window>

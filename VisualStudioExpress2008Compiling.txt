@@ -1,0 +1,7 @@
+1. Launch the NaroCAD.sln project with VisualStudioExpress2008 from the trunk/narocad/ folder.
+2. Some messages that "Solution folders are not supported in this version of the application" appears.
+Press "OK".
+3. Another message that "Some of the properties associated with the solution could not be read" appears.
+Press "OK".
+4. Build the project in Release or Debug.
+Make sure that when launch it with F5 or Ctrl+F5 the Shell project is selected as "StartUp project".

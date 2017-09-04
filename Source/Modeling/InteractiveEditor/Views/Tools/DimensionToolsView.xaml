@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="InteractiveEditor.Views.Tools.DimensionToolsView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Grid>
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="24"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Button Height="20" Style="{DynamicResource RoundedButtonFloatinToolbar}" Width="20" Grid.Row="0" Grid.Column="0" ToolTip="Extrude" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="2,0,2,0" Click="ExtrudeClicked">
+			<Button.Content>
+				<Image Source="/Resources;component/Resources/extrude.png"></Image>
+			</Button.Content>
+		</Button>
+
+		<Button Name="_pasteButton" Height="20" Style="{DynamicResource RoundedButtonFloatinToolbar}" Width="20" Grid.Row="0" Grid.Column="1" Click="DimensionClicked" ToolTip="Cut" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="2,0,2,0">
+			<Button.Content>
+				<Image Source="/Resources;component/Resources/cut.png"></Image>
+			</Button.Content>
+		</Button>
+	</Grid>
+</UserControl>

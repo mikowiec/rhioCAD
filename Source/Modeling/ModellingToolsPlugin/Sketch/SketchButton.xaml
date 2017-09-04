@@ -1,0 +1,5 @@
+<RibbonMapping:RibbonButtonMapping Name="SketchPlane" x:Class="ModellingToolsPlugin.Sketch.SketchButton" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary" xmlns:RibbonMapping="clr-namespace:NaroUiBuilder.RibbonMapping;assembly=NaroUiBuilder">
+	<RibbonMapping:RibbonButtonMapping.Command>
+		<r:RibbonCommand x:Name="command" Executed="SketchButtonClick" SmallImageSource="/Resources;component/Resources/free-draw.png" LargeImageSource="/Resources;component/Resources/free-draw.png" ToolTipTitle="Sketch" ToolTipDescription="Launches Sketch mode." />
+	</RibbonMapping:RibbonButtonMapping.Command>
+</RibbonMapping:RibbonButtonMapping>

@@ -1,0 +1,15 @@
+﻿<RibbonMapping:RibbonSplitButtonMapping x:Class="BooDocumentImportExport.Views.BooShapeList" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:RibbonMapping="clr-namespace:NaroUiBuilder.RibbonMapping;assembly=NaroUiBuilder" xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary">
+	<RibbonMapping:RibbonSplitButtonMapping.Command>
+		<r:RibbonCommand Executed="SplineAddPointClick" LabelTitle="Boo Document Export" ToolTipTitle="Boo Document Import" ToolTipDescription="Boo Document Import" SmallImageSource="/Resources;component/Resources/spline.png" LargeImageSource="/Resources;component/Resources/spline.png" />
+	</RibbonMapping:RibbonSplitButtonMapping.Command>
+	<RibbonMapping:RibbonSplitButtonMapping.Items>
+		<MenuItem Header="Boo Document Export" Name="BooDocumentExport">
+			<MenuItem.Icon>
+				<Image Source="/Resources;component/Resources/spline-point.png" Height="16" Width="16"></Image>
+			</MenuItem.Icon>
+			<MenuItem.Command>
+				<r:RibbonCommand Executed="SplineAddPointClick" LabelTitle="Boo Document Export" ToolTipTitle="Boo Document Export" ToolTipDescription="Boo Document Export" SmallImageSource="/Resources;component/Resources/spline-point.png" LargeImageSource="/Resources;component/Resources/spline-point.png" />
+			</MenuItem.Command>
+		</MenuItem>
+	</RibbonMapping:RibbonSplitButtonMapping.Items>
+</RibbonMapping:RibbonSplitButtonMapping>

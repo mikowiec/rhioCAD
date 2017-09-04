@@ -1,0 +1,11 @@
+namespace NaroCppCore.Occ.V3d
+{
+	public enum V3dTypeOfPickCamera{
+		V3d_POSITIONCAMERA,
+		V3d_SPACECAMERA,
+		V3d_RADIUSTEXTCAMERA,
+		V3d_ExtRADIUSCAMERA,
+		V3d_IntRADIUSCAMERA,
+		V3d_NOTHINGCAMERA,
+	}
+}

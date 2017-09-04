@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Window x:Class="NaroSetup.Pages.Welcome.TipsWindow" WindowStartupLocation="CenterScreen" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="400" Width="600" Title="Tips Center" ResizeMode="NoResize" Name="tipsWindow" Icon="/Extensions;component/Resources/naro.ico">
+	<Window.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/NaroThemeLibrary;component/Themes/NaroTheme.xaml" x:Name="theme" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Window.Resources>
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="30"></RowDefinition>
+		</Grid.RowDefinitions>
+		<WebBrowser x:Name="tipsBrowser" Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="auto" Width="auto"></WebBrowser>
+		<Grid Background="{DynamicResource controlGradient}" Grid.Row="1">
+			<Button Style="{DynamicResource RoundedButton}" Height="24" Width="40" x:Name="btnTipsPrevious" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,55,0" Click="BtnTipsPreviousClick">Prev</Button>
+			<Button Style="{DynamicResource RoundedButton}" Height="24" Width="40" x:Name="btnTipsNext" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5,0,10,0" Click="BtnTipsNextClick">Next</Button>
+			<CheckBox Style="{DynamicResource TipsCheckBox}" x:Name="cbxShowTips" IsChecked="True" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0" Click="CbxShowTipsClick">Show tips on startup</CheckBox>
+		</Grid>
+	</Grid>
+</Window>

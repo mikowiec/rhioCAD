@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="NaroSetup.Pages.Rendering.RenderingOptionsView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="335" Width="335">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/NaroThemeLibrary;component/Themes/NaroTheme.xaml" x:Name="theme" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="25"></RowDefinition>
+			<RowDefinition Height="25"></RowDefinition>
+			<RowDefinition Height="25"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Label Grid.Row="0" HorizontalAlignment="Left" Margin="15,0,0,0">Width</Label>
+		<Label Grid.Row="0" HorizontalAlignment="Center" Margin="-50,0,0,0">Height</Label>
+		<Label Grid.Row="0" HorizontalAlignment="Right" Margin="0,0,75,0">FOV</Label>
+		<TextBox Style="{DynamicResource roundTextBox}" x:Name="tbxWidth" Grid.Row="1" Width="95" Height="20" HorizontalAlignment="Left" Margin="15,0,0,0"></TextBox>
+		<TextBox Style="{DynamicResource roundTextBox}" x:Name="tbxHeight" Grid.Row="1" Width="95" Height="20" HorizontalAlignment="Center"></TextBox>
+		<TextBox Style="{DynamicResource roundTextBox}" x:Name="tbxFOV" Grid.Row="1" Width="95" Height="20" HorizontalAlignment="right" Margin="0,0,15,0"></TextBox>
+		<Button Style="{DynamicResource RoundedButton}" x:Name="btnConfShaders" Grid.Row="2" Margin="15,1.5,0,1.5" HorizontalAlignment="Left" Width="305">Configure Shaders</Button>
+		<ListBox x:Name="lbShaders" Grid.Row="3" Margin="15,5,15,5"></ListBox>
+	</Grid>
+</UserControl>

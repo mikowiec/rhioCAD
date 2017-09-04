@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="NaroSetup.Pages.Occ.OccOptionsView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:cp="clr-namespace:DropDownCustomColorPicker;assembly=CustomColorPicker">
+	<StackPanel Orientation="Vertical" >
+		<StackPanel Orientation="Horizontal">
+			<TextBlock Text="Background Color" />
+			<cp:CustomColorPicker Margin="26,0,7,0" MaxWidth="183" MinWidth="50" x:Name="firstCP" />
+            <cp:CustomColorPicker Margin="26,0,7,0" MaxWidth="183" MinWidth="50" x:Name="secondCp" />
+		</StackPanel>
+		<StackPanel Orientation="Horizontal">
+			<TextBlock Text="Default Shape Drawn Color" />
+			<cp:CustomColorPicker Margin="26,0,7,0" MaxWidth="183" MinWidth="50" x:Name="customCP2"></cp:CustomColorPicker>
+		</StackPanel>
+		<CheckBox Name="cbAntialiasing" Content="Antialiasing" />
+		<StackPanel Orientation="Horizontal">
+			<TextBlock Width="100">Zoom Ratio</TextBlock>
+			<TextBox Name="_zoomRatioTextBox" Width="40" Height="22" VerticalAlignment="Center"></TextBox>
+		</StackPanel>
+	</StackPanel>
+</UserControl>

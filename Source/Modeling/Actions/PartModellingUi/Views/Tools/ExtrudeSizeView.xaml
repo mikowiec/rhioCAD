@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="PartModellingUi.Views.Tools.ExtrudeSizeView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/NaroThemeLibrary;component/Themes/NaroTheme.xaml" x:Name="theme" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+	<StackPanel Orientation="Horizontal">
+		<Button Margin="5,1,5,1" Click="OkButtonClick">
+			<TextBlock Margin="5,1,5,1" Text="OK" />
+		</Button>
+		<Button Margin="5,1,5,1" Click="CancelButtonClick">
+			<TextBlock Margin="5,1,5,1" Text="Cancel" />
+		</Button>
+		<TextBlock Text="Height: " Margin="5,4,5,2" HorizontalAlignment="Center" />
+		<TextBox Name="_textBox" Margin="5,1,5,1" Width="40" KeyUp="TextBoxKeyUp" HorizontalAlignment="Center" />
+		<Slider Name="_valueSldier" Minimum="0" Maximum="1.0" Margin="10,0,0,0" Width="140" MouseMove="SliderMouseDrag" />
+
+	</StackPanel>
+</UserControl>

@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4BFB7440-6915-46D3-85A7-A8B65C4D8D26}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppShell</RootNamespace>
+    <AssemblyName>AppShell</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <StartupObject>AppShell.Entry</StartupObject>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\CiprianDevel\AppData\Roaming\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>PdbOnly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>false</DebugSymbols>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="RibbonView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ShellWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShellWindow.xaml.cs">
+      <DependentUpon>ShellWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entry.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RibbonView.xaml.cs">
+      <DependentUpon>RibbonView.xaml</DependentUpon>
+    </Compile>
+    <Resource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Resource>
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AvalonDock, Version=1.3.3571.0, Culture=neutral, PublicKeyToken=85a1e0ada7ec13e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="RibbonControlsLibrary, Version=3.5.31016.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\RibbonControlsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Lib\AlternateWrapper\NaroOccCore\NaroOccCore-build-desktop\NaroCppCore.csproj">
+      <Project>{8D5FFA62-563E-4566-902A-3E05EA39BF33}</Project>
+      <Name>NaroCppCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\NaroThemeLibrary\NaroThemeLibrary.csproj">
+      <Project>{A544B769-CD08-4A57-8218-050FC708F2C2}</Project>
+      <Name>NaroThemeLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\BooCoreScript\BooCoreScript.csproj">
+      <Project>{F721F3FD-C4E7-473B-9678-BD60094C1BBC}</Project>
+      <Name>BooCoreScript</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\BooEvaluator\BooEvaluator.csproj">
+      <Project>{E7E27EB8-6BE1-4CCB-912D-488ADCC46139}</Project>
+      <Name>BooEvaluator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\ErrorReportCommon\ErrorReportCommon.csproj">
+      <Project>{90EEED45-43A4-4285-844B-C6F7E9ED3E6B}</Project>
+      <Name>ErrorReportCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Extensions\Extensions.csproj">
+      <Project>{0EE555B2-634D-4048-BD44-5FD89DC55D78}</Project>
+      <Name>Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Infrastructure.Interface\Infrastructure.Interface.csproj">
+      <Project>{5E3CB7F9-17DE-420C-B5DA-94E12E1F67D8}</Project>
+      <Name>Infrastructure.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\NaroAppDocumentCore\NaroAppDocumentCore.csproj">
+      <Project>{C8E535A5-704D-4A04-B0BE-5332A7794723}</Project>
+      <Name>NaroAppDocumentCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\NaroConstants\NaroConstants.csproj">
+      <Project>{7B37096D-1715-40E6-8914-317C55F60897}</Project>
+      <Name>NaroConstants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\NaroPipes\NaroPipes.csproj">
+      <Project>{27C6CE51-5F57-4421-8C0F-9526EC3E9963}</Project>
+      <Name>NaroPipes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Options\NaroSetup\NaroSetup.csproj">
+      <Project>{AA33951B-DEDA-4088-B060-AE8C3A7D7227}</Project>
+      <Name>NaroSetup</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\TreeData\TreeData.csproj">
+      <Project>{E5D3FF5A-D77C-418B-8E73-E8D55EE5CAFD}</Project>
+      <Name>TreeData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\UiCore\NaroUiBuilder\NaroUiBuilder.csproj">
+      <Project>{62433E8A-7452-4C8F-8514-262C02765A46}</Project>
+      <Name>NaroUiBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Modeling\Actions\PartModeling\PartModeling.csproj">
+      <Project>{CA66936A-657B-4666-9942-42052EA2C926}</Project>
+      <Name>PartModeling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Modeling\Actions\PartModellingLogic\PartModellingLogic.csproj">
+      <Project>{859E1DBE-6F9D-4F35-A89D-B580681E69CD}</Project>
+      <Name>PartModellingLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Modeling\Actions\PartModellingUi\PartModellingUi.csproj">
+      <Project>{82D9BAC8-EC49-41D3-B485-0F29768103CC}</Project>
+      <Name>PartModellingUi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Modeling\PropertyGrid\PropertyDescriptorsInterface\PropertyDescriptorsInterface.csproj">
+      <Project>{2C7BC841-D7E8-47F5-83C4-81C7E70B2E58}</Project>
+      <Name>PropertyDescriptorsInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Modeling\PropertyGrid\WpfPropertyGrid\WpfPropertyDescriptors.csproj">
+      <Project>{17611CE9-43B5-4FF1-84B1-BAB9D13D8222}</Project>
+      <Name>WpfPropertyDescriptors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PartModeling\PluginInterface\PluginInterface.csproj">
+      <Project>{7CFC02A9-66C4-4FEF-9386-2272B88FFFFD}</Project>
+      <Name>PluginInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Resources\NaroResources.csproj">
+      <Project>{863E2972-C477-4464-97F3-681675597D1C}</Project>
+      <Name>NaroResources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Testing\TestBuilderPlugin\TestBuilderPlugin.csproj">
+      <Project>{9D77FE5A-55C7-4822-A50B-D8CD7E1A01C0}</Project>
+      <Name>TestBuilderPlugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Updater\Updater.csproj">
+      <Project>{2B8ED837-B928-4E90-9008-CCAB72AC7085}</Project>
+      <Name>Updater</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,5 @@
+﻿<RibbonMapping:RibbonButtonMapping x:Class="ViewInterfacePlugin.Constraints.OrthogonalCoordinates" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:RibbonMapping="clr-namespace:NaroUiBuilder.RibbonMapping;assembly=NaroUiBuilder" xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary">
+	<RibbonMapping:RibbonButtonMapping.Command>
+		<r:RibbonCommand x:Name="command" Executed="BlockPlaneButtonClick" SmallImageSource="/Resources;component/Resources/free-draw.png" LargeImageSource="/Resources;component/Resources/free-draw.png" LabelTitle="Ortho" ToolTipTitle="Ortho" ToolTipDescription="You are able to block or unblock drawing on axis." />
+	</RibbonMapping:RibbonButtonMapping.Command>
+</RibbonMapping:RibbonButtonMapping>

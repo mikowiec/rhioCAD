@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.1  (Win32)">
+	<META NAME="CREATED" CONTENT="20090907;344400">
+	<META NAME="CHANGED" CONTENT="20090907;365000">
+</HEAD>
+<BODY LANG="es-ES" DIR="LTR">
+<P>Arc function - draws an arc with the given Center, Start and End</P>
+<P>Syntax - 1:</P>
+<P>void Arc(x1: real; y1: real, z1: real; x2: real; y2: real; z2:
+real; x3: real; y3: real; z3: real)</P>
+<P>Arguments:</P>
+<P>x1, y1, z1: coordinate of the first point representing the center of the arc</P>
+<P>x2, y2, z2: coordinate of the second point, representing the start point</P>
+<P>x3, y3, z3: coordinate of the second point, representing the end point</P>
+<P><BR>
+</P>
+<P>Syntax - 2:</P>
+<P>void Arc(point1: integer; point2: integer, point3: integer)</P>
+<P>Arguments:</P>
+<P>point1: index of the point Node representing the center of the arc</P>
+<P>point2: index of the point Node representing the start point</P>
+<P>point3: index of the point Node representing the end point</P>
+<P><BR>
+</P>
+
+<P>Sample usage:</P>
+<P>s1=Sketch(0,0,5,6,3,5,2,3,5)</P>
+<P>EnterSketch(s1)</P>
+<P>p1=Point(s1,0,0,5)</P>
+<P>p2=Point(s1,3,0,5)</P>
+<P>p3=Point(s1,0,3,5)</P>
+<P>Arc(p1,p2,p3)</P>
+</BODY>
+</HTML>

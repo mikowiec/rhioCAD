@@ -1,0 +1,7 @@
+﻿<r:RibbonControlGroup x:Class="ViewInterfacePlugin.View.HiddenOffToolButton" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary" Height="33">
+	<r:RibbonToggleButton Content="Hide Off" Name="HideOff" Height="33" Width="33">
+		<r:RibbonToggleButton.Command>
+			<r:RibbonCommand Executed="HiddenOff" LabelTitle="Hide Off" ToolTipTitle="Hide Off" ToolTipDescription="Wireframe view." SmallImageSource="/Resources;component/Resources/view_comp_off.png" LargeImageSource="/Resources;component/Resources/view_comp_off.png" />
+		</r:RibbonToggleButton.Command>
+	</r:RibbonToggleButton>
+</r:RibbonControlGroup>

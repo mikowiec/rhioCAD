@@ -1,0 +1,4 @@
+   type shiny
+   diff { "sRGB nonlinear" 1 .33 .33 }
+   refl .5
+

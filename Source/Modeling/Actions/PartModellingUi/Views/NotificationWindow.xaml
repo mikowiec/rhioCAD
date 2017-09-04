@@ -1,0 +1,20 @@
+﻿<Window x:Class="PartModellingUi.Views.NotificationWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="100" Width="380" Topmost="True" ShowInTaskbar="False" WindowStyle="ToolWindow" ResizeMode="NoResize" WindowStartupLocation="Manual">
+	<Window.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/NaroThemeLibrary;component/Themes/NaroTheme.xaml" x:Name="theme" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Window.Resources>
+	<Grid Background="{DynamicResource controlGradient}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="28"></RowDefinition>
+			<RowDefinition Height="28"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<TextBlock Name="FirstRow" Grid.Row="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,20,0" />
+		<TextBlock Name="SecondRow" Grid.Row="1" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,20,0" />
+	</Grid>
+</Window>

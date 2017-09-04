@@ -1,0 +1,144 @@
+﻿<Window x:Class="AppShell.ShellWindow" Activated="WindowsFormHostRedraw" KeyDown="WindowsFormsHostKeyDown" 
+                KeyUp="WindowsFormsHostKeyUp" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary" 
+                xmlns:shell="clr-namespace:AppShell" 
+                xmlns:ad="clr-namespace:AvalonDock;assembly=AvalonDock" 
+                xmlns:Layout1="clr-namespace:PartModellingUi.Layout;assembly=PartModellingUi" 
+                xmlns:UI="clr-namespace:WpfPropertyGrid.UI;assembly=WpfPropertyGrid"
+                xmlns:Layers="clr-namespace:WpfPropertyGrid.Layers;assembly=WpfPropertyGrid" 
+                xmlns:View="clr-namespace:TestBuilderPlugin.View;assembly=TestBuilderPlugin" Title="NaroCAD 1.8.8 Beta"
+                Icon="/Resources;component/Resources/naro.ico" Height="780" Width="1280" Closing="RibbonWindowClosing" 
+                WindowStartupLocation="CenterScreen" MinHeight="768" MinWidth="1024" 
+                LocationChanged="RibbonWindowLocationChanged" StateChanged="RibbonWindowStateChanged"
+        >
+
+	<!--<r:RibbonWindow.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary x:Name="office" Source="/RibbonControlsLibrary;component/Themes/Office2007Black.xaml" />
+				<ResourceDictionary Source="/NaroThemeLibrary;component/Themes/NaroTheme.xaml" x:Name="theme" />
+				
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</r:RibbonWindow.Resources>-->
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+		</Grid.RowDefinitions>
+		<!-- Ribbon area -->
+		<StackPanel Orientation="Vertical">
+			<shell:RibbonView Grid.Row="0" x:Name="RibbonView" VerticalAlignment="Top" />
+			<StackPanel Name="RibbonInfoArea" Background="{DynamicResource controlGradient}" />
+		</StackPanel>
+
+		<!-- Avalon dock area-->
+		<ad:DockingManager Name="dockManager" Grid.Row="1">
+			<ad:ResizingPanel Orientation="Vertical">
+				<ad:ResizingPanel Orientation="Horizontal" Name="parentViews">
+					<ad:DockablePane ad:ResizingPanel.ResizeWidth="250" x:Name="dockPane" Height="Auto" Style="{DynamicResource DockablePaneStyle}">
+						<ad:DockableContent x:Name="booViewDock" Title="Boo">
+							<View:BooView x:Name="booView" />
+						</ad:DockableContent>
+						<ad:DockableContent x:Name="newpLayerDock" Title="Layers">
+							<Layers:LayerView x:Name="newLayerView" />
+						</ad:DockableContent>
+						<ad:DockableContent x:Name="newpropertygridDock" Title="Property Grid">
+							<UI:PropertyGridView x:Name="newpropertygridView" />
+						</ad:DockableContent>
+						<ad:DockableContent x:Name="treeViewDock" Title="Tree View">
+							<Layout1:WpfTreeView x:Name="treeView" />
+						</ad:DockableContent>
+					</ad:DockablePane>
+                    <ad:DocumentPane x:Name="documentsHost">
+                    </ad:DocumentPane>
+
+                    <ad:DockablePane ad:ResizingPanel.ResizeWidth="240" Style="{DynamicResource DockablePaneStyle}">
+						<ad:DockableContent x:Name="helpViewDock" Title="Help">
+							<Layout1:HelpView x:Name="helpView"></Layout1:HelpView>
+						</ad:DockableContent>
+					</ad:DockablePane>
+
+				</ad:ResizingPanel>
+				<ad:DockablePane ad:ResizingPanel.EffectiveSize="0, 65" ad:ResizingPanel.ResizeHeight="65" x:Name="commandLinePane" Style="{DynamicResource DockablePaneStyle}">
+					<ad:DockableContent Title="Command Line" x:Name="commandLineViewDock">
+						<Layout1:CommandLineView x:Name="commandLineView" />
+					</ad:DockableContent>
+				</ad:DockablePane>
+			</ad:ResizingPanel>
+		</ad:DockingManager>
+		<!-- Status bar area -->
+		<StatusBar Height="auto" Grid.Row="2" Width="Auto" VerticalAlignment="Bottom" Style="{DynamicResource LightGradient}">
+			<StatusBarItem Style="{DynamicResource DarkGradient}">
+
+				<StackPanel Orientation="Horizontal" Height="24">
+					<TextBlock VerticalAlignment="Center" Text="Hinter: " />
+					<r:RibbonControlGroup Height="24" Margin="0,0,0,0" VerticalAlignment="Center">
+						<r:RibbonToggleButton Name="SolverPoint" Height="24" Width="24">
+							<r:RibbonToggleButton.Command>
+								<r:RibbonCommand Executed="SolverPointClick" LabelTitle="Point Match" ToolTipTitle="Point Match" ToolTipDescription="Enable/Disalbe Point Match." SmallImageSource="/Resources;component/Resources/point.png" LargeImageSource="/Resources;component/Resources/point.png" />
+							</r:RibbonToggleButton.Command>
+						</r:RibbonToggleButton>
+						<r:RibbonToggleButton Name="SolverEdge" Height="24" Width="24">
+							<r:RibbonToggleButton.Command>
+								<r:RibbonCommand Executed="SolverEdgeClick" LabelTitle="Edge Related Matches" ToolTipTitle="Edge Related Matches" ToolTipDescription="Enable/Disalbe Edge Solver Rule Match." SmallImageSource="/Resources;component/Resources/line.png" LargeImageSource="/Resources;component/Resources/line.png" />
+							</r:RibbonToggleButton.Command>
+						</r:RibbonToggleButton>
+						<r:RibbonToggleButton Name="SolverParallel" Height="24" Width="24">
+							<r:RibbonToggleButton.Command>
+								<r:RibbonCommand Executed="SolverParallelClick" LabelTitle="Parallel Line Match" ToolTipTitle="Parallel Line Match" ToolTipDescription="Enable/Disable Parallel Match." SmallImageSource="/Resources;component/Resources/line-parallel.png" LargeImageSource="/Resources;component/Resources/line-parallel.png" />
+							</r:RibbonToggleButton.Command>
+						</r:RibbonToggleButton>
+						<r:RibbonToggleButton Name="SolverPolar" Height="24" Width="24">
+							<r:RibbonToggleButton.Command>
+								<r:RibbonCommand Executed="SolverPolarClick" LabelTitle="Polar Angle Match" ToolTipTitle="Enable/Disalbe Polar Angle Match." ToolTipDescription="Enable/Disable Parallel Match." SmallImageSource="/Resources;component/Resources/circle.png" LargeImageSource="/Resources;component/Resources/circle.png" />
+							</r:RibbonToggleButton.Command>
+						</r:RibbonToggleButton>
+					</r:RibbonControlGroup>
+				</StackPanel>
+			</StatusBarItem>
+
+			<StatusBarItem Style="{DynamicResource DarkGradient}" Height="25" HorizontalAlignment="Right" VerticalAlignment="Center">
+				<r:RibbonControlGroup Height="24" Margin="0,0,0,0" VerticalAlignment="Center">
+
+					<r:RibbonButton Content="FitAll" Name="FitAl" Height="24" Width="24">
+						<r:RibbonButton.Command>
+							<r:RibbonCommand Executed="FitAll" LabelTitle="Fit All" ToolTipTitle="Fit All" ToolTipDescription="Fit All" SmallImageSource="/Resources;component/Resources/view_fitall.png" LargeImageSource="/Resources;component/Resources/view_fitall.png" />
+						</r:RibbonButton.Command>
+					</r:RibbonButton>
+					<r:RibbonButton Content="DynZoom" Name="DynZoom" Height="24" Width="24">
+						<r:RibbonButton.Command>
+							<r:RibbonCommand Executed="DynamicZoomWindow" LabelTitle="Dynamic Zooming" ToolTipTitle="Dynamic Zooming" ToolTipDescription="Dynamic Zooming" SmallImageSource="/Resources;component/Resources/view_dynzoom.png" LargeImageSource="/Resources;component/Resources/view_dynzoom.png" />
+						</r:RibbonButton.Command>
+					</r:RibbonButton>
+
+					<r:RibbonButton Content="DynPan" Name="DynPan" Height="24" Width="24">
+						<r:RibbonButton.Command>
+							<r:RibbonCommand Executed="DynamicPannning" LabelTitle="Dynamic Pannning" ToolTipTitle="Dynamic Pannning" ToolTipDescription="Dynamic Pannning" SmallImageSource="/Resources;component/Resources/view_dynpan.png" LargeImageSource="/Resources;component/Resources/view_dynpan.png" />
+						</r:RibbonButton.Command>
+					</r:RibbonButton>
+					<r:RibbonButton Content="GlobPan" Name="GlobPan" Height="24" Width="24">
+						<r:RibbonButton.Command>
+							<r:RibbonCommand Executed="GlobalPannning" LabelTitle="Global Pannning" ToolTipTitle="Global Pannning" ToolTipDescription="Global Pannning" SmallImageSource="/Resources;component/Resources/view_globalpan.png" LargeImageSource="/Resources;component/Resources/view_globalpan.png" />
+						</r:RibbonButton.Command>
+					</r:RibbonButton>
+					<r:RibbonButton Content="DynRot" Name="DynRot" Height="24" Width="24">
+						<r:RibbonButton.Command>
+							<r:RibbonCommand Executed="DynamicRotation" LabelTitle="Dynamic Rotation" ToolTipTitle="Dynamic Rotation" ToolTipDescription="Dynamic Rotation" SmallImageSource="/Resources;component/Resources/view_rotate.png" LargeImageSource="/Resources;component/Resources/view_rotate.png" />
+						</r:RibbonButton.Command>
+					</r:RibbonButton>
+					<r:RibbonButton Content="Res" Name="Res" Height="24" Width="24">
+						<r:RibbonButton.Command>
+							<r:RibbonCommand Executed="Reset" LabelTitle="Reset" ToolTipTitle="Reset" ToolTipDescription="Reset" SmallImageSource="/Resources;component/Resources/view_reset.png" LargeImageSource="/Resources;component/Resources/view_reset.png" />
+						</r:RibbonButton.Command>
+					</r:RibbonButton>
+				</r:RibbonControlGroup>
+			</StatusBarItem>
+		</StatusBar>
+
+
+	</Grid>
+</Window>

@@ -1,0 +1,9 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Default" />
+  <Config name="Default" binpath="bin\Debug;Lib;Lib\Boo\bin" runtimeFramework="any">
+    <assembly path="bin\Debug\NaroTestSuite.exe" />
+    <assembly path="bin\Debug\TreeDataTests.dll" />
+    <assembly path="bin\Debug\MetaActionTests.dll" />
+    <assembly path="bin\Debug\PluginTests.dll" />
+  </Config>
+</NUnitProject>

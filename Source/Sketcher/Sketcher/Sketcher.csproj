@@ -1,0 +1,225 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3947FEE9-3C6F-4C70-95D6-7212FD85EB26}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Naro.Sketcher</RootNamespace>
+    <AssemblyName>Sketcher</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Ciprian\AppData\Roaming\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(SolutionDir)bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>$(SolutionDir)bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\ActionNames.cs" />
+    <Compile Include="Constants\ActionType.cs" />
+    <Compile Include="Constants\PipeConstants.cs" />
+    <Compile Include="Constants\SmartPartNames.cs" />
+    <Compile Include="Inputs\Context2dInput.cs" />
+    <Compile Include="Inputs\EditDetectionPipe.cs" />
+    <Compile Include="Inputs\OCCMouseEventsPipe.cs" />
+    <Compile Include="Inputs\SolverDrawerPipe.cs" />
+    <Compile Include="Inputs\View2dInput.cs" />
+    <Compile Include="Inputs\WorkingPlaneInput.cs" />
+    <Compile Include="Modifiers\CircularGridHandler.cs" />
+    <Compile Include="Modifiers\CircularGridPointsHandler.cs" />
+    <Compile Include="Modifiers\DeactivateGrid.cs" />
+    <Compile Include="Modifiers\DrawCircle.cs" />
+    <Compile Include="Modifiers\DrawingAction2d.cs" />
+    <Compile Include="Modifiers\DrawLine.cs" />
+    <Compile Include="Modifiers\DrawRectangle.cs" />
+    <Compile Include="Modifiers\DynamicPanning.cs" />
+    <Compile Include="Modifiers\EditAction.cs" />
+    <Compile Include="Modifiers\FitAll.cs" />
+    <Compile Include="Modifiers\GlobalPanning.cs" />
+    <Compile Include="Modifiers\GridLinesHandler.cs" />
+    <Compile Include="Modifiers\GridPointsHandler.cs" />
+    <Compile Include="Modifiers\HandlingAction2d.cs" />
+    <Compile Include="Modifiers\Helpers\NodeHelper.cs" />
+    <Compile Include="Modifiers\Nothing.cs" />
+    <Compile Include="Modifiers\WindowZooming.cs" />
+    <Compile Include="Modifiers\DynamicZooming.cs" />
+    <Compile Include="Module.cs" />
+    <Compile Include="ModuleController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Constants\CommandNames.cs" />
+    <Compile Include="Constants\EventTopicNames.cs" />
+    <Compile Include="Constants\UIExtensionSiteNames.cs" />
+    <Compile Include="Constants\WorkspaceNames.cs" />
+    <Compile Include="Resources\SketcherResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SketcherResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SketcherViewWorkItemController.cs" />
+    <Compile Include="Update2DModifier.cs" />
+    <Compile Include="Views\ISketcherView.cs" />
+    <Compile Include="Views\SketcherView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SketcherView.Designer.cs">
+      <DependentUpon>SketcherView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SketcherView.GeneratedCode.cs">
+      <DependentUpon>SketcherView.cs</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SketcherViewPresenter.cs" />
+    <Compile Include="Views\SketcherViewPresenter.GeneratedCode.cs">
+      <DependentUpon>SketcherViewPresenter.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\circleshape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)\Source\Infrastructure\Infrastructure.Interface\Infrastructure.Interface.csproj">
+      <Project>{5e3cb7f9-17de-420c-b5da-94e12e1f67d8}</Project>
+      <Name>Infrastructure.Interface</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\OccNaroExtensions\Extensions.csproj">
+      <Project>{0EE555B2-634D-4048-BD44-5FD89DC55D78}</Project>
+      <Name>Extensions</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Blocks\CompositeUI.WinForms\CompositeUI.WinForms.csproj">
+      <Project>{073BCD60-F2FB-4DB9-92FB-403C8F9E8DD0}</Project>
+      <Name>CompositeUI.WinForms</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Blocks\CompositeUI\CompositeUI.csproj">
+      <Project>{C478E40B-A05E-4C69-9AB3-7A3BB374243F}</Project>
+      <Name>CompositeUI</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Infrastructure.Library\Infrastructure.Library.csproj">
+      <Project>{D3DAAD65-6E8B-407F-9D7C-788C7FBA8D61}</Project>
+      <Name>Infrastructure.Library</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OCAFDrivers\OCAFDrivers\OCAFDrivers.csproj">
+      <Project>{408816B6-110E-4B3B-A878-1836B7A20038}</Project>
+      <Name>OCAFDrivers</Name>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SketcherResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SketcherResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SketcherView.resx">
+      <DependentUpon>SketcherView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_fitall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_zoomwnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_dynzoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_dynpan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_globalpan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gridlines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\griderase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gridpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gridcircular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gridcircularpoints.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gridedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangleshape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lineshape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

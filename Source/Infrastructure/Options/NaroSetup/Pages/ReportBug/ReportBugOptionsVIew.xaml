@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<UserControl x:Class="NaroSetup.Pages.ReportBug.ReportBugOptionsVIew" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="335">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/NaroThemeLibrary;component/Themes/NaroTheme.xaml" x:Name="theme" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="25"></RowDefinition>
+			<RowDefinition Height="25"></RowDefinition>
+			<RowDefinition Height="25"></RowDefinition>
+			<RowDefinition Height="25"></RowDefinition>
+			<RowDefinition Height="25"></RowDefinition>
+			<RowDefinition Height="25"></RowDefinition>
+			<RowDefinition Height="25"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Label Grid.Row="0" VerticalAlignment="Center" Margin="15,0,0,0">
+			Report any functionality that don't behave as expected
+		</Label>
+		<TextBlock Grid.Row="1" VerticalAlignment="Center" Margin="15,0,0,0">
+			<Hyperlink x:Name="lnkWebsite" NavigateUri="http://www.narocad.com" RequestNavigate="HyperlinkRequestNavigate">Website</Hyperlink>
+		</TextBlock>
+		<TextBlock Grid.Row="2" VerticalAlignment="Center" Margin="15,0,0,0">
+			<Hyperlink x:Name="lnkBlog" NavigateUri="http://www.narocad.blogspot.com" RequestNavigate="HyperlinkRequestNavigate">
+				Blog development site
+			</Hyperlink>
+		</TextBlock>
+		<TextBlock Grid.Row="3" VerticalAlignment="Center" Margin="15,0,0,0">
+			<Hyperlink x:Name="lnkSourceForge" NavigateUri="http://www.sourceforge.net/projects/narocad" RequestNavigate="HyperlinkRequestNavigate">SourceForge site</Hyperlink>
+		</TextBlock>
+		<TextBlock Grid.Row="4" VerticalAlignment="Center" Margin="15,0,0,0">
+			<Hyperlink x:Name="lnkOpenCascade" NavigateUri="http://www.opencascade.org" RequestNavigate="HyperlinkRequestNavigate">OpenCascade site</Hyperlink>
+		</TextBlock>
+		<TextBlock Grid.Row="5" VerticalAlignment="Center" Margin="15,0,0,0">
+			<Hyperlink x:Name="lnkStartTutorial" RequestNavigate="HyperlinkRequestNavigate">Start tutorial</Hyperlink>
+		</TextBlock>
+		<Button Style="{DynamicResource RoundedButton}" x:Name="btnReportABug" Grid.Row="6" Height="22" Width="105" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,15,0">Report a bug</Button>
+	</Grid>
+</UserControl>

@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="customColorEditorControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="customColorEditorControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="customColorEditorControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 347</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="customColorEditorControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;customColorEditorControl.Name" xml:space="preserve">
+    <value>customColorEditorControl</value>
+  </data>
+  <data name="&gt;&gt;customColorEditorControl.Type" xml:space="preserve">
+    <value>ZetaColorEditor.Runtime.InternalControls.CustomColorEditorUserControl, ZetaColorEditor, Version=1.0.2917.30775, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;customColorEditorControl.Parent" xml:space="preserve">
+    <value>customColorsTabPage</value>
+  </data>
+  <data name="&gt;&gt;customColorEditorControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="customColorsTabPage.ImageKey" xml:space="preserve">
+    <value>colorwheel.png</value>
+  </data>
+  <data name="customColorsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 23</value>
+  </data>
+  <data name="customColorsTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 9, 9, 9</value>
+  </data>
+  <data name="customColorsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 371</value>
+  </data>
+  <data name="customColorsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customColorsTabPage.Text" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="&gt;&gt;customColorsTabPage.Name" xml:space="preserve">
+    <value>customColorsTabPage</value>
+  </data>
+  <data name="&gt;&gt;customColorsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customColorsTabPage.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;customColorsTabPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="webColorEditorControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="webColorEditorControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="webColorEditorControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 347</value>
+  </data>
+  <data name="webColorEditorControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;webColorEditorControl.Name" xml:space="preserve">
+    <value>webColorEditorControl</value>
+  </data>
+  <data name="&gt;&gt;webColorEditorControl.Type" xml:space="preserve">
+    <value>ZetaColorEditor.Runtime.InternalControls.WebColorEditorUserControl, ZetaColorEditor, Version=1.0.2917.30775, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;webColorEditorControl.Parent" xml:space="preserve">
+    <value>webColorsTabPage</value>
+  </data>
+  <data name="&gt;&gt;webColorEditorControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="webColorsTabPage.ImageKey" xml:space="preserve">
+    <value>window_colors.png</value>
+  </data>
+  <data name="webColorsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 23</value>
+  </data>
+  <data name="webColorsTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 9, 9, 9</value>
+  </data>
+  <data name="webColorsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 371</value>
+  </data>
+  <data name="webColorsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="webColorsTabPage.Text" xml:space="preserve">
+    <value>Web</value>
+  </data>
+  <data name="&gt;&gt;webColorsTabPage.Name" xml:space="preserve">
+    <value>webColorsTabPage</value>
+  </data>
+  <data name="&gt;&gt;webColorsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;webColorsTabPage.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;webColorsTabPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="browserSafeColorEditorControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="browserSafeColorEditorControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="browserSafeColorEditorControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 347</value>
+  </data>
+  <data name="browserSafeColorEditorControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;browserSafeColorEditorControl.Name" xml:space="preserve">
+    <value>browserSafeColorEditorControl</value>
+  </data>
+  <data name="&gt;&gt;browserSafeColorEditorControl.Type" xml:space="preserve">
+    <value>ZetaColorEditor.Runtime.InternalControls.BrowserSafeColorEditorUserControl, ZetaColorEditor, Version=1.0.2917.30775, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;browserSafeColorEditorControl.Parent" xml:space="preserve">
+    <value>browserSafeColorsTabPage</value>
+  </data>
+  <data name="&gt;&gt;browserSafeColorEditorControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="browserSafeColorsTabPage.ImageKey" xml:space="preserve">
+    <value>earth.png</value>
+  </data>
+  <data name="browserSafeColorsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 23</value>
+  </data>
+  <data name="browserSafeColorsTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 9, 9, 9</value>
+  </data>
+  <data name="browserSafeColorsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 371</value>
+  </data>
+  <data name="browserSafeColorsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="browserSafeColorsTabPage.Text" xml:space="preserve">
+    <value>Browser-safe</value>
+  </data>
+  <data name="&gt;&gt;browserSafeColorsTabPage.Name" xml:space="preserve">
+    <value>browserSafeColorsTabPage</value>
+  </data>
+  <data name="&gt;&gt;browserSafeColorsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;browserSafeColorsTabPage.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;browserSafeColorsTabPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="systemColorEditorControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="systemColorEditorControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="systemColorEditorControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 347</value>
+  </data>
+  <data name="systemColorEditorControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;systemColorEditorControl.Name" xml:space="preserve">
+    <value>systemColorEditorControl</value>
+  </data>
+  <data name="&gt;&gt;systemColorEditorControl.Type" xml:space="preserve">
+    <value>ZetaColorEditor.Runtime.InternalControls.SystemColorEditorUserControl, ZetaColorEditor, Version=1.0.2917.30775, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;systemColorEditorControl.Parent" xml:space="preserve">
+    <value>systemColorsTabPage</value>
+  </data>
+  <data name="&gt;&gt;systemColorEditorControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="systemColorsTabPage.ImageKey" xml:space="preserve">
+    <value>monitor_rgb.png</value>
+  </data>
+  <data name="systemColorsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 23</value>
+  </data>
+  <data name="systemColorsTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 9, 9, 9</value>
+  </data>
+  <data name="systemColorsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 371</value>
+  </data>
+  <data name="systemColorsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="systemColorsTabPage.Text" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="&gt;&gt;systemColorsTabPage.Name" xml:space="preserve">
+    <value>systemColorsTabPage</value>
+  </data>
+  <data name="&gt;&gt;systemColorsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;systemColorsTabPage.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;systemColorsTabPage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="schemesColorEditorControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="schemesColorEditorControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="schemesColorEditorControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 347</value>
+  </data>
+  <data name="schemesColorEditorControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;schemesColorEditorControl.Name" xml:space="preserve">
+    <value>schemesColorEditorControl</value>
+  </data>
+  <data name="&gt;&gt;schemesColorEditorControl.Type" xml:space="preserve">
+    <value>ZetaColorEditor.Runtime.InternalControls.SchemesColorEditorUserControl, ZetaColorEditor, Version=1.0.2917.30775, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;schemesColorEditorControl.Parent" xml:space="preserve">
+    <value>schemeColorsTabPage</value>
+  </data>
+  <data name="&gt;&gt;schemesColorEditorControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="schemeColorsTabPage.ImageKey" xml:space="preserve">
+    <value>brush1.png</value>
+  </data>
+  <data name="schemeColorsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 23</value>
+  </data>
+  <data name="schemeColorsTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 9, 9, 9</value>
+  </data>
+  <data name="schemeColorsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 371</value>
+  </data>
+  <data name="schemeColorsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="schemeColorsTabPage.Text" xml:space="preserve">
+    <value>Schemes</value>
+  </data>
+  <data name="&gt;&gt;schemeColorsTabPage.Name" xml:space="preserve">
+    <value>schemeColorsTabPage</value>
+  </data>
+  <data name="&gt;&gt;schemeColorsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;schemeColorsTabPage.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;schemeColorsTabPage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="tabPagesImageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="tabPagesImageList.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADi
+        GQAAAk1TRnQBSQFMAgEBBQEAAQwBAAEEAQABEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        AwABIAMAAQEBAAEgBgABICEAAQEDBQEHAw8BFAMWAR8DGgEkAxoBJAMWAR8DDgETAwUBBwMAAQHUAAMC
+        AQMDDQESAyEBMQM2AVkDQwF4A0gBiANIAYgDQwF4AzYBWQMhATEDDQESAwIBA8wAAwIBAwMSARgDNAFV
+        AVICUQGhAV0CWgHTAXkBWQFMAfIBdwFZAUsB8gFdAVoBWQHTA1QBqwNQAZ4DSAGEAzABSwMRARcDAgED
+        xwABAQMNARIDQgF1AVMBZgFEAfABAAGeASAB/wG2AV8BDQH/AbMBXQEMAf8BqwFfARkB/wGhAWkBNAH/
+        AZYBcAFNAf8BcAFUAUcB8ANQAaMDSwGPAy8BSgMNARIDAAEBwAADBQEHAz4BawFAAXYBFQH8AVUBdgEA
+        Af8BMwGGAQAB/wHTAV8BAAH/AcQBYAEAAf8BwQFbAQAB/wG+AVQBAAH/AbYBVAEAAf8BqwFhAS8B/wF1
+        AWIBNAH8A1ABowNHAYMDIgEyAwUBB8AAAxwBJwFqAWcBQQHwAZcBdAEAAf8B6gFoAQAB/wHiAW0BAAH/
+        AdMBcAEAAf8BzAFvAQAB/wHJAWkBAAH/AcQBYwEAAf8BxAFaAQAB/wGGAV4BAAH/AQABmQEpAf8BWwFd
+        AUUB8ANQAZ0DNwFaAw4BE8AAA0oBigFmAYoBAAH/AagBigEAAf8BXwGfARYB/wGxAZEBCwH/AeMBhQEA
+        Af8B1wGDAQAB/wHUAXcBAAH/Ac0BcAEAAf8B0AFmAQAB/wHIAVsBAAH/AR0BdgEAAf8BAAGXAToB/wNT
+        AawDRAF5AxYBH8AAAl0BWQHSAQABsQEdAf8BEwG8AT0B/wETAckBVQH/ARUBzAFaAf8B4gGUAR0B/wHh
+        AZABFQH/AdoBigEIAf8B1wGCAQAB/wHhAW0BAAH/AQABlwEAAf8BcwFmAQAB/wFPAXYBIgH/AV4CWgHV
+        A0gBiAMaASTAAAFpAYIBRAH1AQwBvAE4Af8BKAHKAVoB/wExAdQBZwH/ASsB1gFlAf8BzQGuAUgB/wHq
+        AaABNQH/AeEBlgEfAf8B3AGLAQsB/wHhAXcBAAH/AQABoQEAAf8BJQGEAQAB/wGRAWcBDgH/AYABXQFD
+        AfMDSAGIAxoBJMAAAWoBhAFZAfUBDwHGAUwB/wEkAdgBagH/ATUB5QF2Af8BNQHgAXEB/wHzAcMBgwH/
+        AfABtwFnAf8B6QGqAUoB/wHhAZQBHAH/AecBhgEAAf8BsgGAAQAB/wEAAZABAAH/AUMBdwEJAf8CXwFG
+        AfMDQwF4AxYBH8AAAV4BYAFeAdABPAG/AUgB/wHnAagBQgH/AbMB0gGEAv8BzgGiAf8B+wHRAaMB/wH1
+        AcsBlgH/Ae4BugFqAf8B5gGfATMB/wHrAYkBBwH/AZEBiQEAAf8BAAGRAQAB/wEAAZUBDgH/AV0BWgFZ
+        AdMDNQFYAw4BE8AAA0cBgQENAc4BVwH/AdABsAFLAf8BRQHWAWwB/wH7Ac8BpAH/AfgB0wGoAf8B+wHS
+        AacB/wHzAcMBhgH/Ae0BowE9Af8BoAGYARUB/wFGAZQBAQH/Ab8BaQEAAf8BCQGTAR8B/wFRAlABnwMg
+        AS8DBAEGwAADEAEVAW0BgwFnAe0BCQHUAV8B/wG4AcoBdQL/AcsBnQH/Ad0B1wGjAf8BYQHVAXYB/wH4
+        AbkBbgH/AesBngEyAf8BlAGYARAB/wGIAYoBAAH/ASsBhwEAAf8BegFiAVAB7QMzAVIDDQERAwABAcQA
+        AzEBTwFfAbUBXwH7ARAB0wFgAf8BxQHDAXAB/wE8Ad0BgwH/AToB0QFsAf8B8wGnAUYB/wHhAZMBGAH/
+        AeABhgEAAf8B4AFvAQAB/wF6AXEBIQH6A0ABcAMRARcDAQECzAADMAFMAWIBhwFlAe8BqgGoATcB/wFE
+        Ab4BSQH/AWcBswE8Af8B6QGQAREB/wHbAYgBAAH/AdQBdgEAAf8BgAFnAVEB6wM6AWEDDAEQAwIBA9QA
+        Aw0BEgNEAXoBXAJaAcUBgQFtAVgB6QF9AWwBVgHpAVwBWwFYAcYDRgF/AxgBIQMEAQYDAAEB2wABAQMF
+        AQcDDwEUAxYBHwMaASQDGgEkAxYBHwMPARQDBQEHAwABARAAAwUBBwMRARcDGQEjAxkBIwMSARkDBwEJ
+        AwABASAAAwEBAgMLAQ8DGAEiAxwBJwMcAScDHAEnAxwBJwMcAScDHAEnAxwBJwMcAScDHAEnAxwBJwMY
+        ASIDCwEPAwEBAgwAAwMBBAMLAQ8DEwEaAxgBIgMaASUDGwEmAxoBJAMUARwDCwEPAwIBAxQAAwIBAwMN
+        ARIDIgEyAzcBWgNEAXoDSQGJA0kBiQNEAXoDNwFaAyIBMgMNARIDAgEDCwABAQMOARMDLwFKA0QBfANH
+        AYMDPAFnAyIBMgMHAQogAAMLAQ8DLgFHA0YBgANMAZEDTAGSA0wBkgNMAZIDTAGSA0wBkgNMAZIDTAGS
+        A0wBkgNMAZEDRgGAAy4BRwMLAQ8IAAMDAQQDFAEcAy4BSAM+AWwDRgGBA0oBjANLAY4DSAGGA0ABcQMt
+        AUUDDAEQEAADAgEDAxEBFwM0AVQDUQGiAWACWwHWAmUBQQH0AmUBQQH0AVsBYAFbAdYDUwGsA1ABnQNH
+        AYMDLwFKAxEBFwMCAQMEAAMKAQ0DVQGyA0IB9QNPAe8DVwG/A1ABnQNCAXQDGwEmAwMBBBwAAjYBNQFY
+        Af8BmQEAAv8BmQEAAv8BmQEAAv8BmQEAAv8BmQEAAv8BmQEAAv8BmQEAAv8BmQEAAv8BmQEAAv8BmQEA
+        Av8BmQEAAv8BmQEAAf8DUAGjA0YBgAMYASEIAAMKAQ4DQgF2A1gBuwNhAeEDYgH2A1QB+gNdAe0DWAHL
+        A08BmwM8AWgDFAEbAwABAQsAAQEDDQERAUICQQFzAV0CTgHwAbgBXgEAAf8B4AGoAQcB/wHsAdcBGQH/
+        AeIB7AEpAf8BuQHgARwB/wFrAb0BAAH/AVgBYgFOAe8DUAGjA0sBjgMvAUoDDQERAwABAQQAAw8BFANZ
+        AewDJwH/AwMB/wNaAdsDTwGcAzUBVgMWAR4DBAEGGAAB/wGZAQAC/wLlAv8C5QL/AvAC/wLwAv8C7wL/
+        Au0C/wLsAv8C6gL/AugC/wLmAv8C4wL/AswC/wGZAQAB/wNMAZEDHAEnCAADRgF/A/sB/wP8Af8DyQH/
+        A4EB/wNsAf8DhwH/A2oB/wNjAfQDKQE+AwoBDgMAAQEIAAMEAQYDOwFlAXQBKwERAfwB3gE/AQAB/wH8
+        AWwBAAL/AawBAAL/AeEBAAH/Ae8B/wEAAf8BxgH/ARAB/wG0Af0BQgH/AWwB4QEhAf8BKgGGASEB+wNQ
+        AaMDRwGDAyABLwMEAQYIAANGAYADqgH/AwIB/wMAAf8DUQGiA00BlgM5AV8DGwEmAwUBBxQAAf8BmQEA
+        Av8C6gH/AeoCyAH/ASgB/wGwAf8BQgH/AbAB/wFoAf8BswH/AZMB/wGzAf8BsAH/AbAB/wHKAf8BsAH/
+        AewB/wGzA/8BswL/AuUC/wLPAv8BmQEAAf8DTAGSAxwBJwQAAwEBAgMkATYDWQG+A4wB9wPOAf8DmgH/
+        A1cB/gNiAekDVgGxAzYBWAMdASoDFQEdAw0BEgMDAQQEAAMZASMBYQFVAVQB7QHeAQ0BAAL/AS4BAAL/
+        AVMBAAL/AZYBAAL/AdkBAAH/AecB/wEAAf8BqQH/AQAB/wFnAf8BAAH/AYMB/wE7Af8BQgHhASIB/wFU
+        AWEBVAHtA08BnAM1AVcDDQESCAADBQEHA1UBsgMQAf4DAAH/A18B+wNUAa8DUAGdAzwBaAMaASQDAwEE
+        EAAB/wGZAQAC/wLwAf8B6gLLAf8BKAHoAbAB/wFDAegBsAH/AWgB6AG0Af8BlAHoAbQB/wGwAegBsAH/
+        AcoB6AGwAf8B7AHoAbQC/wHnAbMC/wLnAv8C0QL/AZkBAAH/A0wBkgMcAScEAAMHAQkDNwFaA0oBiwNP
+        AZsD0wH/A7QB/wNZAdIDVAGrA0wBkwNIAYUDRAF8A0ABcAMwAUwDDgETBAABSAJHAYMBtgIAAf8B/AIA
+        Av8BCAEAAv8BLgEAAv8BZQEAAv8BzAEAAf8B3AH/AQAB/wGMAf8BAAH/AT0B/wEAAf8BEQH/AQAB/wFK
+        Af4BRwH/AQABvAEJAf8DUwGqA0IBdgMVAR0QAAM5AV8B7wHsAecB/wG6AbIBngH/AQcBJAGhAf8CWAFa
+        AcADTwGcAzYBWQMRARcDAAEBDAAB/wGZAQAC/wL1Af8B6gLOAf8BFgHEAakB/wE0AcQBqQH/AWMBxwGw
+        Af8BjgHHAbAB/wGpAcQBqQH/AccBxAGpAf8B7AHHAbAC/wHHAbAC/wLoAv8C0gL/AZkBAAH/A0wBkgMc
+        AScEAAMxAU0CrQGrAf4BpQGjAZwB/wGdAZsBkQH/AZMBkAGJAf8BjgGIAYwB/wN/Af4CZAFlAfEDYQHi
+        A10B0wNbAcYDUwGqA0QBewMXASAEAAFdAloBygHeAQwBOwL/ARABOgL/AQABBQL/AgAC/wEsAQAC/wGv
+        AQAB/wHGAf8BAAH/AT0B/wEAAf8BAAH/AQAB/wEAAf8BAAH/ARcB/wE6Af8BHwHhAUcB/wFbAV4BWwHQ
+        A0gBhQMZASMUAANcAc0BQAGGAeYB/wECAUcC/wEAASkC/wNTAaoDSgGNAygBPQMHAQoMAAH/AZkBAAL/
+        AvsB/wHqAtIB/wEWAaMBqQH/ATQBowGpAf8BYwGqAbAB/wGOAaoBsAH/AakBowGpAf8BxwGjAakB/wHs
+        AaoBsAL/AakBsAL/AukC/wLUAv8BmQEAAf8DTAGSAxwBJwQAA0QBegHUAdEByQH/AVwBbQG9Af8BXQGD
+        AdYB/wGCAY0B4QH/AZIBvAGCAf8BmAG2AZkB/wGgAbYBoQH/Ab4BsAGtAf8DswH/AbIBtgG5Af8DYQHu
+        A0YBgAMYASEDAAEBAWEBVAFaAe0B6wE5AY0C/wFEAZkC/wEAAVYC/wEAATsC/wEAARgC/wE4AQAB/wFQ
+        Af8BAAH/AQAB/wESAf8BAAH/ATYB/wEAAf8BRgH/AQAB/wFVAf8BLgHuAYUB/wFZAWQBWQHsA0gBhQMZ
+        ASMUAAMsAUQBQAGhAc0B/QEuAYgC/wEQAU4C/wE6AT4BmwH4A1EBoANAAXADGAEhAwIBAwgAAf8BmQEA
+        Bf8B6gLUAf8BKAGIAbAB/wFDAYgBsAH/AWgBjgG0Af8BlAGOAbQB/wGwAYgBsAH/AcoBiAGwAf8B7AGO
+        AbQC/wGNAbMC/wLqAv8C1gL/AZkBAAH/A0wBkgMcAScEAANLAY4B2gHVAcYB/wEYAUMB5wH/AQABNAL/
+        AQABMAL/AQABsAEAAf8BAAGpAQAB/wEKAZwBAAH/AekBWwEAAf8B2AFaAQAB/wHXAZoBSQH/A2EB3AND
+        AXcDFgEeAwABAQFkAlkC7AE+Aa0C/wFMAcAC/wEbAbMC/wEAAbIC/wEAAdEB/wG+AQAB+QH/AQABugH5
+        Af8BAAH/Ac0B/wEAAf8BrQH/AQAB/wGeAf8BAAH/AZgB/wEnAe4BoQH/AVkBZAFZAewDQgF1AxUBHRgA
+        A0cBggFKAbEC/wEyAYsC/wETAVIC/wJYAVsBxgNOAZcDLgFHAwoBDQgAAf8BmQEABf8B6gLUAf8BKAFg
+        AbAB/wFDAWABsAH/AWgBZgG0Af8BlAFmAbQB/wGwAWABsAH/AcoBYAGwAf8B7AFmAbQC/wFlAbMC/wLq
+        Av8C1gL/AZkBAAH/A0wBkgMcAScDAAEBA1EBoAHYAdIBwQH/ASQBVgHvAf8BHwFVAv8BHQFaAfAB/wEO
+        AcMBBQH/AQYBuQEcAf8BPAGrARwB/wHtAYcBJQH/AdsBhgEZAf8B0wGrAYIB/wFaAVwBXQHKAz8BbQMT
+        ARoEAANZAccB4QErAboC/wFfAekC/wEvAe8B/wH2AQYC/wG9AQAC/wE2AQAC/wEAAToC/wEAAckC/wEA
+        AfoB/AH/AQAB/wHiAf8BAAH/Ac0B/wESAeUBsgH/AVoBXAFaAc0DNAFVAw0BEhsAAQEDUQGiAVEBtQL/
+        ATQBjwL/ASQBYwHdAf4DUAGfA0IBdQMZASMDAgEDBAAB/wGZAQAF/wHqAtQB/wEWATABqQH/ATQBLwGp
+        Af8BYwE/AbAB/wGOAT8BsAH/AakBLwGpAf8BxwEvAakB/wHsAT8BsAL/AT4BsAL/AuoC/wLWAv8BmQEA
+        Af8DTAGSAxwBJwMAAQEDVgGxAc8BxwG4Af8BMAFpAfsB/wE2AW4C/wEvAYgB3QH/ARsBzwEhAf8BEwHJ
+        ATIB/wFcAbMBNAH/AfEBnAFCAf8B5QGaATQB/wHRAbUBmAH/A1YBuwM7AWMDEQEXBAADRAF6AbgBAAGt
+        Af8B/QGFAf4B/wHuAUgC/wHGASMC/wGHAQIC/wEaAQAC/wEAARsC/wEAAYwC/wEAAcUC/wEAAewC/wEA
+        Af8B+QH/AQABvgGqAf8DTwGbAyABLgMEAQYcAAMCAQMBUgJUAaYBUwG3Av8BOAGWAv8CWQFcAc8DTAGT
+        Ay4BRwMKAQ0EAAH/AZkBAAX/AeoC1AH/AhcBqQH/ATUBFgGpAf8BYwEpAbAB/wGOASkBsAH/AakBFgGp
+        Af8BxwEWAakB/wHsASkBsAL/ASgBsAL/AuoC/wLWAv8BmQEAAf8DTAGSAxwBJwMAAQEDWAHBAcQBvQGx
+        Af8BQQGTAv8BTwGWAv8BPgGkAdAB/wEpAdsBOgH/AR8B1wFHAf8BjQG/AUwB/wH2Aa4BXAH/Ae0BrAFO
+        Af8BzgG9AakB/wNTAbADNwFaAw4BEwQAAw0BEgFcAVUBXQHqAccBKgHiAf8B3QGAAv8BtAFEAv8BbgEm
+        Av8BKQEKAv8BAAEZAv8BAAFYAv8BAAGdAv8BAAHGAv8BAAHLAeQB/wFVAlwB6gMxAU8DDAEQAwABASAA
+        AwIBAwFPAlEBnAFSAbsC/wFGAX8B3gH+A0sBjgM+AWsDFgEfAwEBAgH/AZkBAAH/A9YB/wHSArwB/wHS
+        ArwB/wHSArwB/wHSArsB/wHSArgB/wHSArYB/wHSArQB/wHSArEB/wHSAq8B/wHWAroB/wHWArYC/wGZ
+        AQAB/wNMAZEDHAEnAwABAQNeAdABtQG0AbIB/wFZAa4C/wFkAa0C/wFMAbwBxQH/ATkB6gFVAf8BLAHl
+        AVwB/wGpAcsBZAH/Af0BwQGJAf8B9gG+AWkB/wHIAcEBtgH/A08BpQMyAVADCwEPCAADLwFKAU4BIwF1
+        AfoBnwEoAeIB/wG5AWwC/wGSAVMC/wFMATgC/wEoAT0C/wEeAWMC/wEAAYUC/wEAAZcB5QH/ASMBZAF1
+        AfoDPwFtAxABFgMBAQIsAAFHAkgBgwFjAZsB3gH+AVkCWwHDAzwBaAMjATMDBwEJAf8BmQEAAv8BmQEA
+        Af8B6wGFAQAB/wHrAYUBAAH/AesBhQEAAf8B6wGFAQAB/wHrAYUBAAH/AesBhQEAAf8B6wGFAQAB/wHr
+        AYUBAAH/AesBhQEAAf8B6wGFAQAB/wH3AZEBAAL/AZkBAAH/A0YBgAMYASEEAANhAeABqAGvAbUB/wGD
+        AcgC/wGLAcUC/wFVAdMBvwH/AUUB/QFuAf8BNAH3AYAB/wHGAdcBigL/AdkBpQL/AdIBkgH/AbYBsgGv
+        Af8DUAGaAysBQgMIAQsMAAMwAUsCWQFhAesBOgEAAbsB/wFOASQB5gH/AUEBMgHxAf8BKwE5AfEB/wEb
+        AU0B5wH/AQABRgG8Af8CWQFhAesDOgFhAwwBEAMCAQM0AAM6AWEBRQF2AZwB+AMyAVEDHwEsAwkBDAH/
+        AZkBAAL/AcwBmQL/AcwBmQL/AcwBmQL/AcwBmQL/AcwBmQL/AcwBmQL/AcwBmQL/AcwBmQL/AcwBmQL/
+        AcwBmQL/AcwBmQL/Aa0BLAL/AZkBAAH/Ay4BRwMLAQ8EAAJsAWsB7gGgAaoBtAH/AYsBvgHkAf8BlQG8
+        AeMB/wFjAcMBqQH/AWIB2QGQAf8BWAHSAYwB/wG+AbwBkwH/AdgBwgGlAf8B0wG6AZcB/wGiAaEBogH/
+        A0UBfwMcAScDBAEFEAADDgETAkQBRQF8AlkBXAHJAlQBYQHuAlQBYQHuAloBXQHKA0cBggMYASEDBQEH
+        AwABATwAAygBPQNEAXkDCQEMAwMBBAMuAUgB/wGZAQAC/wGZAQAC/wGZAQAC/wGZAQAC/wGZAQAC/wGZ
+        AQAC/wGZAQAC/wGZAQAC/wGZAQAC/wGZAQAC/wGZAQAC/wGZAQAB/wM2AVkDCwEPAwEBAgQAA1ABnQOJ
+        AfcBeQJ3AfQBagJpAfABaAFmAWgB7AFpAWgBaQHrA2QB5wNfAeMDXAHfA10B1wNZAcIDIQEwAwcBCQMA
+        AQEEAAFCAU0BPgcAAT4DAAEoAwABQAMAASADAAEBAQABAQYAAQEWAAP/AQAB4AEHBgABwAEDBgABgAEB
+        VgABgAEBBgABwAEDBgAB4AEHBgAB4AEHAYAB/wIAAeABBwHAAQMBAAH/AgABwAEHAYABAQEAAX8CAAHA
+        AQMCAAGAAT8CAAHAAQMCAAHAAR8CAAGAAQECAAHAAQ8CAAGAAQECAAHwAQcCAAGAAQECAAH4AQcCAAGA
+        AwAB+AEDAgABgAMAAfwBAwMAAQECAAH8AQEDAAEBAgAB/gEBAwABAQIAAf8EAAEBAYABAQH/AcACAAGA
+        AQEBwAEDAf8B4AIAAYABAQHgAQcB/wHwAgABgAEBCw==
+</value>
+  </data>
+  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>442, 398</value>
+  </data>
+  <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>442, 398</value>
+  </data>
+  <data name="&gt;&gt;tabPagesImageList.Name" xml:space="preserve">
+    <value>tabPagesImageList</value>
+  </data>
+  <data name="&gt;&gt;tabPagesImageList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ColorEditorUserControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

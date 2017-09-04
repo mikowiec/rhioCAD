@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CylinderStep1" xml:space="preserve">
+    <value>Cylinder center</value>
+  </data>
+  <data name="CylinderStep2" xml:space="preserve">
+    <value>Cylinder base radius</value>
+  </data>
+  <data name="LineStep1" xml:space="preserve">
+    <value>First point of line</value>
+  </data>
+  <data name="LineStep2" xml:space="preserve">
+    <value>Second point of line</value>
+  </data>
+  <data name="PointStep1" xml:space="preserve">
+    <value>Point coordinate</value>
+  </data>
+  <data name="RectangleStep1Direction" xml:space="preserve">
+    <value>First rectangle point and direction</value>
+  </data>
+  <data name="RectangleStep1" xml:space="preserve">
+    <value>First rectangle point</value>
+  </data>
+  <data name="RectangleStep2" xml:space="preserve">
+    <value>Second rectangle point</value>
+  </data>
+  <data name="RectangleStep3" xml:space="preserve">
+    <value>Third rectangle point</value>
+  </data>
+  <data name="ArcRSEStep1" xml:space="preserve">
+    <value>Arc radius</value>
+  </data>
+  <data name="ArcRSEStep2" xml:space="preserve">
+    <value>Start point of arc</value>
+  </data>
+  <data name="ArcRSEStep3" xml:space="preserve">
+    <value>End point of arc</value>
+  </data>
+  <data name="ArcSERStep1" xml:space="preserve">
+    <value>First point of arc</value>
+  </data>
+  <data name="ArcSERStep2" xml:space="preserve">
+    <value>Second point of arc</value>
+  </data>
+  <data name="ArcSERStep3" xml:space="preserve">
+    <value>Arc radius</value>
+  </data>
+  <data name="CircleStep1" xml:space="preserve">
+    <value>Circle center</value>
+  </data>
+  <data name="CircleStep2" xml:space="preserve">
+    <value>Circle radius</value>
+  </data>
+  <data name="EllipseStep1" xml:space="preserve">
+    <value>First ellipse point</value>
+  </data>
+  <data name="EllipseStep2" xml:space="preserve">
+    <value>Second ellipse point</value>
+  </data>
+  <data name="EllipseStep3" xml:space="preserve">
+    <value>Third ellipse point</value>
+  </data>
+  <data name="SphereStep1" xml:space="preserve">
+    <value>Sphere center</value>
+  </data>
+  <data name="SphereStep2" xml:space="preserve">
+    <value>Sphere radius</value>
+  </data>
+  <data name="BooleanFuseStep1" xml:space="preserve">
+    <value>Select first shape to fuse </value>
+  </data>
+  <data name="BooleanFuseStep2" xml:space="preserve">
+    <value>Select second shape to fuse with</value>
+  </data>
+  <data name="ParllelLineStep2" xml:space="preserve">
+    <value>Click on the parallel plane</value>
+  </data>
+  <data name="ExtrudeStep1" xml:space="preserve">
+    <value>Select face to extrude</value>
+  </data>
+  <data name="ExtrudeStep2" xml:space="preserve">
+    <value>Extrusion height</value>
+  </data>
+  <data name="NormalLineStep2" xml:space="preserve">
+    <value>Click on the normal plane</value>
+  </data>
+  <data name="BoxStep1" xml:space="preserve">
+    <value>First Box point</value>
+  </data>
+  <data name="BoxStep2" xml:space="preserve">
+    <value>Second Box point</value>
+  </data>
+  <data name="BoxStep3" xml:space="preserve">
+    <value>Box height</value>
+  </data>
+  <data name="TorusStep1" xml:space="preserve">
+    <value>Center location</value>
+  </data>
+  <data name="TorusStep2" xml:space="preserve">
+    <value>Internal radius</value>
+  </data>
+  <data name="TorusStep3" xml:space="preserve">
+    <value>External radius</value>
+  </data>
+  <data name="ConeStep1" xml:space="preserve">
+    <value>Cone center</value>
+  </data>
+  <data name="ConeStep2" xml:space="preserve">
+    <value>Base radius</value>
+  </data>
+  <data name="ConeStep3" xml:space="preserve">
+    <value>Cone height</value>
+  </data>
+  <data name="SplineStep1" xml:space="preserve">
+    <value>First point of spline</value>
+  </data>
+  <data name="SplineStep2" xml:space="preserve">
+    <value>Next point of spline</value>
+  </data>
+  <data name="CylinderStep3" xml:space="preserve">
+    <value>Cylinder height</value>
+  </data>
+  <data name="TranslateStep1" xml:space="preserve">
+    <value>Shape to translate</value>
+  </data>
+  <data name="TranslateStep2" xml:space="preserve">
+    <value>Base Point</value>
+  </data>
+  <data name="TranslateStep3" xml:space="preserve">
+    <value>Translation Point</value>
+  </data>
+  <data name="AngleDraftStep1" xml:space="preserve">
+    <value>Select face to be drafted</value>
+  </data>
+  <data name="AngleDraftStep2" xml:space="preserve">
+    <value>Select reference plane for draft</value>
+  </data>
+  <data name="AngleDraftStep3" xml:space="preserve">
+    <value>Draft angle</value>
+  </data>
+  <data name="OffsetStep1" xml:space="preserve">
+    <value>Select 2D closed shape to offset</value>
+  </data>
+  <data name="OffsetStep2" xml:space="preserve">
+    <value>Offset distance</value>
+  </data>
+  <data name="BooleanCutStep1" xml:space="preserve">
+    <value>Select shape to remove from</value>
+  </data>
+  <data name="BooleanCutStep2" xml:space="preserve">
+    <value>Select shape to remove with</value>
+  </data>
+  <data name="LineLengthConstraintStep1" xml:space="preserve">
+    <value>Select line to be constrained</value>
+  </data>
+  <data name="LineLengthConstraintStep2" xml:space="preserve">
+    <value>Fixed length value</value>
+  </data>
+  <data name="RadiusConstraintStep1" xml:space="preserve">
+    <value>Select circle to be constrained</value>
+  </data>
+  <data name="RadiusConstraintStep2" xml:space="preserve">
+    <value>Fixed radius value</value>
+  </data>
+  <data name="RectangleHeightConstraintStep1" xml:space="preserve">
+    <value>Select rectangle who's height to be constrained</value>
+  </data>
+  <data name="RectangleHeightConstraintStep2" xml:space="preserve">
+    <value>Fixed height value</value>
+  </data>
+  <data name="RectangleWidthConstraintStep1" xml:space="preserve">
+    <value>Select rectangle who's width to be constrained</value>
+  </data>
+  <data name="RectangleWidthConstraintStep2" xml:space="preserve">
+    <value>Fixed width value</value>
+  </data>
+  <data name="Shape_mapping_not_found" xml:space="preserve">
+    <value>Shape mapping not found </value>
+  </data>
+  <data name="File_not_found_on_disk" xml:space="preserve">
+    <value>File not found on disk</value>
+  </data>
+  <data name="Invalid_file_to_load" xml:space="preserve">
+    <value>Invalid file to load</value>
+  </data>
+  <data name="ConstraintShapeDialog_Invalid_number_format" xml:space="preserve">
+    <value>Invalid number format</value>
+  </data>
+  <data name="Exception_On_Mouse_Click" xml:space="preserve">
+    <value>Exception on Mouse Click</value>
+  </data>
+  <data name="PipeStep1" xml:space="preserve">
+    <value>Pipe base</value>
+  </data>
+  <data name="PipeStep2" xml:space="preserve">
+    <value>Pipe direction</value>
+  </data>
+  <data name="BooleanIntersectStep1" xml:space="preserve">
+    <value>Select first shape</value>
+  </data>
+  <data name="BooleanIntersectStep2" xml:space="preserve">
+    <value>Select shape which intersects first shape</value>
+  </data>
+  <data name="MirrorLineStep1" xml:space="preserve">
+    <value>Select shape to mirror</value>
+  </data>
+  <data name="MirrorLineStep2" xml:space="preserve">
+    <value>Select mirror line</value>
+  </data>
+  <data name="MirrorPlaneStep1" xml:space="preserve">
+    <value>Select shape to mirror</value>
+  </data>
+  <data name="MirrorPlaneStep2" xml:space="preserve">
+    <value>Select mirror plane</value>
+  </data>
+  <data name="MirrorPointStep1" xml:space="preserve">
+    <value>Select shape to mirror</value>
+  </data>
+  <data name="MirrorPointStep2" xml:space="preserve">
+    <value>Select mirror point</value>
+  </data>
+  <data name="PatternSte2" xml:space="preserve">
+    <value>Select pattern reference</value>
+  </data>
+  <data name="PatternStep1" xml:space="preserve">
+    <value>Select pattern shape</value>
+  </data>
+  <data name="SewStep1" xml:space="preserve">
+    <value>Sew first shape</value>
+  </data>
+  <data name="SewStep2" xml:space="preserve">
+    <value>Sew second shape</value>
+  </data>
+  <data name="RevolveStep1" xml:space="preserve">
+    <value>Select shape to revolve</value>
+  </data>
+  <data name="RevolveStep2" xml:space="preserve">
+    <value>Select reference shape</value>
+  </data>
+  <data name="DefaultSketchPlane" xml:space="preserve">
+    <value>XOY set as default sketch plane</value>
+  </data>
+  <data name="SketchPlaneSelected" xml:space="preserve">
+    <value>Sketch plane selected</value>
+  </data>
+  <data name="StartSketch" xml:space="preserve">
+    <value>Select a sketch plane</value>
+  </data>
+  <data name="Trim" xml:space="preserve">
+    <value>Select an edge to trim</value>
+  </data>
+  <data name="FilletStep1" xml:space="preserve">
+    <value>Select the first edge</value>
+  </data>
+  <data name="FilletStep2" xml:space="preserve">
+    <value>Select the second edge</value>
+  </data>
+</root>

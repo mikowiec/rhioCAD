@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{E5D3FF5A-D77C-418B-8E73-E8D55EE5CAFD}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TreeData</RootNamespace>
+    <AssemblyName>TreeData</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\CiprianItx\AppData\Roaming\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>..\..\..\bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttributeInterpreter\Axis.cs" />
+    <Compile Include="AttributeInterpreter\Axis3DIntepreter.cs" />
+    <Compile Include="AttributeInterpreter\CustomShapeDataInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\DrawingAttributesInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\MetricsInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\TypeHelpers\DoublePropertyHandler.cs" />
+    <Compile Include="AttributeInterpreter\TypeHelpers\IntPropertyHandler.cs" />
+    <Compile Include="AttributeInterpreter\TypeHelpers\IReadWritePropertyInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\TypeHelpers\NaroDataInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\NaroVersionFileFormatInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\ShapeBoundBox.cs" />
+    <Compile Include="AttributeInterpreter\TransformationInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\ShapeUtils.cs" />
+    <Compile Include="AttributeInterpreter\TypeHelpers\Point3DPropertyHandler.cs" />
+    <Compile Include="AttributeInterpreter\TypeHelpers\PropertyReadWriteHandle.cs" />
+    <Compile Include="AttributeInterpreter\TypeHelpers\ReadWritePropertyInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\TypeHelpers\StringPropertyHandler.cs" />
+    <Compile Include="Capabilities\CapabilitiesCollection.cs" />
+    <Compile Include="Capabilities\CapabilitiesDocumentImporter.cs" />
+    <Compile Include="Capabilities\CapabilitiesLoader.cs" />
+    <Compile Include="Capabilities\ConceptBuilder.cs" />
+    <Compile Include="Capabilities\ConceptInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\DocumentUserConfigInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\DontOptimize.cs" />
+    <Compile Include="AttributeInterpreter\InheritedCloneInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\IntegerInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\MeshTopoShapeInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\OcafObjectVisibility.cs" />
+    <Compile Include="AttributeInterpreter\Point3D.cs" />
+    <Compile Include="AttributeInterpreter\Point3DInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\RealInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\ReferenceInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\ReferenceListInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\SceneSelectedEntity.cs" />
+    <Compile Include="AttributeInterpreter\StringInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\TopoDsShapeInterpreter.cs" />
+    <Compile Include="AttributeInterpreter\TreeViewVisibilityInterpreter.cs" />
+    <Compile Include="NaroDataViewer\AttributeInterpreterBase.cs" />
+    <Compile Include="NaroDataViewer\AttributeInterpreterFactory.cs" />
+    <Compile Include="NaroData\AttributeData.cs" />
+    <Compile Include="NaroData\Document.cs" />
+    <Compile Include="NaroData\Node.cs" />
+    <Compile Include="NaroData\NodeDiff.cs" />
+    <Compile Include="NaroData\SerializedNode.cs" />
+    <Compile Include="NaroData\ShapeGraph.cs" />
+    <Compile Include="NaroXmlSerializer\XmlHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Ensure.cs" />
+    <Compile Include="Utils\NaroException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Lib\AlternateWrapper\NaroOccCore\NaroOccCore-build-desktop\NaroCppCore.csproj">
+      <Project>{8D5FFA62-563E-4566-902A-3E05EA39BF33}</Project>
+      <Name>NaroCppCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ErrorReportCommon\ErrorReportCommon.csproj">
+      <Project>{90EEED45-43A4-4285-844B-C6F7E9ED3E6B}</Project>
+      <Name>ErrorReportCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NaroConstants\NaroConstants.csproj">
+      <Project>{7B37096D-1715-40E6-8914-317C55F60897}</Project>
+      <Name>NaroConstants</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+</Project>

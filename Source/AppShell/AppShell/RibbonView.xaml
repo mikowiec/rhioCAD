@@ -1,0 +1,131 @@
+﻿<UserControl x:Class="AppShell.RibbonView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary">
+	<r:Ribbon x:Name="ribbonControl" Height="138" IsVisibleChanged="RibbonControlIsVisibleChanged">
+		<r:Ribbon.Resources>
+
+			<!-- Quick Start menu commands -->
+			<r:RibbonCommand x:Key="NewCommand" SmallImageSource="/Resources;component/Resources/document-new.png" Executed="NewCommandExecuted" ToolTipTitle="New" LabelTitle="New" />
+			<r:RibbonCommand x:Key="OpenCommand" SmallImageSource="/Resources;component/Resources/document-open.png" Executed="OpenCommandExecuted" ToolTipTitle="Open" LabelTitle="Open" />
+			<r:RibbonCommand x:Key="SaveCommand" SmallImageSource="/Resources;component/Resources/document-save-as.png" Executed="SaveExecuted" ToolTipTitle="Save" LabelTitle="Save" />
+			<r:RibbonCommand x:Key="UndoCommand" SmallImageSource="/Resources;component/Resources/edit-undo.png" Executed="UndoExecuted" ToolTipTitle="Undo" LabelTitle="Undo" />
+			<r:RibbonCommand x:Key="RedoCommand" SmallImageSource="/Resources;component/Resources/edit-redo.png" Executed="RedoExecuted" ToolTipTitle="Redo" LabelTitle="Redo" />
+		</r:Ribbon.Resources>
+
+		<r:Ribbon.ApplicationMenu>
+			<r:RibbonApplicationMenu Margin="0,5,0,0" Name="AppMenu">
+				<r:RibbonApplicationMenu.Command>
+					<r:RibbonCommand ToolTipTitle="NaroCAD" LargeImageSource="/Resources;component/Resources/box.png" LabelTitle="Start" />
+				</r:RibbonApplicationMenu.Command>
+
+				<r:RibbonApplicationMenuItem Name="NewOpen">
+					<r:RibbonApplicationMenuItem.Command>
+						<r:RibbonCommand SmallImageSource="/Resources;component/Resources/document-new.png" LargeImageSource="/Resources;component/Resources/document-new.png" Executed="NewCommandExecuted" ToolTipTitle="New" ToolTipDescription="New." LabelTitle="New" />
+					</r:RibbonApplicationMenuItem.Command>
+				</r:RibbonApplicationMenuItem>
+
+				<r:RibbonSeparator Margin="40,0,0,0" />
+
+				<r:RibbonApplicationMenuItem Name="StartOpen">
+					<r:RibbonApplicationMenuItem.Command>
+						<r:RibbonCommand SmallImageSource="/Resources;component/Resources/document-open.png" LargeImageSource="/Resources;component/Resources/document-open.png" Executed="OpenCommandExecuted" ToolTipTitle="Open" ToolTipDescription="Open." LabelTitle="Open" />
+					</r:RibbonApplicationMenuItem.Command>
+				</r:RibbonApplicationMenuItem>
+
+				<r:RibbonApplicationMenuItem Name="StartSave">
+					<r:RibbonApplicationMenuItem.Command>
+						<r:RibbonCommand SmallImageSource="/Resources;component/Resources/document-save-as.png" LargeImageSource="/Resources;component/Resources/document-save-as.png" Executed="SaveExecuted" ToolTipTitle="Save" ToolTipDescription="Save." LabelTitle="Save" />
+					</r:RibbonApplicationMenuItem.Command>
+				</r:RibbonApplicationMenuItem>
+
+				<r:RibbonApplicationMenuItem Name="StartSaveAs">
+					<r:RibbonApplicationMenuItem.Command>
+						<r:RibbonCommand SmallImageSource="/Resources;component/Resources/document-save-as.png" LargeImageSource="/Resources;component/Resources/document-save-as.png" Executed="SaveAsExecuted" ToolTipTitle="Save as" ToolTipDescription="Save as." LabelTitle="Save as" />
+					</r:RibbonApplicationMenuItem.Command>
+				</r:RibbonApplicationMenuItem>
+
+				<r:RibbonSeparator Margin="40,0,0,0" />
+
+				<r:RibbonApplicationSplitMenuItem Name="StartExport">
+					<r:RibbonApplicationMenuItem.Command>
+						<r:RibbonCommand SmallImageSource="/Resources;component/Resources/export-icon.png" LargeImageSource="/Resources;component/Resources/export-icon.png" Executed="ExportStepExecuted" ToolTipTitle="Export" ToolTipDescription="Export." LabelTitle="Export" />
+					</r:RibbonApplicationMenuItem.Command>
+
+					<r:RibbonApplicationMenuItem Name="ExportStep">
+						<r:RibbonApplicationMenuItem.Command>
+							<r:RibbonCommand Executed="ExportStepExecuted" SmallImageSource="/Resources;component/Resources/export-icon.png" LargeImageSource="/Resources;component/Resources/export-icon.png" ToolTipTitle="Export to STEP" ToolTipDescription="Export to STEP." LabelTitle="Export to STEP" />
+						</r:RibbonApplicationMenuItem.Command>
+					</r:RibbonApplicationMenuItem>
+					<r:RibbonApplicationMenuItem Name="ExportNaroXml">
+						<r:RibbonApplicationMenuItem.Command>
+							<r:RibbonCommand Executed="ExportNaroXmlExecuted" SmallImageSource="/Resources;component/Resources/export-icon.png" LargeImageSource="/Resources;component/Resources/export-icon.png" ToolTipTitle="Export to NaroXml" ToolTipDescription="Export To NaroXml" LabelTitle="Export To NaroXml" />
+						</r:RibbonApplicationMenuItem.Command>
+					</r:RibbonApplicationMenuItem>
+				</r:RibbonApplicationSplitMenuItem>
+
+				<r:RibbonApplicationSplitMenuItem Name="StartImport">
+					<r:RibbonApplicationSplitMenuItem.Command>
+						<r:RibbonCommand SmallImageSource="/Resources;component/Resources/import-icon.png" LargeImageSource="/Resources;component/Resources/import-icon.png" Executed="ImportBrepExecuted" ToolTipTitle="Import" ToolTipDescription="Import." LabelTitle="Import" />
+					</r:RibbonApplicationSplitMenuItem.Command>
+
+					<r:RibbonApplicationMenuItem Name="ImportBrep">
+						<r:RibbonApplicationMenuItem.Command>
+							<r:RibbonCommand Executed="ImportBrepExecuted" SmallImageSource="/Resources;component/Resources/import-icon.png" LargeImageSource="/Resources;component/Resources/import-icon.png" ToolTipTitle="Import BREP" ToolTipDescription="Import BREP." LabelTitle="Import BREP" />
+						</r:RibbonApplicationMenuItem.Command>
+					</r:RibbonApplicationMenuItem>
+					<r:RibbonApplicationMenuItem Name="ImportStep">
+						<r:RibbonApplicationMenuItem.Command>
+							<r:RibbonCommand Executed="ImportStepExecuted" SmallImageSource="/Resources;component/Resources/import-icon.png" LargeImageSource="/Resources;component/Resources/import-icon.png" ToolTipTitle="Import STEP" ToolTipDescription="Import STEP." LabelTitle="Import STEP" />
+						</r:RibbonApplicationMenuItem.Command>
+					</r:RibbonApplicationMenuItem>
+					<r:RibbonApplicationMenuItem Name="ImportNaroXml">
+						<r:RibbonApplicationMenuItem.Command>
+							<r:RibbonCommand Executed="ImportNaroXmlExecuted" SmallImageSource="/Resources;component/Resources/import-icon.png" LargeImageSource="/Resources;component/Resources/import-icon.png" ToolTipTitle="Import from NaroXml" ToolTipDescription="Import from NaroXml" LabelTitle="Import from NaroXml" />
+						</r:RibbonApplicationMenuItem.Command>
+					</r:RibbonApplicationMenuItem>
+
+				</r:RibbonApplicationSplitMenuItem>
+				<r:RibbonApplicationSplitMenuItem Name="SystemUtilities">
+					<r:RibbonApplicationSplitMenuItem.Command>
+						<r:RibbonCommand SmallImageSource="/Resources;component/Resources/export-icon.png" LargeImageSource="/Resources;component/Resources/export-icon.png" Executed="RestoreDefaultLayoutExecuted" ToolTipTitle="Restore Defaults Layout" ToolTipDescription="Defaults." LabelTitle="Restore Layout" />
+					</r:RibbonApplicationSplitMenuItem.Command>
+
+					<r:RibbonApplicationMenuItem Name="RestoreDefaultLayout">
+						<r:RibbonApplicationMenuItem.Command>
+							<r:RibbonCommand SmallImageSource="/Resources;component/Resources/export-icon.png" LargeImageSource="/Resources;component/Resources/export-icon.png" Executed="RestoreDefaultLayoutExecuted" ToolTipTitle="Restore Default Layout" ToolTipDescription="Restore Default Layout" LabelTitle="Restore Layout" />
+						</r:RibbonApplicationMenuItem.Command>
+					</r:RibbonApplicationMenuItem>
+					<r:RibbonApplicationMenuItem Name="StartPluginEditor">
+						<r:RibbonApplicationMenuItem.Command>
+							<r:RibbonCommand SmallImageSource="/Resources;component/Resources/export-icon.png" LargeImageSource="/Resources;component/Resources/export-icon.png" Executed="StartPluginEditorExecuted" ToolTipTitle="Start Plugin Editor" ToolTipDescription="Start Plugin Editor" LabelTitle="Start Plugin Editor" />
+						</r:RibbonApplicationMenuItem.Command>
+					</r:RibbonApplicationMenuItem>
+				</r:RibbonApplicationSplitMenuItem>
+				<r:RibbonApplicationMenu.Footer>
+					<DockPanel LastChildFill="False">
+						<r:RibbonButton DockPanel.Dock="Right" Tag="Close">
+							<r:RibbonButton.Command>
+								<r:RibbonCommand Executed="RibbonCommandExecuted" SmallImageSource="/Resources;component/Resources/close-icon.png" LargeImageSource="/Resources;component/Resources/close-icon.png" ToolTipTitle="Close" ToolTipDescription="Close." LabelTitle="Close" />
+							</r:RibbonButton.Command>
+						</r:RibbonButton>
+						<r:RibbonButton DockPanel.Dock="Right" Tag="Options" Name="Options">
+							<r:RibbonButton.Command>
+								<r:RibbonCommand Executed="OptionsExecuted" SmallImageSource="/Resources;component/Resources/options-icon.png" LargeImageSource="/Resources;component/Resources/options-icon.png" ToolTipTitle="Options" ToolTipDescription="Options." LabelTitle="Options" />
+							</r:RibbonButton.Command>
+						</r:RibbonButton>
+					</DockPanel>
+				</r:RibbonApplicationMenu.Footer>
+
+			</r:RibbonApplicationMenu>
+		</r:Ribbon.ApplicationMenu>
+
+
+		<r:Ribbon.QuickAccessToolBar>
+			<r:RibbonQuickAccessToolBar CanUserCustomize="True" Margin="0,3,0,0">
+				<r:RibbonButton Name="New" Command="{StaticResource NewCommand}" r:RibbonQuickAccessToolBar.Placement="InCustomizeMenuAndToolBar" />
+				<r:RibbonButton Name="Open" Command="{StaticResource OpenCommand}" r:RibbonQuickAccessToolBar.Placement="InCustomizeMenuAndToolBar" />
+				<r:RibbonButton Name="Save" Command="{StaticResource SaveCommand}" r:RibbonQuickAccessToolBar.Placement="InCustomizeMenuAndToolBar" />
+				<r:RibbonButton Name="Undo" Command="{StaticResource UndoCommand}" r:RibbonQuickAccessToolBar.Placement="InCustomizeMenuAndToolBar" />
+				<r:RibbonButton Name="Redo" Command="{StaticResource RedoCommand}" r:RibbonQuickAccessToolBar.Placement="InCustomizeMenuAndToolBar" />
+			</r:RibbonQuickAccessToolBar>
+		</r:Ribbon.QuickAccessToolBar>
+	</r:Ribbon>
+</UserControl>

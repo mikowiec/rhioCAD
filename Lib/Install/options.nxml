@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<Item>
+  <Item id="0">
+    <Item id="0">
+      <Interpterer Name="Integer" Value="0" />
+    </Item>
+    <Item id="1">
+      <Interpterer Name="Integer" Value="0" />
+    </Item>
+    <Item id="2">
+      <Interpterer Name="Integer" Value="1" />
+    </Item>
+    <Item id="3">
+      <Interpterer Name="Integer" Value="0" />
+    </Item>
+    <Interpterer Name="String" Value="Welcome" />
+  </Item>
+  <Item id="1">
+    <Item id="0">
+      <Interpterer Name="DrawingAttributes" Blue="0" DisplayMode="1" EnableSelection="1" Green="0" HasColor="0" HasNoColor="0" HasTransparency="0" Red="0" Transparency="0" Visibility="0" />
+    </Item>
+    <Item id="1">
+      <Interpterer Name="DrawingAttributes" Blue="209" DisplayMode="1" EnableSelection="1" Green="206" HasColor="1" HasNoColor="0" HasTransparency="0" Red="0" Transparency="0" Visibility="0" />
+    </Item>
+    <Item id="2">
+      <Interpterer Name="Integer" Value="0" />
+    </Item>
+    <Item id="3">
+      <Interpterer Name="Real" Value="0.2" />
+    </Item>
+    <Item id="4">
+      <Interpterer Name="DrawingAttributes" Blue="255" DisplayMode="1" EnableSelection="1" Green="25" HasColor="1" HasNoColor="0" HasTransparency="0" Red="25" Transparency="0" Visibility="0" />
+    </Item>
+    <Item id="5">
+      <Interpterer Name="DrawingAttributes" Blue="255" DisplayMode="1" EnableSelection="1" Green="125" HasColor="1" HasNoColor="0" HasTransparency="0" Red="125" Transparency="0" Visibility="0" />
+    </Item>
+    <Interpterer Name="String" Value="Background" />
+  </Item>
+  <Item id="2">
+    <Item id="0">
+      <Interpterer Name="Integer" Value="1" />
+      <Interpterer Name="Real" Value="1" />
+    </Item>
+    <Interpterer Name="String" Value="Metrics" />
+  </Item>
+  <Item id="3">
+    <Interpterer Name="String" Value="ReportBug" />
+  </Item>
+  <Item id="4">
+    <Item id="1">
+      <Interpterer Name="Integer" Value="1" />
+      <Interpterer Name="Real" Value="2" />
+    </Item>
+    <Item id="2">
+      <Interpterer Name="Integer" Value="1" />
+      <Interpterer Name="Real" Value="0.0872664625997165" />
+    </Item>
+    <Item id="3">
+      <Interpterer Name="Integer" Value="1" />
+    </Item>
+    <Item id="4">
+      <Interpterer Name="Integer" Value="1" />
+    </Item>
+    <Item id="5">
+      <Interpterer Name="Integer" Value="1" />
+    </Item>
+    <Item id="6">
+      <Interpterer Name="Integer" Value="1" />
+      <Interpterer Name="Real" Value="2" />
+    </Item>
+    <Item id="7">
+      <Interpterer Name="Integer" Value="0" />
+    </Item>
+    <Item id="10">
+      <Interpterer Name="Integer" Value="1" />
+    </Item>
+    <Item id="11">
+      <Interpterer Name="Real" Value="45" />
+    </Item>
+    <Item id="12">
+      <Interpterer Name="Integer" Value="0" />
+    </Item>
+    <Item id="13">
+      <Interpterer Name="Integer" Value="1" />
+    </Item>
+    <Item id="14">
+      <Interpterer Name="Real" Value="0" />
+    </Item>
+    <Item id="15">
+      <Interpterer Name="Real" Value="0" />
+    </Item>
+    <Item id="16">
+      <Interpterer Name="Real" Value="0" />
+    </Item>
+    <Interpterer Name="String" Value="Solver" />
+  </Item>
+  <Item id="5">
+    <Item id="0">
+      <Interpterer Name="Integer" Value="1" />
+    </Item>
+    <Interpterer Name="String" Value="AutoSave" />
+  </Item>
+  <Item id="6">
+    <Item id="0">
+      <Interpterer Name="Integer" Value="1" />
+    </Item>
+    <Item id="1">
+      <Interpterer Name="Integer" Value="0" />
+    </Item>
+    <Interpterer Name="String" Value="Updater" />
+  </Item>
+  <Item id="7">
+    <Item id="0">
+      <Interpterer Name="Real" Value="1" />
+    </Item>
+    <Item id="1">
+      <Interpterer Name="Real" Value="1" />
+    </Item>
+    <Interpterer Name="String" Value="Sketch Hinter" />
+  </Item>
+</Item>

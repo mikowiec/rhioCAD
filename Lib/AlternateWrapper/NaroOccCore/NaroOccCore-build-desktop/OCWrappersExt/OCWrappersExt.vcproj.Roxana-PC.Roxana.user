@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioUserFile
+	ProjectType="Visual C++"
+	Version="9,00"
+	ShowAllFiles="false"
+	>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			>
+			<DebugSettings
+				Command="$(TargetPath)"
+				WorkingDirectory=""
+				CommandArguments="-cppext -cppdir out -cdldir c:\OpenCASCADE6.3.0\ros\src\ Standard MMgt TCollection Quantity TColgp TColStd Message gp TopLoc GeomAbs Geom Bnd TShort TColQuantity SortTools Resource Aspect Viewer OSD MFT PlotMgt Image Graphic2d Xw WNT AlienImage Graphic3d Visual3d V2d V3d TopAbs TopoDS Geom2d StdFail math Adaptor2d Adaptor3d Geom2dAdaptor Precision GeomAdaptor BRepAdaptor CPnts GCPnts TopTools TopExp Intrv TopBas TopTrans TopCnx IntRes2d IntAna2d IntAna Intf IntImp IntSurf IntCurveSurface HLRAlgo MeshDS MeshShape MeshAlgo Poly Prs3d PrsMgr SelectBasics Select2D Select3D SelectMgr StdSelect DsgPrs AIS BRep LProp BRepLProp BRepTools Geom2dLProp GProp TColGeom2d PLib AdvApprox GeomLProp LProp3d AdvApp2Var FEmTool AppParCurves AppCont Approx AppDef BndLib Extrema gce GC GCE2d Convert Geom2dConvert TColGeom GeomConvert GeomLib GeomProjLib GeomTools Hermit ProjLib MeshVS CGM PS Prs2d AIS2D GGraphic2d BRepLib BRepBuilderAPI Primitives BRepPrim Sweep BRepSweep BRepPrimAPI IntImpParGen IntCurve Geom2dInt TopClass BRepClass CSLib BRepTopAdaptor IntStart IntWalk IntPatch BRepIntCurveSurface IntCurvesFace BRepClass3d TopOpeBRepTool TopOpeBRepDS TopOpeBRep TopOpeBRepBuild BOPTColStd BooleanOperations GeomAPI IntTools BOPTools BOP BRepAlgo BRepAlgoAPI Law Draft BRepOffset MAT GccInt Bisector AppBlend GeomFill MAT2d BRepMAT2d ElSLib Plate GeomPlate BRepFill BRepOffsetAPI Blend BlendFunc BRepBlend ChFi2d ChFiDS ChFi3d BRepFilletAPI ChFiKPart FilletSurf PStandard PMMgt DBC PCollection PColStd PTColStd TDF Storage CDM PCDM PDF MDF CDF TDocStd TNaming TDataStd AppStdL AppStd TPrsStd TFunction Dico MoniTool LibCtl Interface Transfer IFSelect XSControl StepBasic StepData StepGeom StepShape StepRepr StepVisual StepAP203 StepAP214 STEPConstruct TransferBRep STEPControl BRepMesh BRepExtrema BRepGProp ShapeExtend ShapeAnalysis BRepCheck"
+				Attach="false"
+				DebuggerType="3"
+				Remote="1"
+				RemoteMachine="ROXANA-PC"
+				RemoteCommand=""
+				HttpUrl=""
+				PDBPath=""
+				SQLDebugging=""
+				Environment=""
+				EnvironmentMerge="true"
+				DebuggerFlavor="0"
+				MPIRunCommand=""
+				MPIRunArguments=""
+				MPIRunWorkingDirectory=""
+				ApplicationCommand=""
+				ApplicationArguments=""
+				ShimCommand=""
+				MPIAcceptMode=""
+				MPIAcceptFilter=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			>
+			<DebugSettings
+				Command="$(TargetPath)"
+				WorkingDirectory=""
+				CommandArguments="-cppext -cppdir out -cdldir c:\OpenCASCADE6.5.5\ros\src\  Standard MMgt TCollection Quantity TColgp TColStd Message gp TopLoc GeomAbs Geom Bnd TShort TColQuantity SortTools Resource Aspect Viewer OSD MFT PlotMgt Image Graphic2d Xw WNT AlienImage Font Graphic3d Visual3d V2d V3d TopAbs TopoDS Geom2d StdFail math Adaptor2d Adaptor3d Geom2dAdaptor Precision GeomAdaptor BRepAdaptor CPnts GCPnts TopTools TopExp Intrv TopBas TopTrans TopCnx IntRes2d IntAna2d IntAna Intf IntImp IntSurf IntCurveSurface HLRAlgo Poly Prs3d PrsMgr SelectBasics Select2D Select3D SelectMgr StdSelect DsgPrs AIS BRep LProp BRepLProp BRepTools Geom2dLProp GProp TColGeom2d PLib AdvApprox GeomLProp LProp3d AdvApp2Var FEmTool AppParCurves AppCont Approx AppDef BndLib Extrema gce GC GCE2d Convert Geom2dConvert TColGeom GeomConvert GeomLib GeomProjLib GeomTools Hermit ProjLib MeshVS CGM PS Prs2d AIS2D GGraphic2d BRepLib BRepBuilderAPI Primitives BRepPrim Sweep BRepSweep BRepPrimAPI IntImpParGen IntCurve Geom2dInt TopClass BRepClass CSLib BRepTopAdaptor IntStart IntWalk IntPatch BRepIntCurveSurface IntCurvesFace BRepClass3d TopOpeBRepTool TopOpeBRepDS TopOpeBRep TopOpeBRepBuild BOPTColStd BooleanOperations GeomAPI HatchGen Geom2dHatch IntTools BOPTools BOP BRepAlgo BRepAlgoAPI Law Draft BRepOffset MAT GccInt Bisector AppBlend GeomFill MAT2d BRepMAT2d ElSLib Plate GeomPlate BRepFill BRepOffsetAPI Blend BlendFunc BRepBlend ChFi2d ChFiDS ChFi3d BRepFilletAPI ChFiKPart FilletSurf PStandard PMMgt DBC PCollection PColStd PTColStd TDF Storage CDM PCDM PDF MDF CDF TDocStd TNaming TDataStd AppStdL AppStd TPrsStd TFunction Dico MoniTool LibCtl Interface Transfer IFSelect XSControl StepBasic StepData StepGeom StepShape StepRepr StepVisual StepAP203 StepAP214 STEPConstruct TransferBRep STEPControl BRepMesh BRepExtrema BRepGProp ShapeExtend ShapeAnalysis BRepCheck"
+				Attach="false"
+				DebuggerType="3"
+				Remote="1"
+				RemoteMachine="ROXANA-PC"
+				RemoteCommand=""
+				HttpUrl=""
+				PDBPath=""
+				SQLDebugging=""
+				Environment=""
+				EnvironmentMerge="true"
+				DebuggerFlavor="0"
+				MPIRunCommand=""
+				MPIRunArguments=""
+				MPIRunWorkingDirectory=""
+				ApplicationCommand=""
+				ApplicationArguments=""
+				ShimCommand=""
+				MPIAcceptMode=""
+				MPIAcceptFilter=""
+			/>
+		</Configuration>
+	</Configurations>
+</VisualStudioUserFile>

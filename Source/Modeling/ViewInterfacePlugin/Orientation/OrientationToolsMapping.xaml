@@ -1,0 +1,62 @@
+﻿<Ribbon:RibbonGroup x:Class="ViewInterfacePlugin.Orientation.OrientationToolsMapping" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Ribbon="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary">
+
+	<Ribbon:RibbonGroup.Command>
+		<Ribbon:RibbonCommand LabelTitle="Orientation"></Ribbon:RibbonCommand>
+	</Ribbon:RibbonGroup.Command>
+
+	<Ribbon:RibbonButton Content="Reset" Name="Rst">
+		<Ribbon:RibbonButton.Command>
+			<Ribbon:RibbonCommand Executed="ResetClick" SmallImageSource="/Resources;component/Resources/view_reset.png" LargeImageSource="/Resources;component/Resources/view_reset.png" LabelTitle="Reset" ToolTipTitle="Reset" ToolTipDescription="Resets the view orientation." />
+		</Ribbon:RibbonButton.Command>
+	</Ribbon:RibbonButton>
+
+	<Ribbon:RibbonControlGroup Height="33">
+		<Ribbon:RibbonButton Content="Axo" Name="Axo1" Height="33" Width="33">
+			<Ribbon:RibbonButton.Command>
+				<Ribbon:RibbonCommand Executed="AxoClick" LabelTitle="Axo" ToolTipTitle="Axo" ToolTipDescription="Axonometric view." SmallImageSource="/Resources;component/Resources/view_axo.png" LargeImageSource="/Resources;component/Resources/view_axo.png" />
+			</Ribbon:RibbonButton.Command>
+		</Ribbon:RibbonButton>
+
+		<Ribbon:RibbonButton Content="Front" Name="Front1" Height="33" Width="33">
+			<Ribbon:RibbonButton.Command>
+				<Ribbon:RibbonCommand Executed="FrontClick" LabelTitle="Front" ToolTipTitle="Front" ToolTipDescription="Front view." SmallImageSource="/Resources;component/Resources/view_front.png" LargeImageSource="/Resources;component/Resources/view_front.png" />
+			</Ribbon:RibbonButton.Command>
+		</Ribbon:RibbonButton>
+
+		<Ribbon:RibbonButton Content="Top" Name="Top1" Height="33" Width="33">
+			<Ribbon:RibbonButton.Command>
+				<Ribbon:RibbonCommand Executed="TopClick" LabelTitle="Top" ToolTipTitle="Top" ToolTipDescription="Top view." SmallImageSource="/Resources;component/Resources/view_top.png" LargeImageSource="/Resources;component/Resources/view_top.png" />
+			</Ribbon:RibbonButton.Command>
+		</Ribbon:RibbonButton>
+
+		<Ribbon:RibbonButton Content="Left" Name="Left1" Height="33" Width="33">
+			<Ribbon:RibbonButton.Command>
+				<Ribbon:RibbonCommand Executed="LeftClick" LabelTitle="Left" ToolTipTitle="Left" ToolTipDescription="Left view." SmallImageSource="/Resources;component/Resources/view_left.png" LargeImageSource="/Resources;component/Resources/view_left.png" />
+			</Ribbon:RibbonButton.Command>
+		</Ribbon:RibbonButton>
+
+	</Ribbon:RibbonControlGroup>
+
+	<Ribbon:RibbonControlGroup Height="33">
+		<Ribbon:RibbonButton Content="Bottom" Name="Bottom1" Height="33" Width="33">
+			<Ribbon:RibbonButton.Command>
+				<Ribbon:RibbonCommand Executed="BottomClick" LabelTitle="Bottom" ToolTipTitle="Bottom" ToolTipDescription="Bottom view." SmallImageSource="/Resources;component/Resources/view_bottom.png" LargeImageSource="/Resources;component/Resources/view_bottom.png" />
+			</Ribbon:RibbonButton.Command>
+		</Ribbon:RibbonButton>
+
+		<Ribbon:RibbonButton Content="Right" Name="Right1" Height="33" Width="33">
+			<Ribbon:RibbonButton.Command>
+				<Ribbon:RibbonCommand Executed="RightClick" LabelTitle="Right" ToolTipTitle="Right" ToolTipDescription="Right view." SmallImageSource="/Resources;component/Resources/view_right.png" LargeImageSource="/Resources;component/Resources/view_right.png" />
+			</Ribbon:RibbonButton.Command>
+		</Ribbon:RibbonButton>
+
+		<Ribbon:RibbonButton Content="Back" Name="Back1" Height="33" Width="33">
+			<Ribbon:RibbonButton.Command>
+				<Ribbon:RibbonCommand Executed="BackClick" LabelTitle="Back" ToolTipTitle="Back" ToolTipDescription="Back view." SmallImageSource="/Resources;component/Resources/view_back.png" LargeImageSource="/Resources;component/Resources/view_back.png" />
+			</Ribbon:RibbonButton.Command>
+		</Ribbon:RibbonButton>
+
+	</Ribbon:RibbonControlGroup>
+
+
+</Ribbon:RibbonGroup>

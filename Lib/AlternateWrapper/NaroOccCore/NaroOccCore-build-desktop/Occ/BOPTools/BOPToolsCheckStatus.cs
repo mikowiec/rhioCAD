@@ -1,0 +1,16 @@
+namespace NaroCppCore.Occ.BOPTools
+{
+	public enum BOPToolsCheckStatus{
+		BOPTools_CHKUNKNOWN,
+		BOPTools_VERTEXVERTEX,
+		BOPTools_VERTEXEDGE,
+		BOPTools_VERTEXFACE,
+		BOPTools_EDGEEDGE,
+		BOPTools_EDGEEDGECOMBLK,
+		BOPTools_EDGEFACE,
+		BOPTools_EDGEFACECOMBLK,
+		BOPTools_FACEFACE,
+		BOPTools_BADSHRANKRANGE,
+		BOPTools_NULLSRANKRANGE,
+	}
+}

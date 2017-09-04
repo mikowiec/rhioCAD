@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FACBCB3-E1BA-4BCF-8E0B-B867E7B46D75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZetaColorEditor.Runtime</RootNamespace>
+    <AssemblyName>ZetaColorEditor</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>brush2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColorEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorEditorForm.Designer.cs">
+      <DependentUpon>ColorEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorEditorUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ColorEditorUserControl.Designer.cs">
+      <DependentUpon>ColorEditorUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorSchemes\IColorScheme.cs" />
+    <Compile Include="Colors\ColorConverting.cs" />
+    <Compile Include="Colors\HslColor.cs" />
+    <Compile Include="Helper\ExtendedNumericUpDownControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\ExtendedNumericUpDownControl.Designer.cs">
+      <DependentUpon>ExtendedNumericUpDownControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colors\HsbColor.cs" />
+    <Compile Include="Colors\RgbColor.cs" />
+    <Compile Include="IExternalColorEditorInformationProvider.cs" />
+    <Compile Include="InternalControls\BrowserSafeColorEditorUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InternalControls\BrowserSafeColorEditorUserControl.Designer.cs">
+      <DependentUpon>BrowserSafeColorEditorUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternalControls\CustomColorEditorUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InternalControls\CustomColorEditorUserControl.Designer.cs">
+      <DependentUpon>CustomColorEditorUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternalControls\CustomColors\ColorAreaAndSliderUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InternalControls\CustomColors\ColorAreaAndSliderUserControl.Designer.cs">
+      <DependentUpon>ColorAreaAndSliderUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternalControls\CustomColors\ColorAreaUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InternalControls\CustomColors\ColorAreaUserControl.Designer.cs">
+      <DependentUpon>ColorAreaUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternalControls\CustomColors\ColorSliderPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InternalControls\CustomColors\ColorSliderPanel.Designer.cs">
+      <DependentUpon>ColorSliderPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternalControls\CustomColors\ColorSliderUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InternalControls\CustomColors\ColorSliderUserControl.Designer.cs">
+      <DependentUpon>ColorSliderUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternalControls\SchemesColorEditorUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InternalControls\SchemesColorEditorUserControl.Designer.cs">
+      <DependentUpon>SchemesColorEditorUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternalControls\SystemColorEditorUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InternalControls\SystemColorEditorUserControl.Designer.cs">
+      <DependentUpon>SystemColorEditorUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternalControls\WebColorEditorUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InternalControls\WebColorEditorUserControl.Designer.cs">
+      <DependentUpon>WebColorEditorUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorLookupElement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGridEditors\ColorTypeDialogConverter.cs" />
+    <Compile Include="PropertyGridEditors\ColorTypeEditorDialog.cs" />
+    <Compile Include="PropertyGridEditors\ColorTypeEditorDropDown.cs" />
+    <Compile Include="PropertyGridEditors\ColorUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyGridEditors\ColorUI.Designer.cs">
+      <DependentUpon>ColorUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGridEditors\ColorTypeDropDownConverter.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ColorEditorForm.de.resx">
+      <DependentUpon>ColorEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorEditorForm.resx">
+      <DependentUpon>ColorEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorEditorUserControl.de.resx">
+      <DependentUpon>ColorEditorUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorEditorUserControl.resx">
+      <DependentUpon>ColorEditorUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper\ExtendedNumericUpDownControl.resx">
+      <DependentUpon>ExtendedNumericUpDownControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternalControls\BrowserSafeColorEditorUserControl.resx">
+      <DependentUpon>BrowserSafeColorEditorUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternalControls\CustomColorEditorUserControl.de.resx">
+      <DependentUpon>CustomColorEditorUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternalControls\CustomColorEditorUserControl.resx">
+      <DependentUpon>CustomColorEditorUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternalControls\CustomColors\ColorAreaAndSliderUserControl.resx">
+      <DependentUpon>ColorAreaAndSliderUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternalControls\CustomColors\ColorAreaUserControl.resx">
+      <DependentUpon>ColorAreaUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternalControls\CustomColors\ColorSliderPanel.resx">
+      <DependentUpon>ColorSliderPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternalControls\CustomColors\ColorSliderUserControl.resx">
+      <DependentUpon>ColorSliderUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternalControls\SchemesColorEditorUserControl.resx">
+      <DependentUpon>SchemesColorEditorUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternalControls\SystemColorEditorUserControl.resx">
+      <DependentUpon>SystemColorEditorUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternalControls\WebColorEditorUserControl.resx">
+      <DependentUpon>WebColorEditorUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="brush2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

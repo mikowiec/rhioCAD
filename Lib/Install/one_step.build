@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<project name="OneStepBuild" default="build">
+
+  <target name="TestNamespace" depends="build">
+             
+    <exec program="..\NUnit\bin\nunit-console-x86.exe" workingdir="./"
+          commandline="${UnitTestsAssembly_0} /nologo /xml:TestResults.xml" failonerror="false">
+    </exec>
+    
+    <!-- call target="nunitreports" />
+    <call target="CopyReportsToFTP" / -->  
+  </target>
+  
+  <target name="build">
+    <property name="UnitTestsAssembly_0" value = "..\..\tests\Debug\NaroTestSuite.exe" />
+    
+    <exec program="c:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe" >
+      <arg value="..\..\Naro.sln"/>
+      <arg value="/p:Configuration=Debug"/>
+      <arg value="/p:Platform=Any CPU"/>
+    </exec>
+                                         
+    <exec program="c:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe" >
+      <arg value="..\..\Naro.sln"/>
+      <arg value="/p:Configuration=Release"/>
+      <arg value="/p:Platform=Any CPU"/>
+    </exec>
+    
+    <exec program="..\..\bin\Debug\CreateNewVersionFiles.exe" >
+      <arg value="${VersionConfiguration}"/>
+    </exec>
+    
+    <exec program="${ProgramFiles}/${InnoSetup}">
+      <arg value="${IssScript}"/>
+    </exec>
+  </target>
+   
+  <target name="nunitreports" >
+    <nunit2report opendesc="yes" out="index.html" >
+      <fileset>
+        <include name="TestResults.xml" />
+      </fileset>
+      <summaries>
+        <include name="TestResults.xml" />
+      </summaries> 
+    </nunit2report>
+  </target>
+
+  <target name="build_installer" depends="init_env">
+  <call target="build" />
+    <copy file="output\setup.exe" tofile="${BuildFileName}" overwrite="true" />
+  </target>
+
+  <target name="update_release" depends="init_env">
+  <property name="VersionConfiguration" value = "stable" />
+  <call target="build" />
+    <copy file="output\setup.exe" tofile="NaroNightly.exe" overwrite="true" />
+    <copy file="output\setup.exe" tofile="${BuildFileName}" overwrite="true" />
+   
+    <loadtasks assembly="Lib\FTPTask\bin\Release\ftptask.dll" />
+    <connection id="ftp_conn" server="${FtpServer}" username="${User}" password="${Passwd}" />
+    <ftp connection="ftp_conn" verbose="true"
+               localdir=""
+               remotedir="/public_html/download/"
+               logfiles="true"
+               connectmode="PASSIVE">
+
+      <put type="bin">
+        <include name="NaroVersionNightly.zip" />
+        <include name="${BuildFileName}" />
+      </put>
+    </ftp>
+    <ftp connection="ftp_conn" verbose="true"
+               localdir=""
+               remotedir="/public_html/download/"
+               logfiles="true"
+               connectmode="PASSIVE">
+
+      <put type="bin">
+        <include name="NaroNightly.exe" />
+      </put>
+    </ftp>
+  </target>
+
+  <target name="full" depends="init_env">
+    <!--<call target="TestNamespace" />-->
+    <call target="build" />
+    <copy file="output\setup.exe" tofile="NaroNightly.exe" overwrite="true" />
+    <copy file="output\setup.exe" tofile="${BuildFileName}" overwrite="true" />
+   
+    <loadtasks assembly="Lib\FTPTask\bin\Release\ftptask.dll" />
+    <connection id="ftp_conn" server="${FtpServer}" username="${User}" password="${Passwd}" />
+    <ftp connection="ftp_conn" verbose="true"
+               localdir=""
+               remotedir="/public_html/download/"
+               logfiles="true"
+               connectmode="PASSIVE">
+
+      <put type="bin">
+        <include name="NaroVersionNightly.zip" />
+        <include name="${BuildFileName}" />
+      </put>
+    </ftp>
+    <ftp connection="ftp_conn" verbose="true"
+               localdir=""
+               remotedir="/public_html/download/"
+               logfiles="true"
+               connectmode="PASSIVE">
+
+      <put type="bin">
+        <include name="NaroNightly.exe" />
+      </put>
+    </ftp>
+  </target>
+
+  <target name="init_env" >
+    <exec program="BuildVersionGenerator\BuildVersionGenerator\bin\Debug\BuildVersionGenerator.exe" />
+    <property name="NaroBuildVersion" value="${environment::get-variable('NaroBuildVersion')}" />
+    <property name="BuildFileName" value="NaroNightly_${NaroBuildVersion}.exe" />
+    <property name="VersionConfiguration" value = "nightly" />
+
+	  <property name="FtpServer" value="ftp.cipdevel.com" />
+	  <property name="User" value="cipdeve" />
+	  <property name="Passwd" value="guQjRkAEjT" />
+	
+    <property name="InnoSetup" value="Inno Setup 5\ISCC.exe" />
+    <property name="IssScript" value="full.iss" />
+    <property name="ProgramFiles" value="${environment::get-variable('ProgramFiles')}" />
+  </target> 
+
+</project>

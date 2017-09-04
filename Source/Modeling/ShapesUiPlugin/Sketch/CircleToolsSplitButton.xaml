@@ -1,0 +1,25 @@
+﻿<RibbonMapping:RibbonSplitButtonMapping x:Class="ShapesUiPlugin.Sketch.CircleToolsSplitButton"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="circleGroup" xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary" xmlns:RibbonMapping="clr-namespace:NaroUiBuilder.RibbonMapping;assembly=NaroUiBuilder" >
+    <r:RibbonSplitButton.Command>
+        <r:RibbonCommand Executed="CircleClick" LabelTitle="Circle" ToolTipTitle="Circle" ToolTipDescription="Circle drawing tool." SmallImageSource="/Resources;component/Resources/circle.png" LargeImageSource="/Resources;component/Resources/circle.png" />
+    </r:RibbonSplitButton.Command>
+    <r:RibbonSplitButton.Items>
+        <MenuItem Header="_Circle" Name="Circle">
+            <MenuItem.Icon>
+                <Image Source="/Resources;component/Resources/circle.png" Height="16" Width="16" />
+            </MenuItem.Icon>
+            <MenuItem.Command>
+                <r:RibbonCommand Executed="CircleClick" LabelTitle="Circle" ToolTipTitle="Circle" ToolTipDescription="Circle drawing tool." SmallImageSource="/Resources;component/Resources/circle.png" LargeImageSource="/Resources;component/Resources/circle.png" />
+            </MenuItem.Command>
+        </MenuItem>
+        <MenuItem Header="_Ellipse" Name="Ellipse">
+            <MenuItem.Icon>
+                <Image Source="/Resources;component/Resources/ellipse.png" Height="16" Width="16" />
+            </MenuItem.Icon>
+            <MenuItem.Command>
+                <r:RibbonCommand Executed="EllipseClick" LabelTitle="Ellipse" ToolTipTitle="Ellipse" ToolTipDescription="Ellipse drawing tool." SmallImageSource="/Resources;component/Resources/ellipse.png" LargeImageSource="/Resources;component/Resources/ellipse.png" />
+            </MenuItem.Command>
+        </MenuItem>
+    </r:RibbonSplitButton.Items>
+</RibbonMapping:RibbonSplitButtonMapping>

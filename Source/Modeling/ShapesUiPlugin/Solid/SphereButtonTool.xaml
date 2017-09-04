@@ -1,0 +1,7 @@
+﻿<RibbonMapping:RibbonButtonMapping x:Class="ShapesUiPlugin.Solid.SphereButtonTool"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary" xmlns:RibbonMapping="clr-namespace:NaroUiBuilder.RibbonMapping;assembly=NaroUiBuilder" Content="Sphere" Name="Sphere" Height="33" Width="33">
+    <r:RibbonButton.Command>
+        <r:RibbonCommand Executed="SphereClick" LabelTitle="Sphere" ToolTipTitle="Sphere" ToolTipDescription="Sphere drawing tool." SmallImageSource="/Resources;component/Resources/sphere.png" LargeImageSource="/Resources;component/Resources/sphere.png" />
+    </r:RibbonButton.Command>
+</RibbonMapping:RibbonButtonMapping>

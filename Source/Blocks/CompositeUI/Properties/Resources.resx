@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfigurationAttributeOnValueWithIncompatibleType" xml:space="preserve">
+    <value>Property marked as configuration property is not valid as its type {0} does not inherit from ApplicationSettingsBase.</value>
+  </data>
+  <data name="FailedToLoadModule" xml:space="preserve">
+    <value>Failed to load module from assembly {0}. Error was:
+{1}</value>
+  </data>
+  <data name="ConfigurationProviderNotSupportLocation" xml:space="preserve">
+    <value>This provider only supports settings classes defined in assemblies deployed locally.</value>
+  </data>
+  <data name="InvalidFileCatalogFilePath" xml:space="preserve">
+    <value>Catalog file path cannot be empty or null, and must be a local file under the application folder.</value>
+  </data>
+  <data name="DefaultProfileNotSpecified" xml:space="preserve">
+    <value>No default profile has been specified.</value>
+  </data>
+  <data name="ProfileNotFound" xml:space="preserve">
+    <value>Profile {0} was not found in the catalog.</value>
+  </data>
+  <data name="InvalidCatalogXml" xml:space="preserve">
+    <value>There is an error in the XML document. &lt;{0} xmlns='{1}'&gt; was not expected.</value>
+  </data>
+  <data name="ModulePathNotUnderRoot" xml:space="preserve">
+    <value>Assembly path {0} does not fall under the current application root.</value>
+  </data>
+  <data name="ReferencedAssemblyNotFound" xml:space="preserve">
+    <value>The ModuleLoaderService cannot initialize the module because some of their dependencies are not present. Make sure to deploy all the assemblies needed to execute the module.</value>
+  </data>
+  <data name="DependencyOnMissingModule" xml:space="preserve">
+    <value>A module declared a dependency on another module which is not declared to be loaded. Missing module(s): {0}</value>
+  </data>
+  <data name="CannotLoadState" xml:space="preserve">
+    <value>An error occurred while loading the state with id {0} from the storage.</value>
+  </data>
+  <data name="CannotSaveState" xml:space="preserve">
+    <value>An error occurred while saving the state with id {0} to the storage.</value>
+  </data>
+  <data name="InvalidConfigurationSectionType" xml:space="preserve">
+    <value>Configuration section {0} must be of type {1}.</value>
+  </data>
+  <data name="DuplicatedModule" xml:space="preserve">
+    <value>A duplicated module with name {0} has been found by the loader.</value>
+  </data>
+  <data name="ReadProfileException" xml:space="preserve">
+    <value>An exception occurred while reading the profile.</value>
+  </data>
+  <data name="ConfigurationProviderMustBeUserScoped" xml:space="preserve">
+    <value>Settings must be user-scoped in order to use the selected provider. </value>
+  </data>
+  <data name="AddServicesCalled" xml:space="preserve">
+    <value>AddServices() method called for Module {0}.</value>
+  </data>
+  <data name="LogModuleAdded" xml:space="preserve">
+    <value>Module {0} added to the container.</value>
+  </data>
+  <data name="LogModuleAssemblyLoaded" xml:space="preserve">
+    <value>Loaded assembly file {0} for Module.</value>
+  </data>
+  <data name="ServiceAdded" xml:space="preserve">
+    <value>Service {1} added for Module {0}.</value>
+  </data>
+  <data name="ServiceAddedOnDemand" xml:space="preserve">
+    <value>Service {1} will be added on demand for Module {0}.</value>
+  </data>
+  <data name="ModuleStartCalled" xml:space="preserve">
+    <value>Load() method called for Module {0}.</value>
+  </data>
+  <data name="NullReaderReturned" xml:space="preserve">
+    <value>Service implementation {0} returned a null reader for the catalog.</value>
+  </data>
+  <data name="InvalidCryptographyValue" xml:space="preserve">
+    <value>The UseCryptography setting must be set to a valid boolean value.</value>
+  </data>
+  <data name="InvalidStateStream" xml:space="preserve">
+    <value>State stream from storage is invalid.</value>
+  </data>
+  <data name="StateDoesNotExist" xml:space="preserve">
+    <value>There is no state persisted with the given id {0}.</value>
+  </data>
+  <data name="InvalidIsolatedStorageStatePersistanceScope" xml:space="preserve">
+    <value>Scope value {0} is invalid. {1} does not exist in the IsolatedStorageScope enumeration.</value>
+  </data>
+  <data name="InvalidIsolatedStorageStatePersistanceParsedScope" xml:space="preserve">
+    <value>Cannot open an isolated store with scope {0}. Check the IsolatedStorageFile documentation for the valid combination of values.</value>
+  </data>
+  <data name="InvalidAdapter" xml:space="preserve">
+    <value>The adapter type is not a ICommandAdapter.</value>
+  </data>
+  <data name="CannotGetCommandAdapter" xml:space="preserve">
+    <value>The Command {0} cannot get an adapter for the type "{1}"</value>
+  </data>
+  <data name="CannotGetMapService" xml:space="preserve">
+    <value>The Command "{0}" does not have access to the IAdapterMapService to perform the AddInvoker operation.</value>
+  </data>
+  <data name="EventTopicFireException" xml:space="preserve">
+    <value>One or more exceptions occurred while firing the topic '{0}'</value>
+  </data>
+  <data name="ServiceMissingExceptionMessage" xml:space="preserve">
+    <value>Service {0}, required for component {1} is not available in the current context.</value>
+  </data>
+  <data name="ServiceMissingExceptionSimpleMessage" xml:space="preserve">
+    <value>Service {0} is not available in the current context.</value>
+  </data>
+  <data name="InvalidSolutionProfileXml" xml:space="preserve">
+    <value>There is an error in the XML document. &lt;{0} xmlns='{1}'&gt; was not expected.</value>
+  </data>
+  <data name="ProfileNotFoundInCatalog" xml:space="preserve">
+    <value>Profile {0} was not found in the catalog.</value>
+  </data>
+  <data name="InvalidSolutionProfilePath" xml:space="preserve">
+    <value>Catalog file path {0} is not a local file under the application folder {1}.</value>
+  </data>
+  <data name="NullSolutionProfileReaderReturned" xml:space="preserve">
+    <value>The ModuleEnumerator implementation {0} returned a null reader for the catalog.</value>
+  </data>
+  <data name="ErrorEnumeratingModules" xml:space="preserve">
+    <value>An exception occurred while enumerating the modules using the {0} enumerator.</value>
+  </data>
+  <data name="ErrorReadingProfile" xml:space="preserve">
+    <value>An error occurred while reading the solution profile {0}.</value>
+  </data>
+  <data name="UIElementNotCorrectType" xml:space="preserve">
+    <value>UI element must be a {0}</value>
+  </data>
+  <data name="NoRegisteredUIElementFactory" xml:space="preserve">
+    <value>No UIElementAdapterFactory register for type {0}.</value>
+  </data>
+  <data name="WorkItemDesignerCodeWarning" xml:space="preserve">
+    <value>Do not modify this method, changes will be lost upon regeneration by the designer.</value>
+  </data>
+  <data name="DuplicateID" xml:space="preserve">
+    <value>An object with this ID already exists: {0}.</value>
+  </data>
+  <data name="DuplicateService" xml:space="preserve">
+    <value>A service of this type already exists: {0}.</value>
+  </data>
+  <data name="CannotFindPublishedEvent" xml:space="preserve">
+    <value>The specified event {0} was not found in the publisher.</value>
+  </data>
+  <data name="InvalidPublicationScope" xml:space="preserve">
+    <value>The value for the PublicationScope is invalid.</value>
+  </data>
+  <data name="OnlyOnePublicationIsAllowed" xml:space="preserve">
+    <value>Cannot add more than one instance of the same publisher to one topic.</value>
+  </data>
+  <data name="SubscriberHandlerNotFound" xml:space="preserve">
+    <value>The specified method handler {0} is not present or accessible on the subscriber type {1}.</value>
+  </data>
+  <data name="CannotRegisterStaticSubscriptionMethods" xml:space="preserve">
+    <value>Subscription {0}.{1} is static and is not supported.</value>
+  </data>
+  <data name="NoRemoveWorkItemFromManagedObjectCollection" xml:space="preserve">
+    <value>Removing WorkItems is not permitted. Use WorkItem.Terminate or WorkItem.Dispose to clean up a WorkItem.</value>
+  </data>
+  <data name="StaticCommandHandlerNotSupported" xml:space="preserve">
+    <value>Static command handler "{0}" is not supported.</value>
+  </data>
+  <data name="StaticPublisherNotAllowed" xml:space="preserve">
+    <value>Registering static event {0} as topic publication is not allowed.</value>
+  </data>
+  <data name="InvalidPublicationSignature" xml:space="preserve">
+    <value>Publication event {0}.{1} must have a delegate type compatible with EventHandler or EventHandler&lt;T&gt;.</value>
+  </data>
+  <data name="InvalidSubscriptionSignature" xml:space="preserve">
+    <value>Subscription method {0}.{1} must have a signature receiving an object and an EventArgs parameter (EventHandler or EventHandler&lt;T&gt; delegates signature).</value>
+  </data>
+  <data name="StaticCommandPublisherNotSupported" xml:space="preserve">
+    <value>Static command publisher "{0}" is not supported.</value>
+  </data>
+  <data name="EventCommandAdapterInvokerNotType" xml:space="preserve">
+    <value>Invoker is not of type {0}</value>
+  </data>
+  <data name="BackgroundSubscriberException" xml:space="preserve">
+    <value>An exception thrown in a background subscriber was not handled. The exception was {0}.</value>
+  </data>
+  <data name="VisualizerAlreadyInitialized" xml:space="preserve">
+    <value>The visualizer has already been initialized.</value>
+  </data>
+  <data name="UnsupportedSmartPartType" xml:space="preserve">
+    <value>Smart part type {0} is not supported. Expected {1} or a compatible type.</value>
+  </data>
+  <data name="SmartPartNotInWorkspace" xml:space="preserve">
+    <value>The smartpart is not present in the workspace.</value>
+  </data>
+  <data name="EventTopicTraceFireCompleted" xml:space="preserve">
+    <value>EventTopic {0} fire completed.</value>
+  </data>
+  <data name="EventTopicTraceFireExceptions" xml:space="preserve">
+    <value>Exceptions occurred while firing the EventTopic {0}.</value>
+  </data>
+  <data name="EventTopicTraceFireStarted" xml:space="preserve">
+    <value>Firing EventTopic {0}</value>
+  </data>
+  <data name="EventTopicTracePublicationAdded" xml:space="preserve">
+    <value>Publication for the EventTopic {0} was added for the event {1} on the type {2}.</value>
+  </data>
+  <data name="EventTopicTracePublicationRemoved" xml:space="preserve">
+    <value>Publication removed from EventTopic {0} for the event {1} on the type {2}</value>
+  </data>
+  <data name="EventTopicTraceSubscriptionAdded" xml:space="preserve">
+    <value>Subscription for EventTopic {0} added for the method {1} on the type {2}</value>
+  </data>
+  <data name="EventTopicTraceSubscriptionRemoved" xml:space="preserve">
+    <value>Subscription on EventTopic {0} removed for the method {1} on the type {2}</value>
+  </data>
+  <data name="DependencyForUnknownModule" xml:space="preserve">
+    <value>Cannot add dependency for unknown module '{0}'; call AddModule() before AddDependency()</value>
+  </data>
+  <data name="VisualizerMustImplementIVisualizer" xml:space="preserve">
+    <value>Visualizer type must implement IVisualizer.</value>
+  </data>
+  <data name="SolutionProfileNotFound" xml:space="preserve">
+    <value>Catalog file at location {0} could not be found.</value>
+  </data>
+  <data name="WorkItemExtensionTypeAlreadyRegistered" xml:space="preserve">
+    <value>The WorkItem Extension type {0} is already registered for WorkItem type {1}.</value>
+  </data>
+  <data name="CannotUnregisterSiteRegisteredWithParent" xml:space="preserve">
+    <value>Cannot unregister site that was registered in parent: {0}</value>
+  </data>
+  <data name="DuplicateUIExtensionSite" xml:space="preserve">
+    <value>A UI extension site with this name already exists: {0}</value>
+  </data>
+  <data name="ExtensionSiteDoesNotExist" xml:space="preserve">
+    <value>Extension site does not exist: {0}</value>
+  </data>
+  <data name="SmartPartMustImplementISmartPartInfoProvider" xml:space="preserve">
+    <value>Implement ISmartPartInfoProvider in the containing smart part. Required in order for contained smart part infos to work.</value>
+  </data>
+  <data name="AutogeneratedCodeWarning" xml:space="preserve">
+    <value>This code is required by the smart part informations.</value>
+  </data>
+  <data name="TraceWorkItemStatusActivating" xml:space="preserve">
+    <value>The work item {0} is Activating.</value>
+  </data>
+  <data name="TraceWorkItemStatusChangedToActivated" xml:space="preserve">
+    <value>The work item {0} is Activated.</value>
+  </data>
+  <data name="TraceWorkItemStatusChangedToDeactivated" xml:space="preserve">
+    <value>The work item {0} is Deactivated.</value>
+  </data>
+  <data name="TraceWorkItemStatusChangedToDisposed" xml:space="preserve">
+    <value>The work item {0} is Disposed.</value>
+  </data>
+  <data name="TraceWorkItemStatusChangedToInitialized" xml:space="preserve">
+    <value>The work item {0} is Initialized.</value>
+  </data>
+  <data name="TraceWorkItemStatusDeactivating" xml:space="preserve">
+    <value>The work item {0} is Deactivating.</value>
+  </data>
+  <data name="TraceWorkItemStatusTerminating" xml:space="preserve">
+    <value>The work item {0} is Terminating.</value>
+  </data>
+  <data name="TraceCommandExecuted" xml:space="preserve">
+    <value>The Command {0} has been executed.</value>
+  </data>
+  <data name="TraceCommandStatusChanged" xml:space="preserve">
+    <value>Command status for command {0} has changed to {1}.</value>
+  </data>
+  <data name="TraceStateChangedMessage" xml:space="preserve">
+    <value>The state with ID {0} has changed. The changed value was {1}.</value>
+  </data>
+  <data name="TraceWorkItemStatusChangedToTerminated" xml:space="preserve">
+    <value>The work item {0} is Terminated.</value>
+  </data>
+  <data name="WorkItemExtensionInitialized" xml:space="preserve">
+    <value>Initialized WorkItem extension {0} with WorkItem {1}.</value>
+  </data>
+  <data name="WorkItemExtensionRegistered" xml:space="preserve">
+    <value>Registered WorkItem extension type {0} for WorkItem type {1}.</value>
+  </data>
+  <data name="WorkItemExtensionRootRegistered" xml:space="preserve">
+    <value>Registered WorkItem extension type {0} for root WorkItem.</value>
+  </data>
+  <data name="DictionaryIsReadOnly" xml:space="preserve">
+    <value>The dictionary is readonly and can not be modified.</value>
+  </data>
+  <data name="InvalidEnumValue" xml:space="preserve">
+    <value>The value of the argument {0} provided for the enumeration {1} is invalid.</value>
+  </data>
+  <data name="StringCannotBeEmpty" xml:space="preserve">
+    <value>The provided String argument {0} must not be empty.</value>
+  </data>
+  <data name="TypeNotCompatible" xml:space="preserve">
+    <value>The provided type {0} is not compatible with {1}.</value>
+  </data>
+  <data name="CommandInjectionBuildUp" xml:space="preserve">
+    <value>Adding command handler on {0} for command '{1}'</value>
+  </data>
+  <data name="CommandInjectionTearDown" xml:space="preserve">
+    <value>Removing command handler from {0} for command '{1}'</value>
+  </data>
+  <data name="EventNotPresentOnInvoker" xml:space="preserve">
+    <value>The event {0} on the invoker {1} is not present.</value>
+  </data>
+  <data name="CannotAddWorkItemToItself" xml:space="preserve">
+    <value>A WorkItem cannot be added to itself.</value>
+  </data>
+  <data name="TraceWorkItemRun" xml:space="preserve">
+    <value>The work item {0} has been run.</value>
+  </data>
+  <data name="AdapterAlreadyBoundToACommand" xml:space="preserve">
+    <value>Command adapter has already been bound to a command.</value>
+  </data>
+  <data name="AdapterNotBoundToGivenCommand" xml:space="preserve">
+    <value>The adapter has not been previously bound to the command.</value>
+  </data>
+  <data name="WorkItemTerminated" xml:space="preserve">
+    <value>WorkItem has already been disposed or terminated.</value>
+  </data>
+  <data name="ModuleNotFound" xml:space="preserve">
+    <value>Assembly file {0} was not found.</value>
+  </data>
+  <data name="RemoveCommandFromWorkItemIsNotPermitted" xml:space="preserve">
+    <value>Removing Commands from WorkItem is not permitted. An attempt was made to remove the command {0}.</value>
+  </data>
+  <data name="RemoveEventTopicFromWorkItemIsNotPermitted" xml:space="preserve">
+    <value>Removing EventTopic from WorkItem is not permitted. An attempt was made to remove the EventTopic {0}.</value>
+  </data>
+  <data name="TraceWorkItemRunStarted" xml:space="preserve">
+    <value>WorkItem {0} Run method has started.</value>
+  </data>
+</root>

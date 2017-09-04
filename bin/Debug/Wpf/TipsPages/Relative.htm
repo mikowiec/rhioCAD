@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title></title>
+		<link href="tipsPagesStyle.css" rel="stylesheet" type="text/css" media="screen"/>
+	</head>
+	<body scroll="no">
+        <div class="header">
+            <label class="title">Command line coordinates</label>
+        </div>	    
+        <div class="content">
+            <div style="float:left; padding-left:30px;">
+                <p>While drawing shapes it is possible to enter coordinates also from command line.</p>
+                <p>There are two types of coordinates:<br />
+                    &nbsp;&nbsp;&nbsp;- global coordinates, written as: 100,100,100<br />
+                    &nbsp;&nbsp;&nbsp;- relative coordinates, written as: 100r,100r,0r<br />
+                    This type of coordinate is relative to the previous coordinate inserted from mouse click or command line.</p>
+                <p>Example:<br />
+                    &nbsp;&nbsp;&nbsp;first point: 100,100,0<br />
+                    &nbsp;&nbsp;&nbsp;second point: 100r,100r,0r<br />
+                    The second point will have the global coordinates 200,200,0</p>
+            </div>
+        </div>	    
+	</body>
+</html>

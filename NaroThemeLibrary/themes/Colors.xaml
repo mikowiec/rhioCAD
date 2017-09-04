@@ -1,0 +1,42 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<LinearGradientBrush x:Key="RibbonButtonBackground" EndPoint="0.5,1" StartPoint="0.5,0">
+		<GradientStop Color="#FFE8F1FC" Offset="0" />  
+		<GradientStop Color="#FFEBF3FD" Offset="1" />
+		<GradientStop Color="#FFD2E1F4" Offset="0.5" />
+		<GradientStop Color="#FFE9F1FC" Offset="0.49" />
+        <!--<GradientStop Color="#FFE8F1" Offset="0" />
+        <GradientStop Color="#FFEBF3" Offset="1" />
+        <GradientStop Color="#FFD2E1" Offset="0.5" />
+        <GradientStop Color="#FFE9F1" Offset="0.49" />-->
+    </LinearGradientBrush>
+
+	<SolidColorBrush x:Key="DockPaneTopColor" Color="#3f3f3f"></SolidColorBrush>
+	<SolidColorBrush x:Key="DockPaneBackground" Color="#767676"></SolidColorBrush>
+	<SolidColorBrush x:Key="DockPaneTabBackground" Color="#1f1f1f"></SolidColorBrush>
+	<SolidColorBrush x:Key="DockPaneTabOver" Color="#595959"></SolidColorBrush>
+	<SolidColorBrush x:Key="WhiteText" Color="White"></SolidColorBrush>
+	<SolidColorBrush x:Key="BlackBorder" Color="Black"></SolidColorBrush>
+
+	<!--Gradients-->
+	<LinearGradientBrush StartPoint="0,0" EndPoint="0,1" x:Key="buttonGradient">
+		<GradientStop Color="#a7d2aa" Offset="0.2" />
+		<GradientStop Color="#b2ceb7" Offset="0.25" />
+		<GradientStop Color="#c6bbbb" Offset="1" />
+	</LinearGradientBrush>
+	<LinearGradientBrush StartPoint="0,0" EndPoint="0,1" x:Key="textboxGradient">
+		<GradientStop Color="#dee2fa" Offset="0.2" />
+		<GradientStop Color="#d7dee5" Offset="0.25" />
+		<GradientStop Color="#fbfbff" Offset="1" />
+	</LinearGradientBrush>
+	<LinearGradientBrush x:Key="controlGradient" StartPoint="0,0" EndPoint="0,1">
+		<GradientStop Color="#506270" Offset="0" />
+		<GradientStop Color="#9096A0" Offset="0.3" />
+		<GradientStop Color="#506270" Offset="1" />
+	</LinearGradientBrush>
+	<LinearGradientBrush x:Key="optionsGradient" StartPoint="0,0" EndPoint="0,1">
+		<GradientStop Color="#80A2B0" Offset="0" />
+		<GradientStop Color="#B0C6E0" Offset="0.3" />
+		<GradientStop Color="#80A2B0" Offset="1" />
+	</LinearGradientBrush>
+</ResourceDictionary>

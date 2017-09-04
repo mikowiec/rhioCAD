@@ -1,0 +1,51 @@
+Concept "Face"
+ Section Keys
+  Dimensionable = ""
+  Extrudable = ""
+ End
+End
+Concept "Rectangle" is "Face"
+ Section Keys
+  RectangleMeasurementConstraint = ""
+ End
+End
+Concept "Circle" is "Face"
+ Section Keys
+  CircleRangeConstraint = ""
+ End
+End
+Concept "Ellipse" is "Face"
+End
+Concept "Arc"
+End
+Concept "Line"
+ Section Keys
+  LineLengthConstraint = ""
+ End
+End
+Concept "VerticalLine"
+End
+Concept "HorizontalLine"
+End
+Concept "Box" is "Face"
+End
+Concept "Cone" is "Face"
+End
+Concept "Cylinder" is "Face"
+End
+Concept "Sphere"
+End
+Concept "Torus"
+End
+Concept "Cut"
+ Section Keys
+  Dimensionable = ""
+  Extrudable = ""
+ End
+End
+Concept "Extrude"
+ Section Keys
+  Dimensionable = ""
+  Extrudable = ""
+ End
+End

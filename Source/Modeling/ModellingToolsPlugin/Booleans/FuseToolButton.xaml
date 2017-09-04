@@ -1,0 +1,5 @@
+﻿<RibbonMapping:RibbonButtonMapping x:Class="ModellingToolsPlugin.Booleans.FuseToolButton" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary" xmlns:RibbonMapping="clr-namespace:NaroUiBuilder.RibbonMapping;assembly=NaroUiBuilder">
+	<RibbonMapping:RibbonButtonMapping.Command>
+		<r:RibbonCommand Executed="BooleanAddClick" LabelTitle="Fuse" ToolTipTitle="Fuse" ToolTipDescription="Applies a boolean Fuse on solids." SmallImageSource="/Resources;component/Resources/bool_fuse.png" LargeImageSource="/Resources;component/Resources/bool_fuse.png" />
+	</RibbonMapping:RibbonButtonMapping.Command>
+</RibbonMapping:RibbonButtonMapping>

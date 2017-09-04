@@ -1,0 +1,6 @@
+   type ward
+   diff { "sRGB nonlinear" .33 1 .33 }
+   spec 1 1 1
+   rough .2 .01
+   samples 4
+   

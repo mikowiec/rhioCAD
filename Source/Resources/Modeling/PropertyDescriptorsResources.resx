@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CircleRangeConstraintTabSetCircleRange" xml:space="preserve">
+    <value>Set circle range</value>
+  </data>
+  <data name="CircleRangeConstraintTab_Length" xml:space="preserve">
+    <value>Length</value>
+  </data>
+  <data name="CircleTab_Range" xml:space="preserve">
+    <value>Radius</value>
+  </data>
+
+  <data name="ArcTab_StartAngle" xml:space="preserve">
+    <value>Start angle</value>
+  </data>
+
+  <data name="ArcTab_InternalAngle" xml:space="preserve">
+    <value>Internal angle</value>
+  </data>
+
+  <data name="ArcTab_EndAngle" xml:space="preserve">
+    <value>End angle</value>
+  </data>
+  <data name="Cone_Height_Constraint" xml:space="preserve">
+    <value>Cone Height Constraint</value>
+  </data>
+  <data name="Cone_Major_Radius_Constraint" xml:space="preserve">
+    <value>Cone Major Radius Constraint</value>
+  </data>
+  <data name="Cone_Minor_Radius_Constraint" xml:space="preserve">
+    <value>Cone Minor Radius Constraint</value>
+  </data>
+  <data name="Cylinder_Height_Constraint" xml:space="preserve">
+    <value>Cylinder Height Constraint</value>
+  </data>
+  <data name="Cylinder_Radius_Constraint" xml:space="preserve">
+    <value>Cylinder Radius Constraint</value>
+  </data>
+  <data name="EllipseTab_Set_major_radius" xml:space="preserve">
+    <value>Set major radius</value>
+  </data>
+  <data name="EllipseTab_Set_minor_radius" xml:space="preserve">
+    <value>Set minor radius</value>
+  </data>
+  <data name="Fillet2D" xml:space="preserve">
+    <value>Fillet2D</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="HorizontalLineTab_Y" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Length</value>
+  </data>
+  <data name="Line_Length_Constraint" xml:space="preserve">
+    <value>Line Length Constraint</value>
+  </data>
+  <data name="Major_Radius" xml:space="preserve">
+    <value>Major Radius</value>
+  </data>
+  <data name="Minor_Radius" xml:space="preserve">
+    <value>Minor Radius</value>
+  </data>
+  <data name="Radius" xml:space="preserve">
+    <value>Radius</value>
+  </data>
+  <data name="Rectangle_Height_Constraint" xml:space="preserve">
+    <value>Rectangle Height Constraint</value>
+  </data>
+  <data name="Rectangle_Width_Constraint" xml:space="preserve">
+    <value>Rectangle Width Constraint</value>
+  </data>
+  <data name="Sphere_Radius_Constraint" xml:space="preserve">
+    <value>Sphere Radius Constraint</value>
+  </data>
+  <data name="TabTitleBox" xml:space="preserve">
+    <value>Box</value>
+  </data>
+  <data name="TabTitleCircle" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="TabTitleArc" xml:space="preserve">
+    <value>Arc</value>
+  </data>
+  <data name="TabTitleEllipse" xml:space="preserve">
+    <value>Ellipse</value>
+  </data>
+  <data name="TabTitleHorizontalLine" xml:space="preserve">
+    <value>Horizontal Line</value>
+  </data>
+  <data name="TabTitleLine" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="TabTitleLinearPatternTool" xml:space="preserve">
+    <value>Linear Pattern Tool</value>
+  </data>
+  <data name="TabTitlePoint" xml:space="preserve">
+    <value>Point</value>
+  </data>
+  <data name="TabTitleRectangle" xml:space="preserve">
+    <value>Rectangle</value>
+  </data>
+  <data name="TabTitleParallogram" xml:space="preserve">
+    <value>Parallogram</value>
+  </data>
+  <data name="TabTitleVerticalLine" xml:space="preserve">
+    <value>Vertical Line</value>
+  </data>
+  <data name="TitleTabCircleRangeConstraint" xml:space="preserve">
+    <value>Circle Range Constraint</value>
+  </data>
+  <data name="TitleTabCone" xml:space="preserve">
+    <value>Cone</value>
+  </data>
+  <data name="TitleTabCut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="TitleTabCylinder" xml:space="preserve">
+    <value>Cylinder</value>
+  </data>
+  <data name="TitleTabExtrude" xml:space="preserve">
+    <value>Extrude</value>
+  </data>
+  <data name="TitleTabFillet" xml:space="preserve">
+    <value>Fillet</value>
+  </data>
+  <data name="TitleTabLineLengthConstraint" xml:space="preserve">
+    <value>Line Length Constraint</value>
+  </data>
+  <data name="TitleTabOffset" xml:space="preserve">
+    <value>Offset</value>
+  </data>
+  <data name="TitleTabRectangleHeightConstraint" xml:space="preserve">
+    <value>Rectangle Height Constraint</value>
+  </data>
+  <data name="TitleTabRectangleWidthConstraint" xml:space="preserve">
+    <value>Rectangle Width Constraint</value>
+  </data>
+  <data name="TitleTabRevolve" xml:space="preserve">
+    <value>Revolve</value>
+  </data>
+  <data name="TitleTabSphere" xml:space="preserve">
+    <value>Sphere</value>
+  </data>
+  <data name="TitleTabTorus" xml:space="preserve">
+    <value>Torus</value>
+  </data>
+  <data name="Torus_Major_Radius" xml:space="preserve">
+    <value>Torus Major Radius</value>
+  </data>
+  <data name="Torus_Minor_Radius_Constraint" xml:space="preserve">
+    <value>Torus Minor Radius Constraint</value>
+  </data>
+  <data name="VerticalLineTab_X" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>Width</value>
+  </data>
+</root>

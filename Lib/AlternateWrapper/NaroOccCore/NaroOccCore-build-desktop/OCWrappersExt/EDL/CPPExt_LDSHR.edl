@@ -1,0 +1,10 @@
+@ifnotdefined ( %CPPExt_LDSHR_EDL ) then
+ @set %CPPExt_LDSHR_EDL = "";
+ @if ( %Station == "sun" ) then 
+  @set %LDSHR_DBMSOpt = "";
+  @template LDSHR_Footer () is
+  $ ;
+  @end;
+ @endif;
+@endif;
+

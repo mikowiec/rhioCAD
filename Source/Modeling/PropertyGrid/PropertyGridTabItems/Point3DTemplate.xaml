@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<UserControl x:Class="PropertyGridTabItems.Point3DTemplate" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="25"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="20"></ColumnDefinition>
+			<ColumnDefinition Width="*" MaxWidth="33"></ColumnDefinition>
+			<ColumnDefinition Width="20"></ColumnDefinition>
+			<ColumnDefinition Width="*" MaxWidth="33"></ColumnDefinition>
+			<ColumnDefinition Width="20"></ColumnDefinition>
+			<ColumnDefinition Width="*" MaxWidth="33"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Label Content="X:" Grid.Row="0" Grid.Column="0" Margin="0,0,0,0" VerticalAlignment="Center" Height="23" Width="20" HorizontalAlignment="Left" />
+		<TextBox Name="textBoxX" Grid.Row="0" Grid.Column="1" Margin="0,0,0,0" Style="{DynamicResource roundTextBox}" KeyDown="TextBoxKeyDown" LostFocus="TextBoxLostFocus" Height="22" MinWidth="8" MaxWidth="33" VerticalAlignment="Center" />
+		<Label Content="Y:" Grid.Row="0" Grid.Column="2" Margin="0,0,0,0" VerticalAlignment="Center" Height="23" Width="20" HorizontalAlignment="Left" />
+		<TextBox Name="textBoxY" Grid.Row="0" Grid.Column="3" Margin="0,0,0,0" Style="{DynamicResource roundTextBox}" KeyDown="TextBoxKeyDown" LostFocus="TextBoxLostFocus" Height="22" MinWidth="8" MaxWidth="33" VerticalAlignment="Center" />
+		<Label Content="Z:" Grid.Row="0" Grid.Column="4" Height="23" Margin="0,0,0,0" VerticalAlignment="Center" Width="20" HorizontalAlignment="Left" />
+		<TextBox Name="textBoxZ" Grid.Row="0" Grid.Column="5" Margin="0,0,0,0" Style="{DynamicResource roundTextBox}" KeyDown="TextBoxKeyDown" LostFocus="TextBoxLostFocus" Height="22" MinWidth="8" MaxWidth="33" VerticalAlignment="Center" />
+	</Grid>
+</UserControl>

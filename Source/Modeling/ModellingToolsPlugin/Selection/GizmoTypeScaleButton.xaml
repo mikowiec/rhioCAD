@@ -1,0 +1,5 @@
+﻿<RibbonMapping:RibbonButtonMapping x:Class="ModellingToolsPlugin.Selection.GizmoTypeScaleButton" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary" xmlns:RibbonMapping="clr-namespace:NaroUiBuilder.RibbonMapping;assembly=NaroUiBuilder">
+	<RibbonMapping:RibbonButtonMapping.Command>
+		<r:RibbonCommand Executed="ScaleGizmoExecuted" LabelTitle="Scale" ToolTipTitle="Vertex selection" ToolTipDescription="Vertex selection tool." SmallImageSource="/Resources;component/Resources/gizmo-scale.png" LargeImageSource="/Resources;component/Resources/gizmo-scale.png" />
+	</RibbonMapping:RibbonButtonMapping.Command>
+</RibbonMapping:RibbonButtonMapping>

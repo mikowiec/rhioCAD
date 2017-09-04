@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{17611CE9-43B5-4FF1-84B1-BAB9D13D8222}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WpfPropertyGrid</RootNamespace>
+    <AssemblyName>WpfPropertyGrid</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Layers\AddLayerWindow.xaml.cs">
+      <DependentUpon>AddLayerWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Layers\LayerView.xaml.cs">
+      <DependentUpon>LayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layers\LayerVisualDescription.xaml.cs" />
+    <Compile Include="UI\PropertyGridView.xaml.cs">
+      <DependentUpon>PropertyGridView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Layers\AddLayerWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Layers\LayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\PropertyGridView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\system-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Infrastructure\ErrorReportCommon\ErrorReportCommon.csproj">
+      <Project>{90EEED45-43A4-4285-844B-C6F7E9ED3E6B}</Project>
+      <Name>ErrorReportCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Infrastructure.Interface\Infrastructure.Interface.csproj">
+      <Project>{5E3CB7F9-17DE-420C-B5DA-94E12E1F67D8}</Project>
+      <Name>Infrastructure.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\NaroConstants\NaroConstants.csproj">
+      <Project>{7B37096D-1715-40E6-8914-317C55F60897}</Project>
+      <Name>NaroConstants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\NaroPipes\NaroPipes.csproj">
+      <Project>{27C6CE51-5F57-4421-8C0F-9526EC3E9963}</Project>
+      <Name>NaroPipes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\TreeData\TreeData.csproj">
+      <Project>{E5D3FF5A-D77C-418B-8E73-E8D55EE5CAFD}</Project>
+      <Name>TreeData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Resources\NaroResources.csproj">
+      <Project>{863E2972-C477-4464-97F3-681675597D1C}</Project>
+      <Name>NaroResources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Functions\ShapeFunctionsInterface\ShapeFunctionsInterface.csproj">
+      <Project>{5037292E-38AB-460E-ADCF-E621B435408E}</Project>
+      <Name>ShapeFunctionsInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyDescriptorsInterface\PropertyDescriptorsInterface.csproj">
+      <Project>{2C7BC841-D7E8-47F5-83C4-81C7E70B2E58}</Project>
+      <Name>PropertyDescriptorsInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyGridTabItems\PropertyGridTabItems.csproj">
+      <Project>{243F27A3-DA8F-44E2-9BD8-E7AB21461EF9}</Project>
+      <Name>PropertyGridTabItems</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyGridTabs\PropertyGridTabs.csproj">
+      <Project>{D09B133C-EA7C-4942-B0B6-C7A6D576D13E}</Project>
+      <Name>PropertyGridTabs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="ZetaColorEditor, Version=1.0.3291.26052, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\ZetaColorEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

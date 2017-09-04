@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<UserControl x:Class="NaroSetup.Pages.Welcome.Welcome" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<StackPanel>
+		<TextBlock TextWrapping="Wrap" Margin="5,10,5,5">
+			Welcome to NaroCAD Options Center
+			<LineBreak />
+			<LineBreak />
+			You can get to any section on the left and change the specific options you need.
+			If you made a change and you make up your mind, you may press Defaults 
+			to get NaroCAD's default options.
+		</TextBlock>
+		<CheckBox Name="cbxEnableTips" Margin="15,15,5,15">Show Tips on StartUp</CheckBox>
+		<CheckBox Name="cbxEnableContextualToolbar" Content="Show Contextual Toolbar" ToolTip="Show contextual toolbar when you select a shape" VerticalAlignment="Center" Margin="15,0,0,0" />
+		<CheckBox Name="cbxEnableTreeViewIcons" Content="Show Icons in TreeView" ToolTip="It will show the shape type in tree. When you have a lot of shapes, the treeview may work slow with them." VerticalAlignment="Center" Margin="15,0,0,0" />
+		<CheckBox Name="cbxEnableBooEvaluation" Content="Evaluate Values Through Boo Evaluator" ToolTip="This will improve the script evaluation speed, but will be less powerful" VerticalAlignment="Center" Margin="15,0,0,0" />
+	</StackPanel>
+</UserControl>

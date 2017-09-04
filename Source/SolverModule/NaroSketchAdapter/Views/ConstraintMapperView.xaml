@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="NaroSketchAdapter.Views.ConstraintMapperView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/NaroThemeLibrary;component/Themes/NaroTheme.xaml" x:Name="theme" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+	<StackPanel Orientation="Horizontal" Name="_mainStack">
+		<Button>Undo</Button>
+		<StackPanel Orientation="Horizontal">
+			<TextBlock Text="Selected Shapes" VerticalAlignment="Center" />
+			<StackPanel Orientation="Horizontal">
+				<StackPanel Orientation="Horizontal">
+					<Button IsEnabled="False">
+						<TextBlock Text="Line-1 (Line)" VerticalAlignment="Center" />
+					</Button>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal">
+					<Button IsEnabled="False">
+						<TextBlock Text="Line-3 (Line)" VerticalAlignment="Center" />
+					</Button>
+				</StackPanel>
+			</StackPanel>
+		</StackPanel>
+		<StackPanel Orientation="Horizontal">
+			<TextBlock Text="Constraints: " VerticalAlignment="Center" />
+			<Button Height="20">
+				<TextBlock Text="Horizonal" VerticalAlignment="Center" />
+			</Button>
+			<Button Height="20">
+				<TextBlock Text="Vertical" VerticalAlignment="Center" />
+			</Button>
+		</StackPanel>
+
+	</StackPanel>
+
+</UserControl>

@@ -1,0 +1,19 @@
+﻿<SolutionProfile xmlns="http://schemas.microsoft.com/pag/cab-profile/2.0">
+  <Section Name="Services">
+    <Modules>
+      <ModuleInfo AssemblyFile="Infrastructure.Module.dll" />
+    </Modules>
+  </Section>
+  <Section Name="Apps">
+    <Dependencies>
+      <Dependency Name="Services" />
+    </Dependencies>
+    <Modules>
+      <ModuleInfo AssemblyFile="Layout.dll" />
+      <ModuleInfo AssemblyFile="PartModeling.dll" />
+      <ModuleInfo AssemblyFile="ImportFile.dll" />
+      <ModuleInfo AssemblyFile="PropertyGridDescriptors.dll" />
+      <ModuleInfo AssemblyFile="NaroCAD.SolverModule.dll" />
+    </Modules>
+  </Section>
+</SolutionProfile>

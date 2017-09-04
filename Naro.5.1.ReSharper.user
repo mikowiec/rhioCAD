@@ -1,0 +1,1086 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="41819499-D497-4F0F-A9DD-DAAC0C283906/d:View/f:BackMetaAction.cs" caret="240" fromTop="3" />
+      <File id="859E1DBE-6F9D-4F35-A89D-B580681E69CD/d:Modifiers/d:View/f:Left.cs" caret="373" fromTop="8" />
+      <File id="30BA1766-2EAB-4A2B-AA4F-CD3D78D84C22/d:Functions/d:Naro/d:Primitives2D/f:PointsDimensionFunction.cs" caret="1362" fromTop="8" />
+      <File id="859E1DBE-6F9D-4F35-A89D-B580681E69CD/d:UI/d:Views/d:Rendering/f:Triangulation.cs" caret="1538" fromTop="26" />
+      <File id="CA66936A-657B-4666-9942-42052EA2C926/f:MultiViewWorkItemController.cs" caret="5965" fromTop="8" />
+      <File id="41819499-D497-4F0F-A9DD-DAAC0C283906/d:Shapes/f:ParallelLineMetaAction.cs" caret="4645" fromTop="8" />
+      <File id="5037292E-38AB-460E-ADCF-E621B435408E/d:Functions/f:FunctionDependency.cs" caret="6020" fromTop="17" />
+      <File id="E5D3FF5A-D77C-418B-8E73-E8D55EE5CAFD/d:AttributeInterpreter/f:Point3D.cs" caret="157" fromTop="3" />
+      <File id="859E1DBE-6F9D-4F35-A89D-B580681E69CD/d:Modifiers/d:View/f:Right.cs" caret="389" fromTop="8" />
+      <File id="F1269B32-D85B-4E45-8641-56B0697797DF/d:Helpers/f:NodeHelper.cs" caret="3998" fromTop="6" />
+      <File id="859E1DBE-6F9D-4F35-A89D-B580681E69CD/d:Inputs/d:Naro/d:Pipes/f:Mouse3dEventsPipe.cs" caret="1392" fromTop="6" />
+      <File id="D3DAAD65-6E8B-407F-9D7C-788C7FBA8D61/d:DocumentHelpers/f:SaveCommonCodes.cs" caret="2481" fromTop="7" />
+      <File id="5037292E-38AB-460E-ADCF-E621B435408E/d:Interpreters/f:ContextShapeManager.cs" caret="7003" fromTop="104" />
+      <File id="30BA1766-2EAB-4A2B-AA4F-CD3D78D84C22/d:Functions/d:Naro/d:Primitives2D/f:TrimFunction.cs" caret="1707" fromTop="9" />
+      <File id="F1269B32-D85B-4E45-8641-56B0697797DF/d:Rules/d:Naro/f:EdgeContinuationMatch.cs" caret="1763" fromTop="9" />
+      <File id="F1269B32-D85B-4E45-8641-56B0697797DF/d:Rules/d:Naro/f:EdgeMatch.cs" caret="1592" fromTop="9" />
+      <File id="5037292E-38AB-460E-ADCF-E621B435408E/d:Utils/f:NodeBuilderUtils.cs" caret="5935" fromTop="9" />
+      <File id="30BA1766-2EAB-4A2B-AA4F-CD3D78D84C22/d:Functions/d:Naro/d:Tools/f:MakeFaceFunction.cs" caret="3414" fromTop="9" />
+      <File id="30BA1766-2EAB-4A2B-AA4F-CD3D78D84C22/d:Handles/d:EditingHandles/f:BoxHandleFunction.cs" caret="1017" fromTop="9" />
+      <File id="30BA1766-2EAB-4A2B-AA4F-CD3D78D84C22/d:Functions/d:Naro/d:Tools/f:PipeFunction.cs" caret="1217" fromTop="1" />
+      <File id="30BA1766-2EAB-4A2B-AA4F-CD3D78D84C22/d:Functions/d:Naro/d:Primitives2D/f:ArrowFunction.cs" caret="2260" fromTop="9" />
+      <File id="30BA1766-2EAB-4A2B-AA4F-CD3D78D84C22/d:Handles/d:EditingHandles/f:ArrowHandleFunction.cs" caret="1338" fromTop="9" />
+      <File id="CA66936A-657B-4666-9942-42052EA2C926/f:OccInitialize.cs" caret="5233" fromTop="9" />
+      <File id="5E3CB7F9-17DE-420C-B5DA-94E12E1F67D8/d:GeomHelpers/f:CustomTrihedron.cs" caret="2166" fromTop="9" />
+      <File id="859E1DBE-6F9D-4F35-A89D-B580681E69CD/d:Modifiers/d:Tools/f:Direction.cs" caret="4271" fromTop="11" />
+      <File id="30BA1766-2EAB-4A2B-AA4F-CD3D78D84C22/d:Functions/d:Naro/d:Tools/f:CutFunction.cs" caret="2458" fromTop="9" />
+      <File id="859E1DBE-6F9D-4F35-A89D-B580681E69CD/d:UI/d:Views/d:Rendering/f:RenderDialog.cs" caret="15139" fromTop="9" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="62136" fromTop="8" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="24575" fromTop="9" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="27834" fromTop="19" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="29723" fromTop="22" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="30229" fromTop="38" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="31111" fromTop="9" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="36654" fromTop="9" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="37132" fromTop="21" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="38238" fromTop="11" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="18380" fromTop="9" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="27252" fromTop="9" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="27469" fromTop="15" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="29073" fromTop="9" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="34224" fromTop="27" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="35114" fromTop="13" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="37798" fromTop="9" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="13565" fromTop="11" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="19820" fromTop="9" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="50771" fromTop="10" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="15486" fromTop="10" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="62218" fromTop="9" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="64502" fromTop="20" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="64649" fromTop="26" />
+      <File id="30BA1766-2EAB-4A2B-AA4F-CD3D78D84C22/d:Handles/d:EditingHandles/f:BoxHandleFunction.cs" caret="1017" fromTop="9" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="52759" fromTop="9" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="53058" fromTop="16" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="53505" fromTop="25" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="53308" fromTop="21" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="59739" fromTop="13" />
+      <File id="859E1DBE-6F9D-4F35-A89D-B580681E69CD/d:Modifiers/d:Tools/f:Direction.cs" caret="4219" fromTop="9" />
+      <File id="7705ABD9-E128-4831-A652-B08884539163/f:GeomUtils.cs" caret="57736" fromTop="6" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="97" />
+      <Item value="DocumentToSolverAdapter`0" priority="2" />
+      <Item value="Node`0" priority="16" />
+      <Item value="return" priority="69" />
+      <Item value="new" priority="149" />
+      <Item value="List&lt;Node&gt;" priority="6" />
+      <Item value="var" priority="154" />
+      <Item value="SortedDictionary" priority="5" />
+      <Item value="int" priority="10" />
+      <Item value="const" priority="4" />
+      <Item value="string" priority="37" />
+      <Item value="true" priority="14" />
+      <Item value="static" priority="6" />
+      <Item value="void" priority="33" />
+      <Item value="actionsGraph" priority="0" />
+      <Item value="functionFactory" priority="1" />
+      <Item value="ArcRulesFunction`0" priority="0" />
+      <Item value="CircleRadiusFunction`0" priority="0" />
+      <Item value="ColinearFunction`0" priority="0" />
+      <Item value="SketchAdaptedDocumentTests`0" priority="0" />
+      <Item value="document" priority="28" />
+      <Item value="builder" priority="35" />
+      <Item value="Point3D" priority="12" />
+      <Item value="NodeBuilder" priority="5" />
+      <Item value="Document`0" priority="21" />
+      <Item value="firstPoint" priority="4" />
+      <Item value="secondPoint" priority="7" />
+      <Item value="docSolverAdapter" priority="2" />
+      <Item value="_valueSldier" priority="1" />
+      <Item value="globalExtrudeSize" priority="0" />
+      <Item value="ValueChanged" priority="2" />
+      <Item value="if" priority="49" />
+      <Item value="null" priority="33" />
+      <Item value="extrudeSizeView" priority="0" />
+      <Item value="_extrudeSizeView" priority="2" />
+      <Item value="_globalExtrudeSize" priority="3" />
+      <Item value="PreviewExtrudes`0" priority="0" />
+      <Item value="_textBox" priority="1" />
+      <Item value="_extrudeHeight" priority="0" />
+      <Item value="value" priority="10" />
+      <Item value="bool" priority="9" />
+      <Item value="ResultOperation" priority="0" />
+      <Item value="false" priority="20" />
+      <Item value="BackToNeutralModifier`0" priority="1" />
+      <Item value="List" priority="27" />
+      <Item value="_extrudesList" priority="0" />
+      <Item value="NodeBuilder`0" priority="21" />
+      <Item value="extrude" priority="0" />
+      <Item value="extrudeBuilder" priority="0" />
+      <Item value="reference" priority="1" />
+      <Item value="FunctionNames`0" priority="5" />
+      <Item value="continue" priority="4" />
+      <Item value="result" priority="33" />
+      <Item value="IntIntPair`0" priority="0" />
+      <Item value="IntIntPair" priority="0" />
+      <Item value="InitSession`0" priority="0" />
+      <Item value="foreach" priority="26" />
+      <Item value="usedAutoFace" priority="0" />
+      <Item value="GeomUtils`0" priority="1" />
+      <Item value="AutoGroupLogic`0" priority="1" />
+      <Item value="sse" priority="0" />
+      <Item value="faceBuilder" priority="0" />
+      <Item value="Document" priority="14" />
+      <Item value="SceneSelectedEntity" priority="0" />
+      <Item value="CommitFinal`0" priority="0" />
+      <Item value="RebuildTreeView`0" priority="2" />
+      <Item value="UpdateView`0" priority="3" />
+      <Item value="Inputs" priority="0" />
+      <Item value="InputNames`0" priority="4" />
+      <Item value="ResetWorkingPlane`0" priority="0" />
+      <Item value="SortedDictionary&lt;int,SortedDictionary&lt;int,IntIntPair&gt;&gt;" priority="0" />
+      <Item value="SortedDictionary&lt;int,Node&gt;" priority="0" />
+      <Item value="sourceNode" priority="5" />
+      <Item value="class" priority="16" />
+      <Item value="_document" priority="25" />
+      <Item value="root" priority="6" />
+      <Item value="dci" priority="0" />
+      <Item value="shapeGraph" priority="2" />
+      <Item value="fromId" priority="2" />
+      <Item value="while" priority="2" />
+      <Item value="repeatSearching" priority="1" />
+      <Item value="ReferingNode`0" priority="0" />
+      <Item value="node" priority="13" />
+      <Item value="App`0" priority="0" />
+      <Item value="SketchBuilder" priority="0" />
+      <Item value="do" priority="0" />
+      <Item value="sketchNode" priority="10" />
+      <Item value="Axis`0" priority="2" />
+      <Item value="OCgp_Ax1" priority="0" />
+      <Item value="BuildSketchNode`0" priority="1" />
+      <Item value="AddDependency`0" priority="4" />
+      <Item value="solutionBuilder" priority="0" />
+      <Item value="this" priority="2" />
+      <Item value="Update`0" priority="0" />
+      <Item value="ShapesGraph" priority="0" />
+      <Item value="from" priority="0" />
+      <Item value="item" priority="7" />
+      <Item value="sourceNodes" priority="0" />
+      <Item value="shapeList" priority="0" />
+      <Item value="GetToMap`0" priority="0" />
+      <Item value="constraintNodes" priority="0" />
+      <Item value="shapeNodes" priority="0" />
+      <Item value="ICollection" priority="0" />
+      <Item value="shapeNodesCount" priority="0" />
+      <Item value="constraintNodesCount" priority="0" />
+      <Item value="shape" priority="8" />
+      <Item value="NamedShapeInterpreter`0" priority="0" />
+      <Item value="NaroSketchSolveBuilder`0" priority="0" />
+      <Item value="GlobalObjectMapping" priority="2" />
+      <Item value="SortedDictionary&lt;int,object&gt;" priority="0" />
+      <Item value="private" priority="8" />
+      <Item value="NaroSketchSolveBuilder" priority="0" />
+      <Item value="interface" priority="0" />
+      <Item value="ISolverObjectMapping`0" priority="0" />
+      <Item value="SortedDictionary&lt;string,ISolverObjectMapping&gt;" priority="0" />
+      <Item value="functionName" priority="5" />
+      <Item value="mapper" priority="0" />
+      <Item value="_shapeSolverObjectMapping" priority="0" />
+      <Item value="out" priority="1" />
+      <Item value="Parameters" priority="2" />
+      <Item value="parameters" priority="3" />
+      <Item value="DoubleRefObject" priority="4" />
+      <Item value="Sketch3DTo2DTranslator`0" priority="0" />
+      <Item value="Point" priority="0" />
+      <Item value="coordiante" priority="1" />
+      <Item value="refX" priority="1" />
+      <Item value="refY" priority="1" />
+      <Item value="Sketch3DTo2DTranslator" priority="2" />
+      <Item value="Point`0" priority="6" />
+      <Item value="point" priority="2" />
+      <Item value="_solverBuilder" priority="2" />
+      <Item value="_relatedShapes" priority="1" />
+      <Item value="_constraints" priority="3" />
+      <Item value="constraint" priority="5" />
+      <Item value="ConstraintContainer" priority="0" />
+      <Item value="SortedDictionary&lt;string,ISolverConstraintMapping&gt;" priority="0" />
+      <Item value="globalObjectMapping" priority="4" />
+      <Item value="referencePoint0" priority="0" />
+      <Item value="translate" priority="0" />
+      <Item value="_parameters" priority="2" />
+      <Item value="error" priority="1" />
+      <Item value="abstract" priority="6" />
+      <Item value="protected" priority="6" />
+      <Item value="_coordinateTranslator" priority="1" />
+      <Item value="line" priority="6" />
+      <Item value="P1" priority="0" />
+      <Item value="point0" priority="0" />
+      <Item value="P2" priority="0" />
+      <Item value="HorizontalConstraintMapper`0" priority="1" />
+      <Item value="constraintList" priority="5" />
+      <Item value="lineIndex" priority="0" />
+      <Item value="thirdPoint" priority="1" />
+      <Item value="Vertical`0" priority="1" />
+      <Item value="Perpendicular`0" priority="0" />
+      <Item value="Parallel`0" priority="0" />
+      <Item value="ParallelConstraintMapper`0" priority="0" />
+      <Item value="PerpendicularConstraintMapper`0" priority="0" />
+      <Item value="Builder" priority="1" />
+      <Item value="CoordinateTranslator" priority="1" />
+      <Item value="coordinateTranslator" priority="0" />
+      <Item value="ConstraintList" priority="0" />
+      <Item value="where" priority="1" />
+      <Item value="Line`0" priority="0" />
+      <Item value="TreeData" priority="1" />
+      <Item value="MappedObject`1" priority="1" />
+      <Item value="MappedReference`1" priority="2" />
+      <Item value="Center" priority="1" />
+      <Item value="Radius" priority="0" />
+      <Item value="_builder" priority="1" />
+      <Item value="point1" priority="0" />
+      <Item value="object" priority="2" />
+      <Item value="_globalObjectMapping" priority="0" />
+      <Item value="UnmapSelf`1" priority="0" />
+      <Item value="MapSelf`0" priority="2" />
+      <Item value="forthPoint" priority="0" />
+      <Item value="double" priority="7" />
+      <Item value="ConstraintDependencyDescription`0" priority="2" />
+      <Item value="constraintName" priority="4" />
+      <Item value="FunctionName" priority="1" />
+      <Item value="FirstDependency" priority="0" />
+      <Item value="firstDependency" priority="1" />
+      <Item value="SecondDependency" priority="0" />
+      <Item value="secondDependency" priority="1" />
+      <Item value="SortedDictionary&lt;string,ConstraintDependencyDescription&gt;" priority="0" />
+      <Item value="SketchConstraintToolButton`0" priority="0" />
+      <Item value="override" priority="11" />
+      <Item value="window" priority="0" />
+      <Item value="modifierContainer" priority="0" />
+      <Item value="List&lt;string&gt;" priority="0" />
+      <Item value="DependencyList" priority="0" />
+      <Item value="dependency" priority="0" />
+      <Item value="ConstraintHighLevelDependencyMapping" priority="0" />
+      <Item value="_constraintMapper" priority="2" />
+      <Item value="EventSetter`0" priority="0" />
+      <Item value="ConstraintDocumentHelper`0" priority="1" />
+      <Item value="ConstraintDocumentHelper" priority="0" />
+      <Item value="usedFunctions" priority="3" />
+      <Item value="functionArray" priority="0" />
+      <Item value="functionNames" priority="1" />
+      <Item value="for" priority="2" />
+      <Item value="in" priority="0" />
+      <Item value="found" priority="1" />
+      <Item value="break" priority="2" />
+      <Item value="BuildTwoLinesDocument`0" priority="0" />
+      <Item value="constraintMapper" priority="2" />
+      <Item value="ReferenceListInterpreter`0" priority="2" />
+      <Item value="using" priority="0" />
+      <Item value="System" priority="0" />
+      <Item value="Collections" priority="0" />
+      <Item value="Generic" priority="0" />
+      <Item value="Assert`0" priority="3" />
+      <Item value="Constraint2DNames`0" priority="2" />
+      <Item value="DocumentShapesGraph`0" priority="1" />
+      <Item value="selection" priority="1" />
+      <Item value="IList" priority="0" />
+      <Item value="ReferrencedBy" priority="0" />
+      <Item value="index" priority="4" />
+      <Item value="referencingList" priority="1" />
+      <Item value="refItem" priority="0" />
+      <Item value="i" priority="3" />
+      <Item value="toRemove" priority="2" />
+      <Item value="startWithList" priority="0" />
+      <Item value="itemToRemove" priority="0" />
+      <Item value="appliedFunctions" priority="0" />
+      <Item value="parallelFunction" priority="1" />
+      <Item value="descriptor" priority="6" />
+      <Item value="nodes" priority="2" />
+      <Item value="EnvironmentVariableTarget`0" priority="0" />
+      <Item value="CheckAppliedConstraints`0" priority="0" />
+      <Item value="constraintFunction" priority="2" />
+      <Item value="constraintNode" priority="1" />
+      <Item value="nodeList" priority="3" />
+      <Item value="entity" priority="0" />
+      <Item value="_window" priority="1" />
+      <Item value="_constraintDocumentHelper" priority="3" />
+      <Item value="mouseData" priority="0" />
+      <Item value="DependsOn`0" priority="0" />
+      <Item value="ActionsGraph" priority="5" />
+      <Item value="sketchBuilder" priority="2" />
+      <Item value="RibbonPanel" priority="0" />
+      <Item value="_undoButton" priority="7" />
+      <Item value="_mainStack" priority="0" />
+      <Item value="Button" priority="0" />
+      <Item value="Content" priority="1" />
+      <Item value="Text" priority="0" />
+      <Item value="VerticalAlignment" priority="1" />
+      <Item value="Click" priority="0" />
+      <Item value="_enableUndo" priority="0" />
+      <Item value="Button`0" priority="1" />
+      <Item value="IsEnabled" priority="0" />
+      <Item value="shapeButton" priority="0" />
+      <Item value="AddUi`0" priority="1" />
+      <Item value="BuildTextBlock`0" priority="1" />
+      <Item value="_view" priority="1" />
+      <Item value="_nodeList" priority="4" />
+      <Item value="Margin" priority="0" />
+      <Item value="Thickness" priority="0" />
+      <Item value="Orientation" priority="0" />
+      <Item value="Horizontal" priority="0" />
+      <Item value="itemStack" priority="0" />
+      <Item value="button" priority="2" />
+      <Item value="iconName" priority="0" />
+      <Item value="Image`0" priority="0" />
+      <Item value="image" priority="2" />
+      <Item value="CheckBox`0" priority="0" />
+      <Item value="sender" priority="0" />
+      <Item value="RebuildUi`0" priority="0" />
+      <Item value="else" priority="4" />
+      <Item value="IsChecked" priority="0" />
+      <Item value="_actionGraph" priority="0" />
+      <Item value="_stepsToUndo" priority="1" />
+      <Item value="delegate" priority="2" />
+      <Item value="SceneChangedEvent`0" priority="0" />
+      <Item value="OnSceneChanged`0" priority="1" />
+      <Item value="StackPanel`0" priority="0" />
+      <Item value="path" priority="0" />
+      <Item value="pathElement" priority="0" />
+      <Item value="SketchElements" priority="0" />
+      <Item value="element" priority="1" />
+      <Item value="pointToolButton" priority="0" />
+      <Item value="RibbonButtonMapping`0" priority="1" />
+      <Item value="RibbonSplitButtonMapping`0" priority="0" />
+      <Item value="BadImageFormatException`0" priority="0" />
+      <Item value="DrawingLiveShape`0" priority="0" />
+      <Item value="RectangleFourPoints" priority="0" />
+      <Item value="SketchBuilder`0" priority="1" />
+      <Item value="Point3D`0" priority="16" />
+      <Item value="point2D" priority="2" />
+      <Item value="_coordinate" priority="0" />
+      <Item value="_firstPoint" priority="0" />
+      <Item value="firstPoint2D" priority="0" />
+      <Item value="secondPoint2D" priority="0" />
+      <Item value="x1" priority="0" />
+      <Item value="y1" priority="0" />
+      <Item value="pointLinker" priority="1" />
+      <Item value="AnimationDocument" priority="1" />
+      <Item value="_secondPoint" priority="0" />
+      <Item value="lines" priority="0" />
+      <Item value="Dependency" priority="2" />
+      <Item value="ApplyConstraint`0" priority="0" />
+      <Item value="HinterShapeBase`0" priority="3" />
+      <Item value="shapeBase" priority="0" />
+      <Item value="hinterShape" priority="1" />
+      <Item value="SortedDictionary&lt;string,HinterShapeCreatorBase&gt;" priority="0" />
+      <Item value="readonly" priority="1" />
+      <Item value="SortedDictionary&lt;int,HinterShapeBase&gt;" priority="0" />
+      <Item value="SketchHinter`0" priority="0" />
+      <Item value="SketchHinter" priority="1" />
+      <Item value="Register`0" priority="0" />
+      <Item value="LineHinterShape`0" priority="0" />
+      <Item value="OCTopoDS_Shape`0" priority="0" />
+      <Item value="SketchHinterExtracterTests`0" priority="0" />
+      <Item value="_hinterShapeCreators" priority="0" />
+      <Item value="creator" priority="0" />
+      <Item value="Build`0" priority="0" />
+      <Item value="Point1" priority="4" />
+      <Item value="Point2" priority="3" />
+      <Item value="sketchHinter" priority="1" />
+      <Item value="List&lt;SketchHinterAlgorithmBase&gt;" priority="0" />
+      <Item value="horizontalLineAlgorithm" priority="0" />
+      <Item value="algorithm" priority="5" />
+      <Item value="Algorithms" priority="0" />
+      <Item value="changes" priority="0" />
+      <Item value="resul" priority="1" />
+      <Item value="short" priority="0" />
+      <Item value="SketchHinterOptions" priority="0" />
+      <Item value="lineShape" priority="3" />
+      <Item value="options" priority="2" />
+      <Item value="_options" priority="3" />
+      <Item value="Remove`0" priority="0" />
+      <Item value="node1" priority="0" />
+      <Item value="node2" priority="0" />
+      <Item value="LineVerticalAlgorithm`0" priority="0" />
+      <Item value="virtual" priority="1" />
+      <Item value="Hinter2D" priority="2" />
+      <Item value="currentPoint" priority="0" />
+      <Item value="initialPosition" priority="0" />
+      <Item value="OCAspect_ColorMap`0" priority="0" />
+      <Item value="AddAlgorithm`0" priority="1" />
+      <Item value="T`0" priority="0" />
+      <Item value="algoInstance" priority="0" />
+      <Item value="keyEventArgs" priority="0" />
+      <Item value="Key`0" priority="0" />
+      <Item value="checkBox" priority="0" />
+      <Item value="nodeId" priority="0" />
+      <Item value="TextBox`0" priority="0" />
+      <Item value="textBox" priority="0" />
+      <Item value="GetDouble`0" priority="0" />
+      <Item value="point3D" priority="3" />
+      <Item value="_origin" priority="6" />
+      <Item value="OriginPosition" priority="0" />
+      <Item value="_originPoisition" priority="0" />
+      <Item value="origin" priority="3" />
+      <Item value="Origin" priority="0" />
+      <Item value="objectMapper" priority="1" />
+      <Item value="is" priority="1" />
+      <Item value="PointSolverObjectMapper`0" priority="1" />
+      <Item value="pointMapper" priority="1" />
+      <Item value="origVal" priority="0" />
+      <Item value="_function" priority="0" />
+      <Item value="_axisDirection" priority="0" />
+      <Item value="axisDirection" priority="0" />
+      <Item value="_originPos" priority="1" />
+      <Item value="Height" priority="2" />
+      <Item value="BoundingRectangle" priority="1" />
+      <Item value="Top" priority="1" />
+      <Item value="Left" priority="1" />
+      <Item value="Width" priority="1" />
+      <Item value="Math`0" priority="1" />
+      <Item value="Position" priority="1" />
+      <Item value="previewDocument" priority="5" />
+      <Item value="FunctionBase`0" priority="0" />
+      <Item value="TexturedShape`0" priority="0" />
+      <Item value="InterpreterNames`0" priority="0" />
+      <Item value="String`0" priority="0" />
+      <Item value="interpreter" priority="4" />
+      <Item value="StringInterpreter`0" priority="2" />
+      <Item value="Interactive" priority="0" />
+      <Item value="TextureShape`0" priority="0" />
+      <Item value="OCTopoDS_Shape" priority="0" />
+      <Item value="OCAIS_InteractiveObject`0" priority="1" />
+      <Item value="texturedShape" priority="0" />
+      <Item value="OccCode" priority="0" />
+      <Item value="OccShapeCreatorCode`0" priority="0" />
+      <Item value="fourth" priority="0" />
+      <Item value="NodeBuilderUtils`0" priority="2" />
+      <Item value="referencesList" priority="3" />
+      <Item value="_previewDocument" priority="1" />
+      <Item value="GetInterpreterTypeNameId`1" priority="0" />
+      <Item value="DocumentContextInterpreter`0" priority="0" />
+      <Item value="Shape" priority="0" />
+      <Item value="rectangle" priority="3" />
+      <Item value="size" priority="3" />
+      <Item value="midPoint" priority="1" />
+      <Item value="rectangleSize" priority="5" />
+      <Item value="textureBuilder" priority="2" />
+      <Item value="count" priority="0" />
+      <Item value="_graph" priority="0" />
+      <Item value="refByList" priority="0" />
+      <Item value="SortedDictionary&lt;string,string&gt;" priority="0" />
+      <Item value="_textureMapper" priority="0" />
+      <Item value="SketchHinterAlgorithmBase`0" priority="0" />
+      <Item value="destination" priority="0" />
+      <Item value="startPoint" priority="1" />
+      <Item value="transparency" priority="0" />
+      <Item value="Hidden" priority="0" />
+      <Item value="IEnumerable" priority="0" />
+      <Item value="IEnumerator" priority="0" />
+      <Item value="_count" priority="1" />
+      <Item value="SceneSelectedEntity`0" priority="0" />
+      <Item value="OCBRepMesh_GeomTool`0" priority="0" />
+      <Item value="PointLinker" priority="1" />
+      <Item value="DocumentPointLinker" priority="0" />
+      <Item value="_activeSketch" priority="0" />
+      <Item value="activeSketch" priority="0" />
+      <Item value="NewSketchNode" priority="0" />
+      <Item value="SketchCreator`0" priority="19" />
+      <Item value="projectionPoint" priority="0" />
+      <Item value="sketch" priority="1" />
+      <Item value="SketchCreator" priority="0" />
+      <Item value="OCGeomLProp_SLProps`0" priority="0" />
+      <Item value="_node" priority="0" />
+      <Item value="t" priority="2" />
+      <Item value="T" priority="0" />
+      <Item value="event" priority="0" />
+      <Item value="Test`0" priority="0" />
+      <Item value="ActionGraph" priority="0" />
+      <Item value="InputBase" priority="0" />
+      <Item value="_root" priority="0" />
+      <Item value="AddNotificationHandler`0" priority="1" />
+      <Item value="NotificationNames`0" priority="1" />
+      <Item value="ReturnData" priority="1" />
+      <Item value="DataPackage" priority="1" />
+      <Item value="StackPanel" priority="0" />
+      <Item value="base" priority="0" />
+      <Item value="sketchCreator" priority="2" />
+      <Item value="point3Ds" priority="0" />
+      <Item value="coordinate" priority="1" />
+      <Item value="x" priority="0" />
+      <Item value="y" priority="0" />
+      <Item value="Current" priority="0" />
+      <Item value="ValueChangedEvent`0" priority="0" />
+      <Item value="Data" priority="1" />
+      <Item value="_value" priority="1" />
+      <Item value="min" priority="1" />
+      <Item value="_slider" priority="1" />
+      <Item value="max" priority="0" />
+      <Item value="Value" priority="0" />
+      <Item value="_max" priority="1" />
+      <Item value="_min" priority="0" />
+      <Item value="secondColor" priority="1" />
+      <Item value="occOptions" priority="0" />
+      <Item value="firstColor" priority="0" />
+      <Item value="Aspect_FM_STRETCH" priority="0" />
+      <Item value="PreviewDocument" priority="1" />
+      <Item value="default" priority="0" />
+      <Item value="newTreeViewItem" priority="0" />
+      <Item value="AddItem`0" priority="3" />
+      <Item value="NewItem`0" priority="1" />
+      <Item value="ObjectInterpreter`0" priority="1" />
+      <Item value="textNameWrapper" priority="0" />
+      <Item value="fileName" priority="1" />
+      <Item value="thr" priority="0" />
+      <Item value="NaroException`0" priority="0" />
+      <Item value="sourcePath" priority="1" />
+      <Item value="destinationPath" priority="0" />
+      <Item value="endindex" priority="0" />
+      <Item value="Parameter" priority="0" />
+      <Item value="Distance" priority="0" />
+      <Item value="_treeView" priority="0" />
+      <Item value="_actionsGraph" priority="0" />
+      <Item value="MyTree" priority="0" />
+      <Item value="TreeView" priority="0" />
+      <Item value="_sketchPopulateLogic" priority="0" />
+      <Item value="InstallDirectory" priority="0" />
+      <Item value="NaroAppConstantNames`0" priority="5" />
+      <Item value="AppUtils`0" priority="1" />
+      <Item value="Environment`0" priority="0" />
+      <Item value="User" priority="0" />
+      <Item value="Path`0" priority="0" />
+      <Item value="directoryName" priority="0" />
+      <Item value="CurrentDirectory" priority="0" />
+      <Item value="StartupAppDirectory" priority="0" />
+      <Item value="File`0" priority="0" />
+      <Item value="surf" priority="0" />
+      <Item value="GeomPlane`0" priority="2" />
+      <Item value="BRepBuilderAPIMakeWire`0" priority="0" />
+      <Item value="wnd" priority="0" />
+      <Item value="explorer" priority="0" />
+      <Item value="AISInteractiveContext`0" priority="0" />
+      <Item value="AISShape`0" priority="4" />
+      <Item value="WNTWindow`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NaroSketchAdapter.Constants.Constraint2DNames">
+      <Item value="CircleRadiusFunction" priority="0" />
+      <Item value="PointOnPointFunction" priority="1" />
+      <Item value="HorizontalFunction" priority="4" />
+      <Item value="VerticalFunction" priority="4" />
+      <Item value="ParallelFunction" priority="4" />
+      <Item value="PerpendicularFunction" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShapeFunctionsInterface.Functions.IFunctionFactory">
+      <Item value="Equals`0" priority="0" />
+      <Item value="Register`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShapeFunctionsInterface.Functions.FunctionDependency+DependencyNode">
+      <Item value="Point3D" priority="4" />
+      <Item value="Reference" priority="14" />
+      <Item value="ReferenceList" priority="0" />
+      <Item value="TransformedAxis3D" priority="0" />
+      <Item value="TransformedPoint3D" priority="3" />
+      <Item value="ReferenceBuilder" priority="2" />
+      <Item value="RefTransformedPoint3D" priority="3" />
+      <Item value="Real" priority="1" />
+      <Item value="Text" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShapeFunctionsInterface.Utils.NodeBuilder">
+      <Item value="ExecuteFunction`0" priority="5" />
+      <Item value="Node" priority="35" />
+      <Item value="FunctionName" priority="11" />
+      <Item value="LastExecute" priority="0" />
+      <Item value="ShapeName" priority="0" />
+      <Item value="Color" priority="0" />
+      <Item value="Shape" priority="0" />
+      <Item value="Transformation" priority="0" />
+      <Item value="Transparency" priority="0" />
+      <Item value="Visibility" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TreeData.NaroData.Document">
+      <Item value="Commit`0" priority="5" />
+      <Item value="Transact`0" priority="3" />
+      <Item value="Root" priority="13" />
+      <Item value="Changed" priority="0" />
+      <Item value="Undo`0" priority="0" />
+      <Item value="GetHashCode`0" priority="0" />
+      <Item value="Revert`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroSketchAdapter.DocumentToSolverAdapter">
+      <Item value="ImpactedNodes`0" priority="0" />
+      <Item value="Solve`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NaroSketchAdapter.Common.ConstraintFunctionsRegister">
+      <Item value="Register`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PartModellingLogic.Modifiers.Tools.Extrude">
+      <Item value="_globalExtrudeSize" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Slider">
+      <Item value="Value" priority="1" />
+      <Item value="Minimum" priority="0" />
+      <Item value="Maximum" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PartModellingUi.Views.Tools.ExtrudeSizeView">
+      <Item value="ValueChanged" priority="0" />
+      <Item value="ExtrudeHeight" priority="0" />
+      <Item value="ResultAccepted" priority="0" />
+      <Item value="ResultOperation" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBox">
+      <Item value="Text" priority="2" />
+      <Item value="KeyUp" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Globalization.CultureInfo">
+      <Item value="InvariantCulture" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Value" priority="5" />
+      <Item value="Key" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NaroConstants.Names.FunctionNames">
+      <Item value="Face" priority="1" />
+      <Item value="Extrude" priority="0" />
+      <Item value="Point" priority="2" />
+      <Item value="PointToPointConstraint" priority="2" />
+      <Item value="Line" priority="2" />
+      <Item value="Arc" priority="0" />
+      <Item value="LineTwoPoints" priority="7" />
+      <Item value="RectangleThreePoints" priority="0" />
+      <Item value="TexturedShape" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="22" />
+      <Item value="Contains`0" priority="4" />
+      <Item value="AddRange`0" priority="5" />
+      <Item value="ToArray`0" priority="0" />
+      <Item value="Clear`0" priority="1" />
+      <Item value="Count" priority="10" />
+      <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TreeData.AttributeInterpreter.SceneSelectedEntity">
+      <Item value="Node" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PartModellingLogic.Modifiers.Tools.Extrude+IntIntPair">
+      <Item value="Get`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Naro.Infrastructure.Interface.GeomHelpers.AutoGroupLogic">
+      <Item value="TryAutoGroup`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NaroConstants.Names.InputNames">
+      <Item value="SelectionContainerPipe" priority="0" />
+      <Item value="SketchPipe" priority="0" />
+      <Item value="FastToolbarInput" priority="1" />
+      <Item value="Document" priority="1" />
+      <Item value="CurrentDocumentInput" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroPipes.Actions.InputBase">
+      <Item value="Send`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NaroConstants.NotificationNames">
+      <Item value="Enable" priority="0" />
+      <Item value="BuildSelections" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TreeData.NaroData.Node">
+      <Item value="Index" priority="17" />
+      <Item value="Get`1" priority="10" />
+      <Item value="AddNewChild`0" priority="0" />
+      <Item value="Set`1" priority="3" />
+      <Item value="Root" priority="2" />
+      <Item value="FindChild`0" priority="0" />
+      <Item value="Parent" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShapeFunctionsInterface.Utils.DocumentShapesGraph">
+      <Item value="FromToMap" priority="0" />
+      <Item value="Update`0" priority="3" />
+      <Item value="ReferrencedByMap" priority="1" />
+      <Item value="ReferrencedBy" priority="1" />
+      <Item value="GetReferredBy`0" priority="0" />
+      <Item value="GetReferredByNodes`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.SortedDictionary`2">
+      <Item value="Keys" priority="1" />
+      <Item value="Values" priority="1" />
+      <Item value="ContainsKey`0" priority="2" />
+      <Item value="TryGetValue`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@AppShell.App">
+      <Item value="Current" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TreeData.AttributeInterpreter.Axis">
+      <Item value="GpAxis" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShapeFunctionsInterface.Utils.SketchBuilder">
+      <Item value="SketchNode`0" priority="11" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PointUtils.DocumentPointLinker">
+      <Item value="GetPoint`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NaroConstants.Names.InterpreterNames">
+      <Item value="Reference" priority="3" />
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShapeFunctionsInterface.Interpreters.DocumentContextInterpreter">
+      <Item value="Document" priority="5" />
+      <Item value="Disable`0" priority="0" />
+      <Item value="ShapesGraph" priority="3" />
+      <Item value="Context" priority="1" />
+      <Item value="ActiveSketch" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroSketchAdapter.ISolverObjectMapping">
+      <Item value="Map`0" priority="0" />
+      <Item value="Unmap`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TreeData.AttributeInterpreter.Point3D">
+      <Item value="X" priority="8" />
+      <Item value="Y" priority="5" />
+      <Item value="IsEqual`0" priority="4" />
+      <Item value="SubstractCoordinate`0" priority="1" />
+      <Item value="AddCoordinate`0" priority="3" />
+      <Item value="GpPnt" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroSketchAdapter.Sketch3DTo2DTranslator">
+      <Item value="Translate`0" priority="2" />
+      <Item value="Origin" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroSketchAdapter.NaroSketchSolveBuilder">
+      <Item value="PopulateShapes`0" priority="0" />
+      <Item value="Solve`0" priority="0" />
+      <Item value="PopulateData`0" priority="0" />
+      <Item value="_shapeSolverObjectMapping" priority="0" />
+      <Item value="_shapeConstraintObjectMapping" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CleanSolver.Primitives.Point">
+      <Item value="X" priority="1" />
+      <Item value="Y" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NaroSketchAdapter.Sketch3DTo2DTranslator">
+      <Item value="ConvertToGlobal`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CleanSolver.Primitives.DoubleRefObject">
+      <Item value="Value" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CleanSolver.SolverSystem.ConstraintContainer">
+      <Item value="AddConstraint`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CleanSolver.Constraints.Horizontal">
+      <Item value="L1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CleanSolver.Primitives.Circle">
+      <Item value="Radius" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="Value" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NaroPipes.Constants.ModifierNames">
+      <Item value="StartSketch" priority="0" />
+      <Item value="SketchConstraintMapper" priority="0" />
+      <Item value="FourLinesRectangle" priority="0" />
+      <Item value="Line3D" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Window">
+      <Item value="Content" priority="0" />
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroPipes.Actions.ModifiersFactory">
+      <Item value="Register`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroSketchAdapter.Views.ConstraintDependencyDescription">
+      <Item value="DependencyList" priority="2" />
+      <Item value="DependOn`0" priority="0" />
+      <Item value="FunctionName" priority="4" />
+      <Item value="IconPicture" priority="0" />
+      <Item value="Descriptor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroSketchAdapter.Views.ConstraintHighLevelDependencyMapping">
+      <Item value="Register`0" priority="0" />
+      <Item value="AccessibleConstraints`0" priority="0" />
+      <Item value="GetConstraintDescription`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Array">
+      <Item value="Sort`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroSketchAdapter.Views.ConstraintDocumentHelper">
+      <Item value="GetPossibleConstraints`0" priority="1" />
+      <Item value="AppliedConstraints`0" priority="0" />
+      <Item value="ConstraintMapper" priority="3" />
+      <Item value="ApplyConstraint`0" priority="1" />
+      <Item value="Document" priority="0" />
+      <Item value="RemoveConstraint`0" priority="0" />
+      <Item value="CheckAppliedConstraints`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
+      <Item value="IsTrue`0" priority="0" />
+      <Item value="AreEqual`0" priority="0" />
+      <Item value="IsNotEmpty`0" priority="0" />
+      <Item value="IsNotNull`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroSketchAdapter.Views.ConstraintMapperView">
+      <Item value="UpdateSelection`0" priority="1" />
+      <Item value="OnSceneChanged" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.StackPanel">
+      <Item value="Children" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.UIElementCollection">
+      <Item value="Add`0" priority="3" />
+      <Item value="Remove`0" priority="0" />
+      <Item value="Clear`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Image">
+      <Item value="Source" priority="0" />
+      <Item value="Width" priority="0" />
+      <Item value="Height" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Button">
+      <Item value="DataContext" priority="0" />
+      <Item value="Click" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.CheckBox">
+      <Item value="IsChecked" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroUiBuilder.AbstractFactoryPath">
+      <Item value="GetPathElement`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroUiBuilder.NaroUiPathFolder">
+      <Item value="Factory" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroUiBuilder.ConcretePathFactory">
+      <Item value="Control" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroUiBuilder.UiBuilder">
+      <Item value="AddMapping`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PartModellingLogic.Modifiers.Shapes.FourLinesRectangle">
+      <Item value="_sketchCoordinateTranslator" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShapeFunctionsInterface.Functions.FunctionDependency">
+      <Item value="Node" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SketchActions.RegisterSketchActions">
+      <Item value="Register`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SketchHinter.SketchHinter">
+      <Item value="Populate`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SketchHinter.Primitives.HinterShapeCreatorBase">
+      <Item value="Create`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SketchHinter.Primitives.LineHinterShape">
+      <Item value="Builder" priority="2" />
+      <Item value="Point1" priority="1" />
+      <Item value="Point2" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SketchHinter.Primitives.HinterShapeBase">
+      <Item value="Builder" priority="8" />
+      <Item value="Size" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SketchHinter.Hinter2D">
+      <Item value="HinterShapes" priority="0" />
+      <Item value="ApplyAlgorithms`0" priority="1" />
+      <Item value="Populate`0" priority="0" />
+      <Item value="Preview`0" priority="0" />
+      <Item value="Document" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SketchHinter.Algorithms.SketchHinterAlgorithmBase">
+      <Item value="Setup`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SketchHinter.SketchHinterOptions">
+      <Item value="ParallelAngle" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Naro.Infrastructure.Interface.GeomHelpers.GeomUtils">
+      <Item value="DegreesToRadians`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Color">
+      <Item value="DarkViolet" priority="0" />
+      <Item value="Black" priority="0" />
+      <Item value="DarkOrange" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Input.KeyEventArgs">
+      <Item value="Key" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Input.Key">
+      <Item value="Enter" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SketchSolve.Primitives.Point">
+      <Item value="X" priority="1" />
+      <Item value="Y" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SketchSolve.Primitives.DoubleRefObject">
+      <Item value="Value" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroSketchAdapter.Mappings.Shapes.PointSolverObjectMapper">
+      <Item value="Point" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NaroConstants.Names.Constraint2DNames">
+      <Item value="VerticalFunction" priority="0" />
+      <Item value="ParallelFunction" priority="0" />
+      <Item value="PerpendicularFunction" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Min`0" priority="0" />
+      <Item value="Abs`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="0" />
+      <Item value="IsNullOrEmpty`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TreeData.AttributeInterpreter.StringInterpreter">
+      <Item value="Value" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@OccCode.OccShapeCreatorCode">
+      <Item value="BuildRectangle`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SketchHinter.ConstraintPreview.BoundingRectangle">
+      <Item value="MiddleX" priority="1" />
+      <Item value="MiddleY" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Naro.PartModeling.ActionGraphInterpreter">
+      <Item value="ActionsGraph" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="CompareTo`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Naro.Infrastructure.Interface.AppUtils.AppUtils">
+      <Item value="CurrentDirectory" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShapeFunctionsInterface.Utils.SketchCreator">
+      <Item value="Current" priority="4" />
+      <Item value="PointLinker" priority="13" />
+      <Item value="NewSketchNode" priority="2" />
+      <Item value="CreateBuilder`0" priority="3" />
+      <Item value="BuildSketchNode`0" priority="5" />
+      <Item value="NormalOnSketch" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShapeFunctionsInterface.Utils.DocumentPointLinker">
+      <Item value="GetPoint`0" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ShapeFunctionsInterface.Utils.SketchCreator+T">
+      <Item value="OnTest" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroPipes.Actions.ActionsGraph">
+      <Item value="Register`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NaroConstants.Names.NotificationNames">
+      <Item value="GetValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroPipes.Actions.PipeBase">
+      <Item value="OnRegister`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroBasicPipes.Actions.MetaActionDependencies">
+      <Item value="AnimationDocument" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroSetup.Pages.SketchHinter.SketchHinterOptionsView">
+      <Item value="PointPrecision" priority="0" />
+      <Item value="AnglePrecision" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroUiControls.Values.RangeValueSliderControl">
+      <Item value="ValueChanged" priority="1" />
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroSetup.Section">
+      <Item value="GetDoubleValue`0" priority="0" />
+      <Item value="GetColorValue`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroSetup.Pages.Occ.OccOptionsView">
+      <Item value="secondCp" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DropDownCustomColorPicker.CustomColorPicker">
+      <Item value="SelectedColor" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:OCNaroWrappers.OCV3d_View">
+      <Item value="SetBackgroundImage`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TreeData.AttributeInterpreter.ObjectInterpreter">
+      <Item value="Data" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@TreeData.Utils.Ensure">
+      <Item value="IsNotNull`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TreeView">
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ItemCollection">
+      <Item value="Clear`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroSketchSolveTests.MyTree">
+      <Item value="Update`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NaroConstants.Names.NaroAppConstantNames">
+      <Item value="InstallDirectory" priority="2" />
+      <Item value="NaroUserDirectory" priority="0" />
+      <Item value="AppDataDirectory" priority="0" />
+      <Item value="GuardFileName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ErrorReportCommon.AppUtils">
+      <Item value="CurrentDirectory" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment">
+      <Item value="GetEnvironmentVariable`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment+SpecialFolder">
+      <Item value="MyDocuments" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Directory">
+      <Item value="CreateDirectory`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="GetDirectoryName`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Exists`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroCppCore.Occ.gp.gpAx1">
+      <Item value="Direction" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroCppCore.Occ.Geom.GeomSurface">
+      <Item value="Convert`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroCppCore.Occ.gp.gpPnt">
+      <Item value="X" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroCppCore.Occ.BRepAdaptor.BRepAdaptorCurve">
+      <Item value="GetType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroCppCore.Occ.Aspect.AspectWindow">
+      <Item value="Convert`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroCppCore.Occ.gp.gpVec">
+      <Item value="XYZ" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroCppCore.Occ.V3d.V3dView">
+      <Item value="SetProj`0" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroCppCore.Occ.AIS.AISInteractiveObject">
+      <Item value="Convert`1" priority="4" />
+      <Item value="DownCast`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroCppCore.Occ.Geom.GeomPlane">
+      <Item value="Convert`1" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

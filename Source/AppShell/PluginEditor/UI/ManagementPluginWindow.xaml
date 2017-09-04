@@ -1,0 +1,30 @@
+﻿<Window x:Class="PluginEditor.UI.ManagementPluginWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Available NaroCAD Plugins" Height="300" Width="300" WindowStartupLocation="CenterScreen">
+	<Window.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/NaroThemeLibrary;component/Themes/NaroTheme.xaml" x:Name="theme" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Window.Resources>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="36"></RowDefinition>
+		</Grid.RowDefinitions>
+
+		<ListBox Name="pluginList" Grid.Row="0"></ListBox>
+
+
+		<StackPanel Grid.Row="1" Orientation="Horizontal" Background="{DynamicResource controlGradient}">
+			<Button Margin="90,7,7,7" Click="InstallPluginClicked" Style="{DynamicResource RoundedButton}" Width="110">
+				<StackPanel Orientation="Horizontal">
+					<Image Source="/Resources;component/Resources/list-add.png" />
+					<TextBlock Text="Install Plugin" VerticalAlignment="Center" />
+				</StackPanel>
+			</Button>
+			<Button Margin="0,7,7,7" Click="ClosedClick" Style="{DynamicResource RoundedButton}">
+				<TextBlock>Close</TextBlock>
+			</Button>
+		</StackPanel>
+	</Grid>
+</Window>

@@ -1,0 +1,5 @@
+s1=Sketch(0,0,5,2,3,5,6,7,5)
+EnterSketch(s1)
+p1=Point(s1,2,2,5)
+p2=Point(s1,15,16,5)
+Rectangle(p1,p2)

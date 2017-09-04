@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{025E89CF-8AE5-4185-A112-9F508C69A320}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShapesUiPlugin</RootNamespace>
+    <AssemblyName>ShapesUiPlugin</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OCWrappers, Version=1.0.3930.33193, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\OCWrappers.dll</HintPath>
+    </Reference>
+    <Reference Include="RibbonControlsLibrary, Version=3.5.31016.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\RibbonControlsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Booleans\FuseToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Booleans\IntersectToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Booleans\SubstractToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Features\ChamferFilletToolsSplitButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Features\CutToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Features\ExtrudeToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Features\PipeToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Features\RevolveToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Features\SewToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Selection\SelectionToolsSplitButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sketch\ArcToolsSplitButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sketch\CircleToolsSplitButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sketch\CursorToolButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sketch\DimensionToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sketch\LaunchSketchToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sketch\LineToolsSplitButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sketch\PointToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sketch\RectangleToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sketch\SplineToolsSplitButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Solid\BoxButtonTool.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Solid\ConeButtonTool.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Solid\CylinderButtonTool.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Solid\SphereButtonTool.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Solid\TorusButtonTool.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\MirrorToolsSplitButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\Offset2DToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\PatternToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\TranslateToolButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Sketch\CursorToolButton.xaml.cs">
+      <DependentUpon>CursorToolButton.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Booleans\FuseToolButton.xaml.cs">
+      <DependentUpon>FuseToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Booleans\IntersectToolButton.xaml.cs">
+      <DependentUpon>IntersectToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Booleans\SubstractToolButton.xaml.cs">
+      <DependentUpon>SubstractToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ChamferFilletToolsSplitButton.xaml.cs">
+      <DependentUpon>ChamferFilletToolsSplitButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\CutToolButton.xaml.cs">
+      <DependentUpon>CutToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ExtrudeToolButton.xaml.cs">
+      <DependentUpon>ExtrudeToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\PipeToolButton.xaml.cs">
+      <DependentUpon>PipeToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\RevolveToolButton.xaml.cs">
+      <DependentUpon>RevolveToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SewToolButton.xaml.cs">
+      <DependentUpon>SewToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Selection\SelectionToolsSplitButton.xaml.cs">
+      <DependentUpon>SelectionToolsSplitButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sketch\ArcToolsSplitButton.xaml.cs">
+      <DependentUpon>ArcToolsSplitButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sketch\CircleToolsSplitButton.xaml.cs">
+      <DependentUpon>CircleToolsSplitButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sketch\DimensionToolButton.xaml.cs">
+      <DependentUpon>DimensionToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sketch\LaunchSketchToolButton.xaml.cs">
+      <DependentUpon>LaunchSketchToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sketch\LineToolsSplitButton.xaml.cs">
+      <DependentUpon>LineToolsSplitButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sketch\PointToolButton.xaml.cs">
+      <DependentUpon>PointToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Sketch\RectangleToolButton.xaml.cs">
+      <DependentUpon>RectangleToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPluginUi.cs" />
+    <Compile Include="Sketch\SplineToolsSplitButton.xaml.cs">
+      <DependentUpon>SplineToolsSplitButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Solid\BoxButtonTool.xaml.cs">
+      <DependentUpon>BoxButtonTool.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Solid\ConeButtonTool.xaml.cs">
+      <DependentUpon>ConeButtonTool.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Solid\CylinderButtonTool.xaml.cs">
+      <DependentUpon>CylinderButtonTool.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Solid\SphereButtonTool.xaml.cs">
+      <DependentUpon>SphereButtonTool.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Solid\TorusButtonTool.xaml.cs">
+      <DependentUpon>TorusButtonTool.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\MirrorToolsSplitButton.xaml.cs">
+      <DependentUpon>MirrorToolsSplitButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Offset2DToolButton.xaml.cs">
+      <DependentUpon>Offset2DToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\PatternToolButton.xaml.cs">
+      <DependentUpon>PatternToolButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\TranslateToolButton.xaml.cs">
+      <DependentUpon>TranslateToolButton.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\Infrastructure.Interface\Infrastructure.Interface.csproj">
+      <Project>{5E3CB7F9-17DE-420C-B5DA-94E12E1F67D8}</Project>
+      <Name>Infrastructure.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\NaroPipes\NaroPipes.csproj">
+      <Project>{27C6CE51-5F57-4421-8C0F-9526EC3E9963}</Project>
+      <Name>NaroPipes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\UiCore\NaroUiBuilder\NaroUiBuilder.csproj">
+      <Project>{62433E8A-7452-4C8F-8514-262C02765A46}</Project>
+      <Name>NaroUiBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Resources\NaroResources.csproj">
+      <Project>{863E2972-C477-4464-97F3-681675597D1C}</Project>
+      <Name>NaroResources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

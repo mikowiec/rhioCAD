@@ -1,0 +1,5 @@
+﻿<RibbonMapping:RibbonButtonMapping x:Class="TwoPointLinePlugin.TwoPointRibbonButton" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:RibbonMapping="clr-namespace:NaroUiBuilder.RibbonMapping;assembly=NaroUiBuilder" xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary">
+	<RibbonMapping:RibbonButtonMapping.Command>
+		<r:RibbonCommand Executed="CursorClick" SmallImageSource="/Resources;component/Resources/cursor-icon.png" LargeImageSource="/Resources;component/Resources/cursor-icon.png" LabelTitle="Two Point Line" ToolTipTitle="Two Point Line" ToolTipDescription="Two Point Line. Based on Plugin." />
+	</RibbonMapping:RibbonButtonMapping.Command>
+</RibbonMapping:RibbonButtonMapping>

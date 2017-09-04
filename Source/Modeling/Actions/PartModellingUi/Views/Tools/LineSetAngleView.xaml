@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="PartModellingUi.Views.Tools.LineSetAngleView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/NaroThemeLibrary;component/Themes/NaroTheme.xaml" x:Name="theme" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+	<StackPanel Orientation="Horizontal" Margin="4,4,4,4">
+		<TextBlock VerticalAlignment="Center">Angle:</TextBlock>
+		<TextBox Style="{DynamicResource roundTextBox}" Name="txtAngle" Width="100" />
+		<Slider Margin="10,0,0,0" Name="sliderAngle" Maximum="360" Width="100" />
+		<CheckBox Margin="10,0,0,0" VerticalAlignment="Center" Name="cbxInvertBase">
+			<TextBlock Text="Invert Base" />
+		</CheckBox>
+		<Button Margin="10,0,0,0" Click="DoneButtonClick">Done</Button>
+		<Button Margin="10,0,0,0" Click="CancelButtonClick">Cancel</Button>
+	</StackPanel>
+</UserControl>

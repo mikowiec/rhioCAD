@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41819499-D497-4F0F-A9DD-DAAC0C283906}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MetaActions</RootNamespace>
+    <AssemblyName>MetaActions</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="MetaActionResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetaActionResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shapes\BoxMetaAction.cs" />
+    <Compile Include="Shapes\ConeMetaAction.cs" />
+    <Compile Include="Shapes\CylinderMetaAction.cs" />
+    <Compile Include="Shapes\SphereMetaAction.cs" />
+    <Compile Include="Shapes\SplineMetaAction.cs" />
+    <Compile Include="Shapes\TorusMetaAction.cs" />
+    <Compile Include="Tools\AngleDraftMetaAction.cs" />
+    <Compile Include="Tools\BooleanCutMetaAction.cs" />
+    <Compile Include="Tools\BooleanFuseMetaAction.cs" />
+    <Compile Include="Tools\BooleanIntersectMetaAction.cs" />
+    <Compile Include="Tools\BooleanMetaActionBase.cs" />
+    <Compile Include="Tools\OffsetMetaAction.cs" />
+    <Compile Include="Tools\TranslateMetaAction.cs" />
+    <Compile Include="View\AxoMetaAction.cs" />
+    <Compile Include="View\BackMetaAction.cs" />
+    <Compile Include="View\BottomMetaAction.cs" />
+    <Compile Include="View\FrontMetaAction.cs" />
+    <Compile Include="View\LeftMetaAction.cs" />
+    <Compile Include="View\ResetMetaAction.cs" />
+    <Compile Include="View\RightMetaAction.cs" />
+    <Compile Include="View\TopMetaAction.cs" />
+    <Compile Include="View\ViewMetaAction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MetaActionResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MetaActionResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\circle.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\rectangle.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Line.cur" />
+    <EmbeddedResource Include="Resources\point.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\polyline.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\normalline.cur" />
+    <EmbeddedResource Include="Resources\parallelline.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\horizontalline.cur" />
+    <EmbeddedResource Include="Resources\verticalline.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\spline.cur" />
+    <EmbeddedResource Include="Resources\splineaddpoint.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\arcRSE.cur" />
+    <EmbeddedResource Include="Resources\arcSER.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ellipse.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\dimension.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GlassButton, Version=1.3.2.1171, Culture=neutral, PublicKeyToken=2e983e6e44d23a4f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\GlassButton.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Lib\AlternateWrapper\NaroOccCore\NaroOccCore-build-desktop\NaroCppCore.csproj">
+      <Project>{8D5FFA62-563E-4566-902A-3E05EA39BF33}</Project>
+      <Name>NaroCppCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\ErrorReportCommon\ErrorReportCommon.csproj">
+      <Project>{90EEED45-43A4-4285-844B-C6F7E9ED3E6B}</Project>
+      <Name>ErrorReportCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Infrastructure.Interface\Infrastructure.Interface.csproj">
+      <Project>{5E3CB7F9-17DE-420C-B5DA-94E12E1F67D8}</Project>
+      <Name>Infrastructure.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Infrastructure.Library\Infrastructure.Library.csproj">
+      <Project>{D3DAAD65-6E8B-407F-9D7C-788C7FBA8D61}</Project>
+      <Name>Infrastructure.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Logic\OccCode\OccCode.csproj">
+      <Project>{7705ABD9-E128-4831-A652-B08884539163}</Project>
+      <Name>OccCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\NaroBasicPipes\NaroBasicPipes.csproj">
+      <Project>{1C23013F-17D4-4EDE-A613-D331FA7632B6}</Project>
+      <Name>NaroBasicPipes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\NaroConstants\NaroConstants.csproj">
+      <Project>{7B37096D-1715-40E6-8914-317C55F60897}</Project>
+      <Name>NaroConstants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\NaroPipes\NaroPipes.csproj">
+      <Project>{27C6CE51-5F57-4421-8C0F-9526EC3E9963}</Project>
+      <Name>NaroPipes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\TreeData\TreeData.csproj">
+      <Project>{E5D3FF5A-D77C-418B-8E73-E8D55EE5CAFD}</Project>
+      <Name>TreeData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Resources\NaroResources.csproj">
+      <Project>{863E2972-C477-4464-97F3-681675597D1C}</Project>
+      <Name>NaroResources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Functions\ShapeFunctionsInterface\ShapeFunctionsInterface.csproj">
+      <Project>{5037292E-38AB-460E-ADCF-E621B435408E}</Project>
+      <Name>ShapeFunctionsInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MetaActionsInterface\MetaActionsInterface.csproj">
+      <Project>{B7EF81EC-333F-45BA-A3DD-CDAFDB8F9E2F}</Project>
+      <Name>MetaActionsInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PartModellingUi\PartModellingUi.csproj">
+      <Project>{82D9BAC8-EC49-41D3-B485-0F29768103CC}</Project>
+      <Name>PartModellingUi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PointUtils\PointUtils.csproj">
+      <Project>{13095427-4917-4362-AAEB-6977A22F0A77}</Project>
+      <Name>PointUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

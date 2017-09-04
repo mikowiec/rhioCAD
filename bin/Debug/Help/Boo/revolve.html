@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.1  (Win32)">
+	<META NAME="CREATED" CONTENT="20090907;344400">
+	<META NAME="CHANGED" CONTENT="20090907;365000">
+</HEAD>
+<BODY LANG="es-ES" DIR="LTR">
+<P>Revolve - draws the shape resulted by revolving one shape around another shape</P>
+<P>Syntax:</P>
+<P>void Revolve(shape1: integer; shape2: integer; double: angle)</P>
+<P>Arguments:</P>
+<P>shape1: index of the node representing the shape that will be revolved</P>
+<P>shape2: index of the node representing the shape that shape1 will be revolved around</P>
+<P>angle: angle of revolution in degrees</P>
+<P><BR></P>
+<P>Usage sample:</P>
+s1=Sketch(0,0,0,2,3,0,4,5,0)
+p1=Point(s1, 2,2,0)
+p2=Point(s1,2,5,0)
+l1=Line(p1,p2)
+p3=Point(s1,6,2,0)
+p4=Point(s1,6,5,0)
+l2=Line(p3,p4)
+Revolve(l1,l2,360)
+</BODY>
+</HTML>

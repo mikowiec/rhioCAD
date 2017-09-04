@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82D9BAC8-EC49-41D3-B485-0F29768103CC}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PartModellingUi</RootNamespace>
+    <AssemblyName>PartModellingUi</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Page Include="Layout\CommandLineView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Layout\HelpView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Layout\PartModelingView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Layout\RibbonTabs\ContextualToolBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Layout\WpfTreeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\DownloadUpdatesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\NotificationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Renderer\WpfRenderingShaders.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Renderer\WpfShaderNewName.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tools\CircularPatternWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tools\ArrayPatternWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tools\ExtrudeSizeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tools\LineSetAngleView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tools\SplineFastAccessTools.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layout\AirspaceOverlay.cs" />
+    <Compile Include="Layout\CommandLineView.xaml.cs">
+      <DependentUpon>CommandLineView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\HelpView.xaml.cs">
+      <DependentUpon>HelpView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\SketchBasedTree.cs" />
+    <Compile Include="Layout\PartModelingView.xaml.cs">
+      <DependentUpon>PartModelingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\RibbonTabs\ContextualToolBar.xaml.cs">
+      <DependentUpon>ContextualToolBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\TreeViewPopulateLogic.cs" />
+    <Compile Include="Layout\WpfTreeView.xaml.cs">
+      <DependentUpon>WpfTreeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Views\ContextMenuManager.cs" />
+    <Compile Include="Views\CustomMultiviewControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\CustomMultiviewControl.Designer.cs">
+      <DependentUpon>CustomMultiviewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DownloadUpdatesWindow.xaml.cs">
+      <DependentUpon>DownloadUpdatesWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MultiView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\MultiView.Designer.cs">
+      <DependentUpon>MultiView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MultiView.GeneratedCode.cs">
+      <DependentUpon>MultiView.cs</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\MultiViewPresenter.cs" />
+    <Compile Include="Views\MultiViewPresenter.GeneratedCode.cs">
+      <DependentUpon>MultiViewPresenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NotificationWindow.xaml.cs">
+      <DependentUpon>NotificationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Renderer\WpfRenderingShaders.xaml.cs">
+      <DependentUpon>WpfRenderingShaders.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Renderer\WpfShaderNewName.xaml.cs">
+      <DependentUpon>WpfShaderNewName.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tools\CircularPatternWindow.xaml.cs">
+      <DependentUpon>CircularPatternWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tools\ArrayPatternWindow.xaml.cs">
+      <DependentUpon>ArrayPatternWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tools\CombinedLinesClassInfo.xaml.cs" />
+    <Compile Include="Views\Tools\ExtrudeSizeView.xaml.cs">
+      <DependentUpon>ExtrudeSizeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tools\LineSetAngleView.xaml.cs">
+      <DependentUpon>LineSetAngleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tools\SplineFastAccessTools.xaml.cs">
+      <DependentUpon>SplineFastAccessTools.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpdaterWindowsManager.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MultiView.resx">
+      <DependentUpon>MultiView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AvalonDock, Version=1.3.3571.0, Culture=neutral, PublicKeyToken=85a1e0ada7ec13e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="RibbonControlsLibrary, Version=3.5.31016.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\RibbonControlsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Lib\AlternateWrapper\NaroOccCore\NaroOccCore-build-desktop\NaroCppCore.csproj">
+      <Project>{8D5FFA62-563E-4566-902A-3E05EA39BF33}</Project>
+      <Name>NaroCppCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\NaroThemeLibrary\NaroThemeLibrary.csproj">
+      <Project>{A544B769-CD08-4A57-8218-050FC708F2C2}</Project>
+      <Name>NaroThemeLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\BooEvaluator\BooEvaluator.csproj">
+      <Project>{E7E27EB8-6BE1-4CCB-912D-488ADCC46139}</Project>
+      <Name>BooEvaluator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\ErrorReportCommon\ErrorReportCommon.csproj">
+      <Project>{90EEED45-43A4-4285-844B-C6F7E9ED3E6B}</Project>
+      <Name>ErrorReportCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Extensions\Extensions.csproj">
+      <Project>{0EE555B2-634D-4048-BD44-5FD89DC55D78}</Project>
+      <Name>Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Infrastructure.Interface\Infrastructure.Interface.csproj">
+      <Project>{5E3CB7F9-17DE-420C-B5DA-94E12E1F67D8}</Project>
+      <Name>Infrastructure.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Infrastructure.Library\Infrastructure.Library.csproj">
+      <Project>{D3DAAD65-6E8B-407F-9D7C-788C7FBA8D61}</Project>
+      <Name>Infrastructure.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Logic\OccCode\OccCode.csproj">
+      <Project>{7705ABD9-E128-4831-A652-B08884539163}</Project>
+      <Name>OccCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\NaroConstants\NaroConstants.csproj">
+      <Project>{7B37096D-1715-40E6-8914-317C55F60897}</Project>
+      <Name>NaroConstants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\NaroPipes\NaroPipes.csproj">
+      <Project>{27C6CE51-5F57-4421-8C0F-9526EC3E9963}</Project>
+      <Name>NaroPipes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Options\NaroSetup\NaroSetup.csproj">
+      <Project>{AA33951B-DEDA-4088-B060-AE8C3A7D7227}</Project>
+      <Name>NaroSetup</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\TreeData\TreeData.csproj">
+      <Project>{E5D3FF5A-D77C-418B-8E73-E8D55EE5CAFD}</Project>
+      <Name>TreeData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Functions\ShapeFunctionsInterface\ShapeFunctionsInterface.csproj">
+      <Project>{5037292E-38AB-460E-ADCF-E621B435408E}</Project>
+      <Name>ShapeFunctionsInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

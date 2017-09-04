@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D09B133C-EA7C-4942-B0B6-C7A6D576D13E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PropertyGridTabs</RootNamespace>
+    <AssemblyName>PropertyGridTabs</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AttributeTabs\ConstraintsTab.cs" />
+    <Compile Include="AttributeTabs\SelectionsTab.cs" />
+    <Compile Include="AttributeTabs\ShapeTab.cs" />
+    <Compile Include="AttributeTabs\TransformationTab.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShapeTabs\Constraints\BoxHeightConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\CircleRangeConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\ConeHeightConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\ConeMajorRadiusConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\ConeMinorRadiusConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\CylinderHeightConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\CylinderRadiusConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\EdgeDistanceConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\PointToEdgeConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\EllipseMajorRadiusConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\EllipseMinorRadiusConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\LineLengthConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\OneDoubleValueConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\PointToPointConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\RectangleHeightConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\RectangleWidthConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\SphereRadiusConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\TorusMajorRadiusConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Constraints\TorusMinorRadiusConstraintTab.cs" />
+    <Compile Include="ShapeTabs\Shapes2D\CircleTab.cs" />
+    <Compile Include="ShapeTabs\Shapes2D\ArcTab.cs" />
+    <Compile Include="ShapeTabs\Shapes2D\Arc3PTab.cs" />
+    <Compile Include="ShapeTabs\Shapes2D\EllipseTab.cs" />
+    <Compile Include="ShapeTabs\Shapes2D\HorizontalLineTab.cs" />
+    <Compile Include="ShapeTabs\Shapes2D\LineTab.cs" />
+    <Compile Include="ShapeTabs\Shapes2D\Point3DTab.cs" />
+    <Compile Include="ShapeTabs\Shapes2D\ParalellogramTab.cs" />
+    <Compile Include="ShapeTabs\Shapes2D\RectangleTab.cs" />
+    <Compile Include="ShapeTabs\Shapes2D\RectangleTabBase.cs" />
+    <Compile Include="ShapeTabs\Shapes2D\VerticalLineTab.cs" />
+    <Compile Include="ShapeTabs\Shapes3D\BoxTab.cs" />
+    <Compile Include="ShapeTabs\Shapes3D\ConeTab.cs" />
+    <Compile Include="ShapeTabs\Shapes3D\CylinderTab.cs" />
+    <Compile Include="ShapeTabs\Shapes3D\SphereTab.cs" />
+    <Compile Include="ShapeTabs\Shapes3D\TorusTab.cs" />
+    <Compile Include="ShapeTabs\Tools\CutTab.cs" />
+    <Compile Include="ShapeTabs\Tools\ExtrudeTab.cs" />
+    <Compile Include="ShapeTabs\Tools\Fillet2DTab.cs" />
+    <Compile Include="ShapeTabs\Tools\FilletTab.cs" />
+    <Compile Include="ShapeTabs\Tools\OffsetTab.cs" />
+    <Compile Include="ShapeTabs\Tools\RevolveTab.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Lib\AlternateWrapper\NaroOccCore\NaroOccCore-build-desktop\NaroCppCore.csproj">
+      <Project>{8D5FFA62-563E-4566-902A-3E05EA39BF33}</Project>
+      <Name>NaroCppCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\ErrorReportCommon\ErrorReportCommon.csproj">
+      <Project>{90EEED45-43A4-4285-844B-C6F7E9ED3E6B}</Project>
+      <Name>ErrorReportCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Infrastructure.Interface\Infrastructure.Interface.csproj">
+      <Project>{5E3CB7F9-17DE-420C-B5DA-94E12E1F67D8}</Project>
+      <Name>Infrastructure.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Infrastructure.Library\Infrastructure.Library.csproj">
+      <Project>{D3DAAD65-6E8B-407F-9D7C-788C7FBA8D61}</Project>
+      <Name>Infrastructure.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Logic\OccCode\OccCode.csproj">
+      <Project>{7705ABD9-E128-4831-A652-B08884539163}</Project>
+      <Name>OccCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\NaroConstants\NaroConstants.csproj">
+      <Project>{7B37096D-1715-40E6-8914-317C55F60897}</Project>
+      <Name>NaroConstants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\TreeData\TreeData.csproj">
+      <Project>{E5D3FF5A-D77C-418B-8E73-E8D55EE5CAFD}</Project>
+      <Name>TreeData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Resources\NaroResources.csproj">
+      <Project>{863E2972-C477-4464-97F3-681675597D1C}</Project>
+      <Name>NaroResources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SolverModule\NaroSketchAdapter\NaroSketchAdapter.csproj">
+      <Project>{0B6DC31B-9C9D-45EC-8C2D-906703AC90D0}</Project>
+      <Name>NaroSketchAdapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Functions\ShapeFunctionsInterface\ShapeFunctionsInterface.csproj">
+      <Project>{5037292E-38AB-460E-ADCF-E621B435408E}</Project>
+      <Name>ShapeFunctionsInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyDescriptorsInterface\PropertyDescriptorsInterface.csproj">
+      <Project>{2C7BC841-D7E8-47F5-83C4-81C7E70B2E58}</Project>
+      <Name>PropertyDescriptorsInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyGridTabItems\PropertyGridTabItems.csproj">
+      <Project>{243F27A3-DA8F-44E2-9BD8-E7AB21461EF9}</Project>
+      <Name>PropertyGridTabItems</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="ZetaColorEditor, Version=1.0.3291.26052, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\ZetaColorEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

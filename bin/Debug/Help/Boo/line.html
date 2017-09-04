@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.1  (Win32)">
+	<META NAME="CREATED" CONTENT="20090907;344400">
+	<META NAME="CHANGED" CONTENT="20090907;365000">
+</HEAD>
+<BODY LANG="es-ES" DIR="LTR">
+<P>Line function can draw a line</P>
+<P>Syntax - 1:</P>
+<P>void line(x1: real; y1: real, z1: real; x2: real; y2: real; z2: real)</P>
+<P>Arguments:</P>
+<P>x1, y1, z1: coordinates of the first point</P>
+<P>x2, y2, z2: coordinates of the second point</P>
+<P><BR>
+</P>
+<P>Syntax - 2:</P>
+<P>void line(point1: integer; point2: integer)</P>
+<P>Arguments:</P>
+<P>point1: index of the point Node representing the first point</P>
+<P>point2: index of the point Node representing the second point</P>
+<P><BR>
+</P>
+<P>Sample usage:</P>
+<P>s1 = Sketch(0,0,0,2,3,0,5,6,0)</P>
+<P>EnterSketch(s1)</P>
+<P>p1 = Point(s1,5,5,0)</P>
+<P>p2 = Point(s1,10,10,0)</P>
+<P>Line(p1,p2)</P>
+</BODY>
+</HTML>

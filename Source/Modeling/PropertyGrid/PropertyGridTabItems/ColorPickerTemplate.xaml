@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="PropertyGridTabItems.ColorPickerTemplate" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:cp="clr-namespace:PropertyGridTabItems.CustomColorPicker" Height="auto" Width="auto">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" MaxWidth="102"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<cp:ColorPicker Grid.Row="0" Grid.Column="0" x:Name="customColorPicker" MinWidth="50" MaxWidth="102"></cp:ColorPicker>
+	</Grid>
+</UserControl>

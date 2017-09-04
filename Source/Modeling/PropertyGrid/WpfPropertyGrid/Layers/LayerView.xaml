@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<UserControl x:Class="WpfPropertyGrid.Layers.LayerView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<StackPanel Orientation="Vertical" Background="{DynamicResource controlGradient}">
+		<StackPanel Orientation="Horizontal" Width="416">
+			<Button Content="_Add" Width="46" Height="23" Click="ButtonClick" />
+			<Button Content="_Remove" Width="53" Height="23" Margin="7,0,0,0" Name="_removeBtn" Click="RemoveButtonClick" />
+			<CheckBox Click="OnShowLayerColorChecked" VerticalAlignment="Center" Margin="10,0,0,0" Name="_layerColorChecked">
+				<TextBlock Text="Show Layer Colors" />
+			</CheckBox>
+		</StackPanel>
+		<StackPanel Grid.Row="0" Height="25" Background="#333333" Width="auto" Orientation="Horizontal">
+			<TextBlock Margin="5, 0, 0, 0" Style="{DynamicResource ListHeader}" Text="HIDE/SHOW"></TextBlock>
+			<TextBlock Margin="40,0,0,0" Style="{DynamicResource ListHeader}" Text="LAYERS"></TextBlock>
+		</StackPanel>
+		<ScrollViewer Grid.Row="1" x:Name="ScrollViewer" Height="auto" BorderBrush="Transparent" VerticalScrollBarVisibility="Auto">
+			<ListBox MouseDoubleClick="ListBoxMouseDoubleClick" VerticalAlignment="Top" Background="White" Name="_listBox" SelectionChanged="ListBoxSelectionChanged" />
+		</ScrollViewer>
+	</StackPanel>
+</UserControl>

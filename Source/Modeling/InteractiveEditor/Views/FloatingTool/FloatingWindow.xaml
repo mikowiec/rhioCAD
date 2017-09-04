@@ -1,0 +1,9 @@
+﻿<Window x:Class="InteractiveEditor.Views.FloatingTool.FloatingWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="InteractiveEditor.Views" ResizeMode="NoResize" WindowStyle="SingleBorderWindow" ShowInTaskbar="False" SizeToContent="WidthAndHeight" Topmost="True" BorderBrush="#4d4d4d" BorderThickness="1,1,1,1">
+	<Border x:Name="BorderBase" Background="#4d4d4d" BorderThickness="1,1,1,1" BorderBrush="#4d4d4d">
+		<StackPanel VerticalAlignment="Top" Name="stackPanel1" MouseLeftButtonDown="StackPanel1MouseLeftButtonDown">
+			<Border Background="#c6c7c7" BorderThickness="1,1,1,1" BorderBrush="#c6c7c7" CornerRadius="3">
+				<StackPanel Orientation="Horizontal" Name="_toolsStack" Style="{DynamicResource StackBackground}"></StackPanel>
+			</Border>
+		</StackPanel>
+	</Border>
+</Window>

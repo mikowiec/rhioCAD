@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Item>
+  <Interpterer Name="LayerContainer" Colors.Blue_0="227" Colors.Count="1" Colors.Green_0="17" Colors.Red_0="184" Index="0" Tags.Count="1" Tags_0="Default" Visible="0" />
+  <Interpterer Name="String" Value="New Part" />
+  <Interpterer Name="DocumentContext" ActiveSketch="-1" Freeze="0" WordIds="" Words.Count="0" />
+  <Interpterer Name="NaroVersionFileFormat" FormatVersion="1" NaroVersion="1.6.8" />
+  <Interpterer Name="ActionGraph" />
+</Item>

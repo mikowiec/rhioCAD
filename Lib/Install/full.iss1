@@ -1,0 +1,58 @@
+[Files]
+Source: ..\..\..\..\bin\Release\*.dll; DestDir: {app}; Flags: ignoreversion
+Source: ..\..\..\..\bin\Release\*.exe; DestDir: {app}; Flags: ignoreversion; Languages:
+
+Source: ..\..\..\..\bin\debug\options.nxml; DestDir: {app}; Flags: ignoreversion
+Source: ..\..\..\..\bin\Debug\NewFile.naroxml; DestDir: {app}; Flags: ignoreversion
+Source: ..\..\..\..\bin\Debug\naroLayout.xml; DestDir: {app}; Flags: ignoreversion
+Source: ..\..\..\..\bin\Debug\defaultNaroLayout.xml; DestDir: {app}; Flags: ignoreversion
+Source: ..\..\..\..\bin\Debug\DockPanel.config; DestDir: {app}; Flags: ignoreversion
+Source: ..\..\..\..\bin\Debug\*.caps; DestDir: {app}; Flags: ignoreversion
+Source: ..\..\..\..\bin\Debug\*.naro; DestDir: {app}; Flags: ignoreversion
+Source: ..\..\..\..\bin\Debug\Boo\*.boo; DestDir: {app}\Boo\; Flags: ignoreversion
+Source: ..\..\..\..\bin\Debug\Boo\Actions\*.*; DestDir: {app}\Boo\Actions\; Flags: ignoreversion
+Source: ..\..\..\..\bin\Debug\Boo\Scripts\*.*; DestDir: {app}\Boo\Scripts\; Flags: ignoreversion
+Source: ..\..\..\..\bin\Debug\Boo\Library\*.*; DestDir: {app}\Boo\Library\; Flags: ignoreversion
+Source: ..\..\..\..\bin\Release\AppShell.exe.config; DestDir: {app}; Flags: ignoreversion
+
+Source: c:\occ\3rdparty\win32\tcltk\bin\*.dll; DestDir: {app}\occ\3rdparty\win32\tcltk\bin; Flags: ignoreversion
+Source: c:\occ\ros\win32\bin\*.dll; DestDir: {app}\occ\ros\win32\bin; Flags: ignoreversion
+
+Source: c:\occ\ros\src\UnitsAPI\CurrentUnits; DestDir: {app}\occ\ros\src\UnitsAPI
+Source: c:\occ\ros\src\UnitsAPI\Lexi_Expr.dat; DestDir: {app}\occ\ros\src\UnitsAPI
+Source: c:\occ\ros\src\UnitsAPI\MDTVBaseUnits; DestDir: {app}\occ\ros\src\UnitsAPI
+Source: c:\occ\ros\src\UnitsAPI\MDTVCurrentUnits; DestDir: {app}\occ\ros\src\UnitsAPI
+Source: c:\occ\ros\src\UnitsAPI\Units.dat; DestDir: {app}\occ\ros\src\UnitsAPI
+
+Source: c:\occ\ros\src\SHMessage\SHAPE.us; DestDir: {app}\occ\ros\src\SHMessage
+Source: c:\occ\ros\src\XSMessage\IGES.us; DestDir: {app}\occ\ros\src\XSMessage
+Source: c:\occ\ros\src\XSMessage\XSTEP.us; DestDir: {app}\occ\ros\src\XSMessage
+Source: c:\occ\ros\src\XSTEPResource\STEP; DestDir: {app}\occ\ros\src\XSTEPResource
+Source: c:\occ\ros\src\XSTEPResource\IGES; DestDir: {app}\occ\ros\src\XSTEPResource
+
+Source: c:\occ\ros\..\3rdparty\win32\vs\*.dll; DestDir: {app}\occ\3rdparty\win32\vs; Flags: ignoreversion
+Source: ..\..\..\..\lib\install\bats\env.bat; DestDir: {app}\occ\ros; Flags: ignoreversion
+
+Source: ..\..\..\..\Tutorial.pdf; DestDir: {app}; Flags: ignoreversion
+Source: ..\..\..\..\lib\install\Readme.txt; DestDir: {app}; Flags: isreadme
+
+Source: ..\..\..\..\bin\debug\Help\*.*; DestDir: {app}\Help; Flags: ignoreversion
+Source: ..\..\..\..\bin\debug\Help\images\*.*; DestDir: {app}\Help\images; Flags: ignoreversion
+Source: ..\..\..\..\bin\debug\Help\Boo\*.html; DestDir: {app}\Help\Lua; Flags: ignoreversion
+Source: ..\..\..\..\bin\debug\Wpf\TipsPages\*.*; DestDir: {app}\Wpf\TipsPages; Flags: ignoreversion
+Source: ..\..\..\..\bin\debug\Shaders\*.*; DestDir: {app}\Shaders; Flags: ignoreversion
+
+Source: ..\..\..\..\Source\TwoPointLinePlugin\Properties\*.*; DestDir: {app}\Source\TwoPointLinePlugin\Properties;  Flags: ignoreversion
+Source: ..\..\..\..\Source\TwoPointLinePlugin\*.cs; DestDir: {app}\Source\TwoPointLinePlugin;  Flags: ignoreversion
+Source: ..\..\..\..\Source\TwoPointLinePlugin\*.csproj; DestDir: {app}\Source\TwoPointLinePlugin;  Flags: ignoreversion
+Source: ..\..\..\..\Source\TwoPointLinePlugin\*.xaml; DestDir: {app}\Source\TwoPointLinePlugin;  Flags: ignoreversion
+
+Source: ..\..\..\..\bin\debug\Version.xml; DestDir: {app}; Flags: ignoreversion
+
+;VS Runtime
+Source: ..\..\..\..\Lib\install\lib\vs\*.*; DestDir: {app}
+Source: ..\..\..\..\Source\Images\view_comp_on_copy.ico; DestDir: {app}; DestName: naro.ico
+;Source: options.nxml; DestDir: {app}
+Source: ..\..\..\..\bin\Debug\naro.cfg; DestDir: {app}
+
+[Tasks]

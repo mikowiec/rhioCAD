@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47DB0D8C-79A3-4D8B-9B33-22DF95431C84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConstraintsModule</RootNamespace>
+    <AssemblyName>ConstraintsModule</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Constraint2DDefinitions.cs" />
+    <Compile Include="Common\Constraint2DFunction.cs" />
+    <Compile Include="Common\ConstraintMapperBase.cs" />
+    <Compile Include="Common\DefaultConstraintFunctions.cs" />
+    <Compile Include="Common\ISolverConstraintMapping.cs" />
+    <Compile Include="Common\TwoShapesConstraintFunctionCreator.cs" />
+    <Compile Include="ConstraintBase.cs" />
+    <Compile Include="ConstraintContainer.cs" />
+    <Compile Include="ConstraintFunctions\ArcAnglesFunction.cs" />
+    <Compile Include="ConstraintFunctions\ArcRadiusFunction.cs" />
+    <Compile Include="ConstraintFunctions\ArcRulesFunction.cs" />
+    <Compile Include="ConstraintFunctions\CircleRadiusFunction.cs" />
+    <Compile Include="ConstraintFunctions\ConstraintOneShape.cs" />
+    <Compile Include="ConstraintFunctions\ConstraintTwoShapes.cs" />
+    <Compile Include="ConstraintFunctions\ExternalAngleFunction.cs" />
+    <Compile Include="ConstraintFunctions\HorizontalDistanceToCenterFunction.cs" />
+    <Compile Include="ConstraintFunctions\InternalAngleFunction.cs" />
+    <Compile Include="ConstraintFunctions\LineLengthFunction.cs" />
+    <Compile Include="ConstraintFunctions\P2LDistanceFunction.cs" />
+    <Compile Include="ConstraintFunctions\P2LDistanceHorzFunction.cs" />
+    <Compile Include="ConstraintFunctions\P2LDistanceVertFunction.cs" />
+    <Compile Include="ConstraintFunctions\P2PDistanceFunction.cs" />
+    <Compile Include="ConstraintFunctions\P2PDistanceHorzFunction.cs" />
+    <Compile Include="ConstraintFunctions\P2PDistanceVertFunction.cs" />
+    <Compile Include="ConstraintFunctions\SymmetricPointsFunction.cs" />
+    <Compile Include="ConstraintMappingList.cs" />
+    <Compile Include="ConstraintRefContainer.cs" />
+    <Compile Include="Constraints\ArcAngles.cs" />
+    <Compile Include="Constraints\ArcRadius.cs" />
+    <Compile Include="Constraints\ArcRules.cs" />
+    <Compile Include="Constraints\CircleRadius.cs" />
+    <Compile Include="Constraints\Colinear.cs" />
+    <Compile Include="Constraints\ConcentricArcs.cs" />
+    <Compile Include="Constraints\ConcentricCircArc.cs" />
+    <Compile Include="Constraints\ConcentricCircles.cs" />
+    <Compile Include="Constraints\PositiveParameter.cs" />
+    <Compile Include="Constraints\PointOnSegment.cs" />
+    <Compile Include="Constraints\EqualLength.cs" />
+    <Compile Include="Constraints\EqualRadiusArcs.cs" />
+    <Compile Include="Constraints\EqualRadiusCircArc.cs" />
+    <Compile Include="Constraints\EqualRadiusCircles.cs" />
+    <Compile Include="Constraints\ExternalAngle.cs" />
+    <Compile Include="Constraints\GradCalc.cs" />
+    <Compile Include="Constraints\Horizontal.cs" />
+    <Compile Include="Constraints\HorizontalDistanceToCenter.cs" />
+    <Compile Include="Constraints\InternalAngle.cs" />
+    <Compile Include="Constraints\LineLength.cs" />
+    <Compile Include="Constraints\P2LDistance.cs" />
+    <Compile Include="Constraints\P2LDistanceHorz.cs" />
+    <Compile Include="Constraints\P2LDistanceVert.cs" />
+    <Compile Include="Constraints\P2PDistance.cs" />
+    <Compile Include="Constraints\P2PDistanceHorz.cs" />
+    <Compile Include="Constraints\P2PDistanceVert.cs" />
+    <Compile Include="Constraints\Parallel.cs" />
+    <Compile Include="Constraints\Perpendicular.cs" />
+    <Compile Include="Constraints\PointOnArc.cs" />
+    <Compile Include="Constraints\PointOnArcMidpoint.cs" />
+    <Compile Include="Constraints\PointOnCircle.cs" />
+    <Compile Include="Constraints\PointOnLine.cs" />
+    <Compile Include="Constraints\PointOnLineMidpoint.cs" />
+    <Compile Include="Constraints\PointOnPoint.cs" />
+    <Compile Include="Constraints\SymmetricPoints.cs" />
+    <Compile Include="Constraints\TangentToArc.cs" />
+    <Compile Include="Constraints\TangentToCircle.cs" />
+    <Compile Include="Constraints\Vertical.cs" />
+    <Compile Include="Constraints\VerticalDistanceToCenter.cs" />
+    <Compile Include="DefaultConstraintsMapping.cs" />
+    <Compile Include="Helpers\MatrixHelper.cs" />
+    <Compile Include="Mappings\Constraints\ArcAnglesConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\ArcRadiusConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\CircleRadiusConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\Common\OneShapeConstraintMapping.cs" />
+    <Compile Include="Mappings\Constraints\Common\PositionToCenterConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\Common\TwoArcsConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\Common\TwoCirclesConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\Common\TwoLinesConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\Common\TwoShapesConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\ConcentricCirclesArcMapper.cs" />
+    <Compile Include="Mappings\Constraints\PositiveParameterConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\PointOnSegmentMapper.cs" />
+    <Compile Include="Mappings\Constraints\EqualRadiusCircArcMapperr.cs" />
+    <Compile Include="Mappings\Constraints\LineLengthConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\OneLineConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\PointOnArcConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\PointOnArcMidpointMapper.cs" />
+    <Compile Include="Mappings\Constraints\PointOnCircleConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\PointOnLineMapper.cs" />
+    <Compile Include="Mappings\Constraints\PointOnLineMidPointMapper.cs" />
+    <Compile Include="Mappings\Constraints\PointOnPointConstraintMapper.cs" />
+    <Compile Include="Mappings\Constraints\TangentToArcMapper.cs" />
+    <Compile Include="Mappings\Constraints\TangentToCircleMapper.cs" />
+    <Compile Include="Mappings\Shapes\ArcSolverObjectMapper.cs" />
+    <Compile Include="Mappings\Shapes\CircleSolverObjectMapper.cs" />
+    <Compile Include="Mappings\Shapes\ISolverObjectMapping.cs" />
+    <Compile Include="Mappings\Shapes\LineSolverObjectMapper.cs" />
+    <Compile Include="Mappings\Shapes\PointSolverObjectMapper.cs" />
+    <Compile Include="Mappings\Shapes\ShapeSolverObjectMapping.cs" />
+    <Compile Include="Primitives\Arc.cs" />
+    <Compile Include="Primitives\Circle.cs" />
+    <Compile Include="Primitives\DoubleRefObject.cs" />
+    <Compile Include="Primitives\Line.cs" />
+    <Compile Include="Primitives\Point.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Views\ConstraintDependencyDescription.cs" />
+    <Compile Include="Views\ConstraintHighLevelDependencyMapping.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure\NaroConstants\NaroConstants.csproj">
+      <Project>{7B37096D-1715-40E6-8914-317C55F60897}</Project>
+      <Name>NaroConstants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure\NaroPipes\NaroPipes.csproj">
+      <Project>{27C6CE51-5F57-4421-8C0F-9526EC3E9963}</Project>
+      <Name>NaroPipes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure\TreeData\TreeData.csproj">
+      <Project>{E5D3FF5A-D77C-418B-8E73-E8D55EE5CAFD}</Project>
+      <Name>TreeData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modeling\Functions\ShapeFunctionsInterface\ShapeFunctionsInterface.csproj">
+      <Project>{5037292E-38AB-460E-ADCF-E621B435408E}</Project>
+      <Name>ShapeFunctionsInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

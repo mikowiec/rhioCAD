@@ -1,0 +1,7 @@
+﻿<RibbonMapping:RibbonButtonMapping x:Class="ShapesUiPlugin.RectangleToolButton"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary" xmlns:RibbonMapping="clr-namespace:NaroUiBuilder.RibbonMapping;assembly=NaroUiBuilder" Content="Rectangle" Name="Rectangle">
+    <r:RibbonButton.Command>
+        <r:RibbonCommand Executed="RectangleClick" LabelTitle="Rectangle" ToolTipTitle="Rectangle" ToolTipDescription="Rectangle drawing tool." SmallImageSource="/Resources;component/Resources/rectangle.png" LargeImageSource="/Resources;component/Resources/rectangle.png" />
+    </r:RibbonButton.Command>
+</RibbonMapping:RibbonButtonMapping>

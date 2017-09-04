@@ -1,0 +1,5 @@
+﻿<RibbonMapping1:RibbonButtonMapping x:Class="ViewInterfacePlugin.Constraints.SynchronizeToolsButton" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Ribbon="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary" xmlns:RibbonMapping1="clr-namespace:NaroUiBuilder.RibbonMapping;assembly=NaroUiBuilder">
+	<RibbonMapping1:RibbonButtonMapping.Command>
+		<Ribbon:RibbonCommand Executed="SynchronizeToolsButtonClick" SmallImageSource="/Resources;component/Resources/linelengthconstraint.png" LargeImageSource="/Resources;component/Resources/linelengthconstraint.png" LabelTitle="Synchronize Tools" ToolTipTitle="Synchronize" ToolTipDescription="Pick two tools/shapes and all internal parameters will be copied on the destination (second selected)" />
+	</RibbonMapping1:RibbonButtonMapping.Command>
+</RibbonMapping1:RibbonButtonMapping>

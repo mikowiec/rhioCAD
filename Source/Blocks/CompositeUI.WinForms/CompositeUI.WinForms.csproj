@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{073BCD60-F2FB-4DB9-92FB-403C8F9E8DD0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Practices.CompositeUI.WinForms</RootNamespace>
+    <AssemblyName>Microsoft.Practices.CompositeUI.WinForms</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Ciprian\AppData\Roaming\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Debug\Microsoft.Practices.CompositeUI.WinForms.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Microsoft.Practices.CompositeUI.WinForms.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GlassButton, Version=1.3.2.911, Culture=neutral, PublicKeyToken=2e983e6e44d23a4f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\GlassButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\..\..\Lib\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Solution Items\GlobalAssemblyInfo.cs" />
+    <Compile Include="Activation\ControlActivationService.cs" />
+    <Compile Include="Activation\ControlActivationStrategy.cs" />
+    <Compile Include="Activation\IControlActivationService.cs" />
+    <Compile Include="ApplicationContextApplication.cs" />
+    <Compile Include="UIElements\ToolStripItemCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\ToolStripItemOwnerCollectionUIAdapter.cs" />
+    <Compile Include="UIElements\ToolStripUIAdapterFactory.cs" />
+    <Compile Include="Visualizer\WinFormsVisualizer.cs" />
+    <Compile Include="ControlCommandAdapter.cs" />
+    <Compile Include="BuilderStrategies\ControlSmartPartStrategy.cs" />
+    <Compile Include="Visualizer\VisualizerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualizer\VisualizerForm.Designer.cs">
+      <DependentUpon>VisualizerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApplication.cs" />
+    <Compile Include="BuilderStrategies\WinFormServiceStrategy.cs" />
+    <Compile Include="Workspaces\DeckWorkspace.Designer.cs">
+      <DependentUpon>DeckWorkspace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workspaces\TabSmartPartInfo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStripItemCommandAdapter.cs" />
+    <Compile Include="FormShellApplication.cs" />
+    <Compile Include="Workspaces\DeckWorkspace.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Workspaces\MdiWorkspace.cs" />
+    <Compile Include="Workspaces\TabWorkspace.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Workspaces\WindowWorkspace.cs" />
+    <Compile Include="Workspaces\WorkspaceUtilities.cs" />
+    <Compile Include="Workspaces\ZoneWorkspace.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Workspaces\ZoneSmartPartInfo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Workspaces\WindowSmartPartInfo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SmartPartPlaceholder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Workspaces\ZoneWorkspace.Designer.cs">
+      <DependentUpon>ZoneWorkspace.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CompositeUI\CompositeUI.csproj">
+      <Project>{C478E40B-A05E-4C69-9AB3-7A3BB374243F}</Project>
+      <Name>CompositeUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartPartPlaceholder.bmp">
+      <DependentUpon>SmartPartPlaceholder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workspaces\ZoneSmartPartInfo.bmp">
+      <DependentUpon>ZoneSmartPartInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualizer\VisualizerForm.resx">
+      <DependentUpon>VisualizerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workspaces\WindowSmartPartInfo.bmp">
+      <DependentUpon>WindowSmartPartInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workspaces\DeckWorkspace.bmp">
+      <DependentUpon>DeckWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workspaces\TabWorkspace.bmp">
+      <DependentUpon>TabWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workspaces\ZoneWorkspace.bmp">
+      <DependentUpon>ZoneWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workspaces\TabSmartPartInfo.bmp">
+      <DependentUpon>TabSmartPartInfo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

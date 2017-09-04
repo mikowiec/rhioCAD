@@ -1,0 +1,8 @@
+﻿<UserControl x:Class="PartModellingUi.Layout.HelpView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Grid Height="auto" Width="auto">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<WebBrowser x:Name="webBrowser" Grid.Row="0" Height="auto" Width="auto" />
+	</Grid>
+</UserControl>

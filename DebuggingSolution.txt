@@ -1,0 +1,31 @@
+
+Debugging native code (debugging the OpenCascade code used by NaroCAD)
+
+1. Debugging with WinDbg:
+
+a. Debugging preparation:
+  - Compile OpenCascade and Wrappers in debug mode. Please check that the Wrappers point to the debug version of OpenCascade modules when compiling and linking,
+  - Configure WinDbg for debugging:
+      Symbol file path example configuration:
+      C:\OpenCASCADE6.3.0\ros\win32\bind;
+      D:\work\sources_narocad\trunk\wrappers\builds\debug;
+      D:\work\sources_narocad\trunk\trunk\narocad\bin\Debug
+      
+      Source file path example configuration:
+      C:\OpenCASCADE6.3.0\ros\src;C:\OpenCASCADE6.3.0\ros\inc
+
+b. Debug checks:
+- If you want to debug the debug version of OpenCascade please check that the PATH and OpenCascade envirnoment variables point to the debug version of libraries.
+Ex: from PATH: C:\OpenCASCADE6.3.0\ros\win32\bind
+To be sure that the correct libraries are loaded you can rename the folder that contains the release version of libraries (the "win32/Bin" and "win32/Lib" folders).  
+
+c. Debugging:
+- Launch NaroCad,
+- File->Attach to process, attach the debugger to the NaroCad process,
+- Open the source file from File->Open source file,
+- Go to the method/line to be debugged and put a breakpoint there (F9),
+If the debugger stops responding (*BUSY*) is written in the status bar, please wait until it finishes parsing the symbol files,
+- Press F5 to resume the process and start the application,
+- Use the application until it stops at a breakpoint,
+- Debugging is made using the WinDbg features like line by line execution or Watch window.
+To reduce the lookup time it is not recommended to have too many variables in the watch window. A speed improvement would be to use a local variable prefix "$!" before the local variable name.

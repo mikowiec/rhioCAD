@@ -1,0 +1,96 @@
+-- File:	MeshShape.cdl
+-- Created:	Fri Aug 27 11:01:37 1993
+-- Author:	Didier PIFFAULT
+--		<dpf@zerox>
+---Copyright:	 Matra Datavision 1993
+
+
+package MeshShape 
+
+	---Purpose: Describes the method to mesh a  face or a shape by
+	--          triangles with respect of the restricted area, the
+	--          deflection and the shared geometrical elements.
+        --  Level : Advanced.  
+        --  All methods of all  classes will be advanced.
+
+
+uses    Standard,
+    	MMgt,
+    	gp,
+	TCollection,
+	TColStd,
+	TColgp,
+	MeshDS,
+	MeshAlgo,
+	GeomAbs,
+	TopAbs,
+	TopoDS,
+	TopTools,
+	GCPnts,
+	BRepAdaptor
+
+
+
+is      enumeration CurvatureType 
+    	    is Plane, SimpleCurvature, DoubleCurvature end;
+
+    	deferred class Vertex;   -- Signature
+
+	deferred class Edge;     -- Signature
+
+	deferred class Triangle; -- Signature
+
+    	class PolygonPoint;
+
+	class Polygon instantiates List from TCollection
+    	    (PolygonPoint from MeshShape);
+
+    	class SurfacePoint;
+
+	class ListOfSurfacePoint instantiates List from TCollection
+    	    (SurfacePoint from MeshShape);
+
+	deferred generic class Curve;
+	
+	deferred generic class Surface;
+	
+	deferred generic class ShapeTool;
+	
+	generic class GeomTool;
+				
+	class Couple;
+	
+	class CoupleHasher;
+	
+	class MapOfCouple instantiates Map from TCollection
+					    (Couple       from MeshShape,
+					     CoupleHasher from MeshShape);
+
+    	class DataMapOfIntegerPnt instantiates
+    	    DataMap from TCollection   (Integer          from Standard,
+    	    	    	    	    	Pnt              from gp,
+    	    	    	    	    	MapIntegerHasher from TColStd);
+
+     	class DataMapOfIntegerXY  instantiates
+    	    DataMap from TCollection   (Integer          from Standard,
+    	    	    	    	        XY               from gp,
+    	    	    	    	    	MapIntegerHasher from TColStd);
+
+
+        class DataMapOfShapeListOfTransient instantiates 
+	    DataMap from TCollection(Shape           from TopoDS,
+	    	    	    	     ListOfTransient from TColStd,
+				     ShapeMapHasher  from TopTools);
+
+	generic class UV, Delaun,
+    	    -- ListOfMeshVertex, DataMapOfVertexInteger, DataMapOfEdgePolygon,
+    	    -- DataMapOfIntegerFace, StripIterator;
+
+
+-- For real programers only :
+
+    SetMesure(val : Boolean from Standard);
+
+    SetTrace(val : Integer from Standard);
+
+end MeshShape;

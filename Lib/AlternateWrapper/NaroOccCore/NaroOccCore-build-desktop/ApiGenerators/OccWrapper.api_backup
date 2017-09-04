@@ -1,0 +1,1335 @@
+<API>
+  <Generator Name="Occ">
+    <Namespace Name="NaroCppCore">
+      <Namespace Name="Occ">
+        <Namespace Name="V3d">
+          <Class Name="V3d_Viewer">
+            <Implements Name="Viewer_Viewer" />
+            <Methods>
+              <Method Name="SetLightOn">
+                <ReturnType Name="void" />
+                <Parameters />
+              </Method>
+              <Method Name="CreateView">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="V3d_View" />
+                <Parameters />
+              </Method>
+              <Method Name="Redraw">
+                <ReturnType Name="void" />
+                <Parameters />
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Device">
+                    <ParamType Name="Aspect_GraphicDevice" />
+                  </Parameter>
+                  <Parameter Name="aName">
+                    <ParamType Name="string" />
+                  </Parameter>
+                  <Parameter Name="aDomain">
+                    <ParamType Name="string" />
+                  </Parameter>
+                  <Parameter Name="ViewSize">
+                    <ParamType Name="double" />
+                  </Parameter>
+                  <Parameter Name="ViewProj">
+                    <ParamType Name="V3d_TypeOfOrientation" />
+                  </Parameter>
+                  <Parameter Name="ViewBackground">
+                    <ParamType Name="Quantity_NameOfColor" />
+                  </Parameter>
+                  <Parameter Name="Visualization">
+                    <ParamType Name="V3d_TypeOfVisualization" />
+                  </Parameter>
+                  <Parameter Name="ShadingModel">
+                    <ParamType Name="V3d_TypeOfShadingModel" />
+                  </Parameter>
+                  <Parameter Name="UpdateMode">
+                    <ParamType Name="V3d_TypeOfUpdate" />
+                  </Parameter>
+                  <Parameter Name="ComputedMode">
+                    <ParamType Name="bool" />
+                  </Parameter>
+                  <Parameter Name="DefaultComputedMode">
+                    <ParamType Name="bool" />
+                  </Parameter>
+                  <Parameter Name="SurfaceDetail">
+                    <ParamType Name="V3d_TypeOfSurfaceDetail" />
+                  </Parameter>
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Enum Name="V3d_TypeOfOrientation">
+            <Field Name="V3d_Xpos" />
+            <Field Name="V3d_Ypos" />
+            <Field Name="V3d_Zpos" />
+            <Field Name="V3d_Xneg" />
+            <Field Name="V3d_Yneg" />
+            <Field Name="V3d_Zneg" />
+            <Field Name="V3d_XposYpos" />
+            <Field Name="V3d_XposZpos" />
+            <Field Name="V3d_YposZpos" />
+            <Field Name="V3d_XnegYneg" />
+            <Field Name="V3d_XnegYpos" />
+            <Field Name="V3d_XnegZneg" />
+            <Field Name="V3d_XnegZpos" />
+            <Field Name="V3d_YnegZneg" />
+            <Field Name="V3d_YnegZpos" />
+            <Field Name="V3d_XposYneg" />
+            <Field Name="V3d_XposZneg" />
+            <Field Name="V3d_YposZneg" />
+            <Field Name="V3d_XposYposZpos" />
+            <Field Name="V3d_XposYnegZpos" />
+            <Field Name="V3d_XposYposZneg" />
+            <Field Name="V3d_XnegYposZpos" />
+            <Field Name="V3d_XposYnegZneg" />
+            <Field Name="V3d_XnegYposZneg" />
+            <Field Name="V3d_XnegYnegZpos" />
+            <Field Name="V3d_XnegYnegZneg" />
+          </Enum>
+          <Enum Name="V3d_TypeOfVisualization">
+            <Field Name="V3d_WIREFRAME" />
+            <Field Name="V3d_ZBUFFER" />
+          </Enum>
+          <Enum Name="V3d_TypeOfShadingModel">
+            <Field Name="V3d_COLOR" />
+            <Field Name="V3d_MULTICOLOR" />
+            <Field Name="V3d_FLAT" />
+            <Field Name="V3d_GOURAUD" />
+            <Field Name="V3d_HIDDEN" />
+          </Enum>
+          <Enum Name="V3d_TypeOfUpdate">
+            <Field Name="V3d_ASAP" />
+            <Field Name="V3d_WAIT" />
+          </Enum>
+          <Enum Name="V3d_TypeOfSurfaceDetail">
+            <Field Name="V3d_TEX_NONE" />
+            <Field Name="V3d_TEX_ENVIRONMENT" />
+            <Field Name="V3d_TEX_ALL" />
+          </Enum>
+          <Class Name="V3d_AmbientLight">
+            <Implements Name="V3d_Light" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="VM">
+                    <ParamType Name="V3d_Viewer" />
+                  </Parameter>
+                  <Parameter Name="Color">
+                    <ParamType Name="Quantity_NameOfColor" />
+                  </Parameter>
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="V3d_Light">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+          <Class Name="V3d_View">
+            <Implements Name="Viewer_View" />
+            <Methods>
+              <Method Name="SetWindow">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="IdWin">
+                    <ParamType Name="Aspect_Window" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="TriedronDisplay">
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="APosition">
+                    <ParamType Name="Aspect_TypeOfTriedronPosition" />
+                  </Parameter>
+                  <Parameter Name="AColor">
+                    <ParamType Name="Quantity_NameOfColor" />
+                  </Parameter>
+                  <Parameter Name="AScale">
+                    <ParamType Name="double" />
+                  </Parameter>
+                  <Parameter Name="AMode">
+                    <ParamType Name="V3d_TypeOfVisualization" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="SetSurfaceDetail">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="SurfaceDetail">
+                    <ParamType Name="V3d_TypeOfSurfaceDetail" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="SetDegenerateModeOn">
+                <ReturnType Name="void" />
+                <Parameters />
+              </Method>
+              <Method Name="SetTransparency">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="AnActivity">
+                    <ParamType Name="bool" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="MustBeResized">
+                <ReturnType Name="void" />
+                <Parameters />
+              </Method>
+              <Method Name="Redraw">
+                <ReturnType Name="void" />
+                <Parameters />
+              </Method>
+              <Method Name="FitAll">
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="Coef">
+                    <ParamType Name="double" />
+                  </Parameter>
+                  <Parameter Name="FitZ">
+                    <ParamType Name="bool" />
+                  </Parameter>
+                  <Parameter Name="update">
+                    <ParamType Name="bool" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+            </Methods>
+          </Class>
+          <Class Name="V3d_DirectionalLight">
+            <Implements Name="V3d_PositionLight" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="VM">
+                    <ParamType Name="V3d_Viewer" />
+                  </Parameter>
+                  <Parameter Name="Direction">
+                    <ParamType Name="V3d_TypeOfOrientation" />
+                  </Parameter>
+                  <Parameter Name="Color">
+                    <ParamType Name="Quantity_NameOfColor" />
+                  </Parameter>
+                  <Parameter Name="Headlight">
+                    <ParamType Name="bool" />
+                  </Parameter>
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="V3d_PositionLight">
+            <Implements Name="V3d_Light" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="Viewer">
+          <Class Name="Viewer_Viewer">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+          <Class Name="Viewer_View">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="MMgt">
+          <Class Name="MMgt_TShared">
+            <Implements Name="Standard_Transient" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="Standard">
+          <Class Name="Standard_Transient">
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="Aspect">
+          <Class Name="Aspect_GraphicDevice">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+          <Class Name="Aspect_Window">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+          <Enum Name="Aspect_TypeOfTriedronPosition">
+            <Field Name="Aspect_TOTP_CENTER" />
+            <Field Name="Aspect_TOTP_LEFT_LOWER" />
+            <Field Name="Aspect_TOTP_LEFT_UPPER" />
+            <Field Name="Aspect_TOTP_RIGHT_LOWER" />
+            <Field Name="Aspect_TOTP_RIGHT_UPPER" />
+            <Field Name="Aspect_TOTP_01" />
+            <Field Name="Aspect_TOTP_02" />
+            <Field Name="Aspect_TOTP_03" />
+            <Field Name="Aspect_TOTP_04" />
+            <Field Name="Aspect_TOTP_05" />
+            <Field Name="Aspect_TOTP_06" />
+            <Field Name="Aspect_TOTP_07" />
+            <Field Name="Aspect_TOTP_08" />
+            <Field Name="Aspect_TOTP_09" />
+            <Field Name="Aspect_TOTP_10" />
+          </Enum>
+        </Namespace>
+        <Namespace Name="Quantity">
+          <Enum Name="Quantity_NameOfColor">
+            <Field Name="Quantity_NOC_BLACK" />
+            <Field Name="Quantity_NOC_MATRABLUE" />
+            <Field Name="Quantity_NOC_MATRAGRAY" />
+            <Field Name="Quantity_NOC_ALICEBLUE" />
+            <Field Name="Quantity_NOC_ANTIQUEWHITE" />
+            <Field Name="Quantity_NOC_ANTIQUEWHITE1" />
+            <Field Name="Quantity_NOC_ANTIQUEWHITE2" />
+            <Field Name="Quantity_NOC_ANTIQUEWHITE3" />
+            <Field Name="Quantity_NOC_ANTIQUEWHITE4" />
+            <Field Name="Quantity_NOC_AQUAMARINE1" />
+            <Field Name="Quantity_NOC_AQUAMARINE2" />
+            <Field Name="Quantity_NOC_AQUAMARINE4" />
+            <Field Name="Quantity_NOC_AZURE" />
+            <Field Name="Quantity_NOC_AZURE2" />
+            <Field Name="Quantity_NOC_AZURE3" />
+            <Field Name="Quantity_NOC_AZURE4" />
+            <Field Name="Quantity_NOC_BEIGE" />
+            <Field Name="Quantity_NOC_BISQUE" />
+            <Field Name="Quantity_NOC_BISQUE2" />
+            <Field Name="Quantity_NOC_BISQUE3" />
+            <Field Name="Quantity_NOC_BISQUE4" />
+            <Field Name="Quantity_NOC_BLANCHEDALMOND" />
+            <Field Name="Quantity_NOC_BLUE1" />
+            <Field Name="Quantity_NOC_BLUE2" />
+            <Field Name="Quantity_NOC_BLUE3" />
+            <Field Name="Quantity_NOC_BLUE4" />
+            <Field Name="Quantity_NOC_BLUEVIOLET" />
+            <Field Name="Quantity_NOC_BROWN" />
+            <Field Name="Quantity_NOC_BROWN1" />
+            <Field Name="Quantity_NOC_BROWN2" />
+            <Field Name="Quantity_NOC_BROWN3" />
+            <Field Name="Quantity_NOC_BROWN4" />
+            <Field Name="Quantity_NOC_BURLYWOOD" />
+            <Field Name="Quantity_NOC_BURLYWOOD1" />
+            <Field Name="Quantity_NOC_BURLYWOOD2" />
+            <Field Name="Quantity_NOC_BURLYWOOD3" />
+            <Field Name="Quantity_NOC_BURLYWOOD4" />
+            <Field Name="Quantity_NOC_CADETBLUE" />
+            <Field Name="Quantity_NOC_CADETBLUE1" />
+            <Field Name="Quantity_NOC_CADETBLUE2" />
+            <Field Name="Quantity_NOC_CADETBLUE3" />
+            <Field Name="Quantity_NOC_CADETBLUE4" />
+            <Field Name="Quantity_NOC_CHARTREUSE" />
+            <Field Name="Quantity_NOC_CHARTREUSE1" />
+            <Field Name="Quantity_NOC_CHARTREUSE2" />
+            <Field Name="Quantity_NOC_CHARTREUSE3" />
+            <Field Name="Quantity_NOC_CHARTREUSE4" />
+            <Field Name="Quantity_NOC_CHOCOLATE" />
+            <Field Name="Quantity_NOC_CHOCOLATE1" />
+            <Field Name="Quantity_NOC_CHOCOLATE2" />
+            <Field Name="Quantity_NOC_CHOCOLATE3" />
+            <Field Name="Quantity_NOC_CHOCOLATE4" />
+            <Field Name="Quantity_NOC_CORAL" />
+            <Field Name="Quantity_NOC_CORAL1" />
+            <Field Name="Quantity_NOC_CORAL2" />
+            <Field Name="Quantity_NOC_CORAL3" />
+            <Field Name="Quantity_NOC_CORAL4" />
+            <Field Name="Quantity_NOC_CORNFLOWERBLUE" />
+            <Field Name="Quantity_NOC_CORNSILK1" />
+            <Field Name="Quantity_NOC_CORNSILK2" />
+            <Field Name="Quantity_NOC_CORNSILK3" />
+            <Field Name="Quantity_NOC_CORNSILK4" />
+            <Field Name="Quantity_NOC_CYAN1" />
+            <Field Name="Quantity_NOC_CYAN2" />
+            <Field Name="Quantity_NOC_CYAN3" />
+            <Field Name="Quantity_NOC_CYAN4" />
+            <Field Name="Quantity_NOC_DARKGOLDENROD" />
+            <Field Name="Quantity_NOC_DARKGOLDENROD1" />
+            <Field Name="Quantity_NOC_DARKGOLDENROD2" />
+            <Field Name="Quantity_NOC_DARKGOLDENROD3" />
+            <Field Name="Quantity_NOC_DARKGOLDENROD4" />
+            <Field Name="Quantity_NOC_DARKGREEN" />
+            <Field Name="Quantity_NOC_DARKKHAKI" />
+            <Field Name="Quantity_NOC_DARKOLIVEGREEN" />
+            <Field Name="Quantity_NOC_DARKOLIVEGREEN1" />
+            <Field Name="Quantity_NOC_DARKOLIVEGREEN2" />
+            <Field Name="Quantity_NOC_DARKOLIVEGREEN3" />
+            <Field Name="Quantity_NOC_DARKOLIVEGREEN4" />
+            <Field Name="Quantity_NOC_DARKORANGE" />
+            <Field Name="Quantity_NOC_DARKORANGE1" />
+            <Field Name="Quantity_NOC_DARKORANGE2" />
+            <Field Name="Quantity_NOC_DARKORANGE3" />
+            <Field Name="Quantity_NOC_DARKORANGE4" />
+            <Field Name="Quantity_NOC_DARKORCHID" />
+            <Field Name="Quantity_NOC_DARKORCHID1" />
+            <Field Name="Quantity_NOC_DARKORCHID2" />
+            <Field Name="Quantity_NOC_DARKORCHID3" />
+            <Field Name="Quantity_NOC_DARKORCHID4" />
+            <Field Name="Quantity_NOC_DARKSALMON" />
+            <Field Name="Quantity_NOC_DARKSEAGREEN" />
+            <Field Name="Quantity_NOC_DARKSEAGREEN1" />
+            <Field Name="Quantity_NOC_DARKSEAGREEN2" />
+            <Field Name="Quantity_NOC_DARKSEAGREEN3" />
+            <Field Name="Quantity_NOC_DARKSEAGREEN4" />
+            <Field Name="Quantity_NOC_DARKSLATEBLUE" />
+            <Field Name="Quantity_NOC_DARKSLATEGRAY1" />
+            <Field Name="Quantity_NOC_DARKSLATEGRAY2" />
+            <Field Name="Quantity_NOC_DARKSLATEGRAY3" />
+            <Field Name="Quantity_NOC_DARKSLATEGRAY4" />
+            <Field Name="Quantity_NOC_DARKSLATEGRAY" />
+            <Field Name="Quantity_NOC_DARKTURQUOISE" />
+            <Field Name="Quantity_NOC_DARKVIOLET" />
+            <Field Name="Quantity_NOC_DEEPPINK" />
+            <Field Name="Quantity_NOC_DEEPPINK2" />
+            <Field Name="Quantity_NOC_DEEPPINK3" />
+            <Field Name="Quantity_NOC_DEEPPINK4" />
+            <Field Name="Quantity_NOC_DEEPSKYBLUE1" />
+            <Field Name="Quantity_NOC_DEEPSKYBLUE2" />
+            <Field Name="Quantity_NOC_DEEPSKYBLUE3" />
+            <Field Name="Quantity_NOC_DEEPSKYBLUE4" />
+            <Field Name="Quantity_NOC_DODGERBLUE1" />
+            <Field Name="Quantity_NOC_DODGERBLUE2" />
+            <Field Name="Quantity_NOC_DODGERBLUE3" />
+            <Field Name="Quantity_NOC_DODGERBLUE4" />
+            <Field Name="Quantity_NOC_FIREBRICK" />
+            <Field Name="Quantity_NOC_FIREBRICK1" />
+            <Field Name="Quantity_NOC_FIREBRICK2" />
+            <Field Name="Quantity_NOC_FIREBRICK3" />
+            <Field Name="Quantity_NOC_FIREBRICK4" />
+            <Field Name="Quantity_NOC_FLORALWHITE" />
+            <Field Name="Quantity_NOC_FORESTGREEN" />
+            <Field Name="Quantity_NOC_GAINSBORO" />
+            <Field Name="Quantity_NOC_GHOSTWHITE" />
+            <Field Name="Quantity_NOC_GOLD" />
+            <Field Name="Quantity_NOC_GOLD1" />
+            <Field Name="Quantity_NOC_GOLD2" />
+            <Field Name="Quantity_NOC_GOLD3" />
+            <Field Name="Quantity_NOC_GOLD4" />
+            <Field Name="Quantity_NOC_GOLDENROD" />
+            <Field Name="Quantity_NOC_GOLDENROD1" />
+            <Field Name="Quantity_NOC_GOLDENROD2" />
+            <Field Name="Quantity_NOC_GOLDENROD3" />
+            <Field Name="Quantity_NOC_GOLDENROD4" />
+            <Field Name="Quantity_NOC_GRAY" />
+            <Field Name="Quantity_NOC_GRAY0" />
+            <Field Name="Quantity_NOC_GRAY1" />
+            <Field Name="Quantity_NOC_GRAY10" />
+            <Field Name="Quantity_NOC_GRAY11" />
+            <Field Name="Quantity_NOC_GRAY12" />
+            <Field Name="Quantity_NOC_GRAY13" />
+            <Field Name="Quantity_NOC_GRAY14" />
+            <Field Name="Quantity_NOC_GRAY15" />
+            <Field Name="Quantity_NOC_GRAY16" />
+            <Field Name="Quantity_NOC_GRAY17" />
+            <Field Name="Quantity_NOC_GRAY18" />
+            <Field Name="Quantity_NOC_GRAY19" />
+            <Field Name="Quantity_NOC_GRAY2" />
+            <Field Name="Quantity_NOC_GRAY20" />
+            <Field Name="Quantity_NOC_GRAY21" />
+            <Field Name="Quantity_NOC_GRAY22" />
+            <Field Name="Quantity_NOC_GRAY23" />
+            <Field Name="Quantity_NOC_GRAY24" />
+            <Field Name="Quantity_NOC_GRAY25" />
+            <Field Name="Quantity_NOC_GRAY26" />
+            <Field Name="Quantity_NOC_GRAY27" />
+            <Field Name="Quantity_NOC_GRAY28" />
+            <Field Name="Quantity_NOC_GRAY29" />
+            <Field Name="Quantity_NOC_GRAY3" />
+            <Field Name="Quantity_NOC_GRAY30" />
+            <Field Name="Quantity_NOC_GRAY31" />
+            <Field Name="Quantity_NOC_GRAY32" />
+            <Field Name="Quantity_NOC_GRAY33" />
+            <Field Name="Quantity_NOC_GRAY34" />
+            <Field Name="Quantity_NOC_GRAY35" />
+            <Field Name="Quantity_NOC_GRAY36" />
+            <Field Name="Quantity_NOC_GRAY37" />
+            <Field Name="Quantity_NOC_GRAY38" />
+            <Field Name="Quantity_NOC_GRAY39" />
+            <Field Name="Quantity_NOC_GRAY4" />
+            <Field Name="Quantity_NOC_GRAY40" />
+            <Field Name="Quantity_NOC_GRAY41" />
+            <Field Name="Quantity_NOC_GRAY42" />
+            <Field Name="Quantity_NOC_GRAY43" />
+            <Field Name="Quantity_NOC_GRAY44" />
+            <Field Name="Quantity_NOC_GRAY45" />
+            <Field Name="Quantity_NOC_GRAY46" />
+            <Field Name="Quantity_NOC_GRAY47" />
+            <Field Name="Quantity_NOC_GRAY48" />
+            <Field Name="Quantity_NOC_GRAY49" />
+            <Field Name="Quantity_NOC_GRAY5" />
+            <Field Name="Quantity_NOC_GRAY50" />
+            <Field Name="Quantity_NOC_GRAY51" />
+            <Field Name="Quantity_NOC_GRAY52" />
+            <Field Name="Quantity_NOC_GRAY53" />
+            <Field Name="Quantity_NOC_GRAY54" />
+            <Field Name="Quantity_NOC_GRAY55" />
+            <Field Name="Quantity_NOC_GRAY56" />
+            <Field Name="Quantity_NOC_GRAY57" />
+            <Field Name="Quantity_NOC_GRAY58" />
+            <Field Name="Quantity_NOC_GRAY59" />
+            <Field Name="Quantity_NOC_GRAY6" />
+            <Field Name="Quantity_NOC_GRAY60" />
+            <Field Name="Quantity_NOC_GRAY61" />
+            <Field Name="Quantity_NOC_GRAY62" />
+            <Field Name="Quantity_NOC_GRAY63" />
+            <Field Name="Quantity_NOC_GRAY64" />
+            <Field Name="Quantity_NOC_GRAY65" />
+            <Field Name="Quantity_NOC_GRAY66" />
+            <Field Name="Quantity_NOC_GRAY67" />
+            <Field Name="Quantity_NOC_GRAY68" />
+            <Field Name="Quantity_NOC_GRAY69" />
+            <Field Name="Quantity_NOC_GRAY7" />
+            <Field Name="Quantity_NOC_GRAY70" />
+            <Field Name="Quantity_NOC_GRAY71" />
+            <Field Name="Quantity_NOC_GRAY72" />
+            <Field Name="Quantity_NOC_GRAY73" />
+            <Field Name="Quantity_NOC_GRAY74" />
+            <Field Name="Quantity_NOC_GRAY75" />
+            <Field Name="Quantity_NOC_GRAY76" />
+            <Field Name="Quantity_NOC_GRAY77" />
+            <Field Name="Quantity_NOC_GRAY78" />
+            <Field Name="Quantity_NOC_GRAY79" />
+            <Field Name="Quantity_NOC_GRAY8" />
+            <Field Name="Quantity_NOC_GRAY80" />
+            <Field Name="Quantity_NOC_GRAY81" />
+            <Field Name="Quantity_NOC_GRAY82" />
+            <Field Name="Quantity_NOC_GRAY83" />
+            <Field Name="Quantity_NOC_GRAY85" />
+            <Field Name="Quantity_NOC_GRAY86" />
+            <Field Name="Quantity_NOC_GRAY87" />
+            <Field Name="Quantity_NOC_GRAY88" />
+            <Field Name="Quantity_NOC_GRAY89" />
+            <Field Name="Quantity_NOC_GRAY9" />
+            <Field Name="Quantity_NOC_GRAY90" />
+            <Field Name="Quantity_NOC_GRAY91" />
+            <Field Name="Quantity_NOC_GRAY92" />
+            <Field Name="Quantity_NOC_GRAY93" />
+            <Field Name="Quantity_NOC_GRAY94" />
+            <Field Name="Quantity_NOC_GRAY95" />
+            <Field Name="Quantity_NOC_GREEN" />
+            <Field Name="Quantity_NOC_GREEN1" />
+            <Field Name="Quantity_NOC_GREEN2" />
+            <Field Name="Quantity_NOC_GREEN3" />
+            <Field Name="Quantity_NOC_GREEN4" />
+            <Field Name="Quantity_NOC_GREENYELLOW" />
+            <Field Name="Quantity_NOC_GRAY97" />
+            <Field Name="Quantity_NOC_GRAY98" />
+            <Field Name="Quantity_NOC_GRAY99" />
+            <Field Name="Quantity_NOC_HONEYDEW" />
+            <Field Name="Quantity_NOC_HONEYDEW2" />
+            <Field Name="Quantity_NOC_HONEYDEW3" />
+            <Field Name="Quantity_NOC_HONEYDEW4" />
+            <Field Name="Quantity_NOC_HOTPINK" />
+            <Field Name="Quantity_NOC_HOTPINK1" />
+            <Field Name="Quantity_NOC_HOTPINK2" />
+            <Field Name="Quantity_NOC_HOTPINK3" />
+            <Field Name="Quantity_NOC_HOTPINK4" />
+            <Field Name="Quantity_NOC_INDIANRED" />
+            <Field Name="Quantity_NOC_INDIANRED1" />
+            <Field Name="Quantity_NOC_INDIANRED2" />
+            <Field Name="Quantity_NOC_INDIANRED3" />
+            <Field Name="Quantity_NOC_INDIANRED4" />
+            <Field Name="Quantity_NOC_IVORY" />
+            <Field Name="Quantity_NOC_IVORY2" />
+            <Field Name="Quantity_NOC_IVORY3" />
+            <Field Name="Quantity_NOC_IVORY4" />
+            <Field Name="Quantity_NOC_KHAKI" />
+            <Field Name="Quantity_NOC_KHAKI1" />
+            <Field Name="Quantity_NOC_KHAKI2" />
+            <Field Name="Quantity_NOC_KHAKI3" />
+            <Field Name="Quantity_NOC_KHAKI4" />
+            <Field Name="Quantity_NOC_LAVENDER" />
+            <Field Name="Quantity_NOC_LAVENDERBLUSH1" />
+            <Field Name="Quantity_NOC_LAVENDERBLUSH2" />
+            <Field Name="Quantity_NOC_LAVENDERBLUSH3" />
+            <Field Name="Quantity_NOC_LAVENDERBLUSH4" />
+            <Field Name="Quantity_NOC_LAWNGREEN" />
+            <Field Name="Quantity_NOC_LEMONCHIFFON1" />
+            <Field Name="Quantity_NOC_LEMONCHIFFON2" />
+            <Field Name="Quantity_NOC_LEMONCHIFFON3" />
+            <Field Name="Quantity_NOC_LEMONCHIFFON4" />
+            <Field Name="Quantity_NOC_LIGHTBLUE" />
+            <Field Name="Quantity_NOC_LIGHTBLUE1" />
+            <Field Name="Quantity_NOC_LIGHTBLUE2" />
+            <Field Name="Quantity_NOC_LIGHTBLUE3" />
+            <Field Name="Quantity_NOC_LIGHTBLUE4" />
+            <Field Name="Quantity_NOC_LIGHTCORAL" />
+            <Field Name="Quantity_NOC_LIGHTCYAN1" />
+            <Field Name="Quantity_NOC_LIGHTCYAN2" />
+            <Field Name="Quantity_NOC_LIGHTCYAN3" />
+            <Field Name="Quantity_NOC_LIGHTCYAN4" />
+            <Field Name="Quantity_NOC_LIGHTGOLDENROD" />
+            <Field Name="Quantity_NOC_LIGHTGOLDENROD1" />
+            <Field Name="Quantity_NOC_LIGHTGOLDENROD2" />
+            <Field Name="Quantity_NOC_LIGHTGOLDENROD3" />
+            <Field Name="Quantity_NOC_LIGHTGOLDENROD4" />
+            <Field Name="Quantity_NOC_LIGHTGOLDENRODYELLOW" />
+            <Field Name="Quantity_NOC_LIGHTGRAY" />
+            <Field Name="Quantity_NOC_LIGHTPINK" />
+            <Field Name="Quantity_NOC_LIGHTPINK1" />
+            <Field Name="Quantity_NOC_LIGHTPINK2" />
+            <Field Name="Quantity_NOC_LIGHTPINK3" />
+            <Field Name="Quantity_NOC_LIGHTPINK4" />
+            <Field Name="Quantity_NOC_LIGHTSALMON1" />
+            <Field Name="Quantity_NOC_LIGHTSALMON2" />
+            <Field Name="Quantity_NOC_LIGHTSALMON3" />
+            <Field Name="Quantity_NOC_LIGHTSALMON4" />
+            <Field Name="Quantity_NOC_LIGHTSEAGREEN" />
+            <Field Name="Quantity_NOC_LIGHTSKYBLUE" />
+            <Field Name="Quantity_NOC_LIGHTSKYBLUE1" />
+            <Field Name="Quantity_NOC_LIGHTSKYBLUE2" />
+            <Field Name="Quantity_NOC_LIGHTSKYBLUE3" />
+            <Field Name="Quantity_NOC_LIGHTSKYBLUE4" />
+            <Field Name="Quantity_NOC_LIGHTSLATEBLUE" />
+            <Field Name="Quantity_NOC_LIGHTSLATEGRAY" />
+            <Field Name="Quantity_NOC_LIGHTSTEELBLUE" />
+            <Field Name="Quantity_NOC_LIGHTSTEELBLUE1" />
+            <Field Name="Quantity_NOC_LIGHTSTEELBLUE2" />
+            <Field Name="Quantity_NOC_LIGHTSTEELBLUE3" />
+            <Field Name="Quantity_NOC_LIGHTSTEELBLUE4" />
+            <Field Name="Quantity_NOC_LIGHTYELLOW" />
+            <Field Name="Quantity_NOC_LIGHTYELLOW2" />
+            <Field Name="Quantity_NOC_LIGHTYELLOW3" />
+            <Field Name="Quantity_NOC_LIGHTYELLOW4" />
+            <Field Name="Quantity_NOC_LIMEGREEN" />
+            <Field Name="Quantity_NOC_LINEN" />
+            <Field Name="Quantity_NOC_MAGENTA1" />
+            <Field Name="Quantity_NOC_MAGENTA2" />
+            <Field Name="Quantity_NOC_MAGENTA3" />
+            <Field Name="Quantity_NOC_MAGENTA4" />
+            <Field Name="Quantity_NOC_MAROON" />
+            <Field Name="Quantity_NOC_MAROON1" />
+            <Field Name="Quantity_NOC_MAROON2" />
+            <Field Name="Quantity_NOC_MAROON3" />
+            <Field Name="Quantity_NOC_MAROON4" />
+            <Field Name="Quantity_NOC_MEDIUMAQUAMARINE" />
+            <Field Name="Quantity_NOC_MEDIUMORCHID" />
+            <Field Name="Quantity_NOC_MEDIUMORCHID1" />
+            <Field Name="Quantity_NOC_MEDIUMORCHID2" />
+            <Field Name="Quantity_NOC_MEDIUMORCHID3" />
+            <Field Name="Quantity_NOC_MEDIUMORCHID4" />
+            <Field Name="Quantity_NOC_MEDIUMPURPLE" />
+            <Field Name="Quantity_NOC_MEDIUMPURPLE1" />
+            <Field Name="Quantity_NOC_MEDIUMPURPLE2" />
+            <Field Name="Quantity_NOC_MEDIUMPURPLE3" />
+            <Field Name="Quantity_NOC_MEDIUMPURPLE4" />
+            <Field Name="Quantity_NOC_MEDIUMSEAGREEN" />
+            <Field Name="Quantity_NOC_MEDIUMSLATEBLUE" />
+            <Field Name="Quantity_NOC_MEDIUMSPRINGGREEN" />
+            <Field Name="Quantity_NOC_MEDIUMTURQUOISE" />
+            <Field Name="Quantity_NOC_MEDIUMVIOLETRED" />
+            <Field Name="Quantity_NOC_MIDNIGHTBLUE" />
+            <Field Name="Quantity_NOC_MINTCREAM" />
+            <Field Name="Quantity_NOC_MISTYROSE" />
+            <Field Name="Quantity_NOC_MISTYROSE2" />
+            <Field Name="Quantity_NOC_MISTYROSE3" />
+            <Field Name="Quantity_NOC_MISTYROSE4" />
+            <Field Name="Quantity_NOC_MOCCASIN" />
+            <Field Name="Quantity_NOC_NAVAJOWHITE1" />
+            <Field Name="Quantity_NOC_NAVAJOWHITE2" />
+            <Field Name="Quantity_NOC_NAVAJOWHITE3" />
+            <Field Name="Quantity_NOC_NAVAJOWHITE4" />
+            <Field Name="Quantity_NOC_NAVYBLUE" />
+            <Field Name="Quantity_NOC_OLDLACE" />
+            <Field Name="Quantity_NOC_OLIVEDRAB" />
+            <Field Name="Quantity_NOC_OLIVEDRAB1" />
+            <Field Name="Quantity_NOC_OLIVEDRAB2" />
+            <Field Name="Quantity_NOC_OLIVEDRAB3" />
+            <Field Name="Quantity_NOC_OLIVEDRAB4" />
+            <Field Name="Quantity_NOC_ORANGE" />
+            <Field Name="Quantity_NOC_ORANGE1" />
+            <Field Name="Quantity_NOC_ORANGE2" />
+            <Field Name="Quantity_NOC_ORANGE3" />
+            <Field Name="Quantity_NOC_ORANGE4" />
+            <Field Name="Quantity_NOC_ORANGERED" />
+            <Field Name="Quantity_NOC_ORANGERED1" />
+            <Field Name="Quantity_NOC_ORANGERED2" />
+            <Field Name="Quantity_NOC_ORANGERED3" />
+            <Field Name="Quantity_NOC_ORANGERED4" />
+            <Field Name="Quantity_NOC_ORCHID" />
+            <Field Name="Quantity_NOC_ORCHID1" />
+            <Field Name="Quantity_NOC_ORCHID2" />
+            <Field Name="Quantity_NOC_ORCHID3" />
+            <Field Name="Quantity_NOC_ORCHID4" />
+            <Field Name="Quantity_NOC_PALEGOLDENROD" />
+            <Field Name="Quantity_NOC_PALEGREEN" />
+            <Field Name="Quantity_NOC_PALEGREEN1" />
+            <Field Name="Quantity_NOC_PALEGREEN2" />
+            <Field Name="Quantity_NOC_PALEGREEN3" />
+            <Field Name="Quantity_NOC_PALEGREEN4" />
+            <Field Name="Quantity_NOC_PALETURQUOISE" />
+            <Field Name="Quantity_NOC_PALETURQUOISE1" />
+            <Field Name="Quantity_NOC_PALETURQUOISE2" />
+            <Field Name="Quantity_NOC_PALETURQUOISE3" />
+            <Field Name="Quantity_NOC_PALETURQUOISE4" />
+            <Field Name="Quantity_NOC_PALEVIOLETRED" />
+            <Field Name="Quantity_NOC_PALEVIOLETRED1" />
+            <Field Name="Quantity_NOC_PALEVIOLETRED2" />
+            <Field Name="Quantity_NOC_PALEVIOLETRED3" />
+            <Field Name="Quantity_NOC_PALEVIOLETRED4" />
+            <Field Name="Quantity_NOC_PAPAYAWHIP" />
+            <Field Name="Quantity_NOC_PEACHPUFF" />
+            <Field Name="Quantity_NOC_PEACHPUFF2" />
+            <Field Name="Quantity_NOC_PEACHPUFF3" />
+            <Field Name="Quantity_NOC_PEACHPUFF4" />
+            <Field Name="Quantity_NOC_PERU" />
+            <Field Name="Quantity_NOC_PINK" />
+            <Field Name="Quantity_NOC_PINK1" />
+            <Field Name="Quantity_NOC_PINK2" />
+            <Field Name="Quantity_NOC_PINK3" />
+            <Field Name="Quantity_NOC_PINK4" />
+            <Field Name="Quantity_NOC_PLUM" />
+            <Field Name="Quantity_NOC_PLUM1" />
+            <Field Name="Quantity_NOC_PLUM2" />
+            <Field Name="Quantity_NOC_PLUM3" />
+            <Field Name="Quantity_NOC_PLUM4" />
+            <Field Name="Quantity_NOC_POWDERBLUE" />
+            <Field Name="Quantity_NOC_PURPLE" />
+            <Field Name="Quantity_NOC_PURPLE1" />
+            <Field Name="Quantity_NOC_PURPLE2" />
+            <Field Name="Quantity_NOC_PURPLE3" />
+            <Field Name="Quantity_NOC_PURPLE4" />
+            <Field Name="Quantity_NOC_RED" />
+            <Field Name="Quantity_NOC_RED1" />
+            <Field Name="Quantity_NOC_RED2" />
+            <Field Name="Quantity_NOC_RED3" />
+            <Field Name="Quantity_NOC_RED4" />
+            <Field Name="Quantity_NOC_ROSYBROWN" />
+            <Field Name="Quantity_NOC_ROSYBROWN1" />
+            <Field Name="Quantity_NOC_ROSYBROWN2" />
+            <Field Name="Quantity_NOC_ROSYBROWN3" />
+            <Field Name="Quantity_NOC_ROSYBROWN4" />
+            <Field Name="Quantity_NOC_ROYALBLUE" />
+            <Field Name="Quantity_NOC_ROYALBLUE1" />
+            <Field Name="Quantity_NOC_ROYALBLUE2" />
+            <Field Name="Quantity_NOC_ROYALBLUE3" />
+            <Field Name="Quantity_NOC_ROYALBLUE4" />
+            <Field Name="Quantity_NOC_SADDLEBROWN" />
+            <Field Name="Quantity_NOC_SALMON" />
+            <Field Name="Quantity_NOC_SALMON1" />
+            <Field Name="Quantity_NOC_SALMON2" />
+            <Field Name="Quantity_NOC_SALMON3" />
+            <Field Name="Quantity_NOC_SALMON4" />
+            <Field Name="Quantity_NOC_SANDYBROWN" />
+            <Field Name="Quantity_NOC_SEAGREEN" />
+            <Field Name="Quantity_NOC_SEAGREEN1" />
+            <Field Name="Quantity_NOC_SEAGREEN2" />
+            <Field Name="Quantity_NOC_SEAGREEN3" />
+            <Field Name="Quantity_NOC_SEAGREEN4" />
+            <Field Name="Quantity_NOC_SEASHELL" />
+            <Field Name="Quantity_NOC_SEASHELL2" />
+            <Field Name="Quantity_NOC_SEASHELL3" />
+            <Field Name="Quantity_NOC_SEASHELL4" />
+            <Field Name="Quantity_NOC_BEET" />
+            <Field Name="Quantity_NOC_TEAL" />
+            <Field Name="Quantity_NOC_SIENNA" />
+            <Field Name="Quantity_NOC_SIENNA1" />
+            <Field Name="Quantity_NOC_SIENNA2" />
+            <Field Name="Quantity_NOC_SIENNA3" />
+            <Field Name="Quantity_NOC_SIENNA4" />
+            <Field Name="Quantity_NOC_SKYBLUE" />
+            <Field Name="Quantity_NOC_SKYBLUE1" />
+            <Field Name="Quantity_NOC_SKYBLUE2" />
+            <Field Name="Quantity_NOC_SKYBLUE3" />
+            <Field Name="Quantity_NOC_SKYBLUE4" />
+            <Field Name="Quantity_NOC_SLATEBLUE" />
+            <Field Name="Quantity_NOC_SLATEBLUE1" />
+            <Field Name="Quantity_NOC_SLATEBLUE2" />
+            <Field Name="Quantity_NOC_SLATEBLUE3" />
+            <Field Name="Quantity_NOC_SLATEBLUE4" />
+            <Field Name="Quantity_NOC_SLATEGRAY1" />
+            <Field Name="Quantity_NOC_SLATEGRAY2" />
+            <Field Name="Quantity_NOC_SLATEGRAY3" />
+            <Field Name="Quantity_NOC_SLATEGRAY4" />
+            <Field Name="Quantity_NOC_SLATEGRAY" />
+            <Field Name="Quantity_NOC_SNOW" />
+            <Field Name="Quantity_NOC_SNOW2" />
+            <Field Name="Quantity_NOC_SNOW3" />
+            <Field Name="Quantity_NOC_SNOW4" />
+            <Field Name="Quantity_NOC_SPRINGGREEN" />
+            <Field Name="Quantity_NOC_SPRINGGREEN2" />
+            <Field Name="Quantity_NOC_SPRINGGREEN3" />
+            <Field Name="Quantity_NOC_SPRINGGREEN4" />
+            <Field Name="Quantity_NOC_STEELBLUE" />
+            <Field Name="Quantity_NOC_STEELBLUE1" />
+            <Field Name="Quantity_NOC_STEELBLUE2" />
+            <Field Name="Quantity_NOC_STEELBLUE3" />
+            <Field Name="Quantity_NOC_STEELBLUE4" />
+            <Field Name="Quantity_NOC_TAN" />
+            <Field Name="Quantity_NOC_TAN1" />
+            <Field Name="Quantity_NOC_TAN2" />
+            <Field Name="Quantity_NOC_TAN3" />
+            <Field Name="Quantity_NOC_TAN4" />
+            <Field Name="Quantity_NOC_THISTLE" />
+            <Field Name="Quantity_NOC_THISTLE1" />
+            <Field Name="Quantity_NOC_THISTLE2" />
+            <Field Name="Quantity_NOC_THISTLE3" />
+            <Field Name="Quantity_NOC_THISTLE4" />
+            <Field Name="Quantity_NOC_TOMATO" />
+            <Field Name="Quantity_NOC_TOMATO1" />
+            <Field Name="Quantity_NOC_TOMATO2" />
+            <Field Name="Quantity_NOC_TOMATO3" />
+            <Field Name="Quantity_NOC_TOMATO4" />
+            <Field Name="Quantity_NOC_TURQUOISE" />
+            <Field Name="Quantity_NOC_TURQUOISE1" />
+            <Field Name="Quantity_NOC_TURQUOISE2" />
+            <Field Name="Quantity_NOC_TURQUOISE3" />
+            <Field Name="Quantity_NOC_TURQUOISE4" />
+            <Field Name="Quantity_NOC_VIOLET" />
+            <Field Name="Quantity_NOC_VIOLETRED" />
+            <Field Name="Quantity_NOC_VIOLETRED1" />
+            <Field Name="Quantity_NOC_VIOLETRED2" />
+            <Field Name="Quantity_NOC_VIOLETRED3" />
+            <Field Name="Quantity_NOC_VIOLETRED4" />
+            <Field Name="Quantity_NOC_WHEAT" />
+            <Field Name="Quantity_NOC_WHEAT1" />
+            <Field Name="Quantity_NOC_WHEAT2" />
+            <Field Name="Quantity_NOC_WHEAT3" />
+            <Field Name="Quantity_NOC_WHEAT4" />
+            <Field Name="Quantity_NOC_WHITESMOKE" />
+            <Field Name="Quantity_NOC_YELLOW" />
+            <Field Name="Quantity_NOC_YELLOW1" />
+            <Field Name="Quantity_NOC_YELLOW2" />
+            <Field Name="Quantity_NOC_YELLOW3" />
+            <Field Name="Quantity_NOC_YELLOW4" />
+            <Field Name="Quantity_NOC_YELLOWGREEN" />
+            <Field Name="Quantity_NOC_WHITE" />
+          </Enum>
+        </Namespace>
+        <Namespace Name="Precision">
+          <Class Name="Precision">
+            <Methods>
+              <Method Name="Confusion">
+                <Attrs>
+                  <IsProperty />
+                  <IsStatic />
+                </Attrs>
+                <ReturnType Name="double" />
+                <Parameters />
+              </Method>
+            </Methods>
+          </Class>
+        </Namespace>
+        <Namespace Name="Graphic3d">
+          <Class Name="Graphic3d_WNTGraphicDevice">
+            <Implements Name="WNT_GraphicDevice" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+        <Namespace Name="WNT">
+          <Class Name="WNT_GraphicDevice">
+            <Implements Name="Aspect_GraphicDevice" />
+            <Methods />
+          </Class>
+          <Class Name="WNT_Window">
+            <Implements Name="Aspect_Window" />
+            <Methods>
+              <Method Name="IsMapped">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="bool" />
+                <Parameters />
+              </Method>
+              <Method Name="Map">
+                <ReturnType Name="void" />
+                <Parameters />
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="aDevice">
+                    <ParamType Name="WNT_GraphicDevice" />
+                  </Parameter>
+                  <Parameter Name="aHandle">
+                    <ParamType Name="IntPtr" />
+                  </Parameter>
+                  <Parameter Name="aBackColor">
+                    <ParamType Name="Quantity_NameOfColor" />
+                  </Parameter>
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+        <Namespace Name="AIS">
+          <Class Name="AIS_InteractiveContext">
+            <Implements Name="MMgt_TShared" />
+            <Methods>
+              <Method Name="SetHilightColor">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="aHiCol">
+                    <ParamType Name="Quantity_NameOfColor" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="SetDisplayMode">
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="AMode">
+                    <ParamType Name="AIS_DisplayMode" />
+                  </Parameter>
+                  <Parameter Name="updateviewer">
+                    <ParamType Name="bool" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="Display">
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="anIobj">
+                    <ParamType Name="AIS_InteractiveObject" />
+                  </Parameter>
+                  <Parameter Name="updateviewer">
+                    <ParamType Name="bool" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="Remove">
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="aniobj">
+                    <ParamType Name="AIS_InteractiveObject" />
+                  </Parameter>
+                  <Parameter Name="updateviewer">
+                    <ParamType Name="bool" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="Select">
+                <ReturnType Name="AIS_StatusOfPick" />
+                <Parameters>
+                  <Parameter Name="updateviewer">
+                    <ParamType Name="bool" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="RemoveAll">
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="updateviewer">
+                    <ParamType Name="bool" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="MainViewer">
+                    <ParamType Name="V3d_Viewer" />
+                  </Parameter>
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Enum Name="AIS_DisplayMode">
+            <Field Name="AIS_WireFrame" />
+            <Field Name="AIS_Shaded" />
+            <Field Name="AIS_QuickHLR" />
+            <Field Name="AIS_ExactHLR" />
+          </Enum>
+          <Class Name="AIS_Shape">
+            <Implements Name="AIS_InteractiveObject" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="shap">
+                    <ParamType Name="TopoDS_Shape" />
+                  </Parameter>
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="AIS_InteractiveObject">
+            <Implements Name="SelectMgr_SelectableObject" />
+            <Methods />
+          </Class>
+          <Class Name="AIS_Trihedron">
+            <Implements Name="AIS_InteractiveObject" />
+            <Methods>
+              <Method Name="SetSize">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="aValue">
+                    <ParamType Name="double" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="aComponent">
+                    <ParamType Name="Geom_Axis2Placement" />
+                  </Parameter>
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Enum Name="AIS_StatusOfPick">
+            <Field Name="AIS_SOP_Error" />
+            <Field Name="AIS_SOP_NothingSelected" />
+            <Field Name="AIS_SOP_Removed" />
+            <Field Name="AIS_SOP_OneSelected" />
+            <Field Name="AIS_SOP_SeveralSelected" />
+          </Enum>
+          <Enum Name="AIS_StatusOfDetection">
+            <Field Name="AIS_SOD_Error" />
+            <Field Name="AIS_SOD_Nothing" />
+            <Field Name="AIS_SOD_AllBad" />
+            <Field Name="AIS_SOD_Selected" />
+            <Field Name="AIS_SOD_OnlyOneDetected" />
+            <Field Name="AIS_SOD_OnlyOneGood" />
+            <Field Name="AIS_SOD_SeveralGood" />
+          </Enum>
+        </Namespace>
+        <Namespace Name="gp">
+          <Class Name="gp_Pnt">
+            <Methods>
+              <Method Name="SetX">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="X">
+                    <ParamType Name="double" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="SetY">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="Y">
+                    <ParamType Name="double" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="SetZ">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="Z">
+                    <ParamType Name="double" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="SetCoord">
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="Xp">
+                    <ParamType Name="double" />
+                  </Parameter>
+                  <Parameter Name="Yp">
+                    <ParamType Name="double" />
+                  </Parameter>
+                  <Parameter Name="Zp">
+                    <ParamType Name="double" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="X">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="double" />
+                <Parameters />
+              </Method>
+              <Method Name="Y">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="double" />
+                <Parameters />
+              </Method>
+              <Method Name="Z">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="double" />
+                <Parameters />
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Xp">
+                    <ParamType Name="double" />
+                  </Parameter>
+                  <Parameter Name="Yp">
+                    <ParamType Name="double" />
+                  </Parameter>
+                  <Parameter Name="Zp">
+                    <ParamType Name="double" />
+                  </Parameter>
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="gp_Ax2">
+            <Methods>
+              <Method Name="SetLocation">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="P">
+                    <ParamType Name="gp_Pnt" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="SetDirection">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="V">
+                    <ParamType Name="gp_Dir" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+              <Method Name="XDirection">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="gp_Dir" />
+                <Parameters />
+              </Method>
+              <Method Name="YDirection">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="gp_Dir" />
+                <Parameters />
+              </Method>
+            </Methods>
+          </Class>
+          <Class Name="gp">
+            <Methods>
+              <Method Name="ZOX">
+                <Attrs>
+                  <IsProperty />
+                  <IsStatic />
+                </Attrs>
+                <ReturnType Name="gp_Ax2" />
+                <Parameters />
+              </Method>
+            </Methods>
+          </Class>
+          <Class Name="gp_Dir">
+            <Methods />
+          </Class>
+          <Class Name="gp_Pnt2d">
+            <Methods>
+              <Method Name="Y">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="double" />
+                <Parameters />
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Coord">
+                    <ParamType Name="gp_XY" />
+                  </Parameter>
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Xp">
+                    <ParamType Name="double" />
+                  </Parameter>
+                  <Parameter Name="Yp">
+                    <ParamType Name="double" />
+                  </Parameter>
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="gp_XY">
+            <Methods />
+          </Class>
+          <Class Name="gp_XYZ">
+            <Methods>
+              <Method Name="SetLinearForm">
+                <ReturnType Name="void" />
+                <Parameters>
+                  <Parameter Name="A1">
+                    <ParamType Name="double" />
+                  </Parameter>
+                  <Parameter Name="XYZ1">
+                    <ParamType Name="gp_XYZ" />
+                  </Parameter>
+                  <Parameter Name="XYZ2">
+                    <ParamType Name="gp_XYZ" />
+                  </Parameter>
+                </Parameters>
+              </Method>
+            </Methods>
+          </Class>
+        </Namespace>
+        <Namespace Name="BRepPrimAPI">
+          <Class Name="BRepPrimAPI_MakeBox">
+            <Implements Name="BRepBuilderAPI_MakeShape" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P">
+                    <ParamType Name="gp_Pnt" />
+                  </Parameter>
+                  <Parameter Name="dx">
+                    <ParamType Name="double" />
+                  </Parameter>
+                  <Parameter Name="dy">
+                    <ParamType Name="double" />
+                  </Parameter>
+                  <Parameter Name="dz">
+                    <ParamType Name="double" />
+                  </Parameter>
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="dx">
+                    <ParamType Name="double" />
+                  </Parameter>
+                  <Parameter Name="dy">
+                    <ParamType Name="double" />
+                  </Parameter>
+                  <Parameter Name="dz">
+                    <ParamType Name="double" />
+                  </Parameter>
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+        <Namespace Name="BRepBuilderAPI">
+          <Class Name="BRepBuilderAPI_MakeShape">
+            <Implements Name="BRepBuilderAPI_Command" />
+            <Methods>
+              <Method Name="Shape">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="TopoDS_Shape" />
+                <Parameters />
+              </Method>
+            </Methods>
+          </Class>
+          <Class Name="BRepBuilderAPI_Command">
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="SelectMgr">
+          <Class Name="SelectMgr_SelectableObject">
+            <Implements Name="PrsMgr_PresentableObject" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="PrsMgr">
+          <Class Name="PrsMgr_PresentableObject">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="TopoDS">
+          <Class Name="TopoDS_Shape">
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="Geom">
+          <Class Name="Geom_Axis2Placement">
+            <Implements Name="Geom_AxisPlacement" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="A2">
+                    <ParamType Name="gp_Ax2" />
+                  </Parameter>
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="Geom_AxisPlacement">
+            <Implements Name="Geom_Geometry" />
+            <Methods />
+          </Class>
+          <Class Name="Geom_Geometry">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="Graphic2d">
+          <Class Name="Graphic2d_Vertex">
+            <Methods>
+              <Method Name="X">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="double" />
+                <Parameters />
+              </Method>
+              <Method Name="Y">
+                <Attrs>
+                  <IsProperty />
+                </Attrs>
+                <ReturnType Name="double" />
+                <Parameters />
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+      </Namespace>
+    </Namespace>
+  </Generator>
+</API>

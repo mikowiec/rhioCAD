@@ -1,0 +1,11 @@
+﻿<Window x:Class="TestBuilderPlugin.View.DebugToolsRemote" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Debugging Tools" Height="111" Width="226">
+	<StackPanel Orientation="Vertical">
+		<Button Click="LaunchOutputDebugClick">
+			<TextBlock Text="Document Debug Tree" />
+		</Button>
+		<Button Click="LaunchUnitTestRemote">
+			<TextBlock Text="Execute Boo Scripts from Folder" />
+		</Button>
+
+	</StackPanel>
+</Window>

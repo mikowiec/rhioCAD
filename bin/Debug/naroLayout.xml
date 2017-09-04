@@ -1,0 +1,21 @@
+<DockingManager version="1.3.0">
+    <ResizingPanel ResizeWidth="*" ResizeHeight="*" EffectiveSize="0,0" Orientation="Vertical">
+        <ResizingPanel ResizeWidth="*" ResizeHeight="*" EffectiveSize="1264,530" Orientation="Horizontal">
+            <DockablePane ResizeWidth="284" ResizeHeight="*" EffectiveSize="284,530" ID="e1bfe535-81d5-44c0-a008-d6818daf3ef6" Anchor="Left" SelectedIndex="3" IsAutoHidden="false">
+                <DockableContent Name="booViewDock" FloatingWindowSize="250,400" />
+                <DockableContent Name="newpLayerDock" FloatingWindowSize="250,400" />
+                <DockableContent Name="newpropertygridDock" FloatingWindowSize="250,400" />
+                <DockableContent Name="treeViewDock" FloatingWindowSize="250,400" />
+            </DockablePane>
+            <DocumentPane IsMain="true" ResizeWidth="*" ResizeHeight="*" EffectiveSize="728,530" />
+            <DockablePane ResizeWidth="240" ResizeHeight="*" EffectiveSize="240,530" ID="211ee0d7-383c-4680-835c-d6360ed5de6e" Anchor="Right" IsAutoHidden="false">
+                <DockableContent Name="helpViewDock" FloatingWindowSize="250,400" ChildIndex="0" Width="239" Height="535" Anchor="Right" State="Docked" />
+            </DockablePane>
+        </ResizingPanel>
+        <DockablePane ResizeWidth="*" ResizeHeight="64" EffectiveSize="1264,64" ID="46ec916c-16b3-4d7c-806e-0e6c78d20cfd" Anchor="Bottom" IsAutoHidden="false">
+            <DockableContent Name="commandLineViewDock" FloatingWindowSize="250,400" />
+        </DockablePane>
+    </ResizingPanel>
+    <Hidden />
+    <Windows />
+</DockingManager>

@@ -1,0 +1,2733 @@
+<API>
+  <Generator Name="Occ">
+    <Namespace Name="NaroCppCore">
+      <Namespace Name="Occ">
+        <Namespace Name="gp">
+          <Class Name="gp_Pnt">
+            <Methods>
+              <Method Name="Distance" ReturnType="double">
+                <Parameters>
+                  <Parameter Name="Other" ParamType="gp_Pnt" />
+                </Parameters>
+              </Method>
+              <Method Name="Transformed" ReturnType="gp_Pnt">
+                <Parameters>
+                  <Parameter Name="T" ParamType="gp_Trsf" />
+                </Parameters>
+              </Method>
+              <Method Name="Transform" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="T" ParamType="gp_Trsf" />
+                </Parameters>
+              </Method>
+              <Method Name="IsEqual" ReturnType="bool">
+                <Parameters>
+                  <Parameter Name="Other" ParamType="gp_Pnt" />
+                  <Parameter Name="LinearTolerance" ParamType="double" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Properties>
+              <Property Name="X" ReturnType="double">
+                <Attrs IsReadProperty="true" IsWriteProperty="true" />
+              </Property>
+              <Property Name="Y" ReturnType="double">
+                <Attrs IsReadProperty="true" IsWriteProperty="true" />
+              </Property>
+              <Property Name="Z" ReturnType="double">
+                <Attrs IsReadProperty="true" IsWriteProperty="true" />
+              </Property>
+              <Property Name="XYZ" ReturnType="gp_XYZ">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Xp" ParamType="double" />
+                  <Parameter Name="Yp" ParamType="double" />
+                  <Parameter Name="Zp" ParamType="double" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Coord" ParamType="gp_XYZ" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="gp_Ax2">
+            <Methods>
+              <Method Name="Translated" ReturnType="gp_Ax2">
+                <Parameters>
+                  <Parameter Name="V" ParamType="gp_Vec" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Properties>
+              <Property Name="Location" ReturnType="gp_Pnt">
+                <Attrs IsReadProperty="true" IsWriteProperty="true" />
+              </Property>
+              <Property Name="Axis" ReturnType="gp_Ax1">
+                <Attrs IsReadProperty="true" IsWriteProperty="true" />
+              </Property>
+              <Property Name="XDirection" ReturnType="gp_Dir">
+                <Attrs IsReadProperty="true" IsWriteProperty="true" />
+              </Property>
+              <Property Name="Direction" ReturnType="gp_Dir">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+            </Properties>
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                  <Parameter Name="V" ParamType="gp_Dir" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="gp">
+            <Methods />
+            <Properties>
+              <Property Name="ZOX" ReturnType="gp_Ax2">
+                <Attrs IsReadProperty="true" IsStatic="true" />
+              </Property>
+              <Property Name="OZ" ReturnType="gp_Ax1">
+                <Attrs IsReadProperty="true" IsStatic="true" />
+              </Property>
+              <Property Name="OX" ReturnType="gp_Ax1">
+                <Attrs IsReadProperty="true" IsStatic="true" />
+              </Property>
+              <Property Name="OY" ReturnType="gp_Ax1">
+                <Attrs IsReadProperty="true" IsStatic="true" />
+              </Property>
+              <Property Name="XOY" ReturnType="gp_Ax2">
+                <Attrs IsReadProperty="true" IsStatic="true" />
+              </Property>
+              <Property Name="YOZ" ReturnType="gp_Ax2">
+                <Attrs IsReadProperty="true" IsStatic="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="gp_Ax1">
+            <Methods>
+              <Method Name="Translated" ReturnType="gp_Ax1">
+                <Parameters>
+                  <Parameter Name="V" ParamType="gp_Vec" />
+                </Parameters>
+              </Method>
+              <Method Name="Transformed" ReturnType="gp_Ax1">
+                <Parameters>
+                  <Parameter Name="T" ParamType="gp_Trsf" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Properties>
+              <Property Name="Location" ReturnType="gp_Pnt">
+                <Attrs IsReadProperty="true" IsWriteProperty="true" />
+              </Property>
+              <Property Name="Direction" ReturnType="gp_Dir">
+                <Attrs IsReadProperty="true" IsWriteProperty="true" />
+              </Property>
+            </Properties>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                  <Parameter Name="V" ParamType="gp_Dir" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="gp_Dir">
+            <Methods>
+              <Method Name="Crossed" ReturnType="gp_Dir">
+                <Parameters>
+                  <Parameter Name="Right" ParamType="gp_Dir" />
+                </Parameters>
+              </Method>
+              <Method Name="IsParallel" ReturnType="bool">
+                <Parameters>
+                  <Parameter Name="Other" ParamType="gp_Dir" />
+                  <Parameter Name="AngularTolerance" ParamType="double" />
+                </Parameters>
+              </Method>
+              <Method Name="IsNormal" ReturnType="bool">
+                <Parameters>
+                  <Parameter Name="Other" ParamType="gp_Dir" />
+                  <Parameter Name="AngularTolerance" ParamType="double" />
+                </Parameters>
+              </Method>
+              <Method Name="IsOpposite" ReturnType="bool">
+                <Parameters>
+                  <Parameter Name="Other" ParamType="gp_Dir" />
+                  <Parameter Name="AngularTolerance" ParamType="double" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Properties>
+              <Property Name="XYZ" ReturnType="gp_XYZ">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Xv" ParamType="double" />
+                  <Parameter Name="Yv" ParamType="double" />
+                  <Parameter Name="Zv" ParamType="double" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Coord" ParamType="gp_XYZ" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="V" ParamType="gp_Vec" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="gp_XYZ">
+            <Methods />
+            <Properties>
+              <Property Name="X" ReturnType="double">
+                <Attrs IsReadProperty="true" IsWriteProperty="true" />
+              </Property>
+              <Property Name="Y" ReturnType="double">
+                <Attrs IsReadProperty="true" IsWriteProperty="true" />
+              </Property>
+              <Property Name="Z" ReturnType="double">
+                <Attrs IsReadProperty="true" IsWriteProperty="true" />
+              </Property>
+            </Properties>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="X" ParamType="double" />
+                  <Parameter Name="Y" ParamType="double" />
+                  <Parameter Name="Z" ParamType="double" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="gp_Pln">
+            <Methods>
+              <Method Name="Distance" ReturnType="double">
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Properties>
+              <Property Name="Position" ReturnType="gp_Ax3">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="Axis" ReturnType="gp_Ax1">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                  <Parameter Name="V" ParamType="gp_Dir" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="A3" ParamType="gp_Ax3" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="gp_Ax3">
+            <Methods />
+            <Properties>
+              <Property Name="Ax2" ReturnType="gp_Ax2">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="Direction" ReturnType="gp_Dir">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="gp_Trsf">
+            <Methods>
+              <Method Name="Multiply" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="T" ParamType="gp_Trsf" />
+                </Parameters>
+              </Method>
+              <Method Name="SetValues" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="a11" ParamType="double" />
+                  <Parameter Name="a12" ParamType="double" />
+                  <Parameter Name="a13" ParamType="double" />
+                  <Parameter Name="a14" ParamType="double" />
+                  <Parameter Name="a21" ParamType="double" />
+                  <Parameter Name="a22" ParamType="double" />
+                  <Parameter Name="a23" ParamType="double" />
+                  <Parameter Name="a24" ParamType="double" />
+                  <Parameter Name="a31" ParamType="double" />
+                  <Parameter Name="a32" ParamType="double" />
+                  <Parameter Name="a33" ParamType="double" />
+                  <Parameter Name="a34" ParamType="double" />
+                  <Parameter Name="Tolang" ParamType="double" />
+                  <Parameter Name="TolDist" ParamType="double" />
+                </Parameters>
+              </Method>
+              <Method Name="Value" ReturnType="double">
+                <Parameters>
+                  <Parameter Name="Row" ParamType="int" />
+                  <Parameter Name="Col" ParamType="int" />
+                </Parameters>
+              </Method>
+              <Method Name="SetRotation" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="A1" ParamType="gp_Ax1" />
+                  <Parameter Name="Ang" ParamType="double" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Properties>
+              <Property Name="Mirror" ReturnType="gp_Ax2">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+              <Property Name="Translation" ReturnType="gp_Vec">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+              <Property Name="ScaleFactor" ReturnType="double">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+              <Property Name="Inverted" ReturnType="gp_Trsf">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="gp_Circ">
+            <Methods />
+            <Properties>
+              <Property Name="Axis" ReturnType="gp_Ax1">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="Radius" ReturnType="double">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="gp_Vec">
+            <Methods>
+              <Method Name="Normalize" ReturnType="void">
+                <Parameters />
+              </Method>
+              <Method Name="Multiply" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="Scalar" ParamType="double" />
+                </Parameters>
+              </Method>
+              <Method Name="Crossed" ReturnType="gp_Vec">
+                <Parameters>
+                  <Parameter Name="Right" ParamType="gp_Vec" />
+                </Parameters>
+              </Method>
+              <Method Name="IsParallel" ReturnType="bool">
+                <Parameters>
+                  <Parameter Name="Other" ParamType="gp_Vec" />
+                  <Parameter Name="AngularTolerance" ParamType="double" />
+                </Parameters>
+              </Method>
+              <Method Name="Rotate" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="A1" ParamType="gp_Ax1" />
+                  <Parameter Name="Ang" ParamType="double" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P1" ParamType="gp_Pnt" />
+                  <Parameter Name="P2" ParamType="gp_Pnt" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="V" ParamType="gp_Dir" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Xv" ParamType="double" />
+                  <Parameter Name="Yv" ParamType="double" />
+                  <Parameter Name="Zv" ParamType="double" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="X" ReturnType="double">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="Y" ReturnType="double">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="Z" ReturnType="double">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="Reversed" ReturnType="gp_Vec">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="Magnitude" ReturnType="double">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="gp_Lin">
+            <Methods>
+              <Method Name="Distance" ReturnType="double">
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                  <Parameter Name="V" ParamType="gp_Dir" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="gp_Pnt2d">
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Xp" ParamType="double" />
+                  <Parameter Name="Yp" ParamType="double" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+        <Namespace Name="Graphic3d">
+          <Class Name="Graphic3d_WNTGraphicDevice">
+            <Implements Name="WNT_GraphicDevice" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="Graphic3d_StructureManager">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+          <Class Name="Graphic3d_DataStructureManager">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="WNT">
+          <Class Name="WNT_GraphicDevice">
+            <Implements Name="Aspect_GraphicDevice" />
+            <Methods />
+          </Class>
+          <Class Name="WNT_Window">
+            <Implements Name="Aspect_Window" />
+            <Methods>
+              <Method Name="Map" ReturnType="void">
+                <Parameters />
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="aDevice" ParamType="WNT_GraphicDevice" />
+                  <Parameter Name="aHandle" ParamType="IntPtr" />
+                  <Parameter Name="aBackColor" ParamType="Quantity_NameOfColor" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="IsMapped" ReturnType="bool">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="Aspect">
+          <Class Name="Aspect_GraphicDevice">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+          <Class Name="Aspect_Window">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+          <Enum Name="Aspect_TypeOfTriedronPosition">
+            <Field Name="Aspect_TOTP_CENTER" />
+            <Field Name="Aspect_TOTP_LEFT_LOWER" />
+            <Field Name="Aspect_TOTP_LEFT_UPPER" />
+            <Field Name="Aspect_TOTP_RIGHT_LOWER" />
+            <Field Name="Aspect_TOTP_RIGHT_UPPER" />
+            <Field Name="Aspect_TOTP_01" />
+            <Field Name="Aspect_TOTP_02" />
+            <Field Name="Aspect_TOTP_03" />
+            <Field Name="Aspect_TOTP_04" />
+            <Field Name="Aspect_TOTP_05" />
+            <Field Name="Aspect_TOTP_06" />
+            <Field Name="Aspect_TOTP_07" />
+            <Field Name="Aspect_TOTP_08" />
+            <Field Name="Aspect_TOTP_09" />
+            <Field Name="Aspect_TOTP_10" />
+          </Enum>
+          <Enum Name="Aspect_TypeOfLayer">
+            <Field Name="Aspect_TOL_OVERLAY" />
+            <Field Name="Aspect_TOL_UNDERLAY" />
+          </Enum>
+          <Enum Name="Aspect_TypeOfLine">
+            <Field Name="Aspect_TOL_SOLID" />
+            <Field Name="Aspect_TOL_DASH" />
+            <Field Name="Aspect_TOL_DOT" />
+            <Field Name="Aspect_TOL_DOTDASH" />
+            <Field Name="Aspect_TOL_USERDEFINED" />
+          </Enum>
+          <Enum Name="Aspect_TypeOfConstraint">
+            <Field Name="Aspect_TOC_BOTTOM_LEFT" />
+            <Field Name="Aspect_TOC_BOTTOM_RIGHT" />
+            <Field Name="Aspect_TOC_TOP_LEFT" />
+            <Field Name="Aspect_TOC_TOP_RIGHT" />
+          </Enum>
+        </Namespace>
+        <Namespace Name="MMgt">
+          <Class Name="MMgt_TShared">
+            <Implements Name="Standard_Transient" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="Standard">
+          <Class Name="Standard_Transient">
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="V3d">
+          <Class Name="V3d_Viewer">
+            <Implements Name="Viewer_Viewer" />
+            <Methods>
+              <Method Name="SetLightOn" ReturnType="void">
+                <Parameters />
+              </Method>
+              <Method Name="Redraw" ReturnType="void">
+                <Parameters />
+              </Method>
+              <Method Name="Update" ReturnType="void">
+                <Parameters />
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Device" ParamType="Aspect_GraphicDevice" />
+                  <Parameter Name="aName" ParamType="string" />
+                  <Parameter Name="aDomain" ParamType="string" />
+                  <Parameter Name="ViewSize" ParamType="double" />
+                  <Parameter Name="ViewProj" ParamType="V3d_TypeOfOrientation" />
+                  <Parameter Name="ViewBackground" ParamType="Quantity_NameOfColor" />
+                  <Parameter Name="Visualization" ParamType="V3d_TypeOfVisualization" />
+                  <Parameter Name="ShadingModel" ParamType="V3d_TypeOfShadingModel" />
+                  <Parameter Name="UpdateMode" ParamType="V3d_TypeOfUpdate" />
+                  <Parameter Name="ComputedMode" ParamType="bool" />
+                  <Parameter Name="DefaultComputedMode" ParamType="bool" />
+                  <Parameter Name="SurfaceDetail" ParamType="V3d_TypeOfSurfaceDetail" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="CreateView" ReturnType="V3d_View">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Enum Name="V3d_TypeOfOrientation">
+            <Field Name="V3d_Xpos" />
+            <Field Name="V3d_Ypos" />
+            <Field Name="V3d_Zpos" />
+            <Field Name="V3d_Xneg" />
+            <Field Name="V3d_Yneg" />
+            <Field Name="V3d_Zneg" />
+            <Field Name="V3d_XposYpos" />
+            <Field Name="V3d_XposZpos" />
+            <Field Name="V3d_YposZpos" />
+            <Field Name="V3d_XnegYneg" />
+            <Field Name="V3d_XnegYpos" />
+            <Field Name="V3d_XnegZneg" />
+            <Field Name="V3d_XnegZpos" />
+            <Field Name="V3d_YnegZneg" />
+            <Field Name="V3d_YnegZpos" />
+            <Field Name="V3d_XposYneg" />
+            <Field Name="V3d_XposZneg" />
+            <Field Name="V3d_YposZneg" />
+            <Field Name="V3d_XposYposZpos" />
+            <Field Name="V3d_XposYnegZpos" />
+            <Field Name="V3d_XposYposZneg" />
+            <Field Name="V3d_XnegYposZpos" />
+            <Field Name="V3d_XposYnegZneg" />
+            <Field Name="V3d_XnegYposZneg" />
+            <Field Name="V3d_XnegYnegZpos" />
+            <Field Name="V3d_XnegYnegZneg" />
+          </Enum>
+          <Enum Name="V3d_TypeOfVisualization">
+            <Field Name="V3d_WIREFRAME" />
+            <Field Name="V3d_ZBUFFER" />
+          </Enum>
+          <Enum Name="V3d_TypeOfShadingModel">
+            <Field Name="V3d_COLOR" />
+            <Field Name="V3d_MULTICOLOR" />
+            <Field Name="V3d_FLAT" />
+            <Field Name="V3d_GOURAUD" />
+            <Field Name="V3d_HIDDEN" />
+          </Enum>
+          <Enum Name="V3d_TypeOfUpdate">
+            <Field Name="V3d_ASAP" />
+            <Field Name="V3d_WAIT" />
+          </Enum>
+          <Enum Name="V3d_TypeOfSurfaceDetail">
+            <Field Name="V3d_TEX_NONE" />
+            <Field Name="V3d_TEX_ENVIRONMENT" />
+            <Field Name="V3d_TEX_ALL" />
+          </Enum>
+          <Class Name="V3d_AmbientLight">
+            <Implements Name="V3d_Light" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="VM" ParamType="V3d_Viewer" />
+                  <Parameter Name="Color" ParamType="Quantity_NameOfColor" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="V3d_Light">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+          <Class Name="V3d_DirectionalLight">
+            <Implements Name="V3d_PositionLight" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="VM" ParamType="V3d_Viewer" />
+                  <Parameter Name="Direction" ParamType="V3d_TypeOfOrientation" />
+                  <Parameter Name="Color" ParamType="Quantity_NameOfColor" />
+                  <Parameter Name="Headlight" ParamType="bool" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="V3d_PositionLight">
+            <Implements Name="V3d_Light" />
+            <Methods />
+          </Class>
+          <Class Name="V3d_View">
+            <Implements Name="Viewer_View" />
+            <Methods>
+              <Method Name="TriedronDisplay" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="APosition" ParamType="Aspect_TypeOfTriedronPosition" />
+                  <Parameter Name="AColor" ParamType="Quantity_NameOfColor" />
+                  <Parameter Name="AScale" ParamType="double" />
+                  <Parameter Name="AMode" ParamType="V3d_TypeOfVisualization" />
+                </Parameters>
+              </Method>
+              <Method Name="Redraw" ReturnType="void">
+                <Parameters />
+              </Method>
+              <Method Name="MustBeResized" ReturnType="void">
+                <Parameters />
+              </Method>
+              <Method Name="FitAll" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="Coef" ParamType="double" />
+                  <Parameter Name="FitZ" ParamType="bool" />
+                  <Parameter Name="update" ParamType="bool" />
+                </Parameters>
+              </Method>
+              <Method Name="ZFitAll" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="Coef" ParamType="double" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Properties>
+              <Property Name="Window" ReturnType="Aspect_Window">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+              <Property Name="Proj" ReturnType="V3d_TypeOfOrientation">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+              <Property Name="View" ReturnType="Visual3d_View">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="Viewer">
+          <Class Name="Viewer_Viewer">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+          <Class Name="Viewer_View">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="Quantity">
+          <Enum Name="Quantity_NameOfColor">
+            <Field Name="Quantity_NOC_BLACK" />
+            <Field Name="Quantity_NOC_MATRABLUE" />
+            <Field Name="Quantity_NOC_MATRAGRAY" />
+            <Field Name="Quantity_NOC_ALICEBLUE" />
+            <Field Name="Quantity_NOC_ANTIQUEWHITE" />
+            <Field Name="Quantity_NOC_ANTIQUEWHITE1" />
+            <Field Name="Quantity_NOC_ANTIQUEWHITE2" />
+            <Field Name="Quantity_NOC_ANTIQUEWHITE3" />
+            <Field Name="Quantity_NOC_ANTIQUEWHITE4" />
+            <Field Name="Quantity_NOC_AQUAMARINE1" />
+            <Field Name="Quantity_NOC_AQUAMARINE2" />
+            <Field Name="Quantity_NOC_AQUAMARINE4" />
+            <Field Name="Quantity_NOC_AZURE" />
+            <Field Name="Quantity_NOC_AZURE2" />
+            <Field Name="Quantity_NOC_AZURE3" />
+            <Field Name="Quantity_NOC_AZURE4" />
+            <Field Name="Quantity_NOC_BEIGE" />
+            <Field Name="Quantity_NOC_BISQUE" />
+            <Field Name="Quantity_NOC_BISQUE2" />
+            <Field Name="Quantity_NOC_BISQUE3" />
+            <Field Name="Quantity_NOC_BISQUE4" />
+            <Field Name="Quantity_NOC_BLANCHEDALMOND" />
+            <Field Name="Quantity_NOC_BLUE1" />
+            <Field Name="Quantity_NOC_BLUE2" />
+            <Field Name="Quantity_NOC_BLUE3" />
+            <Field Name="Quantity_NOC_BLUE4" />
+            <Field Name="Quantity_NOC_BLUEVIOLET" />
+            <Field Name="Quantity_NOC_BROWN" />
+            <Field Name="Quantity_NOC_BROWN1" />
+            <Field Name="Quantity_NOC_BROWN2" />
+            <Field Name="Quantity_NOC_BROWN3" />
+            <Field Name="Quantity_NOC_BROWN4" />
+            <Field Name="Quantity_NOC_BURLYWOOD" />
+            <Field Name="Quantity_NOC_BURLYWOOD1" />
+            <Field Name="Quantity_NOC_BURLYWOOD2" />
+            <Field Name="Quantity_NOC_BURLYWOOD3" />
+            <Field Name="Quantity_NOC_BURLYWOOD4" />
+            <Field Name="Quantity_NOC_CADETBLUE" />
+            <Field Name="Quantity_NOC_CADETBLUE1" />
+            <Field Name="Quantity_NOC_CADETBLUE2" />
+            <Field Name="Quantity_NOC_CADETBLUE3" />
+            <Field Name="Quantity_NOC_CADETBLUE4" />
+            <Field Name="Quantity_NOC_CHARTREUSE" />
+            <Field Name="Quantity_NOC_CHARTREUSE1" />
+            <Field Name="Quantity_NOC_CHARTREUSE2" />
+            <Field Name="Quantity_NOC_CHARTREUSE3" />
+            <Field Name="Quantity_NOC_CHARTREUSE4" />
+            <Field Name="Quantity_NOC_CHOCOLATE" />
+            <Field Name="Quantity_NOC_CHOCOLATE1" />
+            <Field Name="Quantity_NOC_CHOCOLATE2" />
+            <Field Name="Quantity_NOC_CHOCOLATE3" />
+            <Field Name="Quantity_NOC_CHOCOLATE4" />
+            <Field Name="Quantity_NOC_CORAL" />
+            <Field Name="Quantity_NOC_CORAL1" />
+            <Field Name="Quantity_NOC_CORAL2" />
+            <Field Name="Quantity_NOC_CORAL3" />
+            <Field Name="Quantity_NOC_CORAL4" />
+            <Field Name="Quantity_NOC_CORNFLOWERBLUE" />
+            <Field Name="Quantity_NOC_CORNSILK1" />
+            <Field Name="Quantity_NOC_CORNSILK2" />
+            <Field Name="Quantity_NOC_CORNSILK3" />
+            <Field Name="Quantity_NOC_CORNSILK4" />
+            <Field Name="Quantity_NOC_CYAN1" />
+            <Field Name="Quantity_NOC_CYAN2" />
+            <Field Name="Quantity_NOC_CYAN3" />
+            <Field Name="Quantity_NOC_CYAN4" />
+            <Field Name="Quantity_NOC_DARKGOLDENROD" />
+            <Field Name="Quantity_NOC_DARKGOLDENROD1" />
+            <Field Name="Quantity_NOC_DARKGOLDENROD2" />
+            <Field Name="Quantity_NOC_DARKGOLDENROD3" />
+            <Field Name="Quantity_NOC_DARKGOLDENROD4" />
+            <Field Name="Quantity_NOC_DARKGREEN" />
+            <Field Name="Quantity_NOC_DARKKHAKI" />
+            <Field Name="Quantity_NOC_DARKOLIVEGREEN" />
+            <Field Name="Quantity_NOC_DARKOLIVEGREEN1" />
+            <Field Name="Quantity_NOC_DARKOLIVEGREEN2" />
+            <Field Name="Quantity_NOC_DARKOLIVEGREEN3" />
+            <Field Name="Quantity_NOC_DARKOLIVEGREEN4" />
+            <Field Name="Quantity_NOC_DARKORANGE" />
+            <Field Name="Quantity_NOC_DARKORANGE1" />
+            <Field Name="Quantity_NOC_DARKORANGE2" />
+            <Field Name="Quantity_NOC_DARKORANGE3" />
+            <Field Name="Quantity_NOC_DARKORANGE4" />
+            <Field Name="Quantity_NOC_DARKORCHID" />
+            <Field Name="Quantity_NOC_DARKORCHID1" />
+            <Field Name="Quantity_NOC_DARKORCHID2" />
+            <Field Name="Quantity_NOC_DARKORCHID3" />
+            <Field Name="Quantity_NOC_DARKORCHID4" />
+            <Field Name="Quantity_NOC_DARKSALMON" />
+            <Field Name="Quantity_NOC_DARKSEAGREEN" />
+            <Field Name="Quantity_NOC_DARKSEAGREEN1" />
+            <Field Name="Quantity_NOC_DARKSEAGREEN2" />
+            <Field Name="Quantity_NOC_DARKSEAGREEN3" />
+            <Field Name="Quantity_NOC_DARKSEAGREEN4" />
+            <Field Name="Quantity_NOC_DARKSLATEBLUE" />
+            <Field Name="Quantity_NOC_DARKSLATEGRAY1" />
+            <Field Name="Quantity_NOC_DARKSLATEGRAY2" />
+            <Field Name="Quantity_NOC_DARKSLATEGRAY3" />
+            <Field Name="Quantity_NOC_DARKSLATEGRAY4" />
+            <Field Name="Quantity_NOC_DARKSLATEGRAY" />
+            <Field Name="Quantity_NOC_DARKTURQUOISE" />
+            <Field Name="Quantity_NOC_DARKVIOLET" />
+            <Field Name="Quantity_NOC_DEEPPINK" />
+            <Field Name="Quantity_NOC_DEEPPINK2" />
+            <Field Name="Quantity_NOC_DEEPPINK3" />
+            <Field Name="Quantity_NOC_DEEPPINK4" />
+            <Field Name="Quantity_NOC_DEEPSKYBLUE1" />
+            <Field Name="Quantity_NOC_DEEPSKYBLUE2" />
+            <Field Name="Quantity_NOC_DEEPSKYBLUE3" />
+            <Field Name="Quantity_NOC_DEEPSKYBLUE4" />
+            <Field Name="Quantity_NOC_DODGERBLUE1" />
+            <Field Name="Quantity_NOC_DODGERBLUE2" />
+            <Field Name="Quantity_NOC_DODGERBLUE3" />
+            <Field Name="Quantity_NOC_DODGERBLUE4" />
+            <Field Name="Quantity_NOC_FIREBRICK" />
+            <Field Name="Quantity_NOC_FIREBRICK1" />
+            <Field Name="Quantity_NOC_FIREBRICK2" />
+            <Field Name="Quantity_NOC_FIREBRICK3" />
+            <Field Name="Quantity_NOC_FIREBRICK4" />
+            <Field Name="Quantity_NOC_FLORALWHITE" />
+            <Field Name="Quantity_NOC_FORESTGREEN" />
+            <Field Name="Quantity_NOC_GAINSBORO" />
+            <Field Name="Quantity_NOC_GHOSTWHITE" />
+            <Field Name="Quantity_NOC_GOLD" />
+            <Field Name="Quantity_NOC_GOLD1" />
+            <Field Name="Quantity_NOC_GOLD2" />
+            <Field Name="Quantity_NOC_GOLD3" />
+            <Field Name="Quantity_NOC_GOLD4" />
+            <Field Name="Quantity_NOC_GOLDENROD" />
+            <Field Name="Quantity_NOC_GOLDENROD1" />
+            <Field Name="Quantity_NOC_GOLDENROD2" />
+            <Field Name="Quantity_NOC_GOLDENROD3" />
+            <Field Name="Quantity_NOC_GOLDENROD4" />
+            <Field Name="Quantity_NOC_GRAY" />
+            <Field Name="Quantity_NOC_GRAY0" />
+            <Field Name="Quantity_NOC_GRAY1" />
+            <Field Name="Quantity_NOC_GRAY10" />
+            <Field Name="Quantity_NOC_GRAY11" />
+            <Field Name="Quantity_NOC_GRAY12" />
+            <Field Name="Quantity_NOC_GRAY13" />
+            <Field Name="Quantity_NOC_GRAY14" />
+            <Field Name="Quantity_NOC_GRAY15" />
+            <Field Name="Quantity_NOC_GRAY16" />
+            <Field Name="Quantity_NOC_GRAY17" />
+            <Field Name="Quantity_NOC_GRAY18" />
+            <Field Name="Quantity_NOC_GRAY19" />
+            <Field Name="Quantity_NOC_GRAY2" />
+            <Field Name="Quantity_NOC_GRAY20" />
+            <Field Name="Quantity_NOC_GRAY21" />
+            <Field Name="Quantity_NOC_GRAY22" />
+            <Field Name="Quantity_NOC_GRAY23" />
+            <Field Name="Quantity_NOC_GRAY24" />
+            <Field Name="Quantity_NOC_GRAY25" />
+            <Field Name="Quantity_NOC_GRAY26" />
+            <Field Name="Quantity_NOC_GRAY27" />
+            <Field Name="Quantity_NOC_GRAY28" />
+            <Field Name="Quantity_NOC_GRAY29" />
+            <Field Name="Quantity_NOC_GRAY3" />
+            <Field Name="Quantity_NOC_GRAY30" />
+            <Field Name="Quantity_NOC_GRAY31" />
+            <Field Name="Quantity_NOC_GRAY32" />
+            <Field Name="Quantity_NOC_GRAY33" />
+            <Field Name="Quantity_NOC_GRAY34" />
+            <Field Name="Quantity_NOC_GRAY35" />
+            <Field Name="Quantity_NOC_GRAY36" />
+            <Field Name="Quantity_NOC_GRAY37" />
+            <Field Name="Quantity_NOC_GRAY38" />
+            <Field Name="Quantity_NOC_GRAY39" />
+            <Field Name="Quantity_NOC_GRAY4" />
+            <Field Name="Quantity_NOC_GRAY40" />
+            <Field Name="Quantity_NOC_GRAY41" />
+            <Field Name="Quantity_NOC_GRAY42" />
+            <Field Name="Quantity_NOC_GRAY43" />
+            <Field Name="Quantity_NOC_GRAY44" />
+            <Field Name="Quantity_NOC_GRAY45" />
+            <Field Name="Quantity_NOC_GRAY46" />
+            <Field Name="Quantity_NOC_GRAY47" />
+            <Field Name="Quantity_NOC_GRAY48" />
+            <Field Name="Quantity_NOC_GRAY49" />
+            <Field Name="Quantity_NOC_GRAY5" />
+            <Field Name="Quantity_NOC_GRAY50" />
+            <Field Name="Quantity_NOC_GRAY51" />
+            <Field Name="Quantity_NOC_GRAY52" />
+            <Field Name="Quantity_NOC_GRAY53" />
+            <Field Name="Quantity_NOC_GRAY54" />
+            <Field Name="Quantity_NOC_GRAY55" />
+            <Field Name="Quantity_NOC_GRAY56" />
+            <Field Name="Quantity_NOC_GRAY57" />
+            <Field Name="Quantity_NOC_GRAY58" />
+            <Field Name="Quantity_NOC_GRAY59" />
+            <Field Name="Quantity_NOC_GRAY6" />
+            <Field Name="Quantity_NOC_GRAY60" />
+            <Field Name="Quantity_NOC_GRAY61" />
+            <Field Name="Quantity_NOC_GRAY62" />
+            <Field Name="Quantity_NOC_GRAY63" />
+            <Field Name="Quantity_NOC_GRAY64" />
+            <Field Name="Quantity_NOC_GRAY65" />
+            <Field Name="Quantity_NOC_GRAY66" />
+            <Field Name="Quantity_NOC_GRAY67" />
+            <Field Name="Quantity_NOC_GRAY68" />
+            <Field Name="Quantity_NOC_GRAY69" />
+            <Field Name="Quantity_NOC_GRAY7" />
+            <Field Name="Quantity_NOC_GRAY70" />
+            <Field Name="Quantity_NOC_GRAY71" />
+            <Field Name="Quantity_NOC_GRAY72" />
+            <Field Name="Quantity_NOC_GRAY73" />
+            <Field Name="Quantity_NOC_GRAY74" />
+            <Field Name="Quantity_NOC_GRAY75" />
+            <Field Name="Quantity_NOC_GRAY76" />
+            <Field Name="Quantity_NOC_GRAY77" />
+            <Field Name="Quantity_NOC_GRAY78" />
+            <Field Name="Quantity_NOC_GRAY79" />
+            <Field Name="Quantity_NOC_GRAY8" />
+            <Field Name="Quantity_NOC_GRAY80" />
+            <Field Name="Quantity_NOC_GRAY81" />
+            <Field Name="Quantity_NOC_GRAY82" />
+            <Field Name="Quantity_NOC_GRAY83" />
+            <Field Name="Quantity_NOC_GRAY85" />
+            <Field Name="Quantity_NOC_GRAY86" />
+            <Field Name="Quantity_NOC_GRAY87" />
+            <Field Name="Quantity_NOC_GRAY88" />
+            <Field Name="Quantity_NOC_GRAY89" />
+            <Field Name="Quantity_NOC_GRAY9" />
+            <Field Name="Quantity_NOC_GRAY90" />
+            <Field Name="Quantity_NOC_GRAY91" />
+            <Field Name="Quantity_NOC_GRAY92" />
+            <Field Name="Quantity_NOC_GRAY93" />
+            <Field Name="Quantity_NOC_GRAY94" />
+            <Field Name="Quantity_NOC_GRAY95" />
+            <Field Name="Quantity_NOC_GREEN" />
+            <Field Name="Quantity_NOC_GREEN1" />
+            <Field Name="Quantity_NOC_GREEN2" />
+            <Field Name="Quantity_NOC_GREEN3" />
+            <Field Name="Quantity_NOC_GREEN4" />
+            <Field Name="Quantity_NOC_GREENYELLOW" />
+            <Field Name="Quantity_NOC_GRAY97" />
+            <Field Name="Quantity_NOC_GRAY98" />
+            <Field Name="Quantity_NOC_GRAY99" />
+            <Field Name="Quantity_NOC_HONEYDEW" />
+            <Field Name="Quantity_NOC_HONEYDEW2" />
+            <Field Name="Quantity_NOC_HONEYDEW3" />
+            <Field Name="Quantity_NOC_HONEYDEW4" />
+            <Field Name="Quantity_NOC_HOTPINK" />
+            <Field Name="Quantity_NOC_HOTPINK1" />
+            <Field Name="Quantity_NOC_HOTPINK2" />
+            <Field Name="Quantity_NOC_HOTPINK3" />
+            <Field Name="Quantity_NOC_HOTPINK4" />
+            <Field Name="Quantity_NOC_INDIANRED" />
+            <Field Name="Quantity_NOC_INDIANRED1" />
+            <Field Name="Quantity_NOC_INDIANRED2" />
+            <Field Name="Quantity_NOC_INDIANRED3" />
+            <Field Name="Quantity_NOC_INDIANRED4" />
+            <Field Name="Quantity_NOC_IVORY" />
+            <Field Name="Quantity_NOC_IVORY2" />
+            <Field Name="Quantity_NOC_IVORY3" />
+            <Field Name="Quantity_NOC_IVORY4" />
+            <Field Name="Quantity_NOC_KHAKI" />
+            <Field Name="Quantity_NOC_KHAKI1" />
+            <Field Name="Quantity_NOC_KHAKI2" />
+            <Field Name="Quantity_NOC_KHAKI3" />
+            <Field Name="Quantity_NOC_KHAKI4" />
+            <Field Name="Quantity_NOC_LAVENDER" />
+            <Field Name="Quantity_NOC_LAVENDERBLUSH1" />
+            <Field Name="Quantity_NOC_LAVENDERBLUSH2" />
+            <Field Name="Quantity_NOC_LAVENDERBLUSH3" />
+            <Field Name="Quantity_NOC_LAVENDERBLUSH4" />
+            <Field Name="Quantity_NOC_LAWNGREEN" />
+            <Field Name="Quantity_NOC_LEMONCHIFFON1" />
+            <Field Name="Quantity_NOC_LEMONCHIFFON2" />
+            <Field Name="Quantity_NOC_LEMONCHIFFON3" />
+            <Field Name="Quantity_NOC_LEMONCHIFFON4" />
+            <Field Name="Quantity_NOC_LIGHTBLUE" />
+            <Field Name="Quantity_NOC_LIGHTBLUE1" />
+            <Field Name="Quantity_NOC_LIGHTBLUE2" />
+            <Field Name="Quantity_NOC_LIGHTBLUE3" />
+            <Field Name="Quantity_NOC_LIGHTBLUE4" />
+            <Field Name="Quantity_NOC_LIGHTCORAL" />
+            <Field Name="Quantity_NOC_LIGHTCYAN1" />
+            <Field Name="Quantity_NOC_LIGHTCYAN2" />
+            <Field Name="Quantity_NOC_LIGHTCYAN3" />
+            <Field Name="Quantity_NOC_LIGHTCYAN4" />
+            <Field Name="Quantity_NOC_LIGHTGOLDENROD" />
+            <Field Name="Quantity_NOC_LIGHTGOLDENROD1" />
+            <Field Name="Quantity_NOC_LIGHTGOLDENROD2" />
+            <Field Name="Quantity_NOC_LIGHTGOLDENROD3" />
+            <Field Name="Quantity_NOC_LIGHTGOLDENROD4" />
+            <Field Name="Quantity_NOC_LIGHTGOLDENRODYELLOW" />
+            <Field Name="Quantity_NOC_LIGHTGRAY" />
+            <Field Name="Quantity_NOC_LIGHTPINK" />
+            <Field Name="Quantity_NOC_LIGHTPINK1" />
+            <Field Name="Quantity_NOC_LIGHTPINK2" />
+            <Field Name="Quantity_NOC_LIGHTPINK3" />
+            <Field Name="Quantity_NOC_LIGHTPINK4" />
+            <Field Name="Quantity_NOC_LIGHTSALMON1" />
+            <Field Name="Quantity_NOC_LIGHTSALMON2" />
+            <Field Name="Quantity_NOC_LIGHTSALMON3" />
+            <Field Name="Quantity_NOC_LIGHTSALMON4" />
+            <Field Name="Quantity_NOC_LIGHTSEAGREEN" />
+            <Field Name="Quantity_NOC_LIGHTSKYBLUE" />
+            <Field Name="Quantity_NOC_LIGHTSKYBLUE1" />
+            <Field Name="Quantity_NOC_LIGHTSKYBLUE2" />
+            <Field Name="Quantity_NOC_LIGHTSKYBLUE3" />
+            <Field Name="Quantity_NOC_LIGHTSKYBLUE4" />
+            <Field Name="Quantity_NOC_LIGHTSLATEBLUE" />
+            <Field Name="Quantity_NOC_LIGHTSLATEGRAY" />
+            <Field Name="Quantity_NOC_LIGHTSTEELBLUE" />
+            <Field Name="Quantity_NOC_LIGHTSTEELBLUE1" />
+            <Field Name="Quantity_NOC_LIGHTSTEELBLUE2" />
+            <Field Name="Quantity_NOC_LIGHTSTEELBLUE3" />
+            <Field Name="Quantity_NOC_LIGHTSTEELBLUE4" />
+            <Field Name="Quantity_NOC_LIGHTYELLOW" />
+            <Field Name="Quantity_NOC_LIGHTYELLOW2" />
+            <Field Name="Quantity_NOC_LIGHTYELLOW3" />
+            <Field Name="Quantity_NOC_LIGHTYELLOW4" />
+            <Field Name="Quantity_NOC_LIMEGREEN" />
+            <Field Name="Quantity_NOC_LINEN" />
+            <Field Name="Quantity_NOC_MAGENTA1" />
+            <Field Name="Quantity_NOC_MAGENTA2" />
+            <Field Name="Quantity_NOC_MAGENTA3" />
+            <Field Name="Quantity_NOC_MAGENTA4" />
+            <Field Name="Quantity_NOC_MAROON" />
+            <Field Name="Quantity_NOC_MAROON1" />
+            <Field Name="Quantity_NOC_MAROON2" />
+            <Field Name="Quantity_NOC_MAROON3" />
+            <Field Name="Quantity_NOC_MAROON4" />
+            <Field Name="Quantity_NOC_MEDIUMAQUAMARINE" />
+            <Field Name="Quantity_NOC_MEDIUMORCHID" />
+            <Field Name="Quantity_NOC_MEDIUMORCHID1" />
+            <Field Name="Quantity_NOC_MEDIUMORCHID2" />
+            <Field Name="Quantity_NOC_MEDIUMORCHID3" />
+            <Field Name="Quantity_NOC_MEDIUMORCHID4" />
+            <Field Name="Quantity_NOC_MEDIUMPURPLE" />
+            <Field Name="Quantity_NOC_MEDIUMPURPLE1" />
+            <Field Name="Quantity_NOC_MEDIUMPURPLE2" />
+            <Field Name="Quantity_NOC_MEDIUMPURPLE3" />
+            <Field Name="Quantity_NOC_MEDIUMPURPLE4" />
+            <Field Name="Quantity_NOC_MEDIUMSEAGREEN" />
+            <Field Name="Quantity_NOC_MEDIUMSLATEBLUE" />
+            <Field Name="Quantity_NOC_MEDIUMSPRINGGREEN" />
+            <Field Name="Quantity_NOC_MEDIUMTURQUOISE" />
+            <Field Name="Quantity_NOC_MEDIUMVIOLETRED" />
+            <Field Name="Quantity_NOC_MIDNIGHTBLUE" />
+            <Field Name="Quantity_NOC_MINTCREAM" />
+            <Field Name="Quantity_NOC_MISTYROSE" />
+            <Field Name="Quantity_NOC_MISTYROSE2" />
+            <Field Name="Quantity_NOC_MISTYROSE3" />
+            <Field Name="Quantity_NOC_MISTYROSE4" />
+            <Field Name="Quantity_NOC_MOCCASIN" />
+            <Field Name="Quantity_NOC_NAVAJOWHITE1" />
+            <Field Name="Quantity_NOC_NAVAJOWHITE2" />
+            <Field Name="Quantity_NOC_NAVAJOWHITE3" />
+            <Field Name="Quantity_NOC_NAVAJOWHITE4" />
+            <Field Name="Quantity_NOC_NAVYBLUE" />
+            <Field Name="Quantity_NOC_OLDLACE" />
+            <Field Name="Quantity_NOC_OLIVEDRAB" />
+            <Field Name="Quantity_NOC_OLIVEDRAB1" />
+            <Field Name="Quantity_NOC_OLIVEDRAB2" />
+            <Field Name="Quantity_NOC_OLIVEDRAB3" />
+            <Field Name="Quantity_NOC_OLIVEDRAB4" />
+            <Field Name="Quantity_NOC_ORANGE" />
+            <Field Name="Quantity_NOC_ORANGE1" />
+            <Field Name="Quantity_NOC_ORANGE2" />
+            <Field Name="Quantity_NOC_ORANGE3" />
+            <Field Name="Quantity_NOC_ORANGE4" />
+            <Field Name="Quantity_NOC_ORANGERED" />
+            <Field Name="Quantity_NOC_ORANGERED1" />
+            <Field Name="Quantity_NOC_ORANGERED2" />
+            <Field Name="Quantity_NOC_ORANGERED3" />
+            <Field Name="Quantity_NOC_ORANGERED4" />
+            <Field Name="Quantity_NOC_ORCHID" />
+            <Field Name="Quantity_NOC_ORCHID1" />
+            <Field Name="Quantity_NOC_ORCHID2" />
+            <Field Name="Quantity_NOC_ORCHID3" />
+            <Field Name="Quantity_NOC_ORCHID4" />
+            <Field Name="Quantity_NOC_PALEGOLDENROD" />
+            <Field Name="Quantity_NOC_PALEGREEN" />
+            <Field Name="Quantity_NOC_PALEGREEN1" />
+            <Field Name="Quantity_NOC_PALEGREEN2" />
+            <Field Name="Quantity_NOC_PALEGREEN3" />
+            <Field Name="Quantity_NOC_PALEGREEN4" />
+            <Field Name="Quantity_NOC_PALETURQUOISE" />
+            <Field Name="Quantity_NOC_PALETURQUOISE1" />
+            <Field Name="Quantity_NOC_PALETURQUOISE2" />
+            <Field Name="Quantity_NOC_PALETURQUOISE3" />
+            <Field Name="Quantity_NOC_PALETURQUOISE4" />
+            <Field Name="Quantity_NOC_PALEVIOLETRED" />
+            <Field Name="Quantity_NOC_PALEVIOLETRED1" />
+            <Field Name="Quantity_NOC_PALEVIOLETRED2" />
+            <Field Name="Quantity_NOC_PALEVIOLETRED3" />
+            <Field Name="Quantity_NOC_PALEVIOLETRED4" />
+            <Field Name="Quantity_NOC_PAPAYAWHIP" />
+            <Field Name="Quantity_NOC_PEACHPUFF" />
+            <Field Name="Quantity_NOC_PEACHPUFF2" />
+            <Field Name="Quantity_NOC_PEACHPUFF3" />
+            <Field Name="Quantity_NOC_PEACHPUFF4" />
+            <Field Name="Quantity_NOC_PERU" />
+            <Field Name="Quantity_NOC_PINK" />
+            <Field Name="Quantity_NOC_PINK1" />
+            <Field Name="Quantity_NOC_PINK2" />
+            <Field Name="Quantity_NOC_PINK3" />
+            <Field Name="Quantity_NOC_PINK4" />
+            <Field Name="Quantity_NOC_PLUM" />
+            <Field Name="Quantity_NOC_PLUM1" />
+            <Field Name="Quantity_NOC_PLUM2" />
+            <Field Name="Quantity_NOC_PLUM3" />
+            <Field Name="Quantity_NOC_PLUM4" />
+            <Field Name="Quantity_NOC_POWDERBLUE" />
+            <Field Name="Quantity_NOC_PURPLE" />
+            <Field Name="Quantity_NOC_PURPLE1" />
+            <Field Name="Quantity_NOC_PURPLE2" />
+            <Field Name="Quantity_NOC_PURPLE3" />
+            <Field Name="Quantity_NOC_PURPLE4" />
+            <Field Name="Quantity_NOC_RED" />
+            <Field Name="Quantity_NOC_RED1" />
+            <Field Name="Quantity_NOC_RED2" />
+            <Field Name="Quantity_NOC_RED3" />
+            <Field Name="Quantity_NOC_RED4" />
+            <Field Name="Quantity_NOC_ROSYBROWN" />
+            <Field Name="Quantity_NOC_ROSYBROWN1" />
+            <Field Name="Quantity_NOC_ROSYBROWN2" />
+            <Field Name="Quantity_NOC_ROSYBROWN3" />
+            <Field Name="Quantity_NOC_ROSYBROWN4" />
+            <Field Name="Quantity_NOC_ROYALBLUE" />
+            <Field Name="Quantity_NOC_ROYALBLUE1" />
+            <Field Name="Quantity_NOC_ROYALBLUE2" />
+            <Field Name="Quantity_NOC_ROYALBLUE3" />
+            <Field Name="Quantity_NOC_ROYALBLUE4" />
+            <Field Name="Quantity_NOC_SADDLEBROWN" />
+            <Field Name="Quantity_NOC_SALMON" />
+            <Field Name="Quantity_NOC_SALMON1" />
+            <Field Name="Quantity_NOC_SALMON2" />
+            <Field Name="Quantity_NOC_SALMON3" />
+            <Field Name="Quantity_NOC_SALMON4" />
+            <Field Name="Quantity_NOC_SANDYBROWN" />
+            <Field Name="Quantity_NOC_SEAGREEN" />
+            <Field Name="Quantity_NOC_SEAGREEN1" />
+            <Field Name="Quantity_NOC_SEAGREEN2" />
+            <Field Name="Quantity_NOC_SEAGREEN3" />
+            <Field Name="Quantity_NOC_SEAGREEN4" />
+            <Field Name="Quantity_NOC_SEASHELL" />
+            <Field Name="Quantity_NOC_SEASHELL2" />
+            <Field Name="Quantity_NOC_SEASHELL3" />
+            <Field Name="Quantity_NOC_SEASHELL4" />
+            <Field Name="Quantity_NOC_BEET" />
+            <Field Name="Quantity_NOC_TEAL" />
+            <Field Name="Quantity_NOC_SIENNA" />
+            <Field Name="Quantity_NOC_SIENNA1" />
+            <Field Name="Quantity_NOC_SIENNA2" />
+            <Field Name="Quantity_NOC_SIENNA3" />
+            <Field Name="Quantity_NOC_SIENNA4" />
+            <Field Name="Quantity_NOC_SKYBLUE" />
+            <Field Name="Quantity_NOC_SKYBLUE1" />
+            <Field Name="Quantity_NOC_SKYBLUE2" />
+            <Field Name="Quantity_NOC_SKYBLUE3" />
+            <Field Name="Quantity_NOC_SKYBLUE4" />
+            <Field Name="Quantity_NOC_SLATEBLUE" />
+            <Field Name="Quantity_NOC_SLATEBLUE1" />
+            <Field Name="Quantity_NOC_SLATEBLUE2" />
+            <Field Name="Quantity_NOC_SLATEBLUE3" />
+            <Field Name="Quantity_NOC_SLATEBLUE4" />
+            <Field Name="Quantity_NOC_SLATEGRAY1" />
+            <Field Name="Quantity_NOC_SLATEGRAY2" />
+            <Field Name="Quantity_NOC_SLATEGRAY3" />
+            <Field Name="Quantity_NOC_SLATEGRAY4" />
+            <Field Name="Quantity_NOC_SLATEGRAY" />
+            <Field Name="Quantity_NOC_SNOW" />
+            <Field Name="Quantity_NOC_SNOW2" />
+            <Field Name="Quantity_NOC_SNOW3" />
+            <Field Name="Quantity_NOC_SNOW4" />
+            <Field Name="Quantity_NOC_SPRINGGREEN" />
+            <Field Name="Quantity_NOC_SPRINGGREEN2" />
+            <Field Name="Quantity_NOC_SPRINGGREEN3" />
+            <Field Name="Quantity_NOC_SPRINGGREEN4" />
+            <Field Name="Quantity_NOC_STEELBLUE" />
+            <Field Name="Quantity_NOC_STEELBLUE1" />
+            <Field Name="Quantity_NOC_STEELBLUE2" />
+            <Field Name="Quantity_NOC_STEELBLUE3" />
+            <Field Name="Quantity_NOC_STEELBLUE4" />
+            <Field Name="Quantity_NOC_TAN" />
+            <Field Name="Quantity_NOC_TAN1" />
+            <Field Name="Quantity_NOC_TAN2" />
+            <Field Name="Quantity_NOC_TAN3" />
+            <Field Name="Quantity_NOC_TAN4" />
+            <Field Name="Quantity_NOC_THISTLE" />
+            <Field Name="Quantity_NOC_THISTLE1" />
+            <Field Name="Quantity_NOC_THISTLE2" />
+            <Field Name="Quantity_NOC_THISTLE3" />
+            <Field Name="Quantity_NOC_THISTLE4" />
+            <Field Name="Quantity_NOC_TOMATO" />
+            <Field Name="Quantity_NOC_TOMATO1" />
+            <Field Name="Quantity_NOC_TOMATO2" />
+            <Field Name="Quantity_NOC_TOMATO3" />
+            <Field Name="Quantity_NOC_TOMATO4" />
+            <Field Name="Quantity_NOC_TURQUOISE" />
+            <Field Name="Quantity_NOC_TURQUOISE1" />
+            <Field Name="Quantity_NOC_TURQUOISE2" />
+            <Field Name="Quantity_NOC_TURQUOISE3" />
+            <Field Name="Quantity_NOC_TURQUOISE4" />
+            <Field Name="Quantity_NOC_VIOLET" />
+            <Field Name="Quantity_NOC_VIOLETRED" />
+            <Field Name="Quantity_NOC_VIOLETRED1" />
+            <Field Name="Quantity_NOC_VIOLETRED2" />
+            <Field Name="Quantity_NOC_VIOLETRED3" />
+            <Field Name="Quantity_NOC_VIOLETRED4" />
+            <Field Name="Quantity_NOC_WHEAT" />
+            <Field Name="Quantity_NOC_WHEAT1" />
+            <Field Name="Quantity_NOC_WHEAT2" />
+            <Field Name="Quantity_NOC_WHEAT3" />
+            <Field Name="Quantity_NOC_WHEAT4" />
+            <Field Name="Quantity_NOC_WHITESMOKE" />
+            <Field Name="Quantity_NOC_YELLOW" />
+            <Field Name="Quantity_NOC_YELLOW1" />
+            <Field Name="Quantity_NOC_YELLOW2" />
+            <Field Name="Quantity_NOC_YELLOW3" />
+            <Field Name="Quantity_NOC_YELLOW4" />
+            <Field Name="Quantity_NOC_YELLOWGREEN" />
+            <Field Name="Quantity_NOC_WHITE" />
+          </Enum>
+          <Class Name="Quantity_Color">
+            <Methods>
+              <Method Name="SetValues" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="R1" ParamType="double" />
+                  <Parameter Name="R2" ParamType="double" />
+                  <Parameter Name="R3" ParamType="double" />
+                  <Parameter Name="AType" ParamType="Quantity_TypeOfColor" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Enum Name="Quantity_TypeOfColor">
+            <Field Name="Quantity_TOC_RGB" />
+            <Field Name="Quantity_TOC_HLS" />
+          </Enum>
+        </Namespace>
+        <Namespace Name="AIS">
+          <Class Name="AIS_InteractiveContext">
+            <Implements Name="MMgt_TShared" />
+            <Methods>
+              <Method Name="Display" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="anIobj" ParamType="AIS_InteractiveObject" />
+                  <Parameter Name="updateviewer" ParamType="bool" />
+                </Parameters>
+              </Method>
+              <Method Name="SetDisplayMode" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="AMode" ParamType="AIS_DisplayMode" />
+                  <Parameter Name="updateviewer" ParamType="bool" />
+                </Parameters>
+              </Method>
+              <Method Name="Select" ReturnType="AIS_StatusOfPick">
+                <Parameters>
+                  <Parameter Name="updateviewer" ParamType="bool" />
+                </Parameters>
+              </Method>
+              <Method Name="Remove" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="aniobj" ParamType="AIS_InteractiveObject" />
+                  <Parameter Name="updateviewer" ParamType="bool" />
+                </Parameters>
+              </Method>
+              <Method Name="MoveTo" ReturnType="AIS_StatusOfDetection">
+                <Parameters>
+                  <Parameter Name="XPix" ParamType="int" />
+                  <Parameter Name="YPix" ParamType="int" />
+                  <Parameter Name="aView" ParamType="V3d_View" />
+                </Parameters>
+              </Method>
+              <Method Name="CloseAllContexts" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="updateviewer" ParamType="bool" />
+                </Parameters>
+              </Method>
+              <Method Name="OpenLocalContext" ReturnType="int">
+                <Parameters>
+                  <Parameter Name="UseDisplayedObjects" ParamType="bool" />
+                  <Parameter Name="AllowShapeDecomposition" ParamType="bool" />
+                  <Parameter Name="AcceptEraseOfObjects" ParamType="bool" />
+                  <Parameter Name="BothViewers" ParamType="bool" />
+                </Parameters>
+              </Method>
+              <Method Name="ActivateStandardMode" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="aStandardActivation" ParamType="TopAbs_ShapeEnum" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="MainViewer" ParamType="V3d_Viewer" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="HilightColor" ReturnType="Quantity_NameOfColor">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+              <Property Name="Current" ReturnType="AIS_InteractiveObject">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="AIS_Trihedron">
+            <Implements Name="AIS_InteractiveObject" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="aComponent" ParamType="Geom_Axis2Placement" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="Size" ReturnType="double">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="AIS_InteractiveObject">
+            <Implements Name="SelectMgr_SelectableObject" />
+            <Methods />
+            <Properties>
+              <Property Name="Attributes" ReturnType="AIS_Drawer">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="Transparency" ReturnType="double">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+              <Property Name="Color" ReturnType="Quantity_NameOfColor">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+              <Property Name="Type" ReturnType="AIS_KindOfInteractive">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="AIS_Shape">
+            <Implements Name="AIS_InteractiveObject" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="shap" ParamType="TopoDS_Shape" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="BoundingBox" ReturnType="Bnd_Box">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Enum Name="AIS_DisplayMode">
+            <Field Name="AIS_WireFrame" />
+            <Field Name="AIS_Shaded" />
+            <Field Name="AIS_QuickHLR" />
+            <Field Name="AIS_ExactHLR" />
+          </Enum>
+          <Enum Name="AIS_StatusOfPick">
+            <Field Name="AIS_SOP_Error" />
+            <Field Name="AIS_SOP_NothingSelected" />
+            <Field Name="AIS_SOP_Removed" />
+            <Field Name="AIS_SOP_OneSelected" />
+            <Field Name="AIS_SOP_SeveralSelected" />
+          </Enum>
+          <Enum Name="AIS_StatusOfDetection">
+            <Field Name="AIS_SOD_Error" />
+            <Field Name="AIS_SOD_Nothing" />
+            <Field Name="AIS_SOD_AllBad" />
+            <Field Name="AIS_SOD_Selected" />
+            <Field Name="AIS_SOD_OnlyOneDetected" />
+            <Field Name="AIS_SOD_OnlyOneGood" />
+            <Field Name="AIS_SOD_SeveralGood" />
+          </Enum>
+          <Class Name="AIS_LengthDimension">
+            <Implements Name="AIS_Relation" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="aFirstFace" ParamType="TopoDS_Face" />
+                  <Parameter Name="aSecondFace" ParamType="TopoDS_Face" />
+                  <Parameter Name="aVal" ParamType="double" />
+                  <Parameter Name="aText" ParamType="TCollection_ExtendedString" />
+                  <Parameter Name="aPosition" ParamType="gp_Pnt" />
+                  <Parameter Name="aSymbolPrs" ParamType="DsgPrs_ArrowSide" />
+                  <Parameter Name="anArrowSize" ParamType="double" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="AIS_Relation">
+            <Implements Name="AIS_InteractiveObject" />
+            <Methods />
+          </Class>
+          <Class Name="AIS_Line">
+            <Implements Name="AIS_InteractiveObject" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="aLine" ParamType="Geom_Line" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="aStartPoint" ParamType="Geom_Point" />
+                  <Parameter Name="aEndPoint" ParamType="Geom_Point" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="AIS_Drawer">
+            <Implements Name="Prs3d_Drawer" />
+            <Methods />
+          </Class>
+          <Class Name="AIS_DiameterDimension">
+            <Implements Name="AIS_Relation" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="aShape" ParamType="TopoDS_Shape" />
+                  <Parameter Name="aVal" ParamType="double" />
+                  <Parameter Name="aText" ParamType="TCollection_ExtendedString" />
+                  <Parameter Name="aPosition" ParamType="gp_Pnt" />
+                  <Parameter Name="aSymbolPrs" ParamType="DsgPrs_ArrowSide" />
+                  <Parameter Name="aDiamSymbol" ParamType="bool" />
+                  <Parameter Name="anArrowSize" ParamType="double" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Enum Name="AIS_KindOfInteractive">
+            <Field Name="AIS_KOI_None" />
+            <Field Name="AIS_KOI_Datum" />
+            <Field Name="AIS_KOI_Shape" />
+            <Field Name="AIS_KOI_Object" />
+            <Field Name="AIS_KOI_Relation" />
+          </Enum>
+        </Namespace>
+        <Namespace Name="SelectMgr">
+          <Class Name="SelectMgr_SelectableObject">
+            <Implements Name="PrsMgr_PresentableObject" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="PrsMgr">
+          <Class Name="PrsMgr_PresentableObject">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+            <Properties>
+              <Property Name="Location" ReturnType="TopLoc_Location">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="Geom">
+          <Class Name="Geom_Axis2Placement">
+            <Implements Name="Geom_AxisPlacement" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="A2" ParamType="gp_Ax2" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="Geom_AxisPlacement">
+            <Implements Name="Geom_Geometry" />
+            <Methods />
+          </Class>
+          <Class Name="Geom_Geometry">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+          <Class Name="Geom_Plane">
+            <Implements Name="Geom_ElementarySurface" />
+            <Methods>
+              <Method Name="Transform" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="T" ParamType="gp_Trsf" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Pl" ParamType="gp_Pln" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="A3" ParamType="gp_Ax3" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="Pln" ReturnType="gp_Pln">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="Geom_ElementarySurface">
+            <Implements Name="Geom_Surface" />
+            <Methods />
+          </Class>
+          <Class Name="Geom_Surface">
+            <Implements Name="Geom_Geometry" />
+            <Methods />
+          </Class>
+          <Class Name="Geom_Line">
+            <Implements Name="Geom_Curve" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="L" ParamType="gp_Lin" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                  <Parameter Name="V" ParamType="gp_Dir" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="Geom_Curve">
+            <Implements Name="Geom_Geometry" />
+            <Methods />
+          </Class>
+          <Class Name="Geom_CartesianPoint">
+            <Implements Name="Geom_Point" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="Geom_Point">
+            <Implements Name="Geom_Geometry" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="BRepPrimAPI">
+          <Class Name="BRepPrimAPI_MakeBox">
+            <Implements Name="BRepBuilderAPI_MakeShape" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                  <Parameter Name="dx" ParamType="double" />
+                  <Parameter Name="dy" ParamType="double" />
+                  <Parameter Name="dz" ParamType="double" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="dx" ParamType="double" />
+                  <Parameter Name="dy" ParamType="double" />
+                  <Parameter Name="dz" ParamType="double" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="BRepPrimAPI_MakeTorus">
+            <Implements Name="BRepPrimAPI_MakeOneAxis" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="R1" ParamType="double" />
+                  <Parameter Name="R2" ParamType="double" />
+                  <Parameter Name="angle1" ParamType="double" />
+                  <Parameter Name="angle2" ParamType="double" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Axes" ParamType="gp_Ax2" />
+                  <Parameter Name="R1" ParamType="double" />
+                  <Parameter Name="R2" ParamType="double" />
+                  <Parameter Name="angle" ParamType="double" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="BRepPrimAPI_MakeOneAxis">
+            <Implements Name="BRepBuilderAPI_MakeShape" />
+            <Methods />
+          </Class>
+          <Class Name="BRepPrimAPI_MakePrism">
+            <Implements Name="BRepPrimAPI_MakeSweep" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                  <Parameter Name="V" ParamType="gp_Vec" />
+                  <Parameter Name="Copy" ParamType="bool" />
+                  <Parameter Name="Canonize" ParamType="bool" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="BRepPrimAPI_MakeSweep">
+            <Implements Name="BRepBuilderAPI_MakeShape" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="BRepBuilderAPI">
+          <Class Name="BRepBuilderAPI_MakeShape">
+            <Implements Name="BRepBuilderAPI_Command" />
+            <Methods />
+            <Properties>
+              <Property Name="Shape" ReturnType="TopoDS_Shape">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="BRepBuilderAPI_Command">
+            <Methods />
+            <Properties>
+              <Property Name="IsDone" ReturnType="bool">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="BRepBuilderAPI_Transform">
+            <Implements Name="BRepBuilderAPI_ModifyShape" />
+            <Methods>
+              <Method Name="Perform" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                  <Parameter Name="Copy" ParamType="bool" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="T" ParamType="gp_Trsf" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="BRepBuilderAPI_ModifyShape">
+            <Implements Name="BRepBuilderAPI_MakeShape" />
+            <Methods />
+          </Class>
+          <Class Name="BRepBuilderAPI_MakeVertex">
+            <Implements Name="BRepBuilderAPI_MakeShape" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="Vertex" ReturnType="TopoDS_Vertex">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="BRepBuilderAPI_MakeEdge">
+            <Implements Name="BRepBuilderAPI_MakeShape" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P1" ParamType="gp_Pnt" />
+                  <Parameter Name="P2" ParamType="gp_Pnt" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="L" ParamType="gp_Circ" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="Edge" ReturnType="TopoDS_Edge">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="BRepBuilderAPI_MakeWire">
+            <Implements Name="BRepBuilderAPI_MakeShape" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="E1" ParamType="TopoDS_Edge" />
+                  <Parameter Name="E2" ParamType="TopoDS_Edge" />
+                  <Parameter Name="E3" ParamType="TopoDS_Edge" />
+                  <Parameter Name="E4" ParamType="TopoDS_Edge" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="E" ParamType="TopoDS_Edge" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="Wire" ReturnType="TopoDS_Wire">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="BRepBuilderAPI_MakeFace">
+            <Implements Name="BRepBuilderAPI_MakeShape" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="W" ParamType="TopoDS_Wire" />
+                  <Parameter Name="OnlyPlane" ParamType="bool" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="Face" ReturnType="TopoDS_Face">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="TopoDS">
+          <Class Name="TopoDS_Shape">
+            <Properties>
+              <Property Name="IsNull" ReturnType="bool">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="ShapeType" ReturnType="TopAbs_ShapeEnum">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="Location" ReturnType="TopLoc_Location">
+                <Attrs IsReadProperty="true" />
+                <Attrs IsWriteProperty="true" />
+              </Property>
+            </Properties>
+            <Methods>
+              <Method Name="IsSame" ReturnType="bool">
+                <Parameters>
+                  <Parameter Name="other" ParamType="TopoDS_Shape" />
+                </Parameters>
+              </Method>
+              <Method Name="Located" ReturnType="TopoDS_Shape">
+                <Parameters>
+                  <Parameter Name="Loc" ParamType="TopLoc_Location" />
+                </Parameters>
+              </Method>
+            </Methods>
+          </Class>
+          <Class Name="TopoDS">
+            <Methods>
+              <Method Name="Vertex" ReturnType="TopoDS_Vertex">
+                <Attrs>
+                  <IsStatic />
+                </Attrs>
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                </Parameters>
+              </Method>
+              <Method Name="Edge" ReturnType="TopoDS_Edge">
+                <Attrs>
+                  <IsStatic />
+                </Attrs>
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                </Parameters>
+              </Method>
+              <Method Name="Wire" ReturnType="TopoDS_Wire">
+                <Attrs>
+                  <IsStatic />
+                </Attrs>
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                </Parameters>
+              </Method>
+              <Method Name="Face" ReturnType="TopoDS_Face">
+                <Attrs>
+                  <IsStatic />
+                </Attrs>
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                </Parameters>
+              </Method>
+            </Methods>
+          </Class>
+          <Class Name="TopoDS_Vertex">
+            <Implements Name="TopoDS_Shape" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="TopoDS_Edge">
+            <Implements Name="TopoDS_Shape" />
+            <Methods />
+          </Class>
+          <Class Name="TopoDS_Wire">
+            <Implements Name="TopoDS_Shape" />
+            <Methods />
+          </Class>
+          <Class Name="TopoDS_Face">
+            <Implements Name="TopoDS_Shape" />
+            <Methods />
+          </Class>
+          <Class Name="TopoDS_Compound">
+            <Implements Name="TopoDS_Shape" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="TopoDS_Builder3D">
+            <Implements Name="TopoDS_Builder" />
+            <Methods />
+          </Class>
+          <Class Name="TopoDS_Builder">
+            <Methods>
+              <Method Name="MakeCompound" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="C" ParamType="TopoDS_Compound" />
+                </Parameters>
+              </Method>
+              <Method Name="Add" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                  <Parameter Name="C" ParamType="TopoDS_Shape" />
+                </Parameters>
+              </Method>
+            </Methods>
+          </Class>
+        </Namespace>
+        <Namespace Name="TopExp">
+          <Class Name="TopExp">
+            <Methods>
+              <Method Name="MapShapes" ReturnType="void">
+                <Attrs>
+                  <IsStatic />
+                </Attrs>
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                  <Parameter Name="T" ParamType="TopAbs_ShapeEnum" />
+                  <Parameter Name="M" ParamType="TopTools_IndexedMapOfShape" />
+                </Parameters>
+              </Method>
+              <Method Name="Vertices" ReturnType="void">
+                <Attrs>
+                  <IsStatic />
+                </Attrs>
+                <Parameters>
+                  <Parameter Name="E" ParamType="TopoDS_Edge" />
+                  <Parameter Name="Vfirst" ParamType="TopoDS_Vertex" />
+                  <Parameter Name="Vlast" ParamType="TopoDS_Vertex" />
+                  <Parameter Name="CumOri" ParamType="bool" />
+                </Parameters>
+              </Method>
+            </Methods>
+          </Class>
+          <Class Name="TopExp_Explorer">
+            <Methods>
+              <Method Name="Init" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                  <Parameter Name="ToFind" ParamType="TopAbs_ShapeEnum" />
+                  <Parameter Name="ToAvoid" ParamType="TopAbs_ShapeEnum" />
+                </Parameters>
+              </Method>
+              <Method Name="Next" ReturnType="void">
+                <Parameters />
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                  <Parameter Name="ToFind" ParamType="TopAbs_ShapeEnum" />
+                  <Parameter Name="ToAvoid" ParamType="TopAbs_ShapeEnum" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="Current" ReturnType="TopoDS_Shape">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="More" ReturnType="bool">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="TopAbs">
+          <Enum Name="TopAbs_ShapeEnum">
+            <Field Name="TopAbs_COMPOUND" />
+            <Field Name="TopAbs_COMPSOLID" />
+            <Field Name="TopAbs_SOLID" />
+            <Field Name="TopAbs_SHELL" />
+            <Field Name="TopAbs_FACE" />
+            <Field Name="TopAbs_WIRE" />
+            <Field Name="TopAbs_EDGE" />
+            <Field Name="TopAbs_VERTEX" />
+            <Field Name="TopAbs_SHAPE" />
+          </Enum>
+          <Enum Name="TopAbs_State">
+            <Field Name="TopAbs_IN" />
+            <Field Name="TopAbs_OUT" />
+            <Field Name="TopAbs_ON" />
+            <Field Name="TopAbs_UNKNOWN" />
+          </Enum>
+        </Namespace>
+        <Namespace Name="TopTools">
+          <Class Name="TopTools_IndexedMapOfShape">
+            <Implements Name="TCollection_BasicMap" />
+            <Methods>
+              <Method Name="FindKey" ReturnType="TopoDS_Shape">
+                <Parameters>
+                  <Parameter Name="I" ParamType="int" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="NbBuckets" ParamType="int" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="TopTools_HSequenceOfShape">
+            <Implements Name="MMgt_TShared" />
+            <Methods>
+              <Method Name="Append" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="anItem" ParamType="TopoDS_Shape" />
+                </Parameters>
+              </Method>
+              <Method Name="Value" ReturnType="TopoDS_Shape">
+                <Parameters>
+                  <Parameter Name="anIndex" ParamType="int" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+        <Namespace Name="TCollection">
+          <Class Name="TCollection_BasicMap">
+            <Methods />
+            <Properties>
+              <Property Name="Extent" ReturnType="int">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="TCollection_ExtendedString">
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="astring" ParamType="string" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+        <Namespace Name="Precision">
+          <Class Name="Precision">
+            <Methods />
+            <Properties>
+              <Property Name="Confusion" ReturnType="double">
+                <Attrs IsReadProperty="true" IsStatic="true" />
+              </Property>
+              <Property Name="Angular" ReturnType="double">
+                <Attrs IsReadProperty="true" IsStatic="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="BRep">
+          <Class Name="BRep_Tool">
+            <Methods>
+              <Method Name="Pnt" ReturnType="gp_Pnt">
+                <Attrs>
+                  <IsStatic />
+                </Attrs>
+                <Parameters>
+                  <Parameter Name="V" ParamType="TopoDS_Vertex" />
+                </Parameters>
+              </Method>
+              <Method Name="Surface" ReturnType="Geom_Surface">
+                <Attrs>
+                  <IsStatic />
+                </Attrs>
+                <Parameters>
+                  <Parameter Name="F" ParamType="TopoDS_Face" />
+                </Parameters>
+              </Method>
+            </Methods>
+          </Class>
+          <Class Name="BRep_Builder">
+            <Implements Name="TopoDS_Builder3D" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+        <Namespace Name="BRepAdaptor">
+          <Class Name="BRepAdaptor_Surface">
+            <Implements Name="Adaptor3d_Surface" />
+            <Methods>
+              <Method Name="Initialize" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="F" ParamType="TopoDS_Face" />
+                  <Parameter Name="Restriction" ParamType="bool" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="F" ParamType="TopoDS_Face" />
+                  <Parameter Name="R" ParamType="bool" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="GetType" ReturnType="GeomAbs_SurfaceType">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="BRepAdaptor_Curve">
+            <Implements Name="Adaptor3d_Curve" />
+            <Methods>
+              <Method Name="Value" ReturnType="gp_Pnt">
+                <Parameters>
+                  <Parameter Name="U" ParamType="double" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="E" ParamType="TopoDS_Edge" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="GetType" ReturnType="GeomAbs_CurveType">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="Line" ReturnType="gp_Lin">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="FirstParameter" ReturnType="double">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="LastParameter" ReturnType="double">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="Circle" ReturnType="gp_Circ">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="Adaptor3d">
+          <Class Name="Adaptor3d_Surface">
+            <Methods />
+          </Class>
+          <Class Name="Adaptor3d_Curve">
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="GeomAbs">
+          <Enum Name="GeomAbs_SurfaceType">
+            <Field Name="GeomAbs_Plane" />
+            <Field Name="GeomAbs_Cylinder" />
+            <Field Name="GeomAbs_Cone" />
+            <Field Name="GeomAbs_Sphere" />
+            <Field Name="GeomAbs_Torus" />
+            <Field Name="GeomAbs_BezierSurface" />
+            <Field Name="GeomAbs_BSplineSurface" />
+            <Field Name="GeomAbs_SurfaceOfRevolution" />
+            <Field Name="GeomAbs_SurfaceOfExtrusion" />
+            <Field Name="GeomAbs_OffsetSurface" />
+            <Field Name="GeomAbs_OtherSurface" />
+          </Enum>
+          <Enum Name="GeomAbs_CurveType">
+            <Field Name="GeomAbs_Line" />
+            <Field Name="GeomAbs_Circle" />
+            <Field Name="GeomAbs_Ellipse" />
+            <Field Name="GeomAbs_Hyperbola" />
+            <Field Name="GeomAbs_Parabola" />
+            <Field Name="GeomAbs_BezierCurve" />
+            <Field Name="GeomAbs_BSplineCurve" />
+            <Field Name="GeomAbs_OtherCurve" />
+          </Enum>
+        </Namespace>
+        <Namespace Name="Bnd">
+          <Class Name="Bnd_Box">
+            <Methods>
+              <Method Name="Set" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                  <Parameter Name="D" ParamType="gp_Dir" />
+                </Parameters>
+              </Method>
+              <Method Name="IsOut" ReturnType="bool">
+                <Parameters>
+                  <Parameter Name="Other" ParamType="Bnd_Box" />
+                </Parameters>
+              </Method>
+              <Method Name="Get" ReturnType="void">
+                <Parameters>
+                  <Parameter IsRef="true" Name="aXmin" ParamType="double" />
+                  <Parameter IsRef="true" Name="aYmin" ParamType="double" />
+                  <Parameter IsRef="true" Name="aZmin" ParamType="double" />
+                  <Parameter IsRef="true" Name="aXmax" ParamType="double" />
+                  <Parameter IsRef="true" Name="aYmax" ParamType="double" />
+                  <Parameter IsRef="true" Name="aZmax" ParamType="double" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+        <Namespace Name="gce">
+          <Class Name="gce_MakeCirc">
+            <Implements Name="gce_Root" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P1" ParamType="gp_Pnt" />
+                  <Parameter Name="P2" ParamType="gp_Pnt" />
+                  <Parameter Name="P3" ParamType="gp_Pnt" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="Value" ReturnType="gp_Circ">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="gce_Root">
+            <Methods />
+          </Class>
+          <Class Name="gce_MakeLin">
+            <Implements Name="gce_Root" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                  <Parameter Name="V" ParamType="gp_Dir" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="Value" ReturnType="gp_Lin">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="TopLoc">
+          <Class Name="TopLoc_Location">
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="T" ParamType="gp_Trsf" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+        <Namespace Name="STEPControl">
+          <Class Name="STEPControl_Writer">
+            <Methods>
+              <Method Name="Transfer" ReturnType="IFSelect_ReturnStatus">
+                <Parameters>
+                  <Parameter Name="sh" ParamType="TopoDS_Shape" />
+                  <Parameter Name="mode" ParamType="STEPControl_StepModelType" />
+                  <Parameter Name="compgraph" ParamType="bool" />
+                </Parameters>
+              </Method>
+              <Method Name="Write" ReturnType="IFSelect_ReturnStatus">
+                <Parameters>
+                  <Parameter Name="filename" ParamType="string" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Enum Name="STEPControl_StepModelType">
+            <Field Name="STEPControl_AsIs" />
+            <Field Name="STEPControl_ManifoldSolidBrep" />
+            <Field Name="STEPControl_BrepWithVoids" />
+            <Field Name="STEPControl_FacetedBrep" />
+            <Field Name="STEPControl_FacetedBrepAndBrepWithVoids" />
+            <Field Name="STEPControl_ShellBasedSurfaceModel" />
+            <Field Name="STEPControl_GeometricCurveSet" />
+            <Field Name="STEPControl_Hybrid" />
+          </Enum>
+          <Class Name="STEPControl_Reader">
+            <Implements Name="XSControl_Reader" />
+            <Methods>
+              <Method Name="TransferRoot" ReturnType="bool">
+                <Parameters>
+                  <Parameter Name="num" ParamType="int" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+        <Namespace Name="IFSelect">
+          <Enum Name="IFSelect_ReturnStatus">
+            <Field Name="IFSelect_RetVoid" />
+            <Field Name="IFSelect_RetDone" />
+            <Field Name="IFSelect_RetError" />
+            <Field Name="IFSelect_RetFail" />
+            <Field Name="IFSelect_RetStop" />
+          </Enum>
+          <Enum Name="IFSelect_PrintCount">
+            <Field Name="IFSelect_ItemsByEntity" />
+            <Field Name="IFSelect_CountByItem" />
+            <Field Name="IFSelect_ShortByItem" />
+            <Field Name="IFSelect_ListByItem" />
+            <Field Name="IFSelect_EntitiesByItem" />
+            <Field Name="IFSelect_CountSummary" />
+            <Field Name="IFSelect_GeneralInfo" />
+            <Field Name="IFSelect_Mapping" />
+            <Field Name="IFSelect_ResultCount" />
+          </Enum>
+          <Class Name="IFSelect_WorkSession">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="XSControl">
+          <Class Name="XSControl_Reader">
+            <Methods>
+              <Method Name="ReadFile" ReturnType="IFSelect_ReturnStatus">
+                <Parameters>
+                  <Parameter Name="filename" ParamType="string" />
+                </Parameters>
+              </Method>
+              <Method Name="PrintCheckLoad" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="failsonly" ParamType="bool" />
+                  <Parameter Name="mode" ParamType="IFSelect_PrintCount" />
+                </Parameters>
+              </Method>
+              <Method Name="Shape" ReturnType="TopoDS_Shape">
+                <Parameters>
+                  <Parameter Name="num" ParamType="int" />
+                </Parameters>
+              </Method>
+              <Method Name="PrintCheckTransfer" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="failsonly" ParamType="bool" />
+                  <Parameter Name="mode" ParamType="IFSelect_PrintCount" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Properties>
+              <Property Name="NbRootsForTransfer" ReturnType="int">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="WS" ReturnType="XSControl_WorkSession">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="NbShapes" ReturnType="int">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="XSControl_WorkSession">
+            <Implements Name="IFSelect_WorkSession" />
+            <Methods />
+            <Properties>
+              <Property Name="MapReader" ReturnType="Transfer_TransientProcess">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="GeomAPI">
+          <Class Name="GeomAPI_ProjectPointOnCurve">
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                  <Parameter Name="Curve" ParamType="Geom_Curve" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="NbPoints" ReturnType="int">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="NearestPoint" ReturnType="gp_Pnt">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="GeomAPI_ProjectPointOnSurf">
+            <Methods />
+            <Properties>
+              <Property Name="NearestPoint" ReturnType="gp_Pnt">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="NbPoints" ReturnType="int">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="Transfer">
+          <Class Name="Transfer_TransientProcess">
+            <Implements Name="Transfer_ProcessForTransient" />
+            <Methods />
+          </Class>
+          <Class Name="Transfer_ProcessForTransient">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+            <Properties>
+              <Property Name="TraceLevel" ReturnType="int">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="DsgPrs">
+          <Enum Name="DsgPrs_ArrowSide">
+            <Field Name="DsgPrs_AS_NONE" />
+            <Field Name="DsgPrs_AS_FIRSTAR" />
+            <Field Name="DsgPrs_AS_LASTAR" />
+            <Field Name="DsgPrs_AS_BOTHAR" />
+            <Field Name="DsgPrs_AS_FIRSTPT" />
+            <Field Name="DsgPrs_AS_LASTPT" />
+            <Field Name="DsgPrs_AS_BOTHPT" />
+            <Field Name="DsgPrs_AS_FIRSTAR_LASTPT" />
+            <Field Name="DsgPrs_AS_FIRSTPT_LASTAR" />
+          </Enum>
+        </Namespace>
+        <Namespace Name="BRepAlgoAPI">
+          <Class Name="BRepAlgoAPI_Fuse">
+            <Implements Name="BRepAlgoAPI_BooleanOperation" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="S1" ParamType="TopoDS_Shape" />
+                  <Parameter Name="S2" ParamType="TopoDS_Shape" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="BRepAlgoAPI_BooleanOperation">
+            <Implements Name="BRepBuilderAPI_MakeShape" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="Visual3d">
+          <Class Name="Visual3d_Layer">
+            <Implements Name="MMgt_TShared" />
+            <Methods>
+              <Method Name="SetViewport" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="Width" ParamType="int" />
+                  <Parameter Name="Height" ParamType="int" />
+                </Parameters>
+              </Method>
+              <Method Name="SetOrtho" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="Left" ParamType="double" />
+                  <Parameter Name="Right" ParamType="double" />
+                  <Parameter Name="Bottom" ParamType="double" />
+                  <Parameter Name="Top" ParamType="double" />
+                  <Parameter Name="Attach" ParamType="Aspect_TypeOfConstraint" />
+                </Parameters>
+              </Method>
+              <Method Name="DrawText" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="AText" ParamType="string" />
+                  <Parameter Name="X" ParamType="double" />
+                  <Parameter Name="Y" ParamType="double" />
+                  <Parameter Name="AHeight" ParamType="double" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="AViewer" ParamType="Visual3d_ViewManager" />
+                  <Parameter Name="AType" ParamType="Aspect_TypeOfLayer" />
+                  <Parameter Name="AFlag" ParamType="bool" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="Color" ReturnType="Quantity_Color">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="Visual3d_ViewManager">
+            <Implements Name="Graphic3d_StructureManager" />
+            <Methods />
+          </Class>
+          <Class Name="Visual3d_View">
+            <Implements Name="Graphic3d_DataStructureManager" />
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="Prs3d">
+          <Class Name="Prs3d_LineAspect">
+            <Implements Name="Prs3d_BasicAspect" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="aColor" ParamType="Quantity_Color" />
+                  <Parameter Name="aType" ParamType="Aspect_TypeOfLine" />
+                  <Parameter Name="aWidth" ParamType="double" />
+                </Parameters>
+              </Constructor>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="aColor" ParamType="Quantity_NameOfColor" />
+                  <Parameter Name="aType" ParamType="Aspect_TypeOfLine" />
+                  <Parameter Name="aWidth" ParamType="double" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="Prs3d_BasicAspect">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+          </Class>
+          <Class Name="Prs3d_Drawer">
+            <Implements Name="MMgt_TShared" />
+            <Methods />
+            <Properties>
+              <Property Name="LineAspect" ReturnType="Prs3d_LineAspect">
+                <Attrs IsWriteProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="GC">
+          <Class Name="GC_MakePlane">
+            <Implements Name="GC_Root" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P1" ParamType="gp_Pnt" />
+                  <Parameter Name="P2" ParamType="gp_Pnt" />
+                  <Parameter Name="P3" ParamType="gp_Pnt" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="Value" ReturnType="Geom_Plane">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+          <Class Name="GC_Root">
+            <Methods />
+          </Class>
+        </Namespace>
+        <Namespace Name="Extrema">
+          <Class Name="Extrema_ExtPC">
+            <Methods>
+              <Method Name="Value" ReturnType="double">
+                <Parameters>
+                  <Parameter Name="N" ParamType="int" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="P" ParamType="gp_Pnt" />
+                  <Parameter Name="C" ParamType="Adaptor3d_Curve" />
+                  <Parameter Name="TolF" ParamType="double" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="NbExt" ReturnType="int">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="BRepOffsetAPI">
+          <Class Name="BRepOffsetAPI_DraftAngle">
+            <Implements Name="BRepBuilderAPI_ModifyShape" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+        <Namespace Name="ElSLib">
+          <Class Name="ElSLib">
+            <Methods>
+              <Method Name="Value" ReturnType="gp_Pnt">
+                <Attrs>
+                  <IsStatic />
+                </Attrs>
+                <Parameters>
+                  <Parameter Name="U" ParamType="double" />
+                  <Parameter Name="V" ParamType="double" />
+                  <Parameter Name="Pl" ParamType="gp_Pln" />
+                </Parameters>
+              </Method>
+            </Methods>
+          </Class>
+        </Namespace>
+        <Namespace Name="IntTools">
+          <Class Name="IntTools_Context">
+            <Methods>
+              <Method Name="IsValidPointForFace" ReturnType="bool">
+                <Parameters>
+                  <Parameter Name="aP3D" ParamType="gp_Pnt" />
+                  <Parameter Name="aF" ParamType="TopoDS_Face" />
+                  <Parameter Name="aTol" ParamType="double" />
+                </Parameters>
+              </Method>
+            </Methods>
+          </Class>
+        </Namespace>
+        <Namespace Name="BRepClass3d">
+          <Class Name="BRepClass3d_SolidClassifier">
+            <Implements Name="BRepClass3d_SClassifier" />
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+          <Class Name="BRepClass3d_SClassifier">
+            <Methods />
+            <Properties>
+              <Property Name="State" ReturnType="TopAbs_State">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+        <Namespace Name="BRepMesh">
+          <Class Name="BRepMesh">
+            <Methods>
+              <Method Name="Mesh" ReturnType="void">
+                <Attrs>
+                  <IsStatic />
+                </Attrs>
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                  <Parameter Name="d" ParamType="double" />
+                </Parameters>
+              </Method>
+            </Methods>
+          </Class>
+        </Namespace>
+        <Namespace Name="TColgp">
+          <Class Name="TColgp_Array1OfPnt">
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Low" ParamType="int" />
+                  <Parameter Name="Up" ParamType="int" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+        <Namespace Name="Poly">
+          <Class Name="Poly_Array1OfTriangle">
+            <Methods />
+            <Constructors>
+              <Constructor>
+                <Parameters>
+                  <Parameter Name="Low" ParamType="int" />
+                  <Parameter Name="Up" ParamType="int" />
+                </Parameters>
+              </Constructor>
+            </Constructors>
+          </Class>
+        </Namespace>
+        <Namespace Name="BRepTools">
+          <Class Name="BRepTools">
+            <Methods>
+              <Method Name="Triangulation" ReturnType="bool">
+                <Attrs>
+                  <IsStatic />
+                </Attrs>
+                <Parameters>
+                  <Parameter Name="S" ParamType="TopoDS_Shape" />
+                  <Parameter Name="deflec" ParamType="double" />
+                </Parameters>
+              </Method>
+            </Methods>
+          </Class>
+        </Namespace>
+        <Namespace Name="BRepExtrema">
+          <Class Name="BRepExtrema_ExtCC">
+            <Methods>
+              <Method Name="Initialize" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="E2" ParamType="TopoDS_Edge" />
+                </Parameters>
+              </Method>
+              <Method Name="Perform" ReturnType="void">
+                <Parameters>
+                  <Parameter Name="E1" ParamType="TopoDS_Edge" />
+                </Parameters>
+              </Method>
+              <Method Name="Value" ReturnType="double">
+                <Parameters>
+                  <Parameter Name="N" ParamType="int" />
+                </Parameters>
+              </Method>
+              <Method Name="PointOnE1" ReturnType="gp_Pnt">
+                <Parameters>
+                  <Parameter Name="N" ParamType="int" />
+                </Parameters>
+              </Method>
+            </Methods>
+            <Constructors>
+              <Constructor>
+                <Parameters />
+              </Constructor>
+            </Constructors>
+            <Properties>
+              <Property Name="IsParallel" ReturnType="bool">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="NbExt" ReturnType="int">
+                <Attrs IsReadProperty="true" />
+              </Property>
+              <Property Name="IsDone" ReturnType="bool">
+                <Attrs IsReadProperty="true" />
+              </Property>
+            </Properties>
+          </Class>
+        </Namespace>
+      </Namespace>
+    </Namespace>
+  </Generator>
+</API>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<UserControl x:Class="NaroSetup.Pages.Solver.SolverOptionsView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/NaroThemeLibrary;component/Themes/NaroTheme.xaml" x:Name="theme" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+	<StackPanel Orientation="Vertical">
+		<StackPanel Orientation="Horizontal">
+			<CheckBox x:Name="cbxAlignToPoints" Content="Align around points" VerticalAlignment="Center" Margin="15,0,0,0" />
+		</StackPanel>
+		<StackPanel Orientation="Horizontal">
+			<Label Content="Distance:" Grid.Row="1" VerticalAlignment="Center" Margin="15,0,0,0" />
+			<TextBox Style="{DynamicResource roundTextBox}" x:Name="tbxDistance" Height="20" Width="50" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,100,0" />
+		</StackPanel>
+		<CheckBox x:Name="cbxDetectParallelLines" Content="Detect parallel lines" VerticalAlignment="Center" Margin="15,0,0,0" />
+		<StackPanel Orientation="Horizontal">
+			<Label Content="Angular Precision:" Grid.Row="3" VerticalAlignment="Center" Margin="15,0,0,0" />
+			<TextBox Style="{DynamicResource roundTextBox}" x:Name="tbxAngularPrec" Height="20" Width="50" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,100,0" />
+		</StackPanel>
+		<CheckBox x:Name="cbxEdgeIntersectionMatch" Content="Edge Intersection Match" VerticalAlignment="Center" Margin="15,0,0,0" />
+        <CheckBox x:Name="cbxSameCoordinateMatch" Content="Same coordinate match" VerticalAlignment="Center" Margin="15,0,0,0" />
+		<CheckBox x:Name="cbxPlaneMatch" Content="Plane match" VerticalAlignment="Center" Margin="15,0,0,0" />
+		<CheckBox x:Name="cbxEdgeMatch" Content="Edge Match" VerticalAlignment="Center" Margin="15,0,0,0" />
+		<CheckBox x:Name="cbxEdgeContMatch" Content="Edge Continuation Match" Grid.Row="6" VerticalAlignment="Center" Margin="15,0,0,0" />
+		<CheckBox x:Name="cbxHorVerSensitivity" Content="Horizontal/Vertical Sensitivity" Grid.Row="7" VerticalAlignment="Center" Margin="15,0,0,0" />
+		<StackPanel Orientation="Horizontal">
+			<CheckBox x:Name="cbxPolarSensitivity" Content="Polar Angle:" VerticalAlignment="Center" Margin="15,0,0,0" />
+			<TextBox Style="{DynamicResource roundTextBox}" x:Name="tbxPolarAngle" TextWrapping="Wrap" TextAlignment="Justify" Height="20" Width="50" VerticalAlignment="Center" Margin="0,0,100,0" HorizontalAlignment="Right" />
+			<ComboBox x:Name="cbxPolarAngle" Height="20" Width="50" VerticalAlignment="Center" Margin="0,0,100,0" HorizontalAlignment="Right" Text="45">
+				<ComboBoxItem>45</ComboBoxItem>
+				<ComboBoxItem>30</ComboBoxItem>
+				<ComboBoxItem>60</ComboBoxItem>
+				<ComboBoxItem>90</ComboBoxItem>
+			</ComboBox>
+		</StackPanel>
+		<StackPanel Orientation="Horizontal">
+			<Label Content="Vertical/Horizontal line sensitivity:" VerticalAlignment="Center" Margin="15,0,0,0" />
+			<TextBox Style="{DynamicResource roundTextBox}" x:Name="tbxSensitivityPrecision" TextWrapping="Wrap" TextAlignment="Justify" Height="20" Width="50" VerticalAlignment="Center" Margin="0,0,100,0" HorizontalAlignment="Right" />
+		</StackPanel>
+	
+    
+        <!-- Coordinate increments-->
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Move with X-axis increment: " VerticalAlignment="Center" Margin="15,0,0,0" />
+            <TextBox Style="{DynamicResource roundTextBox}" x:Name="tbxXIncrement" TextWrapping="Wrap" TextAlignment="Justify" Height="20" Width="30" VerticalAlignment="Center" Margin="0,0,100,0" HorizontalAlignment="Right" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Move with Y-axis increment: " VerticalAlignment="Center" Margin="15,0,0,0" />
+            <TextBox Style="{DynamicResource roundTextBox}" x:Name="tbxYIncrement" TextWrapping="Wrap" TextAlignment="Justify" Height="20" Width="30" VerticalAlignment="Center" Margin="0,0,100,0" HorizontalAlignment="Right" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Move with Z-axis increment: " VerticalAlignment="Center" Margin="15,0,0,0" />
+            <TextBox Style="{DynamicResource roundTextBox}" x:Name="tbxZIncrement" TextWrapping="Wrap" TextAlignment="Justify" Height="20" Width="30" VerticalAlignment="Center" Margin="0,0,100,0" HorizontalAlignment="Right" />
+        </StackPanel>
+    </StackPanel>
+</UserControl>

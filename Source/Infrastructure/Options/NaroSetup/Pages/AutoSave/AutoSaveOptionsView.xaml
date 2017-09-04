@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="NaroSetup.Pages.AutoSave.AutoSaveOptionsView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<GroupBox Header="AutoSave" Grid.Row="0" Margin="15,5,15,5">
+			<CheckBox x:Name="cbxAutoSave" Margin="15,15,5,15">Enabled</CheckBox>
+		</GroupBox>
+	</Grid>
+</UserControl>

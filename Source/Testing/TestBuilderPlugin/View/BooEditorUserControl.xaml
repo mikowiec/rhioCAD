@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="TestBuilderPlugin.View.BooEditorUserControl" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ad="clr-namespace:ICSharpCode.AvalonEdit;assembly=ICSharpCode.AvalonEdit">
+	<Grid Background="{DynamicResource controlGradient}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="25" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="25" />
+			<RowDefinition Height="25"></RowDefinition>
+			<RowDefinition Height="25" />
+		</Grid.RowDefinitions>
+		<StackPanel Grid.Row="0" Orientation="Horizontal">
+			<Button Style="{DynamicResource RoundedButton}" Click="OpenClick" Width="70" HorizontalAlignment="Left" Margin="10,0,0,0">
+				<StackPanel Orientation="Horizontal" Height="22" Width="auto" VerticalAlignment="Center">
+					<TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,5,0">Open</TextBlock>
+				</StackPanel>
+			</Button>
+			<Button Style="{DynamicResource RoundedButton}" Click="SaveClick" Margin="10,0,0,0" Width="70">
+				<StackPanel Orientation="Horizontal" Height="22" Width="auto" VerticalAlignment="Center">
+					<TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,5,0">Save</TextBlock>
+				</StackPanel>
+			</Button>
+			<CheckBox Content="_Test scripts" IsChecked="True" Margin="10,0,0,0" VerticalAlignment="Center" Name="_isScriptCheckBox" Click="IsScriptCheckBoxClick" />
+		</StackPanel>
+		<ad:TextEditor Grid.Row="1" Name="_textEditor" Style="{DynamicResource AvalonEditStyle}" Background="White" BorderBrush="Black" BorderThickness="1" Foreground="Black" ShowLineNumbers="True" TextChanged="TextEditorTextChanged" />
+
+		<Button x:Name="HelpButton" Content="Help" Cursor="Hand" Click="HelpButtonClick" Grid.Row="2" Height="22" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0">
+			<Button.Template>
+				<ControlTemplate TargetType="Button">
+					<TextBlock TextDecorations="Underline">
+						<ContentPresenter />
+					</TextBlock>
+				</ControlTemplate>
+			</Button.Template>
+			<Button.Style>
+				<Style TargetType="Button">
+					<Setter Property="Foreground" Value="Blue" />
+					<Style.Triggers>
+						<Trigger Property="IsMouseOver" Value="true">
+							<Setter Property="Foreground" Value="Red" />
+						</Trigger>
+					</Style.Triggers>
+				</Style>
+			</Button.Style>
+		</Button>
+
+		<Button Grid.Row="2" Style="{DynamicResource RoundedButton}" Name="executeBtn" Click="ExecuteClick" VerticalAlignment="Center" HorizontalAlignment="Right" Height="22" Margin="0,0,10,0">
+			<StackPanel Orientation="Horizontal" Height="22" Width="auto" VerticalAlignment="Center" Margin="10,0,10,0">
+				<TextBlock VerticalAlignment="Center" HorizontalAlignment="Left">Execute</TextBlock>
+			</StackPanel>
+		</Button>
+		<StackPanel Grid.Row="3" Orientation="Horizontal">
+			<TextBlock VerticalAlignment="Center" Margin="10,0,10,0" Height="auto" Width="auto" Text="Error messages:" />
+		</StackPanel>
+		<TextBlock Grid.Row="4" VerticalAlignment="Center" Margin="10,0,10,0" Height="auto" Width="auto" Name="_errorTextArea" />
+	</Grid>
+</UserControl>

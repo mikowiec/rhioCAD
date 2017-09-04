@@ -1,0 +1,10 @@
+namespace NaroCppCore.Occ.BOPTools
+{
+	public enum BOPToolsIntersectionStatus{
+		BOPTools_INTERSECTED,
+		BOPTools_BOUNDINGBOXINTERSECTED,
+		BOPTools_BOUNDINGBOXOFSUBSHAPESINTERSECTED,
+		BOPTools_NONINTERSECTED,
+		BOPTools_UNKNOWN,
+	}
+}

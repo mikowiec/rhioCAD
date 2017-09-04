@@ -1,0 +1,328 @@
+-- File:	CPPExt_Standard.edl
+-- Author:	Kernel
+-- History:	Fri Dec  8 09:59:38 1995	Kernel	Creation
+-- Copyright:	 Matra Datavision 1995
+
+@template HandleStandardTransient is
+$#ifndef _Handle_Standard_Transient_HeaderFile
+$#define _Handle_Standard_Transient_HeaderFile
+$
+$#ifndef _Standard_Macro_HeaderFile
+$#include <Standard_Macro.hxx>
+$#endif
+$#ifndef _Standard_PrimitiveTypes_HeaderFile
+$#include <Standard_PrimitiveTypes.hxx>
+$#endif
+$#ifndef _Standard_Transient_proto_HeaderFile
+$#include <Standard_Transient_proto.hxx>
+$#endif
+$
+$#ifndef UndefinedHandleAddress 
+$#ifdef DECOSF1
+$#define UndefinedHandleAddress ((Standard_Transient *)0xfefdfefdfefd0000)
+$#else
+$#define UndefinedHandleAddress ((Standard_Transient *)0xfefd0000)
+$#endif
+$#endif
+$
+$class Standard_Transient;
+$class Handle_Standard_Type;
+$
+$Standard_Integer HashCode(const Handle(Standard_Transient)& ,const Standard_Integer);
+$
+$class Handle(Standard_Transient)
+$ {
+$   private:
+$
+$    Standard_Transient *entity;
+$
+$    void RaiseNullObject(const Standard_CString S) const;
+$
+$    void BeginScope() const
+$      {
+$       if (entity != UndefinedHandleAddress) entity->count++;
+$      }    
+$
+$    void EndScope()
+$      {
+$       if (entity != UndefinedHandleAddress) 
+$         {
+$          entity->count--;
+$          if (entity->count == 0) {
+$	    entity->Delete();
+$	    entity = UndefinedHandleAddress ;
+$	  }
+$	}
+$      }
+$
+$
+$   public:
+$
+$    Handle(Standard_Transient)()
+$      {
+$       entity = UndefinedHandleAddress ;
+$      }
+$
+$    Handle(Standard_Transient)(const Handle(Standard_Transient)& aTid) 
+$      {
+$       entity = aTid.entity;
+$       BeginScope();
+$      } 
+$
+$    Handle(Standard_Transient)(const Standard_Transient *anItem)
+$      {
+$       if (!anItem)
+$           entity = UndefinedHandleAddress ;
+$       else
+$           entity = (Standard_Transient *)anItem;
+$       BeginScope();
+$      }
+$     void Dump(Standard_OStream& out) const;
+$    ~Handle(Standard_Transient)();
+$
+$     void  ShallowDump(Standard_OStream&) const;
+$     
+$    int operator==(const Handle(Standard_Transient)& right) const
+$      {
+$       return entity == right.entity;
+$      }
+$
+$    int operator==(const Standard_Transient *right) const
+$      {
+$       return entity == (Standard_Transient *)right;
+$      }
+$
+$    friend int operator==(const Standard_Transient *left, const Handle(Standard_Transient)& right)
+$      {
+$       return left == right.entity;
+$      }
+$
+$    int operator!=(const Handle(Standard_Transient)& right) const
+$      {
+$       return entity != right.entity;
+$      }
+$
+$    int operator!=(const Standard_Transient *right) const
+$      {
+$       return entity != right;
+$      }
+$
+$    friend int operator!=(const Standard_Transient *left, const Handle(Standard_Transient)& right)
+$      {
+$       return left != right.entity;
+$      }
+$
+$    void Nullify()
+$      {
+$       EndScope();
+$       entity =  UndefinedHandleAddress ;
+$      }
+$
+$    Standard_Boolean IsNull() const
+$      {
+$       return entity == UndefinedHandleAddress ;
+$      } 
+$
+$   protected:
+$
+$    Standard_Transient* Access() const
+$      {
+$       return entity;
+$      } 
+$
+$    Standard_Transient* ControlAccess() const
+$      {
+$       return entity;
+$      } 
+$
+$    void Assign(const Standard_Transient *anItem)
+$      {
+$       EndScope();
+$       if (!anItem)
+$           entity = UndefinedHandleAddress ;
+$       else
+$           entity = (Standard_Transient *)anItem;
+$       entity = (Standard_Transient *)anItem;
+$       BeginScope();
+$      }
+$
+$
+$  public:
+$
+$   operator Standard_Transient*()
+$     {
+$       return Access();
+$     }
+$
+$
+$   Handle(Standard_Transient)& operator=(const Handle(Standard_Transient)& aHandle);
+$   Handle(Standard_Transient)& operator=(const Standard_Transient* anItem);
+$
+$   Standard_Transient* operator->() 
+$     {
+$      return ControlAccess();
+$     }
+$
+$   Standard_Transient* operator->() const
+$     {
+$      return ControlAccess();
+$     }
+$
+$   Standard_Transient& operator*()
+$     {
+$      return *(ControlAccess());
+$     }
+$
+$   const Standard_Transient& operator*() const
+$     {
+$      return *(ControlAccess());
+$     }
+$
+$   static const Handle(Standard_Transient) DownCast(const Handle(Standard_Transient)& AnObject);
+$
+$   friend void ShallowDump(const Handle_Standard_Transient&,Standard_OStream&);
+$
+$ };
+$
+$#ifndef _Standard_Type_HeaderFile
+$#include <Standard_Type.hxx>
+$#endif
+$
+$#endif
+@end;
+
+@template StandardTransient is 
+$#ifndef _Standard_Transient_HeaderFile
+$#define _Standard_Transient_HeaderFile
+$
+$#ifndef _Handle_Standard_Transient_HeaderFile
+$#include <Handle_Standard_Transient.hxx>
+$#endif
+$#ifndef _Standard_PrimitiveTypes_HeaderFile
+$#include <Standard_PrimitiveTypes.hxx>
+$#endif
+$#ifndef _Standard_Transient_proto_HeaderFile
+$#include <Standard_Transient_proto.hxx>
+$#endif
+$#ifndef _Standard_Type_HeaderFile
+$#include <Standard_Type.hxx>
+$#endif
+$
+$#endif 
+@end;
+
+@template StandardErrorHandler is
+$//============================================================================
+$//==== Titre: Standard_ErrorHandler.hxx
+$//==== Role : the header file of class "Standard_ErrorHandler".
+$//====        define the syntaxe "try" and "catch". 
+$//============================================================================
+$
+$#ifndef	  _Standard_ErrorHandler_HeaderFile
+$#define   _Standard_ErrorHandler_HeaderFile
+$
+$#ifndef _Standard_Failure_HeaderFile
+$#include <Standard_Failure.hxx>
+$#endif
+$
+$#include <stdlib.h>
+$#include <setjmp.h>
+$
+$class Standard_ErrorHandler 
+${
+$ friend class  Standard_Failure;     // To execute the raise exception.
+$
+$ public:
+$  
+$                                 Standard_ErrorHandler();
+$                                ~Standard_ErrorHandler();
+$           Standard_Boolean      Catches (const Handle(Standard_Type)&);
+$
+$ private:
+$  static  void                      Abort();
+$  static  void                      Error(const Handle(Standard_Failure)&);
+$  static  Handle(Standard_Failure)  LastCaughtError();
+$
+$ //==== The fields ===========================================================
+$ private:
+$           Standard_ErrorHandler*   Previous;
+$           Handle(Standard_Failure) CaughtError;
+$
+$ public:
+$           jmp_buf      Label;
+$
+$};
+$
+$
+$#include <Standard_ErrorHandler.lxx>
+$
+$#endif 
+@end;
+
+@template StandardSStream is 
+$#ifndef _Standard_SStream_HeaderFile
+$#define _Standard_SStream_HeaderFile
+$
+$#include <strstream.h>
+$
+$class Handle_Standard_Type;
+$
+$Handle_Standard_Type& Standard_SStream_Type_();
+$
+$class Standard_SStream : public strstreambase, public ostream {
+$
+$  public:
+$    Standard_SStream();
+$    Standard_SStream(ostream& );
+$
+$    ~Standard_SStream();
+$};
+$#endif
+@end;
+
+@template StandardIStream is
+$#ifndef _Standard_IStream_HeaderFile
+$#define _Standard_IStream_HeaderFile
+$
+$#include <stream.h>
+$
+$
+$class Handle_Standard_Type;
+$
+$Handle_Standard_Type& Standard_IStream_Type_();
+$
+$#define Standard_IStream istream
+$
+$#endif
+@end;
+
+@template StandardOStream is
+$#ifndef _Standard_OStream_HeaderFile
+$#define _Standard_OStream_HeaderFile
+$
+$#include <stream.h>
+$
+$
+$class Handle_Standard_Type;
+$
+$Handle_Standard_Type& Standard_OStream_Type_();
+$
+$#define Standard_OStream ostream
+$
+$#endif
+@end;
+
+@template HandleStandardPersistent is
+$//============================================================================
+$//
+$// Title : Handle_Standard_Persistent.hxx 
+$// Role  : This file just include <Standard_Persistent.hxx>
+$//
+$//============================================================================
+$
+$#ifndef _Handle_Standard_Persistent_HeaderFile
+$#define _Handle_Standard_Persistent_HeaderFile
+$#include <Handle_StandardDB_Persistent.hxx>
+$
+$#endif
+@end;

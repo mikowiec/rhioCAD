@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SolutionProfiles" targetNamespace="http://schemas.microsoft.com/pag/cab-profile" elementFormDefault="qualified" xmlns="http://schemas.microsoft.com/pag/cab-profile" xmlns:cab="http://schemas.microsoft.com/pag/cab-profile" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:complexType name="SolutionProfileElement">
+		<xs:sequence>
+			<xs:element name="Modules" type="ModuleElementCollection" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ModuleElementCollection">
+		<xs:sequence>
+			<xs:element name="ModuleInfo" type="ModuleInfoElement" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ModuleInfoElement">
+		<xs:sequence>
+			<xs:element name="Roles" type="RoleElementCollection" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+		<xs:attribute name="AssemblyFile" type="xs:string"/>
+		<xs:attribute name="UpdateLocation" type="xs:anyURI" use="optional"/>
+	</xs:complexType>
+
+	<xs:complexType name="RoleElementCollection">
+		<xs:sequence>
+			<xs:element name="Role" type="RoleElement" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="RoleElement">
+		<xs:attribute name="Allow" type="xs:string" />
+	</xs:complexType>
+
+	<xs:element name="SolutionProfile" type="SolutionProfileElement" />
+	
+</xs:schema>

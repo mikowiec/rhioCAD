@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.1  (Win32)">
+	<META NAME="CREATED" CONTENT="20090907;344400">
+	<META NAME="CHANGED" CONTENT="20090907;365000">
+</HEAD>
+<BODY LANG="es-ES" DIR="LTR">
+<P>Applies a fillet feature on 2 selected wire objects.</P>
+<P>Syntax:</P>
+<P>void Fillet2D(shape1: integer; shape2: integer; size: real)</P>
+<P>Arguments:</P>
+<P>shape1: index of the first wire node</P>
+<P>shape2: index of the second wire node</P>
+<P>size: radius of the fillet</P>
+<P><BR></P>
+<P>Sample usage:</P>
+<P>s1=Sketch(0,0,0,5,4,0,2,3,0)</P>
+<P>EnterSketch(s1)</P>
+<P>p1=Point(s1,2,3,0)</P>
+<P>p2=Point(s1,16,19,0)</P>
+<P>p3=Point(s1,4,15,0)</P>
+<P>l1=Line(p1,p2)</P>
+<P>l2=Line(p1,p3)</P>
+<P>Fillet2D(l1,l2,4)</P>
+</BODY>
+</HTML>

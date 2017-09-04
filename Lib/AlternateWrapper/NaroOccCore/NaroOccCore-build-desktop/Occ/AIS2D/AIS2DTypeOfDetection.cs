@@ -1,0 +1,10 @@
+namespace NaroCppCore.Occ.AIS2D
+{
+	public enum AIS2DTypeOfDetection{
+		AIS2D_TOD_OBJECT,
+		AIS2D_TOD_PRIMITIVE,
+		AIS2D_TOD_ELEMENT,
+		AIS2D_TOD_VERTEX,
+		AIS2D_TOD_NONE,
+	}
+}

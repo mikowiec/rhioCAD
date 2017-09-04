@@ -1,0 +1,7 @@
+﻿<RibbonMapping:RibbonButtonMapping x:Class="ShapesUiPlugin.Solid.BoxButtonTool"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary" xmlns:RibbonMapping="clr-namespace:NaroUiBuilder.RibbonMapping;assembly=NaroUiBuilder" Content="Box" Name="Box" Height="33" Width="33">
+    <r:RibbonButton.Command>
+        <r:RibbonCommand Executed="BoxClick" LabelTitle="Box" ToolTipTitle="Box" ToolTipDescription="Box drawing tool." SmallImageSource="/Resources;component/Resources/cube.png" LargeImageSource="/Resources;component/Resources/cube.png" />
+    </r:RibbonButton.Command>
+</RibbonMapping:RibbonButtonMapping>

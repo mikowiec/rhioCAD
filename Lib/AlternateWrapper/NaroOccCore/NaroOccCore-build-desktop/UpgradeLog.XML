@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="NaroHost">
+</Property><Property Name="Solution File" Value="E:\NaroOccCore\NaroOccCore-build-desktop\NaroHost.sln">
+</Property><Property Name="Date" Value="Monday, May 09, 2011">
+</Property><Property Name="Time" Value="18:13 PM">
+</Property></Properties><Event ErrorLevel="0" Project="NaroHost" Source="NaroHost.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="NaroHost" Source="NaroHost.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="NaroCppCore" Source="NaroCppCore.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="NaroCppCore" Source="NaroCppCore.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ApiGenerators" Source="ApiGenerators\ApiGenerators.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ApiGenerators" Source="ApiGenerators\ApiGenerators.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ApiToWrapper" Source="ApiToWrapper\ApiToWrapper.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ApiToWrapper" Source="ApiToWrapper\ApiToWrapper.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ApiCommon" Source="ApiCommon\ApiCommon.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ApiCommon" Source="ApiCommon\ApiCommon.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="NaroHost.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="NaroHost.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ApiGenerators" Source="ApiGenerators\ApiGenerators.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ApiToWrapper" Source="ApiToWrapper\ApiToWrapper.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ApiCommon" Source="ApiCommon\ApiCommon.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="NaroHost" Source="NaroHost.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="NaroCppCore" Source="NaroCppCore.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

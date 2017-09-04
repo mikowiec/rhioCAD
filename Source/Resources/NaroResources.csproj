@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{863E2972-C477-4464-97F3-681675597D1C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Resources</RootNamespace>
+    <AssemblyName>Resources</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Infrastructure\ErrorReportCommonResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErrorReportCommonResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\ExtensionsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExtensionsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\InfrastructureInterfaceResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InfrastructureInterfaceResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\InfrastructureLibraryResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InfrastructureLibraryResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\UpdateClientResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateClientResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Modeling\PropertyDescriptorsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PropertyDescriptorsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PartModelling\ModelingResources.Designer.cs">
+      <DependentUpon>ModelingResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PartModelling\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Infrastructure\ErrorReportCommonResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorReportCommonResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infrastructure\ExtensionsResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ExtensionsResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infrastructure\InfrastructureInterfaceResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>InfrastructureInterfaceResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infrastructure\InfrastructureLibraryResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>InfrastructureLibraryResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infrastructure\UpdateClientResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateClientResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modeling\PropertyDescriptorsResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PropertyDescriptorsResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartModelling\ModelingResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ModelingResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Resource Include="PartModelling\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\bool_cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\bool_fuse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\bool_intersect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\chamfer2d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\chamfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\circledotshape1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\circledotshape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\circleshape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\constraint_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cylinder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\dimension.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\document-new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\document-open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\document-save-as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\drawing_fillet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\edit-redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\edit-undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\entersketcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\exitsketcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\face_exploded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\fillet2d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\generate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\linelengthconstraint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\linenormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\lineparallel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\lineshape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\list-remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\mirrorLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\mirrorPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\offset3D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\patternlinecircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\pointshape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\radiusconstraint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\rectangleheightconstraint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\rectangleshape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\rectanglewidthconstraint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\revolve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\select_edges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\select_faces.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\select_solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\select_vertices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\sphere.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\spline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\spline-add-point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\system-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\TagEditor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\TagShapeEditor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\torus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\translate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ungroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_axo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_comp_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_comp_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_dynpan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_dynzoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_fitall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_globalpan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_rotate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\view_zoomwnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\arcSERadius.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\add_constraint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\arc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\layericon.png" />
+    <Resource Include="Resources\RUN-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\fullscreen_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\spline-point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cursor-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\arc-ser.png" />
+    <Resource Include="Resources\circle.png" />
+    <Resource Include="Resources\distance.png" />
+    <Resource Include="Resources\ellipse.png" />
+    <Resource Include="Resources\free-draw.png" />
+    <Resource Include="Resources\line-horizontal.png" />
+    <Resource Include="Resources\line-normal.png" />
+    <Resource Include="Resources\line-parallel.png" />
+    <Resource Include="Resources\line-vertical.png" />
+    <Resource Include="Resources\polyline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\lock.png" />
+    <Resource Include="Resources\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\preferences-system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\edit-copy.png" />
+    <Resource Include="Resources\edit-cut.png" />
+    <Resource Include="Resources\edit-paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cube.png" />
+    <Resource Include="Resources\select-edge.png" />
+    <Resource Include="Resources\select-face.png" />
+    <Resource Include="Resources\select-object.png" />
+    <Resource Include="Resources\select-points.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ReleaseSplash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\naro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\close-icon.png" />
+    <Resource Include="Resources\export-icon.png" />
+    <Resource Include="Resources\import-icon.png" />
+    <Resource Include="Resources\options-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\update-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\offset2d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\extrude.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\pipe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\gizmo-none.png" />
+    <Resource Include="Resources\gizmo-rotate.png" />
+    <Resource Include="Resources\gizmo-scale.png" />
+    <Resource Include="Resources\gizmo-translate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\gizmos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\dialog-error.png" />
+    <Resource Include="Resources\list-add.png" />
+    <Resource Include="Resources\update-available.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\horizontal_constraint.png" />
+    <Resource Include="Resources\parallel_constraint.png" />
+    <Resource Include="Resources\perpendicular_constraint.png" />
+    <Resource Include="Resources\vertical_constraint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

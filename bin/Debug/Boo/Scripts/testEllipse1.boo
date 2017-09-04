@@ -1,0 +1,6 @@
+s1=Sketch(0,0,0,6,3,0,2,3,0)
+EnterSketch(s1)
+p1=Point(s1,0,0,0)
+p2=Point(s1,8,3,0)
+p3=Point(s1,5,6,0)
+Ellipse(p1,p2,p3)

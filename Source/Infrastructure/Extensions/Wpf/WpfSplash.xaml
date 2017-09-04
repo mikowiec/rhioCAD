@@ -1,0 +1,5 @@
+﻿<Window x:Class="Extensions.Wpf.WpfSplash" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" SizeToContent="WidthAndHeight" Topmost="True">
+	<StackPanel>
+		<Image Source="/Resources;component/Resources/ReleaseSplash.png" Width="560" Height="350"></Image>
+	</StackPanel>
+</Window>

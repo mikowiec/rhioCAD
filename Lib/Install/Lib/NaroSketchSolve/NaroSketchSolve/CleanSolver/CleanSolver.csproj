@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0545E18-AA6E-4530-8E36-38962675DE2A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CleanSolver</RootNamespace>
+    <AssemblyName>CleanSolver</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constraints\ArcRadius.cs" />
+    <Compile Include="Constraints\ArcRules.cs" />
+    <Compile Include="Constraints\CircleRadius.cs" />
+    <Compile Include="Constraints\Colinear.cs" />
+    <Compile Include="Constraints\ConcentricArcs.cs" />
+    <Compile Include="Constraints\ConcentricCircArc.cs" />
+    <Compile Include="Constraints\ConstraintBase.cs" />
+    <Compile Include="Constraints\ConstraintTypes.cs" />
+    <Compile Include="Constraints\ConstraintTypesFactory.cs" />
+    <Compile Include="Constraints\EqualLegnth.cs" />
+    <Compile Include="Constraints\EqualRadiusArcs.cs" />
+    <Compile Include="Constraints\EqualRadiusCircArc.cs" />
+    <Compile Include="Constraints\EqualRadiusCircles.cs" />
+    <Compile Include="Constraints\ExternalAngle.cs" />
+    <Compile Include="Constraints\InternalAngle.cs" />
+    <Compile Include="Constraints\LineLength.cs" />
+    <Compile Include="Constraints\Horizontal.cs" />
+    <Compile Include="Constraints\P2LDistance.cs" />
+    <Compile Include="Constraints\P2LDistanceHorz.cs" />
+    <Compile Include="Constraints\P2LDistanceVert.cs" />
+    <Compile Include="Constraints\P2PDistance.cs" />
+    <Compile Include="Constraints\P2PDistanceHorz.cs" />
+    <Compile Include="Constraints\P2PDistanceVert.cs" />
+    <Compile Include="Constraints\Parallel.cs" />
+    <Compile Include="Constraints\Perpendicular.cs" />
+    <Compile Include="Constraints\PointOnArc.cs" />
+    <Compile Include="Constraints\PointOnArcMidpoint.cs" />
+    <Compile Include="Constraints\PointOnCircle.cs" />
+    <Compile Include="Constraints\PointOnCircleQuad.cs" />
+    <Compile Include="Constraints\PointOnLine.cs" />
+    <Compile Include="Constraints\PointOnLineMidpoint.cs" />
+    <Compile Include="Constraints\PointOnPoint.cs" />
+    <Compile Include="Constraints\ConcentricCircles.cs" />
+    <Compile Include="Constraints\SymmetricArcs.cs" />
+    <Compile Include="Constraints\SymmetricCircles.cs" />
+    <Compile Include="Constraints\SymmetricLines.cs" />
+    <Compile Include="Constraints\SymmetricPoints.cs" />
+    <Compile Include="Constraints\TangentToArc.cs" />
+    <Compile Include="Constraints\TangentToCircle.cs" />
+    <Compile Include="Constraints\Vertical.cs" />
+    <Compile Include="Primitives\Arc.cs" />
+    <Compile Include="Primitives\Circle.cs" />
+    <Compile Include="Primitives\DoubleRefObject.cs" />
+    <Compile Include="Primitives\Line.cs" />
+    <Compile Include="Primitives\Point.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SolverSystem\ConstraintContainer.cs" />
+    <Compile Include="SolverSystem\MainClass.cs" />
+    <Compile Include="SolverSystem\SketchDerivative.cs" />
+    <Compile Include="SolverSystem\SketchSolve.cs" />
+    <Compile Include="SolverSystem\SolverUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

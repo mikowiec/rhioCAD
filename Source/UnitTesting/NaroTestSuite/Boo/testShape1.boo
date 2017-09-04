@@ -1,0 +1,1 @@
+GetFirstShapeContains("Rectangle-1")

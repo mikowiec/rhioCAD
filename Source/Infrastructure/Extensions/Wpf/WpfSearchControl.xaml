@@ -1,0 +1,6 @@
+﻿<UserControl x:Class="Extensions.Wpf.WpfSearchControl" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<DockPanel HorizontalAlignment="Stretch">
+		<Image Width="22" Height="22" Source="/Resources;component/Resources/system-search.png" MouseUp="ImageMouseUp" />
+		<TextBox Grid.Row="0" x:Name="tbxSearch" Margin="7,0,7,7" Style="{DynamicResource roundTextBox}" HorizontalAlignment="Stretch" TextChanged="TbxSearchTextChanged" GotFocus="TbxSearchGotFocus" LostFocus="TbxSearchLostFocus" />
+	</DockPanel>
+</UserControl>

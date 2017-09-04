@@ -1,0 +1,22 @@
+namespace NaroCppCore.Occ.Graphic3d
+{
+	public enum Graphic3dNameOfFont{
+		Graphic3d_NOF_ASCII_MONO,
+		Graphic3d_NOF_ASCII_SIMPLEX,
+		Graphic3d_NOF_ASCII_DUPLEX,
+		Graphic3d_NOF_ASCII_COMPLEX,
+		Graphic3d_NOF_ASCII_TRIPLEX,
+		Graphic3d_NOF_ASCII_ITALIC_COMPLEX,
+		Graphic3d_NOF_ASCII_ITALIC_TRIPLEX,
+		Graphic3d_NOF_ASCII_SCRIPT_SIMPLEX,
+		Graphic3d_NOF_ASCII_SCRIPT_COMPLEX,
+		Graphic3d_NOF_GREEK_MONO,
+		Graphic3d_NOF_GREEK_SIMPLEX,
+		Graphic3d_NOF_GREEK_COMPLEX,
+		Graphic3d_NOF_SYMBOL_MONO,
+		Graphic3d_NOF_SYMBOL_SIMPLEX,
+		Graphic3d_NOF_CARTOGRAPHIC_SIMPLEX,
+		Graphic3d_NOF_KANJI_MONO,
+		Graphic3d_NOF_KATAKANA_MONO,
+	}
+}

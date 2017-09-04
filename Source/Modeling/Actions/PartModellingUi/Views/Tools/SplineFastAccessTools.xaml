@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="PartModellingUi.Views.Tools.SplineFastAccessTools" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/NaroThemeLibrary;component/Themes/NaroTheme.xaml" x:Name="theme" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+	<StackPanel Orientation="Horizontal">
+		<Button Margin="6,0,0,0" Click="SplineClick">
+			<TextBlock>Spline</TextBlock>
+		</Button>
+		<Button Margin="6,0,0,0" Click="InterpolatedClick">
+			<TextBlock>Interpolated</TextBlock>
+		</Button>
+		<Button Margin="6,0,0,0" Click="ControlPointClick">
+			<TextBlock>Control Point</TextBlock>
+		</Button>
+		<Button Margin="6,0,0,0" Click="SplitSplineClick">
+			<TextBlock>Split</TextBlock>
+		</Button>
+		<Button Margin="6,0,0,0" Click="CombineSplineClick">
+			<TextBlock>Combine</TextBlock>
+		</Button>
+		<Button Margin="6,0,0,0" Click="DoneClick">
+			<TextBlock>Done</TextBlock>
+		</Button>
+
+	</StackPanel>
+
+</UserControl>

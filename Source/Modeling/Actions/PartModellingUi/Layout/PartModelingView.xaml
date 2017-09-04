@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="PartModellingUi.Layout.PartModelingView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration" xmlns:Views="clr-namespace:PartModellingUi.Views" Name="maincontrol">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/NaroThemeLibrary;component/Themes/NaroTheme.xaml" x:Name="theme" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+
+	<wfi:WindowsFormsHost x:Name="winhost" Height="auto" Width="auto">
+		<Views:MultiView x:Name="multiView" />
+	</wfi:WindowsFormsHost>
+</UserControl>

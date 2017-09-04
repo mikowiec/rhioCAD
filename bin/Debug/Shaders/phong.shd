@@ -1,0 +1,5 @@
+   type phong
+   diff { "sRGB nonlinear" 0.33 0.33 1 }
+   spec 1 1 1 8
+   samples 4
+   

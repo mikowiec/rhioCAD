@@ -1,0 +1,50 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:Precision.cpp" caret="61" fromTop="4" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:NaroExport.h" caret="102" fromTop="7" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:Export_Import.h" caret="113" fromTop="5" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:AISInteractiveContext.cpp" caret="1719" fromTop="4" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:Graphic3dWNTGraphicDevice.cpp" caret="90" fromTop="4" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:WNTWindow.cpp" caret="669" fromTop="20" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:gpPnt.cpp" caret="544" fromTop="19" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:V3dView.cpp" caret="1240" fromTop="40" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:V3dViewer.cpp" caret="756" fromTop="29" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:GeomGeometry.cpp" caret="0" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:NaroExport.h" caret="224" fromTop="12" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:Precision.cpp" caret="74" fromTop="2" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:Export_Import.h" caret="88" fromTop="4" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:Export_Import.h" caret="190" fromTop="8" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:AISInteractiveContext.cpp" caret="1719" fromTop="4" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:Graphic3dWNTGraphicDevice.cpp" caret="90" fromTop="4" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:V3dViewer.cpp" caret="51" fromTop="1" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:V3dView.cpp" caret="1240" fromTop="42" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:WNTWindow.cpp" caret="670" fromTop="16" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:gpPnt.cpp" caret="1233" fromTop="19" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:gpPnt.cpp" caret="544" fromTop="19" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:V3dView.cpp" caret="1240" fromTop="40" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:V3dViewer.cpp" caret="1240" fromTop="29" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:V3dViewer.cpp" caret="763" fromTop="29" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

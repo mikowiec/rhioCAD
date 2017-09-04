@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.1  (Win32)">
+	<META NAME="CREATED" CONTENT="20090907;344400">
+	<META NAME="CHANGED" CONTENT="20090907;365000">
+</HEAD>
+<BODY LANG="es-ES" DIR="LTR">
+<P>Cuts away the shared area of selected objects.</P>
+<P>Syntax:</P>
+<P>void BooleanSubstract(shapeID1: integer; shapeID2: integer)</P>
+<P>Arguments:</P>
+<P>shapeID1: first shape ID</P>
+<P>shapeID2: second shape ID</P>
+<P><BR></P>
+<P>Cuts away the shared area of selected objects and creates a single object from the unshared areas.</P>
+<P><BR></P>
+<P>Sample usage:</P>
+<P>s1=Sketch(0,0,0,4,5,0,2,3,0)</P>
+<P>EnterSketch(s1)</P>
+<P>p1=Point(s1,5,6,0)</P>
+<P>c1=Circle(p1,30)</P>
+<P>p2=Point(s1,2,2,0)</P>
+<P>c2=Circle(p2,10)</P>
+<P>e1=Extrude(s1,20)</P>
+<P>s2=Sketch(0,0,0,4,5,0,2,3,0)</P>
+<P>EnterSketch(s2)</P>
+<P>p4=Point(s2,20,20,0)</P>
+<P>c4=Circle(p4,5)</P>
+<P>e2=Extrude(s2,30)</P>
+<P>BooleanSubstract(e1,e2)</P>
+<P><BR></P>
+<P>Syntax:</P>
+<P>void BooleanAdd(shapeID1: integer; shapeID2: integer)</P>
+<P>Arguments:</P>
+<P>shapeID1: first shape ID</P>
+<P>shapeID2: second shape ID</P>
+<P><BR></P>
+<P>Cuts away the unshared area of selectet objects.</P>
+<P><BR></P>
+<P>Sample usage:</P>
+<P>s1=Sketch(0,0,0,4,5,0,2,3,0)</P>
+<P>EnterSketch(s1)</P>
+<P>p1=Point(s1,5,6,0)</P>
+<P>c1=Circle(p1,30)</P>
+<P>p2=Point(s1,2,2,0)</P>
+<P>c2=Circle(p2,10)</P>
+<P>e1=Extrude(s1,20)</P>
+<P>s2=Sketch(0,0,20,4,5,20,2,3,20)</P>
+<P>EnterSketch(s2)</P>
+<P>p4=Point(s2,20,20,20)</P>
+<P>c4=Circle(p4,5)</P>
+<P>e2=Extrude(s2,10)</P>
+<P>BooleanAdd(e1,e2)</P>
+<P><BR></P>
+<P>Syntax:</P>
+<P>void BooleanIntersect(shapeID1: integer; shapeID2: integer)</P>
+<P>Arguments:</P>
+<P>shapeID1: first shape ID</P>
+<P>shapeID2: second shape ID</P>
+<P><BR></P>
+<P>Sample usage:</P>
+<P>s1=Sketch(0,0,0,4,5,0,2,3,0)</P>
+<P>EnterSketch(s1)</P>
+<P>p1=Point(s1,5,6,0)</P>
+<P>c1=Circle(p1,30)</P>
+<P>p2=Point(s1,2,2,0)</P>
+<P>c2=Circle(p2,10)</P>
+<P>e1=Extrude(s1,20)</P>
+<P>s2=Sketch(0,0,0,4,5,0,2,3,0)</P>
+<P>EnterSketch(s2)</P>
+<P>p4=Point(s2,20,20,0)</P>
+<P>c4=Circle(p4,5)</P>
+<P>e2=Extrude(s2,30)</P>
+<P>BooleanIntersect(e1,e2)</P>
+</BODY>
+</HTML>

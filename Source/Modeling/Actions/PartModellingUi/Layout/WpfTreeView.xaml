@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<UserControl x:Class="PartModellingUi.Layout.WpfTreeView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Wpf="clr-namespace:Extensions.Wpf;assembly=Extensions">
+	<Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{DynamicResource controlGradient}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="30"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<TreeView Name="TreeView" Grid.Row="1" ItemsSource="{Binding FirstItems}" Margin="0,0,0,0" Style="{DynamicResource TreeViewBackColor}" MouseUp="TreeViewMouseUp">
+			<TreeView.Resources>
+                <Style TargetType="{x:Type TreeViewItem}">
+                    <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                    <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                    <Setter Property="FontWeight" Value="Normal" />
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TreeView.Resources>
+			<TreeView.ItemTemplate>
+				<HierarchicalDataTemplate ItemsSource="{Binding Children}"></HierarchicalDataTemplate>
+			</TreeView.ItemTemplate>
+		</TreeView>
+		<Wpf:WpfSearchControl Grid.Row="0" x:Name="searchControl" />
+	</Grid>
+</UserControl>

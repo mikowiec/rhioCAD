@@ -1,0 +1,709 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="9B15D9E6-D47D-439B-8EA2-060D057757DC/f:Consts.cs" caret="165" fromTop="5" />
+      <File id="9B15D9E6-D47D-439B-8EA2-060D057757DC/f:DataNode.cs" caret="543" fromTop="15" />
+      <File id="9B15D9E6-D47D-439B-8EA2-060D057757DC/f:DataNodeLoader.cs" caret="301" fromTop="2" />
+      <File id="9B15D9E6-D47D-439B-8EA2-060D057757DC/d:Generator/f:OccApiGenerator.cs" caret="2000" fromTop="16" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:EnumWriter.cs" caret="0" fromTop="0" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/f:CSharpProjectWriter.cs" caret="6121" fromTop="9" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:PropertyWriter.cs" caret="3517" fromTop="0" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:CSharpClassWriter.cs" caret="3873" fromTop="9" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:ConstructorWriter.cs" caret="1210" fromTop="24" />
+      <File id="9B15D9E6-D47D-439B-8EA2-060D057757DC/d:Generator/f:Util.cs" caret="889" fromTop="9" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:MethodWriter.cs" caret="6411" fromTop="28" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:ParameterListWriter.cs" caret="2099" fromTop="19" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:BndBox.cpp" caret="0" fromTop="0" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:TopoDSBuilder.cpp" caret="449" fromTop="18" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:TopToolsHSequenceOfShape.cpp" caret="745" fromTop="20" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:TopExp.cpp" caret="527" fromTop="22" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:BRepAdaptorSurface.cpp" caret="732" fromTop="15" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:PolyTriangulation.cpp" caret="639" fromTop="16" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:PolyTriangle.cpp" caret="0" fromTop="0" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:AISInteractiveContext.cpp" caret="5807" fromTop="15" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:BRepBuilder.cpp" caret="383" fromTop="17" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:BRepTool.cpp" caret="844" fromTop="28" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:PropertyWriter.cs" caret="9239" fromTop="11" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:PropertyWriter.cs" caret="9953" fromTop="30" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:PropertyWriter.cs" caret="8136" fromTop="19" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/f:CSharpProjectWriter.cs" caret="6095" fromTop="8" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:ConstructorWriter.cs" caret="1562" fromTop="8" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:PropertyWriter.cs" caret="1555" fromTop="5" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:PropertyWriter.cs" caret="3517" fromTop="17" />
+      <File id="9B15D9E6-D47D-439B-8EA2-060D057757DC/d:Generator/f:Util.cs" caret="646" fromTop="14" />
+      <File id="9B15D9E6-D47D-439B-8EA2-060D057757DC/d:Generator/f:Util.cs" caret="1380" fromTop="26" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:CSharpClassWriter.cs" caret="2825" fromTop="19" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:CSharpClassWriter.cs" caret="2375" fromTop="13" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:CSharpClassWriter.cs" caret="3932" fromTop="9" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:ConstructorWriter.cs" caret="1210" fromTop="10" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:MethodWriter.cs" caret="1466" fromTop="9" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:ParameterListWriter.cs" caret="8034" fromTop="18" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:ParameterListWriter.cs" caret="8538" fromTop="24" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:ParameterListWriter.cs" caret="8643" fromTop="30" />
+      <File id="9B15D9E6-D47D-439B-8EA2-060D057757DC/d:Generator/f:Util.cs" caret="889" fromTop="9" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:ParameterListWriter.cs" caret="7201" fromTop="26" />
+      <File id="398D3D11-BE5A-4DC1-A158-CAE23403AA67/d:CodeWriters/d:Constructs/f:ParameterListWriter.cs" caret="2099" fromTop="19" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:BRepTool.cpp" caret="738" fromTop="18" />
+      <File id="A4F7A972-49C9-372F-9C48-9B7FDCBC1333/f:BRepTool.cpp" caret="844" fromTop="23" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="44" />
+      <Item value="DataNode`0" priority="13" />
+      <Item value="string" priority="105" />
+      <Item value="foreach" priority="30" />
+      <Item value="if" priority="96" />
+      <Item value="dataNode" priority="7" />
+      <Item value="nodeName" priority="1" />
+      <Item value="return" priority="95" />
+      <Item value="var" priority="118" />
+      <Item value="new" priority="50" />
+      <Item value="result" priority="44" />
+      <Item value="Children" priority="0" />
+      <Item value="static" priority="13" />
+      <Item value="xmlDoc" priority="7" />
+      <Item value="UpdateData`0" priority="0" />
+      <Item value="xmlNode" priority="0" />
+      <Item value="Name" priority="7" />
+      <Item value="node" priority="18" />
+      <Item value="attribute" priority="3" />
+      <Item value="attributes" priority="0" />
+      <Item value="null" priority="14" />
+      <Item value="XmlAttribute`0" priority="0" />
+      <Item value="data" priority="0" />
+      <Item value="ConformanceLevel`0" priority="0" />
+      <Item value="element" priority="0" />
+      <Item value="XmlAttribute" priority="0" />
+      <Item value="Value" priority="0" />
+      <Item value="fileName" priority="0" />
+      <Item value="xmlelem" priority="3" />
+      <Item value="CreateXmlElement`0" priority="0" />
+      <Item value="child" priority="10" />
+      <Item value="childNode" priority="1" />
+      <Item value="try" priority="0" />
+      <Item value="for" priority="1" />
+      <Item value="ApplicationException`0" priority="0" />
+      <Item value="e" priority="0" />
+      <Item value="Keys`0" priority="0" />
+      <Item value="TypeValidationEventArgs`0" priority="2" />
+      <Item value="textBox1" priority="7" />
+      <Item value="MessageBox`0" priority="1" />
+      <Item value="AssemblyLoadEventArgs`0" priority="0" />
+      <Item value="_assembly" priority="0" />
+      <Item value="typeName" priority="23" />
+      <Item value="asmType" priority="1" />
+      <Item value="Type`0" priority="6" />
+      <Item value="continue" priority="4" />
+      <Item value="break" priority="3" />
+      <Item value="ListBindingConverter`0" priority="2" />
+      <Item value="in" priority="1" />
+      <Item value="type" priority="12" />
+      <Item value="listBox1" priority="8" />
+      <Item value="method" priority="4" />
+      <Item value="api" priority="2" />
+      <Item value="virtual" priority="1" />
+      <Item value="void" priority="8" />
+      <Item value="protected" priority="2" />
+      <Item value="methodInfo" priority="11" />
+      <Item value="_type" priority="2" />
+      <Item value="_api" priority="2" />
+      <Item value="addForm" priority="0" />
+      <Item value="Label`0" priority="0" />
+      <Item value="methodLabel" priority="1" />
+      <Item value="checkBox1" priority="2" />
+      <Item value="prefix" priority="1" />
+      <Item value="words" priority="5" />
+      <Item value="bool" priority="12" />
+      <Item value="MethodInfo`0" priority="2" />
+      <Item value="_methodInfo" priority="4" />
+      <Item value="false" priority="10" />
+      <Item value="typeof" priority="1" />
+      <Item value="System" priority="1" />
+      <Item value="Void`0" priority="0" />
+      <Item value="Length" priority="4" />
+      <Item value="propertyCheckBox" priority="0" />
+      <Item value="true" priority="14" />
+      <Item value="this" priority="4" />
+      <Item value="ApiCommon" priority="1" />
+      <Item value="OccApiGenerator`0" priority="10" />
+      <Item value="const" priority="7" />
+      <Item value="generator" priority="0" />
+      <Item value="BasicStrings`0" priority="4" />
+      <Item value="ns" priority="0" />
+      <Item value="occ" priority="2" />
+      <Item value="occRootNode" priority="1" />
+      <Item value="packageName" priority="5" />
+      <Item value="Consts`0" priority="41" />
+      <Item value="GetPackageNode`0" priority="0" />
+      <Item value="name" priority="3" />
+      <Item value="nodeType" priority="4" />
+      <Item value="itemName" priority="1" />
+      <Item value="newItem" priority="1" />
+      <Item value="parent" priority="0" />
+      <Item value="Attribute`0" priority="0" />
+      <Item value="Attributes" priority="1" />
+      <Item value="value" priority="4" />
+      <Item value="PackageName`0" priority="0" />
+      <Item value="packageNode" priority="0" />
+      <Item value="klassName" priority="7" />
+      <Item value="klassNode" priority="1" />
+      <Item value="GetClassNode`0" priority="0" />
+      <Item value="baseType" priority="0" />
+      <Item value="out" priority="2" />
+      <Item value="IsReadProperty`0" priority="0" />
+      <Item value="IsWriteProperty`0" priority="0" />
+      <Item value="methodsNode" priority="3" />
+      <Item value="methodNode" priority="2" />
+      <Item value="SortedDictionary&lt;string,string&gt;" priority="0" />
+      <Item value="_typeMappings" priority="2" />
+      <Item value="primitiveTypeName" priority="1" />
+      <Item value="else" priority="8" />
+      <Item value="parameter" priority="4" />
+      <Item value="paremetersNode" priority="0" />
+      <Item value="Parent" priority="0" />
+      <Item value="ArgumentOutOfRangeException`0" priority="1" />
+      <Item value="PrimitiveTypeName`0" priority="0" />
+      <Item value="primitiveType" priority="2" />
+      <Item value="EditMethod`0" priority="0" />
+      <Item value="catch" priority="0" />
+      <Item value="_outputPath" priority="1" />
+      <Item value="Directory`0" priority="4" />
+      <Item value="occCodeWriter" priority="0" />
+      <Item value="_apiNode" priority="0" />
+      <Item value="VisitNodes`0" priority="0" />
+      <Item value="List" priority="11" />
+      <Item value="CSharpProjectWriter" priority="0" />
+      <Item value="_csProjectWriter" priority="0" />
+      <Item value="classNode" priority="2" />
+      <Item value="Classes" priority="2" />
+      <Item value="List&lt;CSharpClassWriter&gt;" priority="0" />
+      <Item value="SortedDictionary" priority="2" />
+      <Item value="CSharpClassWriter`0" priority="2" />
+      <Item value="className" priority="3" />
+      <Item value="CSharpClassWriter" priority="0" />
+      <Item value="GetOrAddClass`0" priority="1" />
+      <Item value="IDisposable`0" priority="0" />
+      <Item value="internal" priority="1" />
+      <Item value="abstract" priority="5" />
+      <Item value="DeleteSelf`0" priority="0" />
+      <Item value="classWriter" priority="2" />
+      <Item value="ClassName" priority="14" />
+      <Item value="Namespace" priority="0" />
+      <Item value="basenamespace" priority="0" />
+      <Item value="MethodWriter`0" priority="2" />
+      <Item value="Methods" priority="1" />
+      <Item value="UriHostNameType`0" priority="0" />
+      <Item value="_node" priority="15" />
+      <Item value="switch" priority="2" />
+      <Item value="case" priority="5" />
+      <Item value="projectWriter" priority="0" />
+      <Item value="private" priority="1" />
+      <Item value="TypeDependencies" priority="0" />
+      <Item value="List&lt;string&gt;" priority="4" />
+      <Item value="List&lt;MethodWriter&gt;" priority="0" />
+      <Item value="FileLists`0" priority="0" />
+      <Item value="ParamNames" priority="8" />
+      <Item value="ParamType`0" priority="0" />
+      <Item value="fileWriter" priority="0" />
+      <Item value="lines" priority="19" />
+      <Item value="mainInclude" priority="0" />
+      <Item value="ConstructorInfo`0" priority="1" />
+      <Item value="statusLabel" priority="1" />
+      <Item value="Text" priority="0" />
+      <Item value="item" priority="5" />
+      <Item value="ConstructorWriter`0" priority="1" />
+      <Item value="List&lt;ConstructorWriter&gt;" priority="0" />
+      <Item value="Constructors" priority="2" />
+      <Item value="constructor" priority="0" />
+      <Item value="toImport" priority="0" />
+      <Item value="ParamArrayAttribute`0" priority="0" />
+      <Item value="AddNativeImport`0" priority="0" />
+      <Item value="paramStr" priority="1" />
+      <Item value="nativeMethodName" priority="3" />
+      <Item value="importedNatives" priority="1" />
+      <Item value="MainClass`0" priority="0" />
+      <Item value="line" priority="1" />
+      <Item value="ParamTypes" priority="7" />
+      <Item value="paramTypes" priority="0" />
+      <Item value="Util`0" priority="12" />
+      <Item value="BeautifiedClassName" priority="2" />
+      <Item value="GetCppParamString`0" priority="0" />
+      <Item value="declaration" priority="0" />
+      <Item value="_classWriter" priority="6" />
+      <Item value="GetCppParamCall`0" priority="0" />
+      <Item value="WriteCppMethodBodies`0" priority="0" />
+      <Item value="IsAbstract" priority="0" />
+      <Item value="baseString" priority="4" />
+      <Item value="base" priority="0" />
+      <Item value="paramType" priority="2" />
+      <Item value="cppFileName" priority="1" />
+      <Item value="_fileListFileName" priority="0" />
+      <Item value="fileList" priority="1" />
+      <Item value="AddToFileList`0" priority="0" />
+      <Item value="using" priority="0" />
+      <Item value="Xml" priority="0" />
+      <Item value="fileListFileName" priority="0" />
+      <Item value="File`0" priority="0" />
+      <Item value="doc" priority="0" />
+      <Item value="_csharpProject" priority="1" />
+      <Item value="_csFiles" priority="2" />
+      <Item value="attr" priority="0" />
+      <Item value="klass" priority="1" />
+      <Item value="_rootPaths" priority="0" />
+      <Item value="_xmlDocument" priority="0" />
+      <Item value="ctorsNode" priority="0" />
+      <Item value="constructorInfo" priority="1" />
+      <Item value="sb" priority="29" />
+      <Item value="parameterInfos" priority="0" />
+      <Item value="paramName" priority="0" />
+      <Item value="ComposeParamsName`0" priority="0" />
+      <Item value="ctor" priority="0" />
+      <Item value="paramDef" priority="0" />
+      <Item value="existingParamDef" priority="0" />
+      <Item value="PopulateEnum`0" priority="0" />
+      <Item value="enumNode" priority="0" />
+      <Item value="fieldInfo" priority="0" />
+      <Item value="memberInfo" priority="1" />
+      <Item value="enumMember" priority="0" />
+      <Item value="int" priority="0" />
+      <Item value="sortedFieldsValue" priority="0" />
+      <Item value="memberName" priority="0" />
+      <Item value="member" priority="3" />
+      <Item value="lastVal" priority="1" />
+      <Item value="EnumWriters" priority="3" />
+      <Item value="SortedDictionary&lt;string,EnumWriter&gt;" priority="0" />
+      <Item value="EnumWriter`0" priority="3" />
+      <Item value="ReflectionTypeLoadException`0" priority="0" />
+      <Item value="packageItem" priority="1" />
+      <Item value="WriteEnum`0" priority="0" />
+      <Item value="enumItem" priority="1" />
+      <Item value="csFile" priority="1" />
+      <Item value="t" priority="1" />
+      <Item value="IntPtr`0" priority="0" />
+      <Item value="TypeMappings" priority="0" />
+      <Item value="IsProperty" priority="0" />
+      <Item value="float" priority="0" />
+      <Item value="default" priority="2" />
+      <Item value="IsPrimitiveType`0" priority="0" />
+      <Item value="i" priority="1" />
+      <Item value="GetNativeMethodName`0" priority="0" />
+      <Item value="GetCsNativeParamString`0" priority="0" />
+      <Item value="ParameterListWriter`0" priority="0" />
+      <Item value="_parameterList" priority="6" />
+      <Item value="_parameterListWriter" priority="3" />
+      <Item value="ParameterListWriter" priority="0" />
+      <Item value="returnType" priority="17" />
+      <Item value="nativeParamStr" priority="0" />
+      <Item value="IsStatic" priority="5" />
+      <Item value="callString" priority="0" />
+      <Item value="startDeclaration" priority="0" />
+      <Item value="NativeMethodName" priority="0" />
+      <Item value="BindingFlags`0" priority="1" />
+      <Item value="declarationLines" priority="0" />
+      <Item value="dictionary" priority="0" />
+      <Item value="includedType" priority="0" />
+      <Item value="TypeUtil`0" priority="1" />
+      <Item value="FileWriter`0" priority="0" />
+      <Item value="_cppFolder" priority="0" />
+      <Item value="definitionFile" priority="0" />
+      <Item value="sbyte" priority="0" />
+      <Item value="_typeUtil" priority="9" />
+      <Item value="_dataNode" priority="1" />
+      <Item value="StringBuilder`0" priority="1" />
+      <Item value="ReturnType" priority="4" />
+      <Item value="isHandle" priority="2" />
+      <Item value="get" priority="0" />
+      <Item value="IsHandle" priority="3" />
+      <Item value="CppReturnType" priority="1" />
+      <Item value="Setup`0" priority="0" />
+      <Item value="timer1" priority="2" />
+      <Item value="propertiesNode" priority="0" />
+      <Item value="propertysNode" priority="0" />
+      <Item value="isWriteProperty" priority="10" />
+      <Item value="isReadProperty" priority="0" />
+      <Item value="propertyNode" priority="1" />
+      <Item value="methodName" priority="2" />
+      <Item value="PropertyWriter`0" priority="1" />
+      <Item value="Properties" priority="2" />
+      <Item value="List&lt;PropertyWriter&gt;" priority="0" />
+      <Item value="property" priority="0" />
+      <Item value="attrsNode" priority="0" />
+      <Item value="_name" priority="1" />
+      <Item value="toAdd" priority="1" />
+      <Item value="_isWriteProperty" priority="3" />
+      <Item value="_returnType" priority="8" />
+      <Item value="_isStatic" priority="1" />
+      <Item value="isStatic" priority="0" />
+      <Item value="isWrite" priority="2" />
+      <Item value="_isReadProperty" priority="0" />
+      <Item value="PreProcessControlState`0" priority="0" />
+      <Item value="process" priority="1" />
+      <Item value="apiGeneratorPath" priority="4" />
+      <Item value="override" priority="0" />
+      <Item value="Instance" priority="2" />
+      <Item value="dllName" priority="0" />
+      <Item value="Count" priority="0" />
+      <Item value="definitionsFile" priority="0" />
+      <Item value="typeUtil" priority="0" />
+      <Item value="removeString" priority="1" />
+      <Item value="Opacity" priority="1" />
+      <Item value="foundTypes" priority="1" />
+      <Item value="IList" priority="0" />
+      <Item value="items" priority="3" />
+      <Item value="firstItem" priority="2" />
+      <Item value="offset" priority="3" />
+      <Item value="while" priority="1" />
+      <Item value="startChars" priority="2" />
+      <Item value="startCommon" priority="1" />
+      <Item value="foundType" priority="0" />
+      <Item value="CommonDialog`0" priority="0" />
+      <Item value="comonText" priority="0" />
+      <Item value="RegenWrapper`0" priority="0" />
+      <Item value="List&lt;bool&gt;" priority="0" />
+      <Item value="ByRef" priority="2" />
+      <Item value="WorkingDirectory" priority="0" />
+      <Item value="Path`0" priority="0" />
+      <Item value="paramList" priority="1" />
+      <Item value="childParam" priority="2" />
+      <Item value="childMethodString" priority="0" />
+      <Item value="UpdateMethodList`0" priority="0" />
+      <Item value="constructorsCheckBox" priority="0" />
+      <Item value="defaultConstructorSet" priority="0" />
+      <Item value="ref" priority="1" />
+      <Item value="isDefaultCtroSet" priority="2" />
+      <Item value="isDefaultCtorSet" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiCommon.DataNode">
+      <Item value="Name" priority="25" />
+      <Item value="Attributes" priority="5" />
+      <Item value="Children" priority="14" />
+      <Item value="Parent" priority="2" />
+      <Item value="Set`0" priority="14" />
+      <Item value="AddChild`0" priority="3" />
+      <Item value="Root" priority="1" />
+      <Item value="NodeType" priority="3" />
+      <Item value="Get`0" priority="3" />
+      <Item value="Is`0" priority="2" />
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="26" />
+      <Item value="Count" priority="7" />
+      <Item value="AddRange`0" priority="3" />
+      <Item value="ToArray`0" priority="0" />
+      <Item value="Clear`0" priority="0" />
+      <Item value="RemoveRange`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ApiCommon.DataNodeLoader">
+      <Item value="FromFile`0" priority="1" />
+      <Item value="ToFile`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlDocument">
+      <Item value="Name" priority="0" />
+      <Item value="FirstChild" priority="0" />
+      <Item value="ChildNodes" priority="0" />
+      <Item value="CreateElement`0" priority="0" />
+      <Item value="Save`0" priority="1" />
+      <Item value="RemoveAll`0" priority="0" />
+      <Item value="AppendChild`0" priority="0" />
+      <Item value="Load`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlNode">
+      <Item value="Name" priority="1" />
+      <Item value="Attributes" priority="0" />
+      <Item value="ChildNodes" priority="0" />
+      <Item value="AppendChild`0" priority="0" />
+      <Item value="RemoveAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlAttribute">
+      <Item value="Name" priority="0" />
+      <Item value="Value" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlElement">
+      <Item value="Attributes" priority="0" />
+      <Item value="AppendChild`0" priority="0" />
+      <Item value="RemoveAttribute`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Key" priority="4" />
+      <Item value="Value" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlAttributeCollection">
+      <Item value="Append`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiGenerators.Forms.OccTypeFormLookup">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.Application">
+      <Item value="Run`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.KeyEventArgs">
+      <Item value="KeyCode" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.Keys">
+      <Item value="Enter" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Type">
+      <Item value="GetType`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="5" />
+      <Item value="Enabled" priority="0" />
+      <Item value="Focus`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.Assembly">
+      <Item value="Load`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.Assembly">
+      <Item value="GetType`0" priority="0" />
+      <Item value="GetTypes`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="StartsWith`0" priority="9" />
+      <Item value="Contains`0" priority="1" />
+      <Item value="Split`0" priority="3" />
+      <Item value="Remove`0" priority="3" />
+      <Item value="toar" priority="0" />
+      <Item value="Length" priority="3" />
+      <Item value="Substring`0" priority="0" />
+      <Item value="Replace`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="FullName" priority="3" />
+      <Item value="GetMember`0" priority="0" />
+      <Item value="Equals`0" priority="1" />
+      <Item value="Name" priority="8" />
+      <Item value="BaseType" priority="2" />
+      <Item value="IsClass" priority="1" />
+      <Item value="IsEnum" priority="0" />
+      <Item value="GetFields`0" priority="0" />
+      <Item value="IsByRef" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListBox">
+      <Item value="Items" priority="2" />
+      <Item value="BeginInvoke`0" priority="0" />
+      <Item value="EndUpdate`0" priority="0" />
+      <Item value="SelectedItem" priority="0" />
+      <Item value="SelectedIndex" priority="1" />
+      <Item value="Focus`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListBox+ObjectCollection">
+      <Item value="Add`0" priority="0" />
+      <Item value="Clear`0" priority="1" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.MemberInfo">
+      <Item value="ToString`0" priority="1" />
+      <Item value="Name" priority="1" />
+      <Item value="MemberType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiGenerators.Forms.AddMethodForm">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="37" />
+      <Item value="IsNullOrEmpty`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.MethodInfo">
+      <Item value="ToString`0" priority="2" />
+      <Item value="IsStatic" priority="1" />
+      <Item value="ReturnType" priority="1" />
+      <Item value="GetParameters`0" priority="3" />
+      <Item value="Name" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Label">
+      <Item value="Text" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.CheckBox">
+      <Item value="Enabled" priority="0" />
+      <Item value="Checked" priority="4" />
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ApiCommon.Generator.OccApiGenerator">
+      <Item value="PackageName`0" priority="0" />
+      <Item value="GetOrAddChild`0" priority="0" />
+      <Item value="OccClassName`0" priority="0" />
+      <Item value="PrimitiveTypeName`0" priority="1" />
+      <Item value="PrettyName`0" priority="1" />
+      <Item value="GetItemType`0" priority="0" />
+      <Item value="NativeMethodSuffix`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ApiCommon.BasicStrings">
+      <Item value="Namespace" priority="1" />
+      <Item value="Occ" priority="0" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ApiCommon.Consts">
+      <Item value="NaroCppCore" priority="1" />
+      <Item value="Name" priority="3" />
+      <Item value="Namespace" priority="0" />
+      <Item value="Occ" priority="1" />
+      <Item value="Implements" priority="0" />
+      <Item value="IsProperty" priority="1" />
+      <Item value="Methods" priority="0" />
+      <Item value="Parameters" priority="2" />
+      <Item value="Parameter" priority="1" />
+      <Item value="Generator" priority="0" />
+      <Item value="Method" priority="0" />
+      <Item value="ReturnType" priority="3" />
+      <Item value="ParamType" priority="2" />
+      <Item value="Constructor" priority="2" />
+      <Item value="Enum" priority="4" />
+      <Item value="Field" priority="0" />
+      <Item value="Klass" priority="2" />
+      <Item value="Properties" priority="1" />
+      <Item value="IsReadProperty" priority="1" />
+      <Item value="IsStatic" priority="1" />
+      <Item value="Property" priority="3" />
+      <Item value="IsWriteProperty" priority="0" />
+      <Item value="Attrs" priority="0" />
+      <Item value="ExtString" priority="2" />
+      <Item value="IsRef" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.SortedDictionary`2">
+      <Item value="Remove`0" priority="0" />
+      <Item value="TryGetValue`0" priority="3" />
+      <Item value="Values" priority="1" />
+      <Item value="ContainsValue`0" priority="0" />
+      <Item value="Keys" priority="0" />
+      <Item value="ContainsKey`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.ParameterInfo">
+      <Item value="Name" priority="0" />
+      <Item value="ParameterType" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Directory">
+      <Item value="CreateDirectory`0" priority="1" />
+      <Item value="Exists`0" priority="0" />
+      <Item value="SetCurrentDirectory`0" priority="0" />
+      <Item value="GetCurrentDirectory`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiToWrapper.CodeWriters.OccCodeWriter">
+      <Item value="WriteCode`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiToWrapper.CodeWriters.CSharpClassWriter">
+      <Item value="ProjectWriter" priority="0" />
+      <Item value="WriteToCppFile`0" priority="0" />
+      <Item value="DiskCppFileName" priority="0" />
+      <Item value="BeautifiedClassName" priority="0" />
+      <Item value="Namespace" priority="0" />
+      <Item value="ClassName" priority="0" />
+      <Item value="DiskFileName" priority="0" />
+      <Item value="AddDependentType`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiToWrapper.CodeWriters.CSharpProjectWriter">
+      <Item value="GetOrAddClass`0" priority="0" />
+      <Item value="_rootPaths" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiToWrapper.CodeWriters.FileWriter">
+      <Item value="Lines" priority="1" />
+      <Item value="WriteToDisk`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ApiCommon.Generator.Util">
+      <Item value="Indent`0" priority="5" />
+      <Item value="NativeInstanceDestructor`0" priority="0" />
+      <Item value="ExtractPackage`0" priority="1" />
+      <Item value="BeautifiedClassName`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiToWrapper.CodeWriters.Constructs.ConstructorWriter">
+      <Item value="WriteToCppFile`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiToWrapper.CodeWriters.Constructs.MethodWriter">
+      <Item value="WriteToCppFile`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="WriteAllLines`0" priority="0" />
+      <Item value="Exists`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.ConstructorInfo">
+      <Item value="GetParameters`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="ToString`0" priority="7" />
+      <Item value="Append`0" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.FieldInfo">
+      <Item value="FieldType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiToWrapper.CodeWriters.Constructs.EnumWriter">
+      <Item value="WriteToFile`0" priority="0" />
+      <Item value="DiskFileName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IntPtr">
+      <Item value="Zero" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.BindingFlags">
+      <Item value="Public" priority="1" />
+      <Item value="Static" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.ICollection`1">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiToWrapper.CodeWriters.Constructs.CSharpClassWriter">
+      <Item value="ClassName" priority="5" />
+      <Item value="Properties" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiToWrapper.CodeWriters.Constructs.TypeUtil">
+      <Item value="IsHandle`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiCommon.Generator.TypeUtil">
+      <Item value="Type`0" priority="0" />
+      <Item value="IsHandle`0" priority="4" />
+      <Item value="InstanceToPtr`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Timer">
+      <Item value="Start`0" priority="0" />
+      <Item value="Interval" priority="0" />
+      <Item value="Stop`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Diagnostics.Process">
+      <Item value="StartInfo" priority="0" />
+      <Item value="Start`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Diagnostics.ProcessStartInfo">
+      <Item value="FileName" priority="0" />
+      <Item value="WorkingDirectory" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="Combine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ApiToWrapper.CodeWriters.Constructs.ParameterListWriter">
+      <Item value="ParamTypes" priority="1" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NaroCppCore.Core.NativeInstancePtr">
+      <Item value="Instance" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

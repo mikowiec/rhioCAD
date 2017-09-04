@@ -1,0 +1,29 @@
+﻿#region Usings
+
+using System.Collections.Generic;
+using ConstraintsModule.Mappings.Constraints.Common;
+using ConstraintsModule.Primitives;
+using SketchSolve.Constraints;
+
+#endregion
+
+namespace ConstraintsModule.Mappings.Constraints
+{
+    internal class PointOnArcMidpointRefMapper : TwoShapesConstraintMapper<Arc, Point>
+    {
+        protected override List<ConstraintRefBase> ConstraintRefBuild()
+        {
+            var constraint = new PointOnArcMidPointRef
+            {
+                Arc1 = new RefArc()
+                {
+                    Center = new RefPoint(A1P1, shapeToParamIndex[A1P1], shapeToParamIndex[A1P1] + 1),
+                    Start = new RefPoint(A1P2, shapeToParamIndex[A1P2], shapeToParamIndex[A1P2] + 1),
+                    End = new RefPoint(A1P3, shapeToParamIndex[A1P3], shapeToParamIndex[A1P3] + 1),
+                },
+                P1 = new RefPoint(P1, shapeToParamIndex[P1], shapeToParamIndex[P1] + 1)
+            };
+            return new List<ConstraintRefBase> { constraint };
+        }
+    }
+}

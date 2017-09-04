@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="Documentation" default="docs">
+	<target name="docs">
+		<mkdir dir="docs" />
+		<exec program="mdoc.bat">
+			<arg value="assemble"/>
+			<arg value="docs"/>
+		</exec>
+		<exec program="mdoc.bat">
+			<arg value="update"/>
+			<arg value="-o"/>
+			<arg value="docs"/>
+			<arg value="ImportFile.dll"/>
+			<arg value="Layout.dll"/>
+			<arg value="OCAFDrivers.dll"/>
+			<arg value="OCAFDrivers.Interface.dll"/>
+			<arg value="PartModeling.dll"/>
+			<arg value="PartModelingManager.dll"/>
+		</exec>
+		<exec program="mdoc.bat">
+			<arg value="export-html"/>
+			<arg value="-o"/>
+			<arg value="html"/>
+			<arg value="docs"/>
+		</exec>
+    </target>
+</project>

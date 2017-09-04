@@ -1,0 +1,7 @@
+﻿<UserControl x:Class="InteractiveEditor.Views.Tools.PasteView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Button Height="20" Style="{DynamicResource RoundedButtonFloatinToolbar}" Width="20" Grid.Row="0" Grid.Column="0" Click="PasteClicked" ToolTip="Paste" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="2,0,2,0">
+		<Button.Content>
+			<Image Source="/Resources;component/Resources/edit-paste.png"></Image>
+		</Button.Content>
+	</Button>
+</UserControl>

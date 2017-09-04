@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{30BA1766-2EAB-4A2B-AA4F-CD3D78D84C22}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ShapeFunctions</RootNamespace>
+    <AssemblyName>ShapeFunctions</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Cip\AppData\Roaming\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>..\..\..\bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug' ">
+    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>..\..\..\..\bin\Debug\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\..\bin\Release\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Compile Include="Constraints\Naro\ConstraintsShapes2D\EllipseConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes2D\EllipseMajorRadiusConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes2D\EllipseMinorRadiusConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes3D\BoxHeightConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes2D\CircleRangeConstraint.cs" />
+    <Compile Include="Constraints\Naro\CoLocationConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes3D\ConeHeightConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes3D\ConeMajorRadiusConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes3D\ConeMinorRadiusConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes2D\ConstraintOneRealFunction.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes3D\CutHeightConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes3D\CylinderHeightConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes3D\CylinderRadiusConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes3D\ExtrudeHeightConstraint.cs" />
+    <Compile Include="Constraints\Naro\FixedSizeConstraint.cs" />
+    <Compile Include="Constraints\Naro\LineLengthConstraint.cs" />
+    <Compile Include="Constraints\Naro\RangeSizeConstraint.cs" />
+    <Compile Include="Constraints\Naro\RectangleHeightConstraint.cs" />
+    <Compile Include="Constraints\Naro\RectangleWidthConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes3D\SphereRadiusConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes3D\TorusMajorRadiusConstraint.cs" />
+    <Compile Include="Constraints\Naro\ConstraintsShapes3D\TorusMinorRangeConstraint.cs" />
+    <Compile Include="Constraints\RealSizeLimits\EdgeDistanceConstraint.cs" />
+    <Compile Include="Constraints\RealSizeLimits\HorizontalLineConstraint.cs" />
+    <Compile Include="Constraints\RealSizeLimits\IndexPointConstraintInterpreter.cs" />
+    <Compile Include="Constraints\RealSizeLimits\MiddleEdgeConstraint.cs" />
+    <Compile Include="Constraints\RealSizeLimits\MiddleRectanglePointConstraint.cs" />
+    <Compile Include="Constraints\RealSizeLimits\PointToPointConstraint.cs" />
+    <Compile Include="Constraints\RealSizeLimits\ShapePointConstraint.cs" />
+    <Compile Include="Constraints\RealSizeLimits\VerticalLineConstraint.cs" />
+    <Compile Include="Functions\Naro\Helper\DottedLine.cs" />
+    <Compile Include="Functions\Naro\Mirroring\MirrorFunctionsCommon.cs" />
+    <Compile Include="Functions\Naro\Mirroring\MirrorLineFunction.cs" />
+    <Compile Include="Functions\Naro\Mirroring\MirrorPlaneFunction.cs" />
+    <Compile Include="Functions\Naro\Mirroring\MirrorPointFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\PointHintsFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\LineHintsFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\WireTwoPointsFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\LineTwoPointsFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\ParallelogramBasedFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\ParallelogramFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\SplinePathFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\SplineUtils.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\TexturedShapeFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\TrimFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives3D\PlaneFunction.cs" />
+    <Compile Include="Functions\Naro\Sketch\SketchFunction.cs" />
+    <Compile Include="Functions\Solver\DottedLineCommon.cs" />
+    <Compile Include="Functions\Solver\LineMarker.cs" />
+    <Compile Include="Functions\Solver\SolverLineMarker.cs" />
+    <Compile Include="Handles\EditingHandles\ArrowHandleFunction.cs" />
+    <Compile Include="Handles\EditingHandles\BoxHandleFunction.cs" />
+    <Compile Include="Functions\Naro\DefaultFunctions.cs" />
+    <Compile Include="Functions\Naro\Helper\HorizontalLineFunction.cs" />
+    <Compile Include="Functions\Naro\Helper\VerticalLineFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\Arc3pFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\ArcFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\ArrowFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\CircleFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\DimensionFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\EllipseFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\PointFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\PointsDimensionFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\PolylineFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\RectangleFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives2D\SplineFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives3D\Box1pFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives3D\BoxFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives3D\ConeFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives3D\CylinderFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives3D\SphereFunction.cs" />
+    <Compile Include="Functions\Naro\Primitives3D\TorusFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\AngleDraftFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\BooleanFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\CutFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\EvolvedFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\ExtrudeFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\FaceFuseFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\Fillet2dFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\FilletFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\MakeFaceFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\MeshFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\Offset3DFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\OffsetFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\PipeFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\RevolveFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\SewingFunction.cs" />
+    <Compile Include="Functions\Naro\Tools\SubShapeFunction.cs" />
+    <Compile Include="Handles\EditingHandles\Circle2DHandleFunction.cs" />
+    <Compile Include="Handles\EditingHandles\Rectangle2DHandleFunction.cs" />
+    <Compile Include="Handles\EditingHandles\Triangle2DEditingHandle.cs" />
+    <Compile Include="Handles\Gizmos\AxisHandleFunction.cs" />
+    <Compile Include="Handles\Gizmos\CircleHandleFunction.cs" />
+    <Compile Include="Handles\Gizmos\PlaneHandleFunction.cs" />
+    <Compile Include="Functions\Solver\SolverPointMarker.cs" />
+    <Compile Include="Handles\Gizmos\TriangleHandleFunction.cs" />
+    <Compile Include="Handles\HandleBaseFunction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\DimensionUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Lib\AlternateWrapper\NaroOccCore\NaroOccCore-build-desktop\NaroCppCore.csproj">
+      <Project>{8D5FFA62-563E-4566-902A-3E05EA39BF33}</Project>
+      <Name>NaroCppCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Infrastructure.Interface\Infrastructure.Interface.csproj">
+      <Project>{5E3CB7F9-17DE-420C-B5DA-94E12E1F67D8}</Project>
+      <Name>Infrastructure.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Infrastructure.Library\Infrastructure.Library.csproj">
+      <Project>{D3DAAD65-6E8B-407F-9D7C-788C7FBA8D61}</Project>
+      <Name>Infrastructure.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\Logic\OccCode\OccCode.csproj">
+      <Project>{7705ABD9-E128-4831-A652-B08884539163}</Project>
+      <Name>OccCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\NaroConstants\NaroConstants.csproj">
+      <Project>{7B37096D-1715-40E6-8914-317C55F60897}</Project>
+      <Name>NaroConstants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\NaroPipes\NaroPipes.csproj">
+      <Project>{27C6CE51-5F57-4421-8C0F-9526EC3E9963}</Project>
+      <Name>NaroPipes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infrastructure\TreeData\TreeData.csproj">
+      <Project>{E5D3FF5A-D77C-418B-8E73-E8D55EE5CAFD}</Project>
+      <Name>TreeData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShapeFunctionsInterface\ShapeFunctionsInterface.csproj">
+      <Project>{5037292E-38AB-460E-ADCF-E621B435408E}</Project>
+      <Name>ShapeFunctionsInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="PropertyGridTabItems.DropDownTemplate" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="auto" Width="auto">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" MaxWidth="102"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<ComboBox Grid.Row="0" Grid.Column="0" MaxWidth="102" MinWidth="50" Height="22" x:Name="dropDown" SelectionChanged="DropDownSelectionChanged"></ComboBox>
+	</Grid>
+</UserControl>

@@ -1,0 +1,8 @@
+s1=Sketch(0,0,0,5,4,0,2,3,0)
+EnterSketch(s1)
+p1=Point(s1,2,3,0)
+p2=Point(s1,16,19,0)
+p3=Point(s1,4,15,0)
+l1=Line(p1,p2)
+l2=Line(p1,p3)
+Fillet2D(l1,l2,4)
